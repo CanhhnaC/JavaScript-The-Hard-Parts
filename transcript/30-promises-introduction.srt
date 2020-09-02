@@ -1,0 +1,432 @@
+1
+00:00:00,050 --> 00:00:06,029
+>> Will Sentance: Vì vậy, bây giờ chúng ta sẽ chuyển sang những gì đã thay đổi trong ES2015 và
+
+2
+00:00:06,029 --> 00:00:07,035
+trên thế giới.
+
+3
+00:00:07,035 --> 00:00:07,967
+Thế giới ES6.
+
+4
+00:00:07,967 --> 00:00:11,237
+Vì vậy, cho đến lúc đó, những gì chúng ta đã thấy ở đây trước đây.
+
+5
+00:00:11,237 --> 00:00:14,267
+Mô hình này, hãy nhớ rằng mô hình đẹp ở đây chúng tôi đã có?
+
+6
+00:00:14,267 --> 00:00:15,698
+Đó là khá nhiều đó.
+
+7
+00:00:15,698 --> 00:00:21,428
+Và sau đó là những lời hứa, và mọi thứ có một chút khác biệt.
+
+8
+00:00:21,428 --> 00:00:23,628
+Tiền đề cho nó là điều này.
+
+9
+00:00:23,628 --> 00:00:28,024
+Nếu tôi thử và tổng hợp lại, tiền đề sẽ là cái này.
+
+10
+00:00:28,024 --> 00:00:31,348
+Khi tôi có mô hình này ở đây, khi tôi sử dụng setTimeout.
+
+11
+00:00:31,348 --> 00:00:34,046
+SetTimeout có làm được gì trong JavaScript không?
+
+12
+00:00:34,046 --> 00:00:36,500
+Không, hậu quả của nó là do đâu, Kayla?
+
+13
+00:00:36,500 --> 00:00:37,939
+>> Kayla: Trong trình duyệt web.
+
+14
+00:00:37,939 --> 00:00:39,310
+>> Will Sentance: Trong trình duyệt web, ngay tại chỗ.
+
+15
+00:00:39,310 --> 00:00:42,393
+Nhưng khi tôi đã thiết lập bộ hẹn giờ trong trình duyệt web,
+
+16
+00:00:42,393 --> 00:00:47,402
+theo dõi thực tế là tôi đã bắt đầu nó, hoặc các tính năng nền khác?
+
+17
+00:00:47,402 --> 00:00:51,514
+Tôi thực sự không có bất kỳ cách nào để theo dõi điều đó trong JavaScript, phải không?
+
+18
+00:00:51,514 --> 00:00:52,986
+Trong JavaScript, tôi đã loại bỏ chúng.
+
+19
+00:00:52,986 --> 00:00:58,009
+Bây giờ, tôi có thể trạng thái console.log Trong dữ liệu JavaScript và JavaScript bằng bảng điều khiển của tôi.
+
+20
+00:00:58,009 --> 00:01:00,507
+Nhưng tôi không thể đi và hình dung tất cả những thứ ở đây.
+
+21
+00:01:00,507 --> 00:01:04,295
+Không có bảng điều khiển nào giống như hình dung nó cho trình duyệt web,
+
+22
+00:01:04,295 --> 00:01:06,957
+đó là một chút cũ, phải không?
+
+23
+00:01:06,957 --> 00:01:10,397
+Đó là một nửa những gì bạn đang làm rõ ràng hơn một nửa những gì bạn làm trong JavaScript
+
+24
+00:01:10,397 --> 00:01:11,472
+đang xảy ra ở đây.
+
+25
+00:01:11,472 --> 00:01:16,390
+Và tôi không theo dõi được nó, không thể duy trì tính nhất quán
+
+26
+00:01:16,390 --> 00:01:20,057
+giữa trạng thái, dữ liệu tôi thấy ở đây trong bộ nhớ của mình và
+
+27
+00:01:20,057 --> 00:01:22,726
+những thứ đang xảy ra ở đây.
+
+28
+00:01:22,726 --> 00:01:26,808
+Không có cách nào để lập bản đồ những gì tôi đang làm ở đây
+
+29
+00:01:26,808 --> 00:01:30,904
+trình duyệt web với những gì đang diễn ra ở đây bằng JavaScript.
+
+30
+00:01:30,904 --> 00:01:36,562
+Đó là về lý luận của nhà phát triển và suy nghĩ về những gì chúng tôi đang làm khi chúng tôi
+
+31
+00:01:36,562 --> 00:01:42,389
+đi và sắp xếp duy trì quy mô ứng dụng không phải là lý tưởng mà tôi sẽ nói.
+
+32
+00:01:42,389 --> 00:01:46,368
+Và tôi sẽ đặt lời hứa là lời hứa tuyệt đối trong những điều có giá trị nhất
+
+33
+00:01:46,368 --> 00:01:51,097
+họ cung cấp, họ cũng có tất cả các lợi ích, là một mong muốn nói rằng,
+
+34
+00:01:51,097 --> 00:01:56,158
+khi bạn kích hoạt một thứ gì đó trong nền, đừng chỉ ném nó ra ngoài đó.
+
+35
+00:01:56,158 --> 00:02:02,380
+Nhưng nó cũng có một số hệ quả trong bộ nhớ JavaScript.
+
+36
+00:02:02,380 --> 00:02:06,697
+Vì vậy, tôi có sự nhất quán giữa những thứ đang diễn ra trong nền sẽ
+
+37
+00:02:06,697 --> 00:02:09,536
+có một số hệ quả trở lại trong Java tại một số thời điểm.
+
+38
+00:02:09,536 --> 00:02:13,718
+Và bằng cách nào đó tôi cũng đang theo dõi điều đó trong bộ nhớ JavaScript.
+
+39
+00:02:13,718 --> 00:02:19,274
+Vì vậy, với ES6, chúng tôi đã giới thiệu những gì tôi sẽ gọi là các hàm mặt tiền hai hướng.
+
+40
+00:02:19,274 --> 00:02:25,568
+Họ không chỉ, chúng ta hãy nhớ trình duyệt web của chúng ta, có gì trong đó.
+
+41
+00:02:25,568 --> 00:02:32,028
+Chúng tôi có công cụ JavaScript của mình, chúng tôi có JS, công cụ JavaScript của chúng tôi,
+
+42
+00:02:32,028 --> 00:02:36,298
+và sau đó chúng tôi cũng có rất nhiều tính năng của trình duyệt,
+
+43
+00:02:36,298 --> 00:02:42,123
+một trong số đó đã nói với Internet về yêu cầu mạng.
+
+44
+00:02:42,123 --> 00:02:46,079
+Và đó là nhãn của nó.
+
+45
+00:02:46,079 --> 00:02:50,615
+Chúng tôi có một nhãn trường học cũ, theo cách này hoạt động theo cách giống như thời gian chờ đã đặt.
+
+46
+00:02:50,615 --> 00:02:53,382
+Lấy một chức năng, ném nó xuống trình duyệt web,
+
+47
+00:02:53,382 --> 00:02:55,483
+thiết lập bộ đếm thời gian với phong cách trường học cũ.
+
+48
+00:02:55,483 --> 00:03:01,025
+Chúng tôi có một phong cách mới theo trường phái thiết lập tính năng trình duyệt nói chuyện với Internet,
+
+49
+00:03:01,025 --> 00:03:03,850
+nói chuyện với Twitter, bất kể nó có thể là gì.
+
+50
+00:03:03,850 --> 00:03:06,084
+Gửi yêu cầu thêm dữ liệu qua Internet.
+
+51
+00:03:06,084 --> 00:03:08,949
+Và nhãn cho nó trong JavaScript là tìm nạp.
+
+52
+00:03:08,949 --> 00:03:12,195
+Nhưng có một cách làm mới của một ngôi sao.
+
+53
+00:03:12,195 --> 00:03:15,739
+Đó là một chức năng mà tôi sẽ gọi là chức năng mặt tiền hai hướng.
+
+54
+00:03:15,739 --> 00:03:20,235
+Nó thiết lập một yêu cầu mạng trên web
+
+55
+00:03:20,235 --> 00:03:24,610
+các tính năng của trình duyệt, tôi tiếp tục làm điều đó.
+
+56
+00:03:24,610 --> 00:03:30,232
+Trong các tính năng của trình duyệt web, nó thiết lập một yêu cầu mạng ở đây.
+
+57
+00:03:30,232 --> 00:03:33,827
+Nhưng thay vì chỉ làm điều đó và sau đó không có gì,
+
+58
+00:03:33,827 --> 00:03:38,192
+không có cách nào để biết điều này được thực hiện trong JavaScript từ đó trở đi,
+
+59
+00:03:38,192 --> 00:03:43,094
+nó cũng sẽ có hậu quả ngay lập tức trong JavaScript.
+
+60
+00:03:43,094 --> 00:03:47,176
+Nhãn tìm nạp này sẽ kích hoạt nói chuyện với Internet ở đây.
+
+61
+00:03:47,176 --> 00:03:50,438
+Gửi yêu cầu mạng, nói chuyện với internet, yêu cầu
+
+62
+00:03:50,438 --> 00:03:51,902
+dữ liệu từ Twitter ở đây.
+
+63
+00:03:51,902 --> 00:03:57,025
+Và đồng thời nó cũng sẽ có trong JavaScript,
+
+64
+00:03:57,025 --> 00:04:00,077
+trong JavaScript land trở lại
+
+65
+00:04:00,077 --> 00:04:04,659
+một loại đối tượng đặc biệt được gọi là đối tượng hứa hẹn.
+
+66
+00:04:04,659 --> 00:04:06,990
+Điều đó sẽ nằm trong trí nhớ.
+
+67
+00:04:06,990 --> 00:04:11,358
+Và khi công việc nền được hoàn thành ở đây, bạn sẽ điền vào và
+
+68
+00:04:11,358 --> 00:04:15,294
+cập nhật dữ liệu của đối tượng đó với dữ liệu từ nền.
+
+69
+00:04:15,294 --> 00:04:18,117
+Và bây giờ khi chúng tôi hoàn thành công việc nền của mình,
+
+70
+00:04:18,117 --> 00:04:22,315
+chúng tôi không ngạc nhiên rằng điều gì đó sẽ có kết quả trở lại
+
+71
+00:04:22,315 --> 00:04:26,073
+JavaScript vì chúng ta đã có một hàm mặt tiền hai hướng.
+
+72
+00:04:26,073 --> 00:04:29,775
+Nó đã gây ra hậu quả ở đây, một ngạnh.
+
+73
+00:04:29,775 --> 00:04:32,597
+Nhưng nó có một hậu quả khác ngay lập tức trong JavaScript.
+
+74
+00:04:32,597 --> 00:04:35,935
+Một loại đối tượng giữ chỗ nhỏ sẽ cho phép chúng tôi giữ lại
+
+75
+00:04:35,935 --> 00:04:38,727
+theo dõi bằng JavaScript trong bộ nhớ cục bộ của chúng tôi hoặc trong toàn cầu của chúng tôi
+
+76
+00:04:38,727 --> 00:04:42,388
+bộ nhớ ở đó về những thứ mà chúng tôi đã kích hoạt ở đây trong trình duyệt web.
+
+77
+00:04:42,388 --> 00:04:46,182
+Vì vậy, bây giờ chúng tôi đã ánh xạ hai thứ này với nhau và chúng được liên kết mật thiết.
+
+78
+00:04:46,182 --> 00:04:49,844
+Tính năng nền khi nó hoàn thành sẽ dẫn đến hậu quả
+
+79
+00:04:49,844 --> 00:04:52,471
+ngay lập tức trả về đối tượng JavaScript.
+
+80
+00:04:52,471 --> 00:04:56,324
+Chúng ta sẽ thấy nó phát ở đây, nhưng hãy xem nó,
+
+81
+00:04:56,324 --> 00:05:01,314
+hai hàm mặt tiền được phân bổ đều có thể khởi tạo hoạt động của trình duyệt web nền
+
+82
+00:05:01,314 --> 00:05:04,734
+là Internet và trả về một đối tượng giữ chỗ.
+
+83
+00:05:04,734 --> 00:05:06,744
+Nó chỉ là điện tích của vật thể nhưng
+
+84
+00:05:06,744 --> 00:05:11,072
+một loại đặc biệt với một lời hứa ngay lập tức trong vùng đất JavaScript.
+
+85
+00:05:11,072 --> 00:05:15,675
+Vì vậy, chúng tôi có một cách để đảm bảo rằng chúng tôi biết những gì đang xảy ra ở đây bởi vì
+
+86
+00:05:15,675 --> 00:05:17,734
+chúng tôi đã cập nhật nó ở đây.
+
+87
+00:05:17,734 --> 00:05:21,545
+Thực sự thú vị, là khái niệm rất thú vị.
+
+88
+00:05:21,545 --> 00:05:22,094
+Vì vậy, chúng tôi bắt đầu.
+
+89
+00:05:22,094 --> 00:05:23,771
+Chúng ta sẽ thấy nó diễn ra ở đây.
+
+90
+00:05:23,771 --> 00:05:29,549
+Lưu một màn hình chức năng, hy vọng sẽ được chạy với dữ liệu
+
+91
+00:05:29,549 --> 00:05:35,986
+quay lại từ Twitter dưới dạng đầu vào, sau đó chúng tôi sẽ có dữ liệu tương lai về nhãn của anh ấy.
+
+92
+00:05:35,986 --> 00:05:38,436
+Và sau đó ở phía bên tay phải,
+
+93
+00:05:38,436 --> 00:05:42,429
+từ năm chữ cái mạnh nhất trong JavaScript.
+
+94
+00:05:42,429 --> 00:05:46,349
+Những gì năm chữ cái đó làm rất phức tạp.
+
+95
+00:05:46,349 --> 00:05:49,315
+Họ sẽ bắt đầu nói chuyện với Internet.
+
+96
+00:05:49,315 --> 00:05:53,496
+Năm chữ cái đó thực sự nói với Internet ở đây từ
+
+97
+00:05:53,496 --> 00:05:54,589
+trình duyệt web.
+
+98
+00:05:54,589 --> 00:05:56,734
+Không phải trong JavaScript, JavaScript không làm được, nhưng trình duyệt web thì có thể.
+
+99
+00:05:56,734 --> 00:05:59,501
+Đó là sức mạnh của từ năm chữ cái đó.
+
+100
+00:05:59,501 --> 00:06:02,352
+Nó sử dụng vô số công nghệ để đi và
+
+101
+00:06:02,352 --> 00:06:06,338
+lấy dữ liệu từ phía bên kia của thế giới Adrian, JavaScript.
+
+102
+00:06:06,338 --> 00:06:07,754
+JavaScript không có tính năng đó, tin tôi đi.
+
+103
+00:06:07,754 --> 00:06:10,795
+Nhưng trình duyệt web có vô số điều đáng chú ý
+
+104
+00:06:10,795 --> 00:06:13,564
+công nghệ giúp tất cả công việc bắt đầu.
+
+105
+00:06:13,564 --> 00:06:18,050
+Nhưng nó cũng đồng thời trong JavaScript trả về một đối tượng nhỏ,
+
+106
+00:06:18,050 --> 00:06:23,450
+đó sẽ được gọi là một đối tượng hứa hẹn, đó chỉ là một đối tượng JavaScript thông thường.
+
+107
+00:06:23,450 --> 00:06:27,958
+Nhưng có một số tính năng bổ sung nhỏ trên đó, một số tính năng bổ sung nhỏ hai chúng tôi sẽ
+
+108
+00:06:27,958 --> 00:06:30,260
+xem chúng và cách chúng diễn ra trong chốc lát.
+

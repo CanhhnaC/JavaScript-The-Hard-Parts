@@ -1,0 +1,808 @@
+1
+00:00:00,320 --> 00:00:02,030
+>> Will Sentance: Nhưng đây là câu hỏi.
+
+2
+00:00:02,030 --> 00:00:05,830
+Tôi không chỉ lấy dữ liệu đó từ Twitter để không sử dụng nó.
+
+3
+00:00:05,830 --> 00:00:10,220
+Tôi có nó để sử dụng nó, trưng bày nó, bất kể nó có thể là gì.
+
+4
+00:00:10,220 --> 00:00:11,760
+Nhưng tôi không biết khi nào dữ liệu đó sẽ quay trở lại.
+
+5
+00:00:11,760 --> 00:00:13,950
+Nó có thể quay lại bất cứ lúc nào.
+
+6
+00:00:13,950 --> 00:00:19,155
+Vì vậy, tôi sẽ cần JavaScript để bằng cách nào đó khi dữ liệu quay trở lại và
+
+7
+00:00:19,155 --> 00:00:24,898
+được lưu trữ trong một thuộc tính, tự động chạy một số mã trên đó để sử dụng.
+
+8
+00:00:24,898 --> 00:00:26,830
+Nhưng tôi sẽ làm điều đó như thế nào?
+
+9
+00:00:28,830 --> 00:00:33,280
+Mọi người cho rằng mảng trống này
+
+10
+00:00:33,280 --> 00:00:38,110
+trong tài sản hoàn thành của riêng mình cũng là một điều cực kỳ quan trọng.
+
+11
+00:00:38,110 --> 00:00:45,840
+Mảng trống này sẽ có, hoặc chúng ta có thể đặt vào đó bất kỳ hàm nào, bất kỳ mã nào,
+
+12
+00:00:45,840 --> 00:00:51,800
+mà chúng tôi muốn tự động có với sự trợ giúp của JavaScript
+
+13
+00:00:51,800 --> 00:00:56,580
+được kích hoạt để chạy khi thuộc tính giá trị được điền vào.
+
+14
+00:00:56,580 --> 00:00:58,900
+Điều này xảy ra khi dữ liệu quay trở lại từ Twitter,
+
+15
+00:00:58,900 --> 00:01:00,840
+điều này xảy ra bất cứ khi nào nó xảy ra.
+
+16
+00:01:00,840 --> 00:01:06,320
+Và nó sẽ tự động kích hoạt, tại thời điểm đó, dữ liệu
+
+17
+00:01:06,320 --> 00:01:11,150
+trở lại từ Twitter, được cập nhật về thuộc tính giá trị, tự động.
+
+18
+00:01:11,150 --> 00:01:14,690
+Nó sẽ tự động kích hoạt bất kỳ chức năng nào được lưu trữ trong mảng này.
+
+19
+00:01:14,690 --> 00:01:17,679
+Trong JavaScript, bạn có thể lưu trữ các hàm như trong một danh sách.
+
+20
+00:01:19,620 --> 00:01:22,500
+Và thông thường, bạn có thể lưu trữ một loạt các hàm ở đây,
+
+21
+00:01:22,500 --> 00:01:24,060
+chúng ta có thể đặt một hàm.
+
+22
+00:01:24,060 --> 00:01:28,330
+Và bất kỳ hàm nào chúng tôi gắn bó trong mảng này sẽ được tự động kích hoạt để chạy
+
+23
+00:01:29,950 --> 00:01:31,330
+khi thuộc tính giá trị được cập nhật.
+
+24
+00:01:31,330 --> 00:01:32,464
+Và chờ đợi nó,
+
+25
+00:01:32,464 --> 00:01:37,004
+dữ liệu đó trong thuộc tính giá trị sẽ được tự động chèn làm đầu vào,
+
+26
+00:01:37,004 --> 00:01:42,460
+làm đối số để điền vào tham số của bất kỳ hàm nào được lưu trữ tại đây.
+
+27
+00:01:42,460 --> 00:01:47,600
+Vì vậy, hãy xem chức năng hiển thị đó ở đó, có một chút tham số dữ liệu của họ.
+
+28
+00:01:47,600 --> 00:01:51,660
+Nếu chúng ta chỉ có thể lưu trữ màn hình trong mảng đó,
+
+29
+00:01:52,700 --> 00:01:57,330
+nó sẽ tự động chạy và dữ liệu của chúng tôi quay lại sẽ điền vào,
+
+30
+00:01:57,330 --> 00:02:01,260
+thông số dữ liệu đó khi nó tự động chạy khi hiển thị dưới dạng tự động chạy.
+
+31
+00:02:02,360 --> 00:02:06,370
+Nhưng làm thế nào chúng ta sẽ hiển thị vào mảng đó?
+
+32
+00:02:06,370 --> 00:02:10,820
+Làm cách nào để tôi thường thực sự có màu đỏ tươi để phù hợp trên bản đồ này?
+
+33
+00:02:10,820 --> 00:02:12,870
+Tôi thường thêm vào phương thức nào?
+
+34
+00:02:12,870 --> 00:02:15,340
+Tôi có phải thêm hai mảng không?
+
+35
+00:02:15,340 --> 00:02:16,540
+>> Loa 2: Đẩy. >> Will Sentance: Đẩy.
+
+36
+00:02:16,540 --> 00:02:17,960
+Nó nằm trên các thuộc tính chưa hoàn thành.
+
+37
+00:02:17,960 --> 00:02:19,920
+Bạn chỉ cần nghĩ xem tôi sẽ làm gì thông thường.
+
+38
+00:02:19,920 --> 00:02:22,340
+Dữ liệu tương lai, dấu chấm.
+
+39
+00:02:22,340 --> 00:02:24,470
+>> Loa 2: Chấm, chưa đạt, chấm, đẩy.
+
+40
+00:02:24,470 --> 00:02:27,790
+>> Will Sentance: Chấm, đẩy và sau đó chuyển vào chức năng hiển thị.
+
+41
+00:02:29,810 --> 00:02:33,820
+Thật không may, chúng tôi không thể làm điều đó nhưng về cơ bản, nó đúng.
+
+42
+00:02:33,820 --> 00:02:34,650
+Chúng tôi không thể làm điều đó.
+
+43
+00:02:34,650 --> 00:02:37,440
+Có ai biết tại sao chúng ta không thể làm điều đó từ những gì tôi đã nói trước đó không?
+
+44
+00:02:37,440 --> 00:02:38,220
+Tom? >> Người nói 2: Đó là một tài sản ẩn.
+
+45
+00:02:38,220 --> 00:02:39,150
+>> Will Sentance: Tài sản ẩn.
+
+46
+00:02:39,150 --> 00:02:41,980
+Thuộc tính ẩn, thậm chí không thể truy cập vào điều này.
+
+47
+00:02:41,980 --> 00:02:43,760
+Chính xác ngay từ Tolls Pom.
+
+48
+00:02:43,760 --> 00:02:45,160
+Đừng hoảng sợ.
+
+49
+00:02:45,160 --> 00:02:50,160
+JavaScript cung cấp cho chúng ta một phương pháp được tích hợp sẵn cho phép chúng ta bất cứ điều gì chúng ta vượt qua
+
+50
+00:02:50,160 --> 00:02:54,770
+cho dù nó như là đầu vào sẽ được lấy và mắc kẹt trong mảng đó.
+
+51
+00:02:54,770 --> 00:02:56,447
+Nhân tiện, đằng sau hậu trường, họ đang làm gì
+
+52
+00:02:56,447 --> 00:02:57,480
+dữ liệu để thực hiện đẩy đó?
+
+53
+00:02:59,380 --> 00:03:02,296
+Và những gì mọi người có thể nhận ra có thể là ẩn, không ẩn.
+
+54
+00:03:02,296 --> 00:03:06,777
+Bạn có thể phát hiện ra điều gì có thể là phương pháp gắn một hàm vào đó
+
+55
+00:03:06,777 --> 00:03:08,717
+mảng chưa thực hiện, Peter?
+
+56
+00:03:08,717 --> 00:03:09,374
+>> Người nói 2: Vậy thì.
+
+57
+00:03:09,374 --> 00:03:12,520
+>> Will Sentance: Chính xác, phương thức Then, phương thức dấu chấm Then, chính xác, và
+
+58
+00:03:12,520 --> 00:03:14,220
+đó là những gì chúng ta sẽ thấy.
+
+59
+00:03:14,220 --> 00:03:17,750
+Nhân tiện, chúng ta cũng sẽ thấy trong giây lát sau,
+
+60
+00:03:17,750 --> 00:03:22,310
+chúng ta sẽ xem một chút sau, phương pháp đó đến từ đâu?
+
+61
+00:03:22,310 --> 00:03:26,030
+Bởi vì nó không có ở đây. Nó không có trên đối tượng này?
+
+62
+00:03:26,030 --> 00:03:28,570
+Chúng ta sẽ thấy, một khi chúng ta ở trong một phiên quá lâu,
+
+63
+00:03:28,570 --> 00:03:31,430
+chúng ta sẽ xem phương pháp đó thực sự đến từ đâu vào chiều nay.
+
+64
+00:03:31,430 --> 00:03:32,480
+Đi thôi.
+
+65
+00:03:32,480 --> 00:03:36,659
+Nhưng bây giờ, hãy làm chính xác dòng đó ở đó.
+
+66
+00:03:36,659 --> 00:03:40,410
+Hãy lấy một cái gì đó sẽ hoạt động ở đây.
+
+67
+00:03:40,410 --> 00:03:43,220
+Bởi vì không có ích gì khi mang dữ liệu trở lại từ Twitter chỉ dành cho
+
+68
+00:03:43,220 --> 00:03:44,440
+nó biến mất trong thuộc tính giá trị.
+
+69
+00:03:44,440 --> 00:03:47,760
+Và chúng tôi không biết những gì sẽ hiển thị nên chúng tôi không thể sử dụng nó trực tiếp.
+
+70
+00:03:47,760 --> 00:03:50,870
+Chúng tôi phải đảm bảo rằng chúng tôi có một chức năng được lưu trữ ở đây.
+
+71
+00:03:50,870 --> 00:03:53,110
+Nó sẽ được tự động chạy bằng JavaScript cho chúng tôi.
+
+72
+00:03:53,110 --> 00:03:57,658
+Vì vậy, chúng ta bắt đầu,
+
+73
+00:03:57,658 --> 00:04:03,750
+sau đó chấm dữ liệu trong tương lai
+
+74
+00:04:03,750 --> 00:04:08,880
+chuyển toàn bộ định nghĩa chức năng hiển thị.
+
+75
+00:04:10,590 --> 00:04:17,364
+Được rồi, vì vậy dữ liệu trong tương lai là đối tượng này ở đây.
+
+76
+00:04:17,364 --> 00:04:21,440
+Nó có một tài sản chưa hoàn thành.
+
+77
+00:04:21,440 --> 00:04:27,030
+Tôi sẽ không đặt tất cả tên tài sản và chúng tôi có tài sản chưa hoàn thành và
+
+78
+00:04:27,030 --> 00:04:31,380
+Bất cứ điều gì trôi qua đến lúc đó, nó sẽ chỉ được ghi lại, xin lỗi.
+
+79
+00:04:31,380 --> 00:04:33,390
+Đó có phải là một từ ở Mỹ?
+
+80
+00:04:33,390 --> 00:04:34,830
+Nó là. >> Người nói 2: Có.
+
+81
+00:04:34,830 --> 00:04:40,810
+>> Will Sentance: Từ tiếng Anh giống như một từ bông thế kỷ 19 sẽ được sử dụng.
+
+82
+00:04:42,170 --> 00:04:46,860
+Bất cứ khi nào nó phân tích cú pháp, nó sẽ được lấy và mắc kẹt trong đó.
+
+83
+00:04:46,860 --> 00:04:48,300
+Và đó chính xác là những gì chúng tôi làm.
+
+84
+00:04:48,300 --> 00:04:53,940
+Chúng tôi sử dụng chức năng hiển thị và mắc kẹt vào mảng chưa thực hiện.
+
+85
+00:04:53,940 --> 00:04:55,955
+Hãy đặt nó vào.
+
+86
+00:04:55,955 --> 00:05:03,930
+Đây rồi, chức năng hiển thị của chúng ta trong mảng chưa thực hiện.
+
+87
+00:05:03,930 --> 00:05:05,650
+Nhìn kìa, không đẹp sao?
+
+88
+00:05:07,220 --> 00:05:07,930
+Trời ơi.
+
+89
+00:05:07,930 --> 00:05:11,870
+[LAUGH] Aha,
+
+90
+00:05:11,870 --> 00:05:14,820
+đó là tất cả những gì đạt được bởi hai dòng.
+
+91
+00:05:14,820 --> 00:05:17,850
+Nhưng nữ thần này đã sắp đặt hết rồi sao?
+
+92
+00:05:17,850 --> 00:05:18,940
+Bạn cá là nó có.
+
+93
+00:05:18,940 --> 00:05:20,380
+Chúng tôi đã thiết lập tất cả bây giờ.
+
+94
+00:05:20,380 --> 00:05:21,330
+Chúng tôi đang nói chuyện với Internet trong nền.
+
+95
+00:05:21,330 --> 00:05:26,026
+Chúng tôi có một kết nối tốt đẹp với một đối tượng đẹp ở đây trong JavaScript.
+
+96
+00:05:26,026 --> 00:05:30,199
+Nó sẽ được lấp đầy bằng giá trị của chúng tôi khi thời gian đến từ mạng
+
+97
+00:05:30,199 --> 00:05:31,850
+yêu cầu phản hồi.
+
+98
+00:05:31,850 --> 00:05:36,090
+Kayla cho biết, mảng đã hoàn thành cũ hiện có một chức năng sẽ
+
+99
+00:05:36,090 --> 00:05:37,910
+tự động chạy khi dữ liệu đó quay trở lại.
+
+100
+00:05:37,910 --> 00:05:39,710
+Đã được thực hiện.
+
+101
+00:05:39,710 --> 00:05:44,490
+Chúng ta phải tiếp tục với tốc độ gần như là một phần nghìn giây.
+
+102
+00:05:44,490 --> 00:05:46,330
+Dòng nào qua.
+
+103
+00:05:46,330 --> 00:05:49,390
+Ethan, chúng ta đánh dòng nào ở một phần nghìn giây?
+
+104
+00:05:49,390 --> 00:05:51,010
+>> Người thuyết trình 2: Nhật ký bảng điều khiển, tôi đầu tiên.
+
+105
+00:05:51,010 --> 00:05:53,820
+>> Will Sentance: Tuyệt vời, tôi yêu mọi người ở lại như vậy.
+
+106
+00:05:53,820 --> 00:06:01,160
+Lấy nét cũng chính xác, nhật ký bảng điều khiển ('Tôi là người đầu tiên'),
+
+107
+00:06:01,160 --> 00:06:05,350
+nó ở trong một bảng điều khiển.
+
+108
+00:06:05,350 --> 00:06:08,753
+Và chúng tôi có, Tôi đầu tiên.
+
+109
+00:06:08,753 --> 00:06:14,044
+Nó ở đây ở tốc độ 1 phần nghìn giây.
+
+110
+00:06:16,772 --> 00:06:19,818
+>> Will Sentance: Một điều tôi hối tiếc về điều này là điều này ở đây là như vậy
+
+111
+00:06:19,818 --> 00:06:22,250
+gần với tạo hưng ở bên phải.
+
+112
+00:06:22,250 --> 00:06:24,720
+Vì vậy, hãy di chuyển điều này một chút.
+
+113
+00:06:24,720 --> 00:06:27,334
+Cảm giác sẵn sàng, đó là một nửa marathon là bao lâu, phải không?
+
+114
+00:06:29,531 --> 00:06:33,120
+>> Will Sentence: 3 dặm, 3 dặm.
+
+115
+00:06:34,250 --> 00:06:39,050
+Em gái tôi đang chạy marathon đầy đủ vào tháng Ba, em yêu, gì cũng được.
+
+116
+00:06:39,050 --> 00:06:44,920
+Rất tự hào về cô ấy, rất tự hào, rất tự hào.
+
+117
+00:06:44,920 --> 00:06:45,980
+Vậy chúng ta đang sử dụng cái nào ở đây?
+
+118
+00:06:45,980 --> 00:06:48,420
+Chúng tôi đang sử dụng tính năng yêu cầu mạng, phải không?
+
+119
+00:06:48,420 --> 00:06:50,130
+Nhãn là gì, mọi người?
+
+120
+00:06:50,130 --> 00:06:52,110
+>> Diễn giả 3: Tìm nạp. >> Will Sentance: Tìm nạp, chính xác, vâng,
+
+121
+00:06:52,110 --> 00:06:52,636
+lấy.
+
+122
+00:06:55,052 --> 00:06:57,808
+>> Will Sentance: Đó là nhãn JavaScript của chúng tôi để sử dụng yêu cầu mạng cho
+
+123
+00:06:57,808 --> 00:06:58,380
+lẫn nhau.
+
+124
+00:06:59,410 --> 00:07:00,730
+Nhưng nó có hai hướng, vì vậy
+
+125
+00:07:00,730 --> 00:07:03,650
+nó cũng có hậu quả trong JavaScript, khá tuyệt vời.
+
+126
+00:07:04,770 --> 00:07:09,738
+Được rồi, vì vậy khi tôi đang làm điều đó, bạn sẽ không tin những gì đã xảy ra.
+
+127
+00:07:09,738 --> 00:07:14,217
+Twitter đã gửi lại thành công cho chúng tôi tại, giả sử, chúng tôi nên nói gì,
+
+128
+00:07:14,217 --> 00:07:17,335
+như 270 mili giây, tương tự như vậy?
+
+129
+00:07:17,335 --> 00:07:19,328
+Đúng, 270 mili giây.
+
+130
+00:07:19,328 --> 00:07:24,340
+Với 270 mili giây, chúng tôi nhận được tin tốt.
+
+131
+00:07:24,340 --> 00:07:29,289
+Chúng tôi đã nhận lại dữ liệu, một thông báo phản hồi từ Twitter
+
+132
+00:07:29,289 --> 00:07:33,596
+ở 270, hoàn thành và nó đã quay trở lại.
+
+133
+00:07:33,596 --> 00:07:39,025
+Được rồi, trang trình bày đơn giản ở đây, đã trở lại dưới dạng một chuỗi nhỏ xinh ở đây, Xin chào.
+
+134
+00:07:39,025 --> 00:07:43,200
+Sau khi hoàn thành, đó là những gì đã trở lại.
+
+135
+00:07:44,720 --> 00:07:47,920
+Và cô ấy quay trở lại trong một đối tượng vì anh ấy nói rằng hãy gói thành một dạng đối tượng nhưng
+
+136
+00:07:47,920 --> 00:07:50,820
+chúng ta có thể lấy thuộc tính của dữ liệu đó.
+
+137
+00:07:50,820 --> 00:07:53,279
+Và nó đây, là chuỗi cao với một tweet tuyệt vời.
+
+138
+00:07:54,630 --> 00:07:56,410
+Theo dõi người này, hmm?
+
+139
+00:07:56,410 --> 00:08:00,950
+Vì vậy, sau khi hoàn thành, chúng tôi đã nhận được phản hồi đáng yêu này, nhưng
+
+140
+00:08:00,950 --> 00:08:01,810
+nó bị kẹt trong trình duyệt web.
+
+141
+00:08:03,090 --> 00:08:04,450
+Làm sao?
+
+142
+00:08:04,450 --> 00:08:07,330
+Làm thế nào, Todd, nó quay trở lại JavaScript?
+
+143
+00:08:07,330 --> 00:08:10,890
+Nó sẽ được gán vào cái gì trong bộ nhớ chung trong JavaScript?
+
+144
+00:08:10,890 --> 00:08:11,870
+>> Diễn giả 2: Giá trị dữ liệu trong tương lai.
+
+145
+00:08:11,870 --> 00:08:14,760
+>> Will Sentance: Giá trị dữ liệu tương lai thuộc tính tại chỗ.
+
+146
+00:08:14,760 --> 00:08:18,746
+Và lúc đó, anh ta sẽ kích hoạt những gì để chạy, Todd?
+
+147
+00:08:18,746 --> 00:08:20,509
+>> Loa 2: Các chức năng chưa hoàn thành.
+
+148
+00:08:20,509 --> 00:08:22,740
+>> Will Sentance: Vâng, các chức năng chưa được thực hiện, nói tốt.
+
+149
+00:08:22,740 --> 00:08:25,210
+Mà cụ thể, đây là của chúng tôi?
+
+150
+00:08:25,210 --> 00:08:27,010
+>> Loa 2: Màn hình. >> Will Sentance: Chức năng hiển thị,
+
+151
+00:08:27,010 --> 00:08:28,860
+với những gì là đầu vào của nó?
+
+152
+00:08:30,250 --> 00:08:31,760
+>> Người nói 2: Giá trị.
+
+153
+00:08:31,760 --> 00:08:34,830
+>> Will Sentance: Tuyệt vời, thuộc tính giá trị là giá trị, chuỗi?
+
+154
+00:08:34,830 --> 00:08:36,190
+>> Người nói 2: Xin chào. >> Will Sentance: Xin chào.
+
+155
+00:08:36,190 --> 00:08:38,270
+Tuyệt vời từ Todd, rất tốt.
+
+156
+00:08:38,270 --> 00:08:44,790
+Vì vậy, chúng ta đang ở đây, muộn hơn ở 270 mili giây.
+
+157
+00:08:44,790 --> 00:08:48,410
+270 mili giây,
+
+158
+00:08:48,410 --> 00:08:53,420
+chúng tôi sẽ gọi, và bạn có thể đã đi, giữ máy, thực sự?
+
+159
+00:08:53,420 --> 00:08:54,880
+Gì?
+
+160
+00:08:54,880 --> 00:08:56,890
+Chúng tôi sẽ chỉ đặt nó vào ngăn xếp cuộc gọi.
+
+161
+00:08:56,890 --> 00:09:00,370
+Chúng tôi sẽ gọi hiển thị với đầu vào là
+
+162
+00:09:03,370 --> 00:09:05,990
+xin chào, nó đây.
+
+163
+00:09:05,990 --> 00:09:07,750
+Một số màu của tôi bắt đầu trở nên.
+
+164
+00:09:07,750 --> 00:09:14,574
+Hiển thị với đầu vào là hi và hoàn toàn mới.
+
+165
+00:09:14,574 --> 00:09:15,250
+Mọi người?
+
+166
+00:09:15,250 --> 00:09:17,261
+>> Diễn giả 3: Bối cảnh thực thi.
+
+167
+00:09:17,261 --> 00:09:17,884
+>> Will Sentance: Đúng vậy.
+
+168
+00:09:17,884 --> 00:09:22,400
+Chúng ta đã bắt đầu, chúng ta đã đặt những phần trăm vào cuối?
+
+169
+00:09:22,400 --> 00:09:24,500
+Không, những thứ này sẽ tự động bị kẹt cho
+
+170
+00:09:24,500 --> 00:09:27,080
+chúng tôi bằng JavaScript, vẫn là một bối cảnh thực thi hoàn toàn mới.
+
+171
+00:09:27,080 --> 00:09:30,833
+Vì vậy, và vào nó, chúng tôi đi và sau đó là địa phương.
+
+172
+00:09:33,640 --> 00:09:38,107
+>> Will Sentance: Bộ nhớ là những gì dữ liệu đi vào, Todd,
+
+173
+00:09:38,107 --> 00:09:40,900
+chỉ là nhắc nhở chúng tôi một lần nữa.
+
+174
+00:09:40,900 --> 00:09:41,909
+Giá trị là? >> Loa 2: Cao.
+
+175
+00:09:41,909 --> 00:09:47,110
+>> Will Sentance: Cao, nhưng hiển thị bên trong, nhãn cho nó là gì?
+
+176
+00:09:47,110 --> 00:09:48,890
+>> Diễn giả 2: Dữ liệu. >> Will Sentance: Dữ liệu, vâng, ngay tại chỗ.
+
+177
+00:09:50,060 --> 00:09:50,600
+Đây rồi.
+
+178
+00:09:51,640 --> 00:09:56,260
+Dữ liệu và sau đó chúng tôi điều khiển dữ liệu nhật ký, nghĩa là chúng tôi điều khiển nhật ký, Todd?
+
+179
+00:09:56,260 --> 00:09:56,830
+>> Loa 2: Cao. >> Di chúc: Cao,
+
+180
+00:09:57,930 --> 00:09:59,310
+Todd không mệt mỏi khi nói cao.
+
+181
+00:09:59,310 --> 00:10:02,720
+Nó đây, và ở 270 mili giây, mọi người.
+
+182
+00:10:02,720 --> 00:10:05,535
+Chúng tôi có một bản ghi bảng điều khiển.
+
+183
+00:10:05,535 --> 00:10:08,336
+Xin chào, Chúa ơi.
+
+184
+00:10:08,336 --> 00:10:09,131
+Trời ơi.
+
+185
+00:10:09,131 --> 00:10:12,750
+[LAUGH] Chúa ơi, nhìn kìa.
+
+186
+00:10:12,750 --> 00:10:17,396
+Tất cả chức năng tìm nạp đáng kinh ngạc của thanh sáng kiến ​​đó thật đáng kinh ngạc,
+
+187
+00:10:17,396 --> 00:10:18,346
+không hoạt động.
+
+188
+00:10:18,346 --> 00:10:21,414
+Chức năng mặt tiền, đã kích hoạt công việc nền này,
+
+189
+00:10:21,414 --> 00:10:23,400
+kích hoạt yêu cầu mạng.
+
+190
+00:10:23,400 --> 00:10:25,930
+Tắt Internet, mang lại dữ liệu.
+
+191
+00:10:25,930 --> 00:10:29,020
+Nó sẽ đi đâu, và chúng ta sẽ làm gì với nó?
+
+192
+00:10:29,020 --> 00:10:29,950
+Đừng hoảng sợ.
+
+193
+00:10:29,950 --> 00:10:32,990
+Chúng tôi có ngay trong JavaScript một đối tượng đẹp,
+
+194
+00:10:32,990 --> 00:10:35,870
+đối tượng hứa hẹn, với hai thuộc tính.
+
+195
+00:10:35,870 --> 00:10:39,260
+Một, một giá trị, đã tự động
+
+196
+00:10:40,470 --> 00:10:45,210
+cập nhật với Chào, điều đó đã trở lại sau khi nói
+
+197
+00:10:45,210 --> 00:10:48,370
+với Internet ở chế độ nền, phía bên kia của các lần tìm nạp hoạt động.
+
+198
+00:10:49,460 --> 00:10:53,890
+Và khi nó quay trở lại, chúng ta không biết ai sẽ quay lại, đừng hoảng sợ.
+
+199
+00:10:53,890 --> 00:10:58,170
+Chúng tôi đã có một chức năng sẵn sàng để tự động chạy, với đầu vào là
+
+200
+00:10:58,170 --> 00:11:02,050
+giá trị thuộc tính quay trở lại hoặc giá trị của dữ liệu quay lại từ Twitter.
+
+201
+00:11:02,050 --> 00:11:07,039
+Khi đầu vào của chức năng đó ở màn hình 230 mili giây bị kẹt trên
+
+202
+00:11:07,039 --> 00:11:11,394
+mặt mát mẻ với đầu vào cao và chúng tôi đã có thể điều khiển log hi.
+

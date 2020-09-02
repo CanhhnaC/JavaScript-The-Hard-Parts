@@ -1,0 +1,492 @@
+1
+00:00:00,600 --> 00:00:04,523
+>> Will Sentance: 303 mili giây.
+
+2
+00:00:07,119 --> 00:00:11,740
+>> Will Sentance: [LAUGH] Tôi không biết tại sao tất cả mọi người, sợ hãi dự đoán này.
+
+3
+00:00:11,740 --> 00:00:12,920
+Đó là điều hiển nhiên, chắc chắn.
+
+4
+00:00:12,920 --> 00:00:15,480
+Tôi biết hàng đợi hoạt động như thế nào, tôi thậm chí còn đặt một chút dấu phẩy ở giữa, vì vậy
+
+5
+00:00:15,480 --> 00:00:17,610
+chúng tôi thực sự biết cách hàng đợi hoạt động.
+
+6
+00:00:17,610 --> 00:00:21,570
+Vòng lặp sự kiện của tôi, nó ở đó, hãy chắc chắn rằng nó ở đó, nó ở đó.
+
+7
+00:00:21,570 --> 00:00:25,749
+Vòng lặp sự kiện, đó là vòng lặp sẽ thực hiện kiểm tra xem cái này có trống không.
+
+8
+00:00:25,749 --> 00:00:26,869
+Nó trống không?
+
+9
+00:00:26,869 --> 00:00:27,718
+Nó trống không?
+
+10
+00:00:27,718 --> 00:00:28,525
+Nó trống không?
+
+11
+00:00:28,525 --> 00:00:29,100
+Không.
+
+12
+00:00:29,100 --> 00:00:30,700
+Ngữ cảnh toàn cầu đã chạy xong chưa?
+
+13
+00:00:30,700 --> 00:00:31,450
+Không.
+
+14
+00:00:31,450 --> 00:00:33,520
+Vì vậy, sự kiện đã diễn ra vô cùng hấp dẫn.
+
+15
+00:00:34,590 --> 00:00:36,230
+Nhưng nó đã chuyển sang ba phần nghìn giây.
+
+16
+00:00:36,230 --> 00:00:37,600
+Vòng lặp sự kiện kiểm tra ngăn xếp cuộc gọi,
+
+17
+00:00:37,600 --> 00:00:42,030
+kiểm tra nó thêm nữa không, mã toàn cầu để chạy, và nó hoạt động, chúng ta có tốt để tiếp tục không?
+
+18
+00:00:42,030 --> 00:00:44,890
+Chúng tôi tốt để đi, chúng tôi tốt để kiểm tra hàng đợi của chúng tôi.
+
+19
+00:00:46,080 --> 00:00:48,620
+Tại thời điểm đó, nó sẽ chạy là gì?
+
+20
+00:00:48,620 --> 00:00:50,110
+Chà, nó phải rõ ràng?
+
+21
+00:00:50,110 --> 00:00:51,210
+Ai muốn tình nguyện?
+
+22
+00:00:52,530 --> 00:00:53,690
+Tôi không muốn câu trả lời đúng,
+
+23
+00:00:53,690 --> 00:00:56,675
+Tôi muốn câu trả lời sau những gì một hàng đợi nói sẽ là câu trả lời ở đây.
+
+24
+00:00:56,675 --> 00:00:57,331
+>> Khán giả: [LAUGH] >> Will Sentance: Brayden,
+
+25
+00:00:57,331 --> 00:00:57,900
+làm ơn, cảm ơn bạn.
+
+26
+00:00:57,900 --> 00:00:58,835
+>> Brayden: Xin chào tàu hỏa?
+
+27
+00:00:58,835 --> 00:01:01,564
+>> Will Sentance: Tất nhiên vì máy in [KHÔNG NGHE ĐƯỢC] bcnf nên
+
+28
+00:01:01,564 --> 00:01:05,148
+nó ở phía trước, tôi biết cách hoạt động của hàng đợi,
+
+29
+00:01:05,148 --> 00:01:09,383
+anh ấy sai về cơ bản, tôi có nghĩa là chắc chắn tốt hơn là một số điều nhưng
+
+30
+00:01:09,383 --> 00:01:12,898
+không phải lúc này [LAUGH] >> Khán giả: [LAUGH]
+
+31
+00:01:12,898 --> 00:01:13,883
+>> Di chúc: Được rồi,
+
+32
+00:01:13,883 --> 00:01:17,337
+bạn nghĩ điều gì thực sự chạy Brayden?
+
+33
+00:01:17,337 --> 00:01:18,904
+>> Brayden: Màn hình.
+
+34
+00:01:18,904 --> 00:01:20,450
+>> Will Sentance: Vâng.
+
+35
+00:01:20,450 --> 00:01:23,240
+Nhưng điều đó không có ý nghĩa gì, tôi biết cách hàng đợi hoạt động.
+
+36
+00:01:23,240 --> 00:01:25,818
+Ai đó có thể có một bước nhảy vọt về trí tuệ đức tin,
+
+37
+00:01:25,818 --> 00:01:28,750
+thay vào đó điều gì có thể xảy ra ở đây?
+
+38
+00:01:28,750 --> 00:01:30,200
+Tôi sẽ có xu hướng Kayla về cái này.
+
+39
+00:01:31,450 --> 00:01:32,656
+>> Kayla: Đó là một hàng đợi khác.
+
+40
+00:01:32,656 --> 00:01:33,760
+>> Will Sentance: Cô ấy nói đúng.
+
+41
+00:01:33,760 --> 00:01:36,220
+Tôi nói với bạn, trong tất cả thời gian tôi nói chuyện này, tôi sẽ nói một hoặc
+
+42
+00:01:36,220 --> 00:01:38,530
+hai lần mà mọi người sẽ có bước nhảy vọt đó.
+
+43
+00:01:38,530 --> 00:01:41,900
+Với niềm tin vô hình, rất lớn hãy hét lên với Kayla, chính xác là đúng.
+
+44
+00:01:41,900 --> 00:01:43,020
+Có một hàng đợi bổ sung.
+
+45
+00:01:43,020 --> 00:01:44,282
+Đừng hiểu sai ý tôi,
+
+46
+00:01:44,282 --> 00:01:47,899
+không gian rộng lớn ở đây mà tôi để lại có thể là một thứ gì đó của một món quà.
+
+47
+00:01:47,899 --> 00:01:50,233
+>> Khán giả: [LAUGH] >> Will Sentance: Nhưng điều đó thật tuyệt vời,
+
+48
+00:01:50,233 --> 00:01:51,730
+cảm ơn bạn đến Kayla.
+
+49
+00:01:51,730 --> 00:01:55,410
+Chính xác là đúng, trên thực tế có một hàng đợi khác.
+
+50
+00:01:55,410 --> 00:01:58,994
+Nó được gọi, họ gọi điều này trong đặc tả, hàng đợi tác vụ.
+
+51
+00:01:58,994 --> 00:02:01,572
+Vì vậy, bạn có thể đoán xem cái kia được gọi là gì.
+
+52
+00:02:01,572 --> 00:02:04,592
+Nó được gọi là hàng đợi microtask.
+
+53
+00:02:04,592 --> 00:02:12,209
+Đây rồi, hàng đợi microtask.
+
+54
+00:02:12,209 --> 00:02:16,170
+Và chúng tôi nghĩ ở đâu khi hiển thị được kích hoạt và
+
+55
+00:02:16,170 --> 00:02:18,760
+sẵn sàng để chạy, chúng tôi nghĩ rằng màn hình hiển thị?
+
+56
+00:02:18,760 --> 00:02:21,670
+Kayla nằm trong hàng đợi gọi lại hay hàng đợi microtask?
+
+57
+00:02:21,670 --> 00:02:22,420
+>> Kayla: Hàng đợi microtask.
+
+58
+00:02:22,420 --> 00:02:26,197
+>> Will Sentance: Hàng đợi microtask, cô ấy được đưa vào hàng đợi microtask.
+
+59
+00:02:26,197 --> 00:02:29,822
+Nhân tiện, nó đã được trưng bày,
+
+60
+00:02:29,822 --> 00:02:34,822
+đối số cao đã sẵn sàng để được chèn vào nó,
+
+61
+00:02:34,822 --> 00:02:38,949
+dữ liệu cao ở 270 mili giây.
+
+62
+00:02:38,949 --> 00:02:44,134
+Đây rồi, hãy lấy nó ra khỏi hàng đợi ở đây.
+
+63
+00:02:44,134 --> 00:02:46,281
+Không không không không không.
+
+64
+00:02:46,281 --> 00:02:51,620
+Không phải ở đây, cảm ơn Brayden đã chơi cùng.
+
+65
+00:02:51,620 --> 00:02:57,590
+Không, không phải ở cuối hàng đợi ở đó, và như vậy, ở đâu?
+
+66
+00:02:57,590 --> 00:03:00,604
+Sau khi vòng lặp sự kiện ở 303 mili giây trôi qua,
+
+67
+00:03:00,604 --> 00:03:03,410
+chúng tôi rõ ràng về mã toàn cầu đồng bộ.
+
+68
+00:03:03,410 --> 00:03:07,161
+Kayla, bạn có nghĩ nó hướng đến đâu đầu tiên,
+
+69
+00:03:07,161 --> 00:03:10,731
+bạn nghĩ nó đứng đầu hàng đợi nào?
+
+70
+00:03:10,731 --> 00:03:13,696
+>> Kayla: Hàng đợi microtask >> Will Sentance: Hàng đợi microtask
+
+71
+00:03:13,696 --> 00:03:18,780
+cô ấy đúng chỗ, nó lấy hiển thị nó dequeue nó, lấy mã của nó.
+
+72
+00:03:20,040 --> 00:03:21,600
+Nó đặt nó trên ngăn xếp cuộc gọi.
+
+73
+00:03:23,190 --> 00:03:28,720
+Với đối số được chèn tự động,
+
+74
+00:03:28,720 --> 00:03:32,860
+có giá trị cao, nó tự động thêm JavaScript gốc.
+
+75
+00:03:32,860 --> 00:03:34,456
+Nó tự động chèn JavaScript đối số.
+
+76
+00:03:34,456 --> 00:03:35,119
+Tôi thích điều đó.
+
+77
+00:03:35,119 --> 00:03:38,840
+Vì vậy, điều đó rất quan trọng để phân loại vị trí.
+
+78
+00:03:38,840 --> 00:03:44,730
+Và nó thực thi nó, và vì vậy, với Matt.
+
+79
+00:03:44,730 --> 00:03:48,450
+Matt, cái gì sẽ hiển thị trong bảng điều khiển của chúng ta, ở 303 mili giây?
+
+80
+00:03:48,450 --> 00:03:49,920
+>> Matt: Cao. >> Will Sentance: Nó sẽ cao,
+
+81
+00:03:49,920 --> 00:03:51,350
+Tôi nên hỏi Todd.
+
+82
+00:03:51,350 --> 00:03:56,350
+Nó sẽ cao, chính xác là 303 mili giây,
+
+83
+00:03:56,350 --> 00:04:00,040
+chúng tôi nhận được cao trong bảng điều khiển của chúng tôi.
+
+84
+00:04:01,360 --> 00:04:04,982
+Và cuối cùng, đứa nhỏ tội nghiệp của chúng ta,
+
+85
+00:04:04,982 --> 00:04:09,680
+hàng đợi microtask hiện đang trống.
+
+86
+00:04:09,680 --> 00:04:12,470
+Và vòng lặp sự kiện cuối cùng cũng diễn ra.
+
+87
+00:04:12,470 --> 00:04:15,670
+Đã đến lúc đi xuống hàng đợi gọi lại.
+
+88
+00:04:15,670 --> 00:04:17,750
+Nó tìm thấy gì ở đâu?
+
+89
+00:04:17,750 --> 00:04:20,829
+Nhưng người bạn nhỏ của chúng tôi xin chào,
+
+90
+00:04:20,829 --> 00:04:25,451
+người đã đợi ở đó 304 mili giây.
+
+91
+00:04:25,451 --> 00:04:31,937
+Tuy nhiên, sau khi xóa hiển thị khỏi ngăn xếp cuộc gọi, nó đã chạy xong,
+
+92
+00:04:31,937 --> 00:04:36,428
+cuối cùng chúng ta đang ở 304 mili giây, có thể
+
+93
+00:04:36,428 --> 00:04:41,649
+vòng lặp sự kiện để kiểm tra hàng đợi cuối cùng của chúng ta, hàng đợi gọi lại.
+
+94
+00:04:41,649 --> 00:04:47,070
+Trong 304 mili giây, print hello đã sẵn sàng chạy ở đó.
+
+95
+00:04:47,070 --> 00:04:50,290
+Đó là giấc mơ, nhưng bây giờ là thời điểm của nó.
+
+96
+00:04:50,290 --> 00:04:52,828
+Nhìn nó thật đáng tự hào.
+
+97
+00:04:52,828 --> 00:04:55,950
+Nó nhảy lên, vào ngăn xếp cuộc gọi.
+
+98
+00:04:57,040 --> 00:05:03,850
+Đó là in lời chào trên ngăn xếp cuộc gọi ở 304 mili giây.
+
+99
+00:05:03,850 --> 00:05:10,730
+Do đó Ethan ở tốc độ 304 mili giây, chúng ta thấy gì trong bảng điều khiển của mình sau đó?
+
+100
+00:05:10,730 --> 00:05:12,840
+Điều gì sẽ ghi nhật ký bảng điều khiển nhưng?
+
+101
+00:05:12,840 --> 00:05:13,510
+>> Ethan: Xin chào.
+
+102
+00:05:13,510 --> 00:05:14,800
+>> Will Sentance: Xin chào.
+
+103
+00:05:14,800 --> 00:05:15,735
+Chính xác.
+
+104
+00:05:15,735 --> 00:05:19,021
+[SOUND] Wow mọi người, làm tốt lắm.
+
+105
+00:05:19,021 --> 00:05:26,430
+Chúa ơi, đó là toàn bộ mô hình của một JavaScript đồng bộ đằng sau hậu trường.
+
+106
+00:05:26,430 --> 00:05:28,044
+Chúng tôi có hai hàng đợi.
+
+107
+00:05:28,044 --> 00:05:32,083
+Chúng tôi xếp hàng in chào, chúng tôi bật nó ra khỏi ngăn xếp cuộc gọi tại thời điểm đó.
+
+108
+00:05:32,083 --> 00:05:37,696
+Chúng tôi có hai hàng đợi, bất kỳ hàm nào bị loại bỏ khỏi JavaScript,
+
+109
+00:05:37,696 --> 00:05:42,324
+hoặc ít nhất một liên kết quay lại nó bị loại khỏi JavaScript,
+
+110
+00:05:42,324 --> 00:05:47,655
+thông qua các chức năng mặt tiền gọi lại của trường cũ như đặt thời gian chờ.
+
+111
+00:05:47,655 --> 00:05:53,180
+Các chức năng đó khi công việc nền hoàn thành, đứng thứ hai trong hàng đợi gọi lại.
+
+112
+00:05:54,390 --> 00:06:00,030
+Bất kỳ hàm nào được gắn vào một đối tượng hứa thông qua phương thức then,
+
+113
+00:06:00,030 --> 00:06:03,520
+và sau đó tự động được kích hoạt để chạy từ bên trong JavaScript
+
+114
+00:06:03,520 --> 00:06:08,060
+khi thuộc tính giá trị mà đối tượng hứa hẹn được cập nhật tự động,
+
+115
+00:06:08,060 --> 00:06:14,250
+là kết quả của công việc nền từ một hàm mặt tiền hai hướng như tìm nạp.
+
+116
+00:06:14,250 --> 00:06:17,640
+Hàm đó không nằm trong hàng đợi gọi lại.
+
+117
+00:06:17,640 --> 00:06:20,380
+Nó đang ở trong hàng đợi microtask.
+
+118
+00:06:20,380 --> 00:06:22,650
+Và khi tất cả mã toàn cầu chạy xong, và
+
+119
+00:06:22,650 --> 00:06:26,210
+không có gì trên ngăn xếp cuộc gọi, vòng lặp sự kiện sẽ đi và kiểm tra các hàng đợi.
+
+120
+00:06:26,210 --> 00:06:27,170
+Nó kiểm tra cái nào trước?
+
+121
+00:06:28,680 --> 00:06:30,090
+Hàng đợi microtask.
+
+122
+00:06:30,090 --> 00:06:31,892
+Nó sắp xếp lại hàm, chạy nó và
+
+123
+00:06:31,892 --> 00:06:34,441
+thì chỉ cuối cùng thì nó mới kiểm tra hàng đợi gọi lại.
+

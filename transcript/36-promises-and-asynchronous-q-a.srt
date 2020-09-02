@@ -1,0 +1,640 @@
+1
+00:00:00,260 --> 00:00:03,166
+>> Will Sentance: Braydon, tiếp tục đi Braydon.
+
+2
+00:00:03,166 --> 00:00:08,316
+>> Diễn giả 2: Vì vậy, nếu chúng tôi đang cố gắng sử dụng dữ liệu lưu trữ dữ liệu từ mạng
+
+3
+00:00:08,316 --> 00:00:14,938
+yêu cầu, thực hiện như thế nào nếu bạn có một dòng mã trong JavaScript, trong toàn cầu.
+
+4
+00:00:14,938 --> 00:00:16,529
+Làm thế nào nó biết khi nào nó có thể truy cập nó?
+
+5
+00:00:16,529 --> 00:00:19,063
+>> Will Sentance: Hậu trường trong thực tế,
+
+6
+00:00:19,063 --> 00:00:22,772
+giá trị cao này không bao giờ được điền vào trên thực tế.
+
+7
+00:00:22,772 --> 00:00:26,631
+Cho đến khi tất cả các mã toàn cầu chạy xong, vì vậy chúng tôi thậm chí không thể truy cập vào nó tại thời điểm đó
+
+8
+00:00:26,631 --> 00:00:29,580
+cho đến khi chúng tôi có, chúng tôi chỉ có quyền truy cập vào nó từ phía trước.
+
+9
+00:00:29,580 --> 00:00:31,722
+Và theo cách đó, ý tôi là khác với mô hình gọi lại, phải không?
+
+10
+00:00:31,722 --> 00:00:33,766
+Bạn chỉ có quyền truy cập từ chức năng mà chúng tôi thêm vào,
+
+11
+00:00:33,766 --> 00:00:36,333
+chúng tôi cũng đã kích hoạt bởi vì chúng tôi không muốn có ngôn ngữ.
+
+12
+00:00:36,333 --> 00:00:37,047
+Nơi chúng ta có thể đi và
+
+13
+00:00:37,047 --> 00:00:40,060
+thử và có quyền truy cập vào nội dung và chúng tôi không biết liệu nó có ở đó hay không.
+
+14
+00:00:40,060 --> 00:00:44,044
+Vì vậy, chúng tôi không thực sự tự động điền điều đó vào hậu trường,
+
+15
+00:00:44,044 --> 00:00:46,388
+cho đến khi tất cả các mã toàn cầu chạy xong.
+
+16
+00:00:46,388 --> 00:00:48,994
+Được rồi, trong thực tế, điều đó có một hậu quả nhỏ.
+
+17
+00:00:48,994 --> 00:00:52,013
+Nhưng nó hơi khác so với cách tôi đã cho bạn thấy ở đây, nơi chúng tôi
+
+18
+00:00:52,013 --> 00:00:53,722
+ngụ ý rằng nó được điền vào đây ngay lúc đó.
+
+19
+00:00:53,722 --> 00:00:56,291
+Nhưng thực tế là vào phút cuối cùng,
+
+20
+00:00:56,291 --> 00:00:58,734
+trước khi chúng tôi bắt đầu đi qua hàng đợi.
+
+21
+00:00:58,734 --> 00:01:01,814
+Điều đó không có hậu quả về mặt.
+
+22
+00:01:01,814 --> 00:01:04,430
+Chúng tôi không chạy các chức năng này cho đến khi nó được điền vào,
+
+23
+00:01:04,430 --> 00:01:07,518
+cho đến khi chúng tôi hoàn thành tất cả mã toàn cầu để không có hậu quả.
+
+24
+00:01:07,518 --> 00:01:09,380
+Dấu?
+
+25
+00:01:09,380 --> 00:01:10,871
+>> Người nói 2: Tôi đang cố gắng nghĩ cách diễn đạt điều này cho đúng.
+
+26
+00:01:10,871 --> 00:01:12,878
+>> Will Sentance: Bạn có muốn dành một giây?
+
+27
+00:01:12,878 --> 00:01:13,452
+>> Người nói 2: Tôi có thể thử.
+
+28
+00:01:13,452 --> 00:01:19,519
+Nếu đó là lời chào in khi trình duyệt có nó, thì đó là tham chiếu đến lời chào in toàn cầu.
+
+29
+00:01:19,519 --> 00:01:21,774
+Không in hello chính nó.
+
+30
+00:01:21,774 --> 00:01:23,966
+>> Will Sentance: Vâng, chúng tôi không đưa vào trình duyệt web một bản sao của
+
+31
+00:01:23,966 --> 00:01:24,607
+chức năng.
+
+32
+00:01:24,607 --> 00:01:28,115
+Chúng tôi chỉ đưa ra một tham chiếu trở lại trong bộ nhớ, chức năng này, vâng.
+
+33
+00:01:28,115 --> 00:01:32,145
+>> Người thuyết trình 2: Có thể in lời chào, hãy xem xét thời điểm bạn nhấn
+
+34
+00:01:32,145 --> 00:01:36,266
+văn bản chi phí một cái gì đó tham số khác từ bộ nhớ chung?
+
+35
+00:01:36,266 --> 00:01:38,559
+Hoặc là nó phải được có thể.
+
+36
+00:01:38,559 --> 00:01:39,953
+>> Will Sentance: Sẽ rất khó để làm như vậy, bởi vì.
+
+37
+00:01:39,953 --> 00:01:40,625
+>> Người nói 2: Vâng. >> Di chúc: Chờ đã,
+
+38
+00:01:40,625 --> 00:01:42,323
+ai đang in những tờ giấy bạc?
+
+39
+00:01:42,323 --> 00:01:44,148
+Xin chào, chúng tôi đang làm điều đó, vâng.
+
+40
+00:01:44,148 --> 00:01:45,924
+Chúng ta đang đặt bản in trên bản in?
+
+41
+00:01:45,924 --> 00:01:46,492
+Xin chào? >> Người nói 2: Không.
+
+42
+00:01:46,492 --> 00:01:48,029
+>> Will Sentance: Không có JavaScript đang làm điều đó.
+
+43
+00:01:48,029 --> 00:01:51,878
+Nếu chúng ta không đặt thương hiệu vào làm cách nào để chèn bất kỳ đối số nào?
+
+44
+00:01:51,878 --> 00:01:54,786
+Chúng ta phải dựa vào sự hiểu biết.
+
+45
+00:01:54,786 --> 00:01:58,898
+Và đây là một điểm thực sự tốt, đáng làm nhất ở đây.
+
+46
+00:01:58,898 --> 00:02:00,489
+Nó có nghĩa là chúng ta phải biết chẳng hạn như
+
+47
+00:02:00,489 --> 00:02:02,254
+bạn có thể trả lời một dấu cách khác, hãy chờ.
+
+48
+00:02:02,254 --> 00:02:06,151
+Tôi có thể có hai đối số được chuyển cho tôi, đó là tất cả về hiển thị hàm
+
+49
+00:02:06,151 --> 00:02:07,234
+nhận đầu vào đầu tiên của nó.
+
+50
+00:02:07,234 --> 00:02:11,578
+Dữ liệu quay trở lại như thể tôi chỉ có thể mong đợi hai đối số.
+
+51
+00:02:11,578 --> 00:02:13,218
+Bây giờ, tôi phải đi và
+
+52
+00:02:13,218 --> 00:02:18,060
+xem chính xác tính năng của trình duyệt web mà chức năng này hoạt động như thế nào
+
+53
+00:02:18,060 --> 00:02:23,002
+sẽ được tự động kích hoạt khi trình duyệt web tính năng kết thúc hoạt động.
+
+54
+00:02:23,002 --> 00:02:25,284
+Nó mong đợi như thế nào trình duyệt web và
+
+55
+00:02:25,284 --> 00:02:28,653
+lời hứa của bệnh mong đợi chức năng này được đặt ra.
+
+56
+00:02:28,653 --> 00:02:30,202
+Tôi phải đi đâu để tìm các quy tắc về điều đó?
+
+57
+00:02:30,202 --> 00:02:34,913
+Tôi đang ở đâu để tìm ra cách trình duyệt mong đợi chức năng
+
+58
+00:02:34,913 --> 00:02:36,549
+sẽ được tự động chạy.
+
+59
+00:02:36,549 --> 00:02:40,702
+Khi công việc của nó được hoàn thành sẽ hoạt động và nó sẽ cần những đầu vào nào?
+
+60
+00:02:40,702 --> 00:02:41,975
+Làm thế nào để tôi tìm ra điều đó, mọi người?
+
+61
+00:02:41,975 --> 00:02:43,561
+Cho dù đó là một trang web.
+
+62
+00:02:43,561 --> 00:02:44,395
+>> Diễn giả 2: MDN. >> Will Sentance: Shutting
+
+63
+00:02:44,395 --> 00:02:45,196
+MDN, chính xác.
+
+64
+00:02:45,196 --> 00:02:48,187
+MDN đã có một danh sách tất cả các tính năng này.
+
+65
+00:02:48,187 --> 00:02:49,945
+Họ không gọi những chức năng mặt tiền này.
+
+66
+00:02:49,945 --> 00:02:55,045
+Họ gọi chúng là API là viết tắt của giao diện là bất kỳ chức năng nào hoặc
+
+67
+00:02:55,045 --> 00:03:00,814
+thường là dữ liệu không có trong thế giới của tôi, nhưng trong thế giới của người khác và tôi giao tiếp với nó.
+
+68
+00:03:00,814 --> 00:03:05,651
+Đây là những nhãn của tôi mà tôi có thể tương tác với
+
+69
+00:03:05,651 --> 00:03:07,474
+thế giới bên ngoài này.
+
+70
+00:03:07,474 --> 00:03:11,983
+Điều đó được nói hơi liên quan đến những gì bạn đang nói, Mark,
+
+71
+00:03:11,983 --> 00:03:16,290
+giả sử tôi đặt lệnh gọi thời gian chờ bên trong thực thi và chức năng khác.
+
+72
+00:03:16,290 --> 00:03:20,710
+Và nó muốn sử dụng một số dữ liệu từ ngữ cảnh thực thi đó.
+
+73
+00:03:20,710 --> 00:03:24,879
+Chà, vào lúc bản in hello chạy, nó chạy trên toàn cầu,
+
+74
+00:03:24,879 --> 00:03:29,758
+ngữ cảnh thực thi mà trong đó thời gian chờ đã đặt với thiết lập đã hết,
+
+75
+00:03:29,758 --> 00:03:33,065
+và tất cả dữ liệu của nó đã biến mất, trừ khi- >> Loa 2: Ba lô.
+
+76
+00:03:33,065 --> 00:03:36,540
+>> Will Sentance: Ba lô, chính xác, in hello có một liên kết đến tất cả xung quanh của nó
+
+77
+00:03:36,540 --> 00:03:40,775
+bộ nhớ có thể được sử dụng trong đó, khá tuyệt vời, điều đó thật tuyệt vời.
+
+78
+00:03:40,775 --> 00:03:43,472
+Được rồi, chúng tôi đã có một cái khác, vâng, Jason, làm ơn?
+
+79
+00:03:43,472 --> 00:03:48,128
+>> Người nói 2: [COUGH] Xin lỗi, vì vậy ví dụ ít nhất cũng cho chúng ta ấn tượng
+
+80
+00:03:48,128 --> 00:03:51,577
+rằng hàng đợi vi tác vụ ở đầu tiên,
+
+81
+00:03:51,577 --> 00:03:55,923
+cuối cùng, nơi nó được sử dụng ưu tiên- >> Will Sentance: Câu hỏi hay.
+
+82
+00:03:55,923 --> 00:03:59,618
+>> Người thuyết trình 2: Nơi bạn nhận được tùy thuộc vào loại cuộc gọi bạn sẽ nhận được
+
+83
+00:03:59,618 --> 00:04:00,170
+một hàng đợi.
+
+84
+00:04:00,170 --> 00:04:04,854
+Tôi nghi ngờ là nhiệm vụ vi mô thực sự có vòng lặp phát minh riêng của nó
+
+85
+00:04:04,854 --> 00:04:05,657
+>> Di chúc: Bởi vì không,
+
+86
+00:04:05,657 --> 00:04:06,891
+sự kiện cần xử lý.
+
+87
+00:04:06,891 --> 00:04:10,764
+Hãy nói một chút về cách các từ trong hàng đợi nhiệm vụ vi mô liên quan đến những gì Jason
+
+88
+00:04:10,764 --> 00:04:11,488
+hỏi họ.
+
+89
+00:04:11,488 --> 00:04:15,049
+Nếu không thực sự thú vị thì sao?
+
+90
+00:04:15,049 --> 00:04:18,801
+Vì vậy, hóa ra với các đối tượng hứa, tôi chỉ có thể tạo một đối tượng trực tiếp.
+
+91
+00:04:18,801 --> 00:04:21,017
+Tôi không cần phải tạo nó tự động bằng cách tìm nạp,
+
+92
+00:04:21,017 --> 00:04:22,410
+Tôi thực sự chỉ có thể nói tạo một.
+
+93
+00:04:22,410 --> 00:04:28,571
+Nếu sau đó tôi nói giải quyết điều đó, nghĩa là nói trong dòng mã đó trong thời điểm đó.
+
+94
+00:04:28,571 --> 00:04:30,642
+Để nó tự động hoàn thành và
+
+95
+00:04:30,642 --> 00:04:33,823
+có chức năng của nó mà tôi có thể kiểm soát chức năng đó.
+
+96
+00:04:33,823 --> 00:04:34,752
+Chúng tôi có thể làm điều đó với tìm nạp.
+
+97
+00:04:34,752 --> 00:04:38,323
+Bởi vì tìm nạp đang xử lý mối quan hệ ở đây, nhưng
+
+98
+00:04:38,323 --> 00:04:43,302
+nếu tôi tạo đối tượng hứa hẹn của riêng mình, thì tôi có thể có chức năng gắn liền với nó.
+
+99
+00:04:43,302 --> 00:04:47,778
+Tôi có thể trực tiếp đưa nó vào hàng đợi microtask bằng cách
+
+100
+00:04:47,778 --> 00:04:52,037
+thuộc tính giá trị của đối tượng lời hứa đó được cập nhật và hoàn thành.
+
+101
+00:04:52,037 --> 00:04:55,578
+Và tự động kích hoạt chức năng để chạy trong hàng đợi microtask.
+
+102
+00:04:55,578 --> 00:04:57,704
+Đây là một kịch bản thực sự thú vị.
+
+103
+00:04:57,704 --> 00:05:02,457
+Nếu khi tôi chạy chức năng trong microtask của tôi
+
+104
+00:05:02,457 --> 00:05:06,426
+hàng đợi đã được hiển thị, Nếu bên trong đó.
+
+105
+00:05:06,426 --> 00:05:10,855
+Tôi tạo một đối tượng hứa hẹn hoàn toàn mới với chức năng liên quan của nó
+
+106
+00:05:10,855 --> 00:05:12,830
+trong khi tôi đang ở bên trong màn hình.
+
+107
+00:05:12,830 --> 00:05:15,622
+Đối tượng lời hứa đó đã hoàn thành vì tôi đã trực tiếp nói với nó,
+
+108
+00:05:15,622 --> 00:05:19,438
+chức năng liên quan sẽ bị kẹt vào phần phụ trợ của hàng đợi microtask trong khi tôi
+
+109
+00:05:19,438 --> 00:05:20,528
+vẫn hiển thị bên trong.
+
+110
+00:05:23,551 --> 00:05:24,332
+>> Will Sentance: Đây thực sự là
+
+111
+00:05:24,332 --> 00:05:26,518
+tình huống thú vị có thể xảy ra sau đó.
+
+112
+00:05:26,518 --> 00:05:31,086
+Tôi có thể điền vào phía sau hàng đợi nhiệm vụ vi mô với nhiều hơn
+
+113
+00:05:31,086 --> 00:05:34,642
+các chức năng trong khi tôi vẫn ở bên trong màn hình.
+
+114
+00:05:34,642 --> 00:05:36,525
+Và vòng lặp sự kiện rất thú vị và
+
+115
+00:05:36,525 --> 00:05:40,424
+cách nó tương tác với hàng đợi nhiệm vụ vi mô là một phần thưởng rất, rất lớn.
+
+116
+00:05:40,424 --> 00:05:44,799
+Nếu bạn truy cập nếu bạn muốn biết các phần cứng của nút, chúng ta sẽ đi vào một số chi tiết hơn.
+
+117
+00:05:44,799 --> 00:05:46,560
+Họ lo lắng quá nhiều về điều này.
+
+118
+00:05:46,560 --> 00:05:50,346
+Nhưng tôi đang cảm thấy nếu tôi muốn tôi đang ở bên trong màn hình và
+
+119
+00:05:50,346 --> 00:05:53,481
+điền vào các chức năng mới ở đây.
+
+120
+00:05:53,481 --> 00:05:56,199
+Và chính họ đang xây dựng một chức năng mới.
+
+121
+00:05:56,199 --> 00:05:59,255
+Và sau đó đó là những chức năng khá mới gần như đệ quy.
+
+122
+00:05:59,255 --> 00:06:03,603
+Tôi sẽ không bao giờ rời khỏi hàng đợi microdose vì vòng lặp sự kiện
+
+123
+00:06:03,603 --> 00:06:07,194
+sẽ luôn nhận và thực thi trên ngăn xếp cuộc gọi.
+
+124
+00:06:07,194 --> 00:06:08,448
+Nó sẽ luôn quay trở lại và
+
+125
+00:06:08,448 --> 00:06:11,568
+kiểm tra microtask trước khi nó chuyển sang hàng đợi gọi lại.
+
+126
+00:06:11,568 --> 00:06:15,274
+Điều đó phân biệt với hàng đợi gọi lại mà một khi nó vào sẽ làm tất cả
+
+127
+00:06:15,274 --> 00:06:17,657
+những thứ ở đó và sau đó lại di chuyển vòng quanh.
+
+128
+00:06:17,657 --> 00:06:20,416
+Hàng đợi microtask khi nó vào,
+
+129
+00:06:20,416 --> 00:06:24,694
+nếu bạn đang nạp lại ở phía sau, bạn sẽ không rời khỏi nó.
+
+130
+00:06:24,694 --> 00:06:29,591
+Bạn nhận được cái gọi là bỏ đói hàng đợi gọi lại và trong Node.
+
+131
+00:06:29,591 --> 00:06:33,963
+Điều này đặc biệt quan trọng vì bạn muốn, bạn biết đấy, ứng dụng sản xuất.
+
+132
+00:06:33,963 --> 00:06:38,379
+Và đây là lý do tại sao cần thận trọng khi sử dụng
+
+133
+00:06:38,379 --> 00:06:40,771
+quy trình tiếp theo phương pháp đánh dấu.
+
+134
+00:06:40,771 --> 00:06:43,940
+Cái nào dính những thứ trong hàng đợi này và
+
+135
+00:06:43,940 --> 00:06:49,696
+đệ quy có thể bỏ đói bạn khi xử lý các yêu cầu từ người dùng của bạn.
+
+136
+00:06:49,696 --> 00:06:52,993
+Tôi chủ đề Valence, nhưng hãy xem Node Harper's, bạn quan tâm đến điều đó, nhưng
+
+137
+00:06:52,993 --> 00:06:56,025
+đó là một bản chất thú vị mà chúng đang hoạt động hơi khác một chút.
+
+138
+00:06:56,025 --> 00:07:00,469
+Đúng như Jason đang gợi ý, còn một Brayden nữa, có phải là
+
+139
+00:07:00,469 --> 00:07:02,151
+đó là Peter hay Kayla?
+
+140
+00:07:02,151 --> 00:07:03,984
+Dan, đó là Dan, vâng, tiếp tục đi Dan.
+
+141
+00:07:03,984 --> 00:07:07,815
+>> Người nói 2: Vâng khi bạn có thể đã đề cập đến điều này, nhưng.
+
+142
+00:07:07,815 --> 00:07:10,838
+Những mục nào đi vào hàng đợi microtask và những mục nào đi vào.
+
+143
+00:07:10,838 --> 00:07:11,591
+>> Will Sentance: Tuyệt vời, điểm tuyệt vời.
+
+144
+00:07:11,591 --> 00:07:13,920
+Hãy thực sự rõ ràng.
+
+145
+00:07:13,920 --> 00:07:18,540
+Bất kỳ hàm nào được gắn vào một đối tượng hứa hẹn bởi một trong hai ngạnh này cho
+
+146
+00:07:18,540 --> 00:07:19,756
+các chức năng được lưu trữ.
+
+147
+00:07:19,756 --> 00:07:23,027
+Để thêm một đối tượng hứa, chúng tôi đính kèm một hàm vào nó bằng cách sử dụng chúng.
+
+148
+00:07:23,027 --> 00:07:26,676
+Các chức năng đó đều đi vào nhiệm vụ vi mô bạn nhé.
+
+149
+00:07:26,676 --> 00:07:31,000
+Bất kỳ hàm nào được chuyển trực tiếp đến một hàm mặt tiền để kích hoạt web
+
+150
+00:07:31,000 --> 00:07:35,080
+tính năng trình duyệt, bạn xem tham chiếu liên kết đến chức năng ở đây.
+
+151
+00:07:35,080 --> 00:07:37,682
+Các chức năng đó khi chúng hoàn thành hoặc
+
+152
+00:07:37,682 --> 00:07:42,976
+xin lỗi khi nhiệm vụ nền bộ hẹn giờ hoàn thành gọi lại chức năng này.
+
+153
+00:07:42,976 --> 00:07:44,542
+Vì vậy, chúng ta phải đi vào MDN và
+
+154
+00:07:44,542 --> 00:07:49,482
+xem, mặt tiền cụ thể của chúng ta có chức năng kích hoạt nội dung trong nền không?
+
+155
+00:07:49,482 --> 00:07:51,928
+Nó có trong một chức năng?
+
+156
+00:07:51,928 --> 00:07:54,401
+Người đó sẽ đi vào hàng đợi gọi lại?
+
+157
+00:07:54,401 --> 00:07:57,666
+Hay nó quay trở lại thành một đối tượng hứa hẹn và
+
+158
+00:07:57,666 --> 00:08:02,200
+chúng ném xuống nền nhưng không ném một hàm xuống đây.
+
+159
+00:08:02,200 --> 00:08:06,388
+Hàm kết hợp trên đối tượng hứa hẹn, hàng đợi microtask đó.
+
+160
+00:08:06,388 --> 00:08:07,690
+Được rồi, ngọt ngào.
+

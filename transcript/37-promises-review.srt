@@ -1,0 +1,424 @@
+1
+00:00:00,030 --> 00:00:04,040
+>> Will Sentance: Hãy nói về những lợi ích và
+
+2
+00:00:04,040 --> 00:00:06,294
+không lợi ích của cách tiếp cận này.
+
+3
+00:00:06,294 --> 00:00:11,670
+Vì vậy, 99% nhà phát triển không biết vấn đề này hoạt động như thế nào,
+
+4
+00:00:11,670 --> 00:00:14,750
+điều này làm cho việc gỡ lỗi chỉ là điều bí ẩn.
+
+5
+00:00:14,750 --> 00:00:18,034
+Và trên hết, tôi nghĩ là vâng, tôi đã nói rằng bây giờ,
+
+6
+00:00:18,034 --> 00:00:20,790
+trên hết, tôi cảm thấy phải đi phỏng vấn.
+
+7
+00:00:20,790 --> 00:00:25,040
+Mặt trái của phong cách này là nó tạo ra thứ gì đó có ý nghĩa
+
+8
+00:00:25,040 --> 00:00:29,870
+nếu bạn không hiểu nó hoạt động như thế nào, bạn có thể làm cho nó thành công.
+
+9
+00:00:29,870 --> 00:00:32,315
+Tôi sẽ nói về kiểu cũ mà bạn thực sự truyền một hàm vào,
+
+10
+00:00:32,315 --> 00:00:33,675
+nếu bạn hiểu cách nó hoạt động.
+
+11
+00:00:33,675 --> 00:00:37,634
+Bạn đã hoàn thành, phong cách này, bởi vì vẻ ngoài này,
+
+12
+00:00:37,634 --> 00:00:42,471
+phương pháp sau đó bạn nghĩ rằng bạn biết nó đang làm gì và nó hoạt động nhưng
+
+13
+00:00:42,471 --> 00:00:45,130
+thực sự, tôi ghét cái tên này.
+
+14
+00:00:45,130 --> 00:00:49,030
+Nó không làm gì cả, nếu tôi đang đọc mã này với tư cách là một nhà phát triển, tôi thích, được rồi, vì vậy
+
+15
+00:00:49,030 --> 00:00:50,930
+tìm nạp và sau đó tôi sẽ hiển thị.
+
+16
+00:00:50,930 --> 00:00:54,000
+Nhưng tất nhiên, nó thậm chí không gần,
+
+17
+00:00:54,000 --> 00:00:57,020
+có lẽ chúng ta thậm chí nghĩ như vậy nếu chúng ta quay lại chuỗi và thực hiện dòng đó và
+
+18
+00:00:57,020 --> 00:01:00,140
+rồi bit sau, Không, không, không, sau đó nên đổi tên là gì?
+
+19
+00:01:00,140 --> 00:01:07,290
+Tôi nghĩ rằng nó nên được đổi tên này, chức năng lưu trữ để Chạy sau, vâng, chính xác.
+
+20
+00:01:07,290 --> 00:01:11,650
+Dấu chấm ngày tháng trong tương lai, lưu trữ tôi để Chạy tôi sau tự động khi tác vụ nền
+
+21
+00:01:11,650 --> 00:01:14,230
+xuất phát từ cuộc gọi tìm nạp trước đó đã hoàn thành và
+
+22
+00:01:14,230 --> 00:01:15,340
+giá trị có thể được cập nhật.
+
+23
+00:01:16,470 --> 00:01:23,320
+Không hấp dẫn, nhưng nó chính xác, mm-hm, vì vậy tôi sẽ thêm một lợi ích nữa.
+
+24
+00:01:23,320 --> 00:01:25,390
+Vì vậy, mọi người nghĩ kiểu văn phong gọn gàng hơn, dễ đọc hơn,
+
+25
+00:01:25,390 --> 00:01:28,260
+Tôi sẽ nói, giống như đồng bộ giả,
+
+26
+00:01:28,260 --> 00:01:31,290
+Có vẻ như bạn đang chạy nó ngay lúc đó nhưng thực sự thì không.
+
+27
+00:01:31,290 --> 00:01:34,160
+Bạn đang chuyển một hàm sẽ được chạy như trước đây,
+
+28
+00:01:34,160 --> 00:01:36,300
+không phải bởi bạn, mà bởi JavaScript.
+
+29
+00:01:36,300 --> 00:01:40,220
+Và nó lấy một đầu vào mà bạn không đưa vào đó, JavaScript đưa vào đó.
+
+30
+00:01:40,220 --> 00:01:43,160
+Điều đó từ nền hoạt động rằng chuỗi cao sẽ tự động
+
+31
+00:01:43,160 --> 00:01:46,300
+được chèn vào chức năng hiển thị khi nó là AutoRun, tôi thích nó.
+
+32
+00:01:46,300 --> 00:01:49,220
+Nhân tiện, khi bạn thấy rằng JavaScript đã
+
+33
+00:01:49,220 --> 00:01:52,800
+người ta thấy rằng JavaScript đang sử dụng mã chức năng đó để hiển thị và
+
+34
+00:01:52,800 --> 00:01:55,750
+nó chạy nó cho bạn bằng cách tự động đặt Print trên nó cho bạn.
+
+35
+00:01:55,750 --> 00:01:57,250
+Và nó đang chèn đầu vào cho
+
+36
+00:01:57,250 --> 00:02:01,460
+bạn tự động Đó là một ngôn ngữ rất hào phóng theo nghĩa đó.
+
+37
+00:02:02,990 --> 00:02:05,430
+Có một lợi ích lớn của thiết kế này, và
+
+38
+00:02:05,430 --> 00:02:09,880
+đó là quy trình xử lý thời đại, vì vậy, điều này thực sự tốt.
+
+39
+00:02:09,880 --> 00:02:12,710
+Hóa ra mọi người, thực sự có một
+
+40
+00:02:12,710 --> 00:02:16,940
+mảng trên đối tượng hứa hẹn này đằng sau hậu trường, một thuộc tính ẩn khác.
+
+41
+00:02:16,940 --> 00:02:24,450
+Và nó được gọi là onRjection, và nó cũng là một mảng mà chúng ta có thể đặt các hàm vào đó.
+
+42
+00:02:24,450 --> 00:02:29,010
+Đặc biệt là khi bạn tương tác với thế giới bên ngoài
+
+43
+00:02:29,010 --> 00:02:30,770
+nội dung mạng bạn luôn gặp lỗi.
+
+44
+00:02:31,790 --> 00:02:35,630
+Bạn không muốn chạy các chức năng hiển thị của mình để người dùng trên Twitter có được một
+
+45
+00:02:35,630 --> 00:02:37,630
+phát toàn bộ chi tiết của lỗi.
+
+46
+00:02:38,760 --> 00:02:41,480
+Lý tưởng nhất là muốn có một chức năng riêng biệt sẽ chạy
+
+47
+00:02:41,480 --> 00:02:42,690
+xử lý lỗi đó.
+
+48
+00:02:42,690 --> 00:02:44,447
+Có thể nó ghi lại nó cho bạn theo một cách nào đó, nhưng
+
+49
+00:02:44,447 --> 00:02:46,751
+có lẽ chỉ mang lại cho người dùng trải nghiệm tốt hơn.
+
+50
+00:02:46,751 --> 00:02:51,588
+Nó đang làm điều gì đó tương tự, có thể, bất kể nó có thể là gì,
+
+51
+00:02:51,588 --> 00:02:53,840
+bây giờ, làm thế nào chúng ta có thể xử lý điều đó?
+
+52
+00:02:53,840 --> 00:02:54,496
+Chà, bạn biết không?
+
+53
+00:02:54,496 --> 00:02:57,820
+Đối tượng hứa hẹn cung cấp cho chúng ta tính năng tuyệt vời này,
+
+54
+00:02:57,820 --> 00:03:03,050
+điều đó có nghĩa là nếu chúng tôi nhận được lỗi không phải đối tượng phản hồi thực tế mà chúng tôi muốn có bất kỳ lỗi nào,
+
+55
+00:03:03,050 --> 00:03:04,710
+nó sẽ không chạy chức năng hiển thị đó.
+
+56
+00:03:04,710 --> 00:03:08,050
+Nó thậm chí sẽ không tự động kích hoạt bất kỳ chức năng nào của bạn khi chưa được thực hiện,
+
+57
+00:03:08,050 --> 00:03:12,870
+nó sẽ kích hoạt bất kỳ chức năng nào mà bạn đã lưu trữ trong onRejection,
+
+58
+00:03:12,870 --> 00:03:14,430
+làm thế nào để chúng tôi có được các chức năng trong đó?
+
+59
+00:03:14,430 --> 00:03:15,650
+Chà, có hai cách,
+
+60
+00:03:15,650 --> 00:03:21,001
+một người sẽ viết tương lai, >> Will Sentance: Data dot, có ai biết không?
+
+61
+00:03:22,070 --> 00:03:25,318
+Bắt dấu chấm chính xác, Cate đúng, bắt dấu chấm, và
+
+62
+00:03:25,318 --> 00:03:29,680
+bất kỳ chức năng nào chúng ta chuyển vào đó, nó sẽ bị từ chối, phải không?
+
+63
+00:03:29,680 --> 00:03:33,930
+Cách khác là tạm dừng để sau đó là đối số thứ hai,
+
+64
+00:03:35,980 --> 00:03:39,720
+bất kỳ chức năng nào bạn muốn sẽ vào đây để Tự động chạy khi bị lỗi,
+
+65
+00:03:39,720 --> 00:03:42,510
+đối số đầu tiên, gắn hàm đó ở trạng thái chưa thực hiện.
+
+66
+00:03:42,510 --> 00:03:44,163
+Sau đó, chúng ta sẽ lấy đối số thứ hai,
+
+67
+00:03:44,163 --> 00:03:47,610
+đầu vào thứ hai và giữ nguyên chức năng mà bạn đã từ chối?
+
+68
+00:03:47,610 --> 00:03:49,350
+Điều đó thực sự tốt, đó là một thực sự,
+
+69
+00:03:49,350 --> 00:03:52,740
+cách tiếp cận xử lý lỗi thực sự tốt mà không nghi ngờ gì.
+
+70
+00:03:53,870 --> 00:03:58,410
+Được rồi mọi người, vậy là đã có rồi, giờ chúng tôi có quy tắc cho
+
+71
+00:03:58,410 --> 00:04:03,510
+việc thực thi các chức năng trì hoãn mã trì hoãn không đồng bộ của chúng tôi.
+
+72
+00:04:03,510 --> 00:04:06,110
+Đây là những gì Dan đã nói chức năng trì hoãn hứa hẹn,
+
+73
+00:04:06,110 --> 00:04:08,970
+những cái được đính kèm với một lời hứa sẽ trì hoãn chúng chạy
+
+74
+00:04:08,970 --> 00:04:11,070
+cho đến khi một cái gì đó xảy ra trong nền.
+
+75
+00:04:11,070 --> 00:04:14,230
+Lưu trữ chúng trong hàng đợi microtask và các hàm gọi lại,
+
+76
+00:04:14,230 --> 00:04:19,220
+những cái đã được chuyển vào một trong những chức năng mặt tiền này như hẹn giờ, xin lỗi,
+
+77
+00:04:19,220 --> 00:04:22,140
+đặt thời gian chờ, để họ vào hàng đợi gọi lại.
+
+78
+00:04:23,840 --> 00:04:28,740
+Khi tính năng trình duyệt web khác có kết thúc API,
+
+79
+00:04:28,740 --> 00:04:32,410
+thêm chức năng đó vào ngăn mát.
+
+80
+00:04:32,410 --> 00:04:37,050
+Nói cách khác, Chạy nó khi ngăn mát trống và
+
+81
+00:04:37,050 --> 00:04:42,930
+tất cả mã toàn cầu đã chạy xong, hãy yêu cầu sự kiện kiểm tra lại điều kiện này cho chúng tôi.
+
+82
+00:04:42,930 --> 00:04:44,870
+Trước khi chúng ta tìm hiểu mã, tôi sẽ Chạy tiếp theo,
+
+83
+00:04:44,870 --> 00:04:50,460
+ưu tiên các chức năng trong hàng đợi vi nhiệm vụ hơn hàng đợi gọi lại.
+
+84
+00:04:52,120 --> 00:04:57,440
+Hứa hẹn về các tính năng của trình duyệt web, hàng đợi gọi lại và microtask và
+
+85
+00:04:57,440 --> 00:05:01,810
+vòng lặp sự kiện cho phép chúng tôi xây dựng các ứng dụng không chặn.
+
+86
+00:05:01,810 --> 00:05:04,790
+Chúng tôi không phải đợi trong chuỗi JavaScript duy nhất này,
+
+87
+00:05:04,790 --> 00:05:07,630
+chúng tôi không phải đợi ở đây để dữ liệu của chúng tôi quay trở lại.
+
+88
+00:05:07,630 --> 00:05:10,359
+Không phải chờ ở dòng này, tìm nạp sẽ không ở trên dòng này, đang đợi
+
+89
+00:05:10,359 --> 00:05:12,022
+dữ liệu quay lại, không, không, không, không.
+
+90
+00:05:12,022 --> 00:05:13,326
+Ý tôi là không trong mã thông thường,
+
+91
+00:05:13,326 --> 00:05:16,700
+chức năng của bạn tuyệt vời, bạn đang ở trên dòng đó cho đến khi bạn hoàn thành nó.
+
+92
+00:05:16,700 --> 00:05:19,070
+Nhưng nó không phải là một lệnh gọi hàm thông thường, nó là một hàm mặt tiền cho
+
+93
+00:05:19,070 --> 00:05:20,150
+thiết lập công việc nền.
+
+94
+00:05:21,670 --> 00:05:24,833
+Tuy nhiên, chúng tôi không thể đoán trước được khi nào các tính năng của trình duyệt hoạt động
+
+95
+00:05:24,833 --> 00:05:26,218
+sẽ kết thúc ở chế độ nền.
+
+96
+00:05:26,218 --> 00:05:30,113
+Chúng tôi không thể biết chính xác khi nào nó sẽ kết thúc, vì vậy chúng tôi không thể có dòng
+
+97
+00:05:30,113 --> 00:05:33,340
+mã sẽ sử dụng dữ liệu nền đó Chạy ngay bây giờ.
+
+98
+00:05:33,340 --> 00:05:34,970
+Chúng ta phải cho nó biết khi nào chạy,
+
+99
+00:05:34,970 --> 00:05:38,670
+chúng ta phải dựa vào JavaScript để biết khi nào công việc nền hoàn thành
+
+100
+00:05:38,670 --> 00:05:42,400
+để tự động kích hoạt, chức năng Chạy vào thời điểm đó.
+
+101
+00:05:43,810 --> 00:05:48,030
+Đây là những gì cho phép chúng tôi, mọi người, tạo ra những
+
+102
+00:05:48,030 --> 00:05:50,710
+ứng dụng năng động, nhanh chóng.
+
+103
+00:05:50,710 --> 00:05:54,330
+Chúng tôi có thể xử lý việc thiết lập rất nhiều thứ trong nền
+
+104
+00:05:54,330 --> 00:05:58,200
+trong khi chúng tôi chạy đua ở phía trước để chạy mã của mình,
+
+105
+00:05:58,200 --> 00:06:03,730
+đáp ứng các tương tác của người dùng, xây dựng các ứng dụng động này.
+
+106
+00:06:03,730 --> 00:06:06,800
+Đây là những gì thực sự làm cho JavaScript rất, rất đặc biệt và rất hữu ích.
+

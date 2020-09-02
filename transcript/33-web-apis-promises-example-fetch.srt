@@ -1,0 +1,1136 @@
+1
+00:00:00,050 --> 00:00:02,660
+>> Will Sentance: Chúng tôi đã có hai chức năng mặt tiền mạnh mẽ của chúng tôi, trời ơi,
+
+2
+00:00:02,660 --> 00:00:03,850
+chúng có đáng chú ý không?
+
+3
+00:00:03,850 --> 00:00:04,570
+Và nếu bạn nhớ,
+
+4
+00:00:04,570 --> 00:00:08,110
+Tôi chỉ muốn hỏi câu hỏi mà chúng tôi đã hỏi ngay trước giờ giải lao chỉ một lần nữa.
+
+5
+00:00:08,110 --> 00:00:11,120
+Đó là, làm rõ của chúng tôi là gì?
+
+6
+00:00:12,250 --> 00:00:16,370
+Và tôi nghĩ là, có ai có thể nhớ một trong những câu hỏi tôi đã hỏi không?
+
+7
+00:00:16,370 --> 00:00:17,540
+Bạn hỏi có phải là Todd không?
+
+8
+00:00:17,540 --> 00:00:18,460
+Chờ đã, những gì sẽ?
+
+9
+00:00:18,460 --> 00:00:19,200
+Vâng, hãy tiếp tục.
+
+10
+00:00:19,200 --> 00:00:22,420
+>> Người nói 2: Tôi đoán khi nào điều đó được đưa vào ngăn xếp cuộc gọi?
+
+11
+00:00:22,420 --> 00:00:26,020
+>> Will Sentance: Vâng, khi nào thì chức năng đó bị trì hoãn, trì hoãn bởi
+
+12
+00:00:26,020 --> 00:00:31,610
+được đính kèm với đối tượng hứa hẹn trên mảng thực hiện?
+
+13
+00:00:31,610 --> 00:00:35,660
+Khi nào thì chức năng đó, với điều kiện là nó được tự động kích hoạt để chạy?
+
+14
+00:00:35,660 --> 00:00:37,150
+Nó có trở nên tuyệt vời không?
+
+15
+00:00:37,150 --> 00:00:39,589
+Ý tôi là nó trong JavaScript, vậy nó có đi thẳng vào ngăn xếp cuộc gọi không?
+
+16
+00:00:42,080 --> 00:00:43,840
+Không điên để nghĩ, tốt,
+
+17
+00:00:43,840 --> 00:00:48,640
+chúng tôi sẽ cần hiểu các quy tắc mà lời hứa của chúng tôi được trì hoãn
+
+18
+00:00:48,640 --> 00:00:53,283
+chức năng quay trở lại JavaScript để được thực thi.
+
+19
+00:00:53,283 --> 00:00:58,200
+Bạn biết không, hãy quay trở lại ngăn xếp cuộc gọi nó bằng JavaScript.
+
+20
+00:00:58,200 --> 00:01:01,210
+Quay lại ngăn xếp cuộc gọi để được thực hiện.
+
+21
+00:01:01,210 --> 00:01:02,410
+Chúng ta sẽ thấy điều đó ở đây.
+
+22
+00:01:02,410 --> 00:01:05,913
+Hãy nhanh chóng nhắc lại ở đây phương pháp và chức năng then, nó làm gì
+
+23
+00:01:05,913 --> 00:01:09,018
+nói, sau đó là phương thức và chức năng để gọi, vâng, phương thức then và
+
+24
+00:01:09,018 --> 00:01:12,457
+chức năng gọi và hoàn thành bất kỳ mã nào chúng tôi muốn chạy sẽ trả về dữ liệu.
+
+25
+00:01:12,457 --> 00:01:15,923
+Dữ liệu phản hồi phải được thêm vào đối tượng lời hứa
+
+26
+00:01:15,923 --> 00:01:21,180
+đã thêm bằng cách sử dụng phương thức then vào thuộc tính ẩn trên mảng thực hiện.
+
+27
+00:01:21,180 --> 00:01:26,960
+Các đối tượng Promise sẽ tự động kích hoạt hàm được đính kèm trong mảng đó để chạy
+
+28
+00:01:26,960 --> 00:01:33,020
+với đầu vào là dữ liệu phản hồi từ tính năng trình duyệt web từ Twitter.
+
+29
+00:01:33,020 --> 00:01:34,670
+Được rồi, chúng ta đi thôi.
+
+30
+00:01:34,670 --> 00:01:37,960
+Hãy xem, đây là mã phức tạp nhất mà chúng ta sẽ thấy ngày hôm nay.
+
+31
+00:01:38,980 --> 00:01:43,330
+Chúng ta sẽ xem chiều nay nhưng đây là một trong những chức năng của tôi ở đây
+
+32
+00:01:43,330 --> 00:01:48,220
+để tôi thử và thu nhỏ mã và chỉ đi đến phần lõi.
+
+33
+00:01:48,220 --> 00:01:52,142
+Nhưng chúng ta cần ba ở đây để xem các quy tắc mà
+
+34
+00:01:52,142 --> 00:01:55,587
+mã hoãn lại không đồng bộ sẽ được chạy.
+
+35
+00:01:55,587 --> 00:02:00,970
+Và nhân tiện, tôi sẽ chốt lại ở cuối từ không đồng bộ nghĩa là gì.
+
+36
+00:02:01,970 --> 00:02:03,430
+Tôi sẽ nói ngay bây giờ.
+
+37
+00:02:03,430 --> 00:02:06,150
+Nó có nghĩa là làm mã không theo thứ tự từ khi bạn nhìn thấy nó,
+
+38
+00:02:06,150 --> 00:02:07,260
+từ khi nó được cho là đã được thực hiện.
+
+39
+00:02:07,260 --> 00:02:12,241
+Vì vậy, khi chúng ta thấy mã JavaScript bình thường, nếu một dòng cho biết mã đó,
+
+40
+00:02:12,241 --> 00:02:13,700
+Tôi làm điều đó ngay sau đó.
+
+41
+00:02:13,700 --> 00:02:15,590
+Nếu dòng nói làm mã, tôi làm ngay lúc đó.
+
+42
+00:02:15,590 --> 00:02:17,500
+Không đồng bộ nói không, không,
+
+43
+00:02:17,500 --> 00:02:22,620
+không, JavaScript sẽ xử lý khi chức năng đó hoạt động trở lại.
+
+44
+00:02:22,620 --> 00:02:26,004
+Và nó sẽ không theo thứ tự khi bạn kích hoạt tính năng trình duyệt
+
+45
+00:02:26,004 --> 00:02:27,181
+mà bắt đầu công việc của nó.
+
+46
+00:02:27,181 --> 00:02:30,296
+Và chức năng liên quan sẽ hoạt động trở lại khi
+
+47
+00:02:30,296 --> 00:02:31,940
+công việc nền được thực hiện.
+
+48
+00:02:31,940 --> 00:02:36,660
+Chúng tôi không còn có mã của chúng tôi nữa, chúng tôi không thể để lại dòng mã này cho đến khi chúng tôi hoàn thành
+
+49
+00:02:36,660 --> 00:02:39,570
+nó cho đến khi chúng tôi chuyển sang dòng tiếp theo.
+
+50
+00:02:39,570 --> 00:02:43,270
+Bây giờ chúng ta thực sự có thể có mã sẽ được chạy sau
+
+51
+00:02:43,270 --> 00:02:44,950
+tất cả mã thông thường của chúng tôi được chạy.
+
+52
+00:02:44,950 --> 00:02:50,290
+Được rồi, vậy chúng ta sẽ xem tất cả những điều đó diễn ra như thế nào ở đây từng dòng một.
+
+53
+00:02:50,290 --> 00:02:55,520
+Chúng tôi đã có ES5 truyền thống của chúng tôi và thời gian đặt trước đó với một chức năng.
+
+54
+00:02:55,520 --> 00:02:57,040
+Nó sẽ được ném xuống trình duyệt web.
+
+55
+00:02:57,040 --> 00:02:59,800
+Chúng tôi đã có cuộc gọi tìm nạp của chúng tôi với hai ngạnh.
+
+56
+00:03:01,760 --> 00:03:05,200
+Với mặt này, với mã này và sơ đồ này,
+
+57
+00:03:05,200 --> 00:03:10,240
+chúng ta sẽ thấy toàn bộ bản đồ về sự không đồng bộ trong JavaScript.
+
+58
+00:03:10,240 --> 00:03:12,480
+Được rồi, chúng ta bắt đầu, các bạn.
+
+59
+00:03:12,480 --> 00:03:13,770
+Chúng tôi gần như đang ở rào cản cuối cùng.
+
+60
+00:03:15,390 --> 00:03:16,560
+Không hẳn.
+
+61
+00:03:16,560 --> 00:03:17,890
+Bắt đầu.
+
+62
+00:03:17,890 --> 00:03:25,200
+Dòng một, vào bộ nhớ toàn cầu của chúng ta, chúng ta sẽ lưu trữ những gì, bạn tôi, Matt?
+
+63
+00:03:25,200 --> 00:03:26,870
+>> Loa 2: Màn hình hiển thị chức năng.
+
+64
+00:03:26,870 --> 00:03:32,469
+>> Will Sentance: Tuyệt vời, chức năng >> Will Sentance: Hiển thị, nó đây.
+
+65
+00:03:34,580 --> 00:03:37,770
+Được lưu vào bộ nhớ chung.
+
+66
+00:03:37,770 --> 00:03:38,520
+Cảm ơn Matt.
+
+67
+00:03:38,520 --> 00:03:40,900
+Bây giờ đến dòng tiếp theo của Tod.
+
+68
+00:03:40,900 --> 00:03:42,830
+>> Loa 2: Hàm in lời chào.
+
+69
+00:03:42,830 --> 00:03:44,210
+>> Will Sentance: In xin chào.
+
+70
+00:03:44,210 --> 00:03:49,010
+Được lưu trữ trong bộ nhớ chung cũng như được khai báo và lưu trữ trong bộ nhớ.
+
+71
+00:03:49,010 --> 00:03:51,278
+Dòng tiếp theo, Ryan, chúng ta nên làm gì là an toàn?
+
+72
+00:03:51,278 --> 00:03:54,754
+Xóa khối chức năng trong 300 mili giây hoặc
+
+73
+00:03:54,754 --> 00:03:59,240
+300 mili giây một khối trong 30 mili giây.
+
+74
+00:03:59,240 --> 00:04:01,760
+Tôi muốn cắt những bit này trong hơn 300 mili giây.
+
+75
+00:04:01,760 --> 00:04:02,820
+Đây rồi.
+
+76
+00:04:02,820 --> 00:04:07,330
+Đó là một khối mới trong 300 mili giây.
+
+77
+00:04:08,620 --> 00:04:10,200
+Đây rồi.
+
+78
+00:04:10,200 --> 00:04:14,800
+Và bây giờ mọi thứ trở nên thú vị.
+
+79
+00:04:14,800 --> 00:04:19,890
+Bây giờ chúng ta đến thời gian chờ đã định.
+
+80
+00:04:19,890 --> 00:04:22,160
+Nó có làm bất cứ điều gì thú vị trong JavaScript không, mọi người?
+
+81
+00:04:22,160 --> 00:04:23,110
+>> Người nói 2: Không.
+
+82
+00:04:23,110 --> 00:04:26,760
+>> Will Sentance: Không, không phải, đây là một trong những vấn đề duy nhất.
+
+83
+00:04:26,760 --> 00:04:32,570
+Thực ra, hãy đưa trình duyệt web của chúng ta lên đây, ngay tại đây.
+
+84
+00:04:32,570 --> 00:04:35,370
+Trình duyệt web.
+
+85
+00:04:35,370 --> 00:04:41,570
+Chúng tôi đã có, màu trắng là công cụ và tính năng JavaScript.
+
+86
+00:04:41,570 --> 00:04:46,960
+Và sau đó bạn đã đến đây, chúng tôi có các yêu cầu mạng
+
+87
+00:04:46,960 --> 00:04:52,050
+là một trong những tính năng của trình duyệt web được xây dựng bằng C ++, chắc chắn không phải trong JavaScript.
+
+88
+00:04:52,050 --> 00:04:59,360
+Và nó được điều khiển từ bên trong JavaScript bởi chức năng mặt tiền tìm nạp tuyệt vời này.
+
+89
+00:04:59,360 --> 00:05:00,730
+Sau đó, chúng tôi đã có bảng điều khiển.
+
+90
+00:05:00,730 --> 00:05:05,786
+Chúng tôi cũng có bộ đếm thời gian, một tính năng của web
+
+91
+00:05:05,786 --> 00:05:10,685
+trình duyệt được kiểm soát bởi thời gian chờ đã đặt.
+
+92
+00:05:10,685 --> 00:05:12,240
+Nhưng có rất nhiều thứ mà chúng ta biết.
+
+93
+00:05:13,520 --> 00:05:19,020
+Được rồi, mọi thứ bên dưới đây sẽ diễn ra
+
+94
+00:05:19,020 --> 00:05:25,989
+không phải là JavaScript mà là các tính năng của trình duyệt web của chúng tôi.
+
+95
+00:05:28,880 --> 00:05:30,415
+Tôi đã quên điều gì khác từ nền tảng chính của chúng tôi?
+
+96
+00:05:30,415 --> 00:05:33,900
+Dan, tôi đang quên điều gì từ loại nền tảng Java chính của mình?
+
+97
+00:05:33,900 --> 00:05:35,290
+My- >> Loa 2: Ngăn xếp yêu thích của tôi.
+
+98
+00:05:35,290 --> 00:05:37,690
+>> Will Sentance: Vâng, không cảm thấy ngăn xếp rất thú vị.
+
+99
+00:05:37,690 --> 00:05:39,340
+Chính xác, nó đây.
+
+100
+00:05:41,000 --> 00:05:43,950
+Đây rồi. Và chúng tôi đang thực thi mã trên toàn cầu.
+
+101
+00:05:43,950 --> 00:05:45,350
+Vì vậy, nó đó.
+
+102
+00:05:45,350 --> 00:05:47,094
+Chà, không phải bao mát.
+
+103
+00:05:47,094 --> 00:05:50,700
+Được rồi, trong quá trình thực thi JavaScript, chúng tôi đã thực hiện chúng tôi đã làm
+
+104
+00:05:50,700 --> 00:05:53,880
+hiển thị khối in hello trong 300 mili giây để tiết kiệm bộ nhớ chung.
+
+105
+00:05:53,880 --> 00:05:59,080
+Bây giờ chúng ta đánh ổn, hãy giơ tay lên nếu bạn muốn là người nói bằng lời
+
+106
+00:05:59,080 --> 00:06:04,690
+thông qua, Ethan đã là chuyên gia của chúng tôi về vấn đề này, có lẽ chúng tôi sẽ chọn Ethan.
+
+107
+00:06:04,690 --> 00:06:10,051
+Điều đó thành lời thông qua điều này đầu tiên
+
+108
+00:06:10,051 --> 00:06:14,870
+chức năng mặt tiền đặt thời gian ra.
+
+109
+00:06:14,870 --> 00:06:18,240
+Hãy giơ tay lên nếu bạn muốn là người huy động thông qua việc này,
+
+110
+00:06:18,240 --> 00:06:20,050
+Vì tôi không nhìn xung quanh, tôi thực sự không thể biết được.
+
+111
+00:06:20,050 --> 00:06:24,292
+Vì vậy, nhưng tôi không thể thấy Matt ở đó.
+
+112
+00:06:24,292 --> 00:06:26,820
+Matt, nói cho tôi biết chuyện gì đang xảy ra.
+
+113
+00:06:26,820 --> 00:06:28,910
+Bất cứ ai đã giơ tay tuyệt vời, cảm ơn bạn.
+
+114
+00:06:28,910 --> 00:06:31,400
+Nhưng là người duy nhất mà cô ấy cảm thấy tức điên.
+
+115
+00:06:31,400 --> 00:06:32,530
+Cho tôi quay lưng lại.
+
+116
+00:06:32,530 --> 00:06:35,380
+Vậy đúng rồi, Matt, đặt thời gian chờ, hậu quả của nó là ở đâu?
+
+117
+00:06:35,380 --> 00:06:37,650
+>> Người thuyết trình 2: Sẽ chuyển sang tính năng trình duyệt web, tính năng hẹn giờ.
+
+118
+00:06:37,650 --> 00:06:39,302
+>> Will Sentance: Tuyệt vời, tuyệt vời.
+
+119
+00:06:39,302 --> 00:06:41,480
+Tính năng trình duyệt web.
+
+120
+00:06:41,480 --> 00:06:46,200
+>> Người nói 2: Nó sẽ gửi cho nó thời lượng, giá trị bằng không.
+
+121
+00:06:46,200 --> 00:06:46,770
+>> Will Sentance: Rất hay.
+
+122
+00:06:46,770 --> 00:06:49,510
+>> Loa 2: Và chức năng chạy print hello.
+
+123
+00:06:49,510 --> 00:06:50,370
+>> Will Sentance: Được rồi, điều đó thật xuất sắc.
+
+124
+00:06:50,370 --> 00:06:52,620
+Điều đó đã được truyền đạt rất tốt, cảm ơn bạn.
+
+125
+00:06:52,620 --> 00:06:53,430
+Vâng chính xác.
+
+126
+00:06:53,430 --> 00:06:54,810
+Không có mili giây của chúng tôi.
+
+127
+00:06:54,810 --> 00:06:58,270
+Và có chức năng của chúng tôi để chạy khi hoàn thành việc đó.
+
+128
+00:06:58,270 --> 00:07:01,574
+Ngày nay, hãy nói chính xác hơn, chức năng của chúng tôi để thêm vào,
+
+129
+00:07:01,574 --> 00:07:03,682
+>> Loa 2: Ngăn xếp cuộc gọi.
+
+130
+00:07:03,682 --> 00:07:04,956
+>> Will Sentance: Ngăn xếp cuộc gọi >> Người thuyết trình 2: Hàng đợi gọi lại
+
+131
+00:07:04,956 --> 00:07:06,010
+>> Will Sentance: Hàng đợi gọi lại lên đến
+
+132
+00:07:06,010 --> 00:07:09,950
+chính xác là hàng đợi gọi lại khi hoàn thành không mili giây.
+
+133
+00:07:09,950 --> 00:07:12,430
+Vì vậy, hãy thiết lập một bộ đếm thời gian.
+
+134
+00:07:15,090 --> 00:07:15,718
+Đây rồi.
+
+135
+00:07:15,718 --> 00:07:22,820
+Bộ hẹn giờ, không mili giây.
+
+136
+00:07:22,820 --> 00:07:25,480
+Hoàn thành ở 0 mili giây mọi người.
+
+137
+00:07:25,480 --> 00:07:26,200
+>> Người nói 2: Đúng.
+
+138
+00:07:26,200 --> 00:07:27,890
+>> Will Sentance: Vâng, chính xác, yeah.
+
+139
+00:07:27,890 --> 00:07:34,560
+Sau khi hoàn thành, những gì chúng ta muốn chạy?
+
+140
+00:07:34,560 --> 00:07:37,480
+Chúng ta muốn lấy lại JavaScript điều gì, Todd?
+
+141
+00:07:37,480 --> 00:07:38,270
+>> Diễn giả 2: In chào.
+
+142
+00:07:38,270 --> 00:07:41,800
+>> Will Sentance: In xin chào, chính xác là 0 mili giây là hoàn thành
+
+143
+00:07:41,800 --> 00:07:42,990
+như tất cả các bạn đã nói?
+
+144
+00:07:42,990 --> 00:07:44,690
+Bạn đặt cược đó là.
+
+145
+00:07:44,690 --> 00:07:49,610
+Nó đã hoàn tất, hẹn giờ khi hoàn thành, chúng tôi sẽ gọi
+
+146
+00:07:51,020 --> 00:07:54,430
+In, họ chỉ nên bảo họ đi từ phía trước của quái vật
+
+147
+00:07:54,430 --> 00:07:56,630
+nếu tôi hiện đang di chuyển trên màn hình phía trước của nó.
+
+148
+00:07:58,810 --> 00:07:59,990
+Không có mát mẻ.
+
+149
+00:07:59,990 --> 00:08:01,020
+Đây rồi.
+
+150
+00:08:01,020 --> 00:08:01,520
+in xin chào.
+
+151
+00:08:02,750 --> 00:08:05,270
+sẽ diễn ra vào thời điểm đó nhưng chúng ta hãy đưa ra ngay bây giờ.
+
+152
+00:08:06,330 --> 00:08:07,790
+Hãy đưa nó lên ngay bây giờ.
+
+153
+00:08:07,790 --> 00:08:08,290
+Mát mẻ.
+
+154
+00:08:12,737 --> 00:08:13,260
+>> Di chúc: Que.
+
+155
+00:08:16,650 --> 00:08:17,740
+Đây rồi, gọi lại hàng đợi.
+
+156
+00:08:18,950 --> 00:08:21,740
+Vì vậy, ở 0 mili giây, nó đã hoàn tất.
+
+157
+00:08:21,740 --> 00:08:24,965
+Jeff, điều gì sẽ xảy ra với hàm in hello trên ngăn xếp cuộc gọi?
+
+158
+00:08:24,965 --> 00:08:27,910
+>> [KHÔNG NGHE ĐƯỢC] >> Will Sentance: Không, hàng đợi gọi lại.
+
+159
+00:08:27,910 --> 00:08:28,640
+Jeff xuất sắc.
+
+160
+00:08:28,640 --> 00:08:29,800
+Ở 0 mili giây.
+
+161
+00:08:29,800 --> 00:08:30,616
+Chính xác.
+
+162
+00:08:30,616 --> 00:08:32,235
+Mili giây.
+
+163
+00:08:32,235 --> 00:08:34,770
+Chúng tôi sẽ có bản in xin chào.
+
+164
+00:08:34,770 --> 00:08:39,760
+Tôi chắc rằng nó sẽ chạy gần như ngay lập tức, phải không?
+
+165
+00:08:39,760 --> 00:08:40,770
+Vâng.
+
+166
+00:08:40,770 --> 00:08:42,910
+Gửi cho tôi tất cả những thứ tuyệt vời đó sớm.
+
+167
+00:08:42,910 --> 00:08:46,240
+Chúng tôi nhận được rất nghiêm túc và háo hức ở đây.
+
+168
+00:08:46,240 --> 00:08:49,160
+Nó đã sẵn sàng để được nhân hóa.
+
+169
+00:08:49,160 --> 00:08:50,340
+Chức năng rất vui mừng.
+
+170
+00:08:50,340 --> 00:08:52,450
+Tôi gần như không thể chờ đợi.
+
+171
+00:08:54,130 --> 00:08:55,830
+Sẵn sàng bắt đầu cuộc gọi.
+
+172
+00:08:57,570 --> 00:09:01,430
+Công việc đặt thời gian chờ được thực hiện khi thiết lập bộ hẹn giờ và thời gian nền công việc của anh ấy
+
+173
+00:09:01,430 --> 00:09:04,460
+được thực hiện bởi vì nó đặt chức năng thấp của máy in trong hàng đợi gọi lại.
+
+174
+00:09:04,460 --> 00:09:08,270
+Tuyệt vời hét lên với tất cả những người bằng lời nói rất hay.
+
+175
+00:09:08,270 --> 00:09:12,370
+Bây giờ chúng ta tiếp tục với The Hardhee
+
+176
+00:09:12,370 --> 00:09:17,445
+khu vực chúng tôi sẽ tiếp tục với tốc độ một phần nghìn giây.
+
+177
+00:09:17,445 --> 00:09:20,180
+Và cố gắng giữ nó càng gọn gàng càng tốt.
+
+178
+00:09:20,180 --> 00:09:21,950
+Cày vào đó một phần nghìn giây.
+
+179
+00:09:21,950 --> 00:09:28,620
+Ethan bên tay trái, chúng ta đang làm gì ở dòng tiếp theo, bên tay trái?
+
+180
+00:09:28,620 --> 00:09:30,652
+>> Diễn giả 2: Khai báo dữ liệu tương lai const.
+
+181
+00:09:30,652 --> 00:09:35,804
+>> Will Sentance: futureData, nó đây,
+
+182
+00:09:35,804 --> 00:09:38,497
+dữ liệu tương lai.
+
+183
+00:09:38,497 --> 00:09:43,700
+Nó là một mặt tiền có hai hướng.
+
+184
+00:09:43,700 --> 00:09:49,030
+Không, không phải, nó sẽ có kết quả của cuộc gọi tìm nạp của chúng tôi,
+
+185
+00:09:49,030 --> 00:09:51,990
+hệ quả JavaScript của nó.
+
+186
+00:09:51,990 --> 00:09:58,986
+Là giá trị của dữ liệu trong tương lai, bởi vì lệnh gọi tìm nạp đó, hàm mặt tiền tìm nạp đó,
+
+187
+00:09:58,986 --> 00:10:04,320
+hàm mặt tiền tìm nạp đó là một hàm mặt tiền hai hướng.
+
+188
+00:10:04,320 --> 00:10:09,110
+Xem yêu cầu mạng trong trình duyệt web và nội dung bằng JavaScript.
+
+189
+00:10:09,110 --> 00:10:12,040
+Hãy xem xét nó trong hệ quả JavaScript.
+
+190
+00:10:12,040 --> 00:10:14,100
+Vì vậy, chúng tôi sẽ gọi tìm nạp.
+
+191
+00:10:14,100 --> 00:10:18,960
+Nó đây, với chỉ một chuỗi của chúng ta, nhân tiện JavaScript chỉ là một chuỗi.
+
+192
+00:10:18,960 --> 00:10:21,490
+Có ai đã lấy dữ liệu của anh ấy xuống không
+
+193
+00:10:21,490 --> 00:10:23,310
+trình duyệt mà nó trở nên có ý nghĩa hơn?
+
+194
+00:10:24,580 --> 00:10:26,840
+Chính xác thì nó là gì?
+
+195
+00:10:26,840 --> 00:10:28,997
+Twitter twitter.com.
+
+196
+00:10:28,997 --> 00:10:32,160
+Chúng tôi sẽ rút ngắn nó một chút.
+
+197
+00:10:32,160 --> 00:10:34,280
+Vâng, chúng ta bắt đầu.
+
+198
+00:10:34,280 --> 00:10:43,010
+Được rồi, đó là hệ quả của JavaScript, Dan có phải là hệ quả JavaScript của anh ấy không?
+
+199
+00:10:43,010 --> 00:10:44,170
+Nó tạo ra một lời hứa mới.
+
+200
+00:10:44,170 --> 00:10:48,520
+Vâng, chính xác trả lại ngay lập tức, do đó được lưu trữ ở bên trái
+
+201
+00:10:48,520 --> 00:10:54,430
+bên tay trong khoảnh khắc một phần nghìn giây này một đối tượng, đối tượng đặc biệt.
+
+202
+00:10:54,430 --> 00:11:00,036
+Đối tượng Promise và đối tượng đó sẽ được lưu trữ ở đây trong dữ liệu trong tương lai.
+
+203
+00:11:00,036 --> 00:11:07,273
+Và là gì >> Will Sentance: Tự động
+
+204
+00:11:07,273 --> 00:11:11,330
+tài sản trên đó, Dan?
+
+205
+00:11:11,330 --> 00:11:15,820
+>> Người thuyết trình 2: Giá trị của nó và >> Lời gửi gắm: Chưa hoàn thành nghĩa là,
+
+206
+00:11:17,140 --> 00:11:21,400
+đó là mảng của chính xác một mảng ngay bây giờ là một mảng trống nhưng
+
+207
+00:11:21,400 --> 00:11:24,740
+nó sẽ là một mảng hàm được sinh ra từ những điều đã nói.
+
+208
+00:11:24,740 --> 00:11:25,800
+Đây rồi.
+
+209
+00:11:25,800 --> 00:11:31,770
+Họ đi đến mảng và họ đánh giá tài sản và chúng ta đừng quên.
+
+210
+00:11:31,770 --> 00:11:36,420
+Thuộc tính giá trị đó ngay sau khi được cập nhật, ngay lập tức
+
+211
+00:11:38,100 --> 00:11:42,970
+sẽ kích hoạt chức năng được lưu trữ trong mảng đó tự động chạy.
+
+212
+00:11:44,740 --> 00:11:48,060
+Rất tốt, đó là bởi vì nếu chúng ta, và nhân tiện.
+
+213
+00:11:49,510 --> 00:11:53,380
+Tài sản giá trị này ở đây tôi có cảm giác sẽ được kết nối mật thiết
+
+214
+00:11:53,380 --> 00:11:56,310
+với hệ quả khác, ngạnh khác
+
+215
+00:11:56,310 --> 00:12:00,180
+từ tìm nạp đang nói chuyện với mạng trong trình duyệt web.
+
+216
+00:12:00,180 --> 00:12:04,320
+Và ngay sau khi hoàn tất, giá trị đó sẽ trả về đối tượng phản hồi như
+
+217
+00:12:04,320 --> 00:12:08,630
+Kayla đã nói trước đó, sẽ điền vào thuộc tính giá trị đó
+
+218
+00:12:08,630 --> 00:12:12,080
+Quay lại JavaScript sẽ tự động kích hoạt bất kỳ chức năng nào trong
+
+219
+00:12:12,080 --> 00:12:16,880
+mảng đó với giá trị đó làm đầu vào của hàm đó hoặc các hàm đó.
+
+220
+00:12:16,880 --> 00:12:18,849
+Được rồi, hoàn hảo.
+
+221
+00:12:18,849 --> 00:12:25,360
+Bây giờ chúng ta hãy giao cho người khác, Chúa ơi, bây giờ hãy xử lý các ngạnh khác của việc tìm nạp.
+
+222
+00:12:25,360 --> 00:12:26,802
+Bút màu xanh, đó là thứ của trình duyệt web.
+
+223
+00:12:29,226 --> 00:12:34,335
+>> Will Sentance: Vì vậy, chỉ cần nhắc chúng tôi, Brayden, web là gì
+
+224
+00:12:34,335 --> 00:12:39,930
+tính năng trình duyệt được bật.
+
+225
+00:12:39,930 --> 00:12:40,700
+>> Người thuyết trình 2: Yêu cầu mạng.
+
+226
+00:12:40,700 --> 00:12:41,400
+>> Will Sentance: Yêu cầu mạng.
+
+227
+00:12:41,400 --> 00:12:43,280
+Làm tốt chính xác.
+
+228
+00:12:43,280 --> 00:12:46,060
+Yêu cầu mạng.
+
+229
+00:12:47,250 --> 00:12:48,670
+Đây rồi.
+
+230
+00:12:48,670 --> 00:12:50,615
+xuống nó đến, xuống nó là trình duyệt web,
+
+231
+00:12:50,615 --> 00:12:56,492
+đây chúng ta bắt đầu, >> Will Sentance: Tư thế tốt nhất của tôi,
+
+232
+00:12:56,492 --> 00:12:59,370
+yêu cầu mạng.
+
+233
+00:12:59,370 --> 00:13:00,080
+Được rồi, chúng ta bắt đầu.
+
+234
+00:13:00,080 --> 00:13:02,310
+Nó sẽ không phải là một cuộc nói chuyện vượt qua hội trường.
+
+235
+00:13:03,570 --> 00:13:04,289
+Đây rồi.
+
+236
+00:13:05,310 --> 00:13:08,770
+Bây giờ, chúng tôi yêu cầu, chúng tôi cần thông tin gì, Adam, ở phía sau?
+
+237
+00:13:08,770 --> 00:13:10,940
+Chúng tôi cần thông tin gì cho yêu cầu mạng đó?
+
+238
+00:13:10,940 --> 00:13:11,790
+>> Người nói 2: Địa chỉ.
+
+239
+00:13:11,790 --> 00:13:13,440
+>> Will Sentance: Đúng vậy, chúng tôi có hai phần quan tâm.
+
+240
+00:13:14,980 --> 00:13:16,980
+Có ai muốn nói cho tôi biết không, Brayden?
+
+241
+00:13:16,980 --> 00:13:18,030
+>> Diễn giả 2: Miền. >> Will Sentance: Tên miền
+
+242
+00:13:18,030 --> 00:13:18,970
+và- >> Người thuyết trình 2: Thư mục.
+
+243
+00:13:18,970 --> 00:13:20,060
+>> Will Sentance: Vâng, chính xác là phần khác của,
+
+244
+00:13:20,060 --> 00:13:22,900
+phần chúng tôi muốn lấy dữ liệu.
+
+245
+00:13:22,900 --> 00:13:30,430
+Vì vậy, tên miền là Twitter .com, đường dẫn là / will / 1 và nó được mặc định để lấy.
+
+246
+00:13:31,990 --> 00:13:35,920
+Và cứ khoảng 1 mili giây,
+
+247
+00:13:37,590 --> 00:13:42,530
+chúng tôi bắt đầu đi đến, chúng tôi sẽ làm điều này ở đâu?
+
+248
+00:13:42,530 --> 00:13:49,130
+Có lẽ Hmm, chúng tôi nghĩ bất kỳ điều gì tôi đoán là khối lập phương rất nhỏ.
+
+249
+00:13:49,130 --> 00:13:53,660
+Đến trụ sở chính của Twitter, trụ sở chính của Twitter, hãy nhìn về phía xa.
+
+250
+00:13:55,860 --> 00:14:00,710
+Đây rồi, với tin nhắn nói lời chào, tôi cần một số tweet mới,
+
+251
+00:14:00,710 --> 00:14:01,580
+vì vậy những tweet đó.
+
+252
+00:14:01,580 --> 00:14:03,838
+Và chúng tôi gửi đi khoảng cách đó.
+
+253
+00:14:03,838 --> 00:14:06,732
+Không mili giây.
+
+254
+00:14:06,732 --> 00:14:08,360
+Xinh đẹp.
+
+255
+00:14:08,360 --> 00:14:09,400
+Đây rồi.
+
+256
+00:14:09,400 --> 00:14:12,200
+Và nó có hoàn chỉnh ở điểm đó không?
+
+257
+00:14:12,200 --> 00:14:13,900
+Chúng ta có dữ liệu trở lại không, Dan?
+
+258
+00:14:13,900 --> 00:14:17,260
+Không, chúng tôi biết chúng tôi không muốn đặt chính xác nó ở đó.
+
+259
+00:14:17,260 --> 00:14:20,360
+Nhưng khi nó hoàn thành, mụn cóc Hãy giơ tay lên.
+
+260
+00:14:20,360 --> 00:14:22,760
+Bạn muốn cho tôi biết điều gì sẽ xảy ra.
+
+261
+00:14:22,760 --> 00:14:26,170
+Quay lại JavaScript, quá trình hoàn thành của chúng ta trong JavaScript là gì?
+
+262
+00:14:26,170 --> 00:14:28,760
+Anh ấy sẽ cho bạn xem một chiếc bánh pizza.
+
+263
+00:14:28,760 --> 00:14:33,390
+Đối tượng trả về được nhập vào thuộc tính giá trị của dữ liệu của bạn.
+
+264
+00:14:33,390 --> 00:14:34,100
+Rất rất tốt.
+
+265
+00:14:34,100 --> 00:14:37,200
+Chúng tôi sẽ giữ cho nó đơn giản và chỉ nói một chuỗi, chính tweet thực tế, nhưng
+
+266
+00:14:37,200 --> 00:14:37,800
+Vâng chính xác.
+
+267
+00:14:37,800 --> 00:14:41,170
+Điều đó sẽ tiếp tục và điền vào Bởi vì
+
+268
+00:14:41,170 --> 00:14:45,950
+dữ liệu tương lai là nơi chúng tôi lưu trữ hệ quả khác của việc tìm nạp mát mẻ.
+
+269
+00:14:45,950 --> 00:14:49,220
+Vấn đề có ảnh hưởng trong JavaScript cho phép chúng tôi theo dõi
+
+270
+00:14:49,220 --> 00:14:51,130
+nhất quán với những gì chúng tôi đang làm trong nền.
+
+271
+00:14:51,130 --> 00:14:51,800
+Tôi thích điều đó.
+
+272
+00:14:51,800 --> 00:14:54,090
+Nhìn vào sự nhất quán đó, đang làm gì đó trong nền.
+
+273
+00:14:55,210 --> 00:14:57,030
+Có một đối tượng hứa hẹn tốt đẹp ở phía trước,
+
+274
+00:14:57,030 --> 00:14:58,670
+trong JavaScript để theo dõi nó.
+
+275
+00:14:58,670 --> 00:15:01,670
+Bạn biết không, nó sẽ được cập nhật thuộc tính giá trị của nó khi nền
+
+276
+00:15:01,670 --> 00:15:03,780
+công việc hoàn thành, như Peter đã nói.
+
+277
+00:15:03,780 --> 00:15:08,897
+Vì vậy, dữ liệu trong tương lai, giá trị của bạn
+
+278
+00:15:08,897 --> 00:15:13,320
+sẽ là bất cứ thứ gì quay trở lại từ công việc nền, nhưng
+
+279
+00:15:13,320 --> 00:15:17,920
+công việc nền ở một phần nghìn giây vẫn chưa được thực hiện.
+
+280
+00:15:17,920 --> 00:15:21,710
+Và hãy tưởng tượng nếu chúng ta phải đợi nó ở phía trước trong JavaScript, hoặc
+
+281
+00:15:21,710 --> 00:15:24,670
+chúng tôi sẽ ngồi đó một lúc, có thể là 70 mili giây.
+
+282
+00:15:24,670 --> 00:15:28,550
+Và ngôn ngữ của chúng ta sẽ rất thực dụng, nhưng thay vào đó.
+
+283
+00:15:28,550 --> 00:15:31,408
+Nhân tiện, làm tốt lắm mọi người, chúng tôi gần như đã hoàn thành tương đối tất cả nội dung tìm nạp,
+
+284
+00:15:31,408 --> 00:15:31,940
+thoải mái.
+
