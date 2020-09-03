@@ -1,0 +1,231 @@
+1
+00:00:00,040 --> 00:00:04,850
+>> Will Sentance: Thật dân gian, đó là công việc tuyệt vời trong hai ngày qua.
+
+2
+00:00:04,850 --> 00:00:09,233
+Lòng biết ơn to lớn đối với từng người mà tôi đã kêu gọi trong suốt chặng đường.
+
+3
+00:00:09,233 --> 00:00:12,129
+Ai biết nếu bạn biết điều đó sẽ đến.
+
+4
+00:00:12,129 --> 00:00:15,550
+Nhưng trời ơi, nếu bạn không biết, [LAUGH] đó là chuyến đi như thế nào.
+
+5
+00:00:15,550 --> 00:00:17,358
+Nhưng đó là một niềm vui tuyệt đối.
+
+6
+00:00:17,358 --> 00:00:20,170
+Chúng tôi đã xem qua, hãy tóm tắt ngắn gọn.
+
+7
+00:00:20,170 --> 00:00:24,110
+Chúng tôi đã xem xét các nguyên tắc cơ bản của JavaScript mà bạn đã thấy,
+
+8
+00:00:24,110 --> 00:00:24,930
+họ không bao giờ đi xa.
+
+9
+00:00:24,930 --> 00:00:27,140
+[LAUGH] Họ đã ở trên nền tảng.
+
+10
+00:00:27,140 --> 00:00:30,916
+Sau đó, chúng tôi đã thấy một phần thú vị tạo nên một phần cốt lõi của chức năng
+
+11
+00:00:30,916 --> 00:00:35,460
+lập trình, các hàm bậc cao hơn của chúng tôi, khả năng để lại chỗ dành sẵn cho
+
+12
+00:00:35,460 --> 00:00:39,876
+một số chức năng trong một chức năng và sau đó chỉ xác định chức năng đầy đủ
+
+13
+00:00:39,876 --> 00:00:45,090
+một khi chúng ta chạy hàm và điều đó khá hay, một phần của lập trình hàm.
+
+14
+00:00:45,090 --> 00:00:47,286
+Hoặc có thể tôi thậm chí sẽ nói thực sự nơi bạn có thể lấy những thứ này.
+
+15
+00:00:47,286 --> 00:00:51,260
+Nếu bạn muốn tìm hiểu thêm về điều đó, vì có rất nhiều chức năng bạn có thể
+
+16
+00:00:51,260 --> 00:00:56,660
+chỉnh sửa, đặc biệt là chỉnh sửa mạnh mẽ nhất trong số tất cả, giảm, thực sự đẹp,
+
+17
+00:00:56,660 --> 00:00:59,380
+tất cả đều có trong các bộ phận Hall lập trình chức năng.
+
+18
+00:00:59,380 --> 00:01:02,450
+Tôi sẽ cung cấp cho bạn một số theo dõi nhỏ về những thứ ở đây.
+
+19
+00:01:02,450 --> 00:01:06,872
+Sau đó, chúng tôi giải quyết vấn đề đối với tôi là tính năng đẹp nhất của JavaScript, vì nó
+
+20
+00:01:06,872 --> 00:01:11,433
+như kiểu, wow, nếu tôi hiểu, tôi thực sự nhận được mô hình thực thi của JavaScript.
+
+21
+00:01:11,433 --> 00:01:16,045
+Ý tưởng rằng một hàm trên thực tế có thể trả về mã đã lưu vào một toàn cục khác
+
+22
+00:01:16,045 --> 00:01:19,046
+nhãn và điều đó sẽ mang lại dữ liệu với nó
+
+23
+00:01:19,046 --> 00:01:23,729
+ba lô của anh ấy mà sau đó chúng tôi có quyền sử dụng trong suốt thời gian còn lại, vĩnh viễn,
+
+24
+00:01:23,729 --> 00:01:26,678
+bạn sẽ khám phá ra rằng bạn có thể sử dụng nó ở mọi nơi.
+
+25
+00:01:26,678 --> 00:01:29,580
+Điều đó chi phối các công việc mà chúng ta không hề hay biết.
+
+26
+00:01:29,580 --> 00:01:33,140
+Sau đó, chúng tôi đã thấy JavaScript không đồng bộ trong vòng lặp sự kiện.
+
+27
+00:01:33,140 --> 00:01:36,755
+Đây là điều tôi muốn tìm hiểu sâu hơn giống như chúng ta đã thấy toàn bộ
+
+28
+00:01:36,755 --> 00:01:41,652
+mô hình của JavaScript không đồng bộ, thành thật mà nói, chúng tôi đã vượt xa JavaScript.
+
+29
+00:01:41,652 --> 00:01:44,666
+Đó là JavaScript chạy trong trình duyệt web, vì vậy chúng tôi phải đưa tất cả
+
+30
+00:01:44,666 --> 00:01:47,339
+những thứ khác ở đây mà JavaScript cung cấp cho chúng tôi quyền truy cập.
+
+31
+00:01:47,339 --> 00:01:50,520
+Và họ có một loạt các quy tắc về cách nội dung đó kết thúc trên web
+
+32
+00:01:50,520 --> 00:01:52,868
+trình duyệt, giống như nói chuyện với bộ đếm thời gian cũ trên Internet,
+
+33
+00:01:52,868 --> 00:01:56,550
+cho phép chức năng liên quan của nó mà nó sẽ chạy khi hoàn thành.
+
+34
+00:01:56,550 --> 00:01:59,770
+Và dữ liệu có thể lấy lại từ công việc nền đó,
+
+35
+00:01:59,770 --> 00:02:00,660
+trở lại JavaScript.
+
+36
+00:02:02,130 --> 00:02:05,938
+Có một số theo dõi về những thứ xung quanh những thứ như chuỗi lời hứa,
+
+37
+00:02:05,938 --> 00:02:08,906
+các lĩnh vực khác, xây dựng lời hứa từ đầu.
+
+38
+00:02:08,906 --> 00:02:10,662
+Nhưng thú vị để theo dõi vào.
+
+39
+00:02:10,662 --> 00:02:16,918
+Và cuối cùng, chúng ta đã thấy ở đây các lớp, nguyên mẫu, chuỗi nguyên mẫu,
+
+40
+00:02:16,918 --> 00:02:21,442
+thuộc tính proto không phải là thuộc tính nguyên mẫu,
+
+41
+00:02:21,442 --> 00:02:26,080
+[LAUGH] nhưng có liên kết đến thuộc tính nguyên mẫu.
+
+42
+00:02:26,080 --> 00:02:30,420
+Chúng tôi đã thấy cách mới và điều khoản không thay đổi bất kỳ điều gì bên cạnh
+
+43
+00:02:30,420 --> 00:02:34,480
+tự động hóa và cung cấp cho chúng tôi một cách nhanh chóng để đạt được những gì chúng tôi đã đạt được một cách trực tiếp
+
+44
+00:02:34,480 --> 00:02:39,126
+với object.create, điều khiển chi tiết thủ công trong giải pháp hai của chúng tôi.
+
+45
+00:02:39,126 --> 00:02:42,280
+Chúng tôi thấy rằng từ khóa này và tất cả những điều thú vị, hoặc
+
+46
+00:02:42,280 --> 00:02:44,530
+hai cách thú vị mà nó hoạt động.
+
+47
+00:02:44,530 --> 00:02:49,515
+Chúng tôi đã thấy cách các hàm mũi tên có thể cung cấp cho chúng tôi nhiều quyền kiểm soát hơn đối với điều đó,
+
+48
+00:02:49,515 --> 00:02:54,321
+từ khóa này và đã đưa chúng ta đến hết phần cuối cùng,
+
+49
+00:02:54,321 --> 00:03:00,575
+vốn đang xây dựng lớp học từ đầu bằng cách sử dụng tất cả các phần này dưới mui xe.
+
+50
+00:03:00,575 --> 00:03:02,574
+Vì vậy, dân gian, đó là một niềm vui tuyệt đối.
+
+51
+00:03:02,574 --> 00:03:05,037
+Tôi thích làm điều này với tất cả các bạn.
+
+52
+00:03:05,037 --> 00:03:05,795
+Tôi nghĩ đó là nó.
+
+53
+00:03:05,795 --> 00:03:08,554
+Giả sử chúng tôi là một người kết thúc, 5:30, chúng tôi đã làm được.
+
+54
+00:03:08,554 --> 00:03:09,725
+Đó là một niềm vui.
+
+55
+00:03:09,725 --> 00:03:11,411
+Chúng tôi sẽ gặp lại tất cả các bạn [LAUGH] vào một ngày không xa.
+
+56
+00:03:11,411 --> 00:03:12,432
+Cảm ơn tất cả mọi người và cổ vũ.
+
+57
+00:03:12,432 --> 00:03:13,042
+>> Người nói 2: Tuyệt vời.
+
+58
+00:03:13,042 --> 00:03:17,760
+[VỖ TAY]

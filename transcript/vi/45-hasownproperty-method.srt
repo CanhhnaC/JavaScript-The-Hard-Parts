@@ -1,0 +1,411 @@
+1
+00:00:00,180 --> 00:00:02,209
+>> Will Sentance: Bây giờ, chúng tôi đang đi đến đoạn cuối cùng, gần như.
+
+2
+00:00:02,209 --> 00:00:06,815
+Vì vậy, ở đây, chúng tôi đã có nó, chúng tôi đã có những chia sẻ tuyệt vời của mình,
+
+3
+00:00:06,815 --> 00:00:11,649
+phiên bản lưu duy nhất của chức năng và các đối tượng của chúng tôi.
+
+4
+00:00:11,649 --> 00:00:16,810
+Người dùng 1, người dùng 2, người dùng 500 [SOUND] đều có quyền truy cập vào nó thông qua chuỗi proto.
+
+5
+00:00:16,810 --> 00:00:22,153
+Không, thông qua tham chiếu proto, do bản chất nguyên mẫu JavaScript,
+
+6
+00:00:22,153 --> 00:00:27,067
+tính năng nguyên mẫu của nó, khả năng cho các đối tượng kết nối với các đối tượng khác.
+
+7
+00:00:27,067 --> 00:00:32,092
+Vì vậy, khi chúng ta không tìm thấy một hàm trên đối tượng đã cho, đừng hoảng sợ, hãy tiếp tục.
+
+8
+00:00:32,092 --> 00:00:37,371
+Được rồi, bây giờ, tôi muốn làm điều gì đó thú vị ở đây, không có tiền thưởng.
+
+9
+00:00:37,371 --> 00:00:40,459
+Điều gì xảy ra nếu tôi muốn xác nhận, không có gì thay đổi bằng cách này, ngoại trừ
+
+10
+00:00:40,459 --> 00:00:41,855
+bây giờ tôi không sử dụng gia số.
+
+11
+00:00:41,855 --> 00:00:45,620
+Tôi đang sử dụng phương pháp này, hàm này hasOwnProperty.
+
+12
+00:00:46,660 --> 00:00:50,326
+Điều gì sẽ xảy ra nếu chúng tôi muốn xác nhận user1 của chúng tôi có điểm thuộc tính?
+
+13
+00:00:50,326 --> 00:00:54,106
+Điều này thật thú vị, hasOwnProperty ở đây.
+
+14
+00:00:54,106 --> 00:00:59,201
+Tôi cho rằng hasOwnProperty có trên user1 như một thuộc tính, Matt, phải không?
+
+15
+00:00:59,201 --> 00:01:02,110
+>> Người nói 2: Vâng, ý tôi là, không có gì ở đó cả.
+
+16
+00:01:02,110 --> 00:01:02,977
+>> Will Sentance: Không có tài sản, xin lỗi,
+
+17
+00:01:02,977 --> 00:01:04,431
+không có phương thức nào được gọi là hasOwnProperty, vâng, chính xác.
+
+18
+00:01:04,431 --> 00:01:07,198
+Nó phải có trên cửa hàng chức năng người dùng, phải không Todd?
+
+19
+00:01:07,198 --> 00:01:08,448
+>> Người nói 2: Không, không phải.
+
+20
+00:01:08,448 --> 00:01:11,048
+>> Will Sentance: Vậy chức năng này sẽ đến từ đâu?
+
+21
+00:01:11,048 --> 00:01:17,002
+Hóa ra mọi người thấy rằng có một đối tượng tiêu đề cũ lớn trong JavaScript,
+
+22
+00:01:17,002 --> 00:01:22,211
+chúng ta sẽ thấy chính xác nơi nó được lưu trữ một chút sau,
+
+23
+00:01:22,211 --> 00:01:26,844
+nhưng bây giờ >> Will Sentance: Có một cái cũ lớn
+
+24
+00:01:26,844 --> 00:01:32,779
+đối tượng tiêu đề trong JavaScript được gọi là object.prototype.
+
+25
+00:01:32,779 --> 00:01:35,940
+Chúng ta sẽ tìm hiểu thêm về điều đó một chút sau, nó đây.
+
+26
+00:01:35,940 --> 00:01:37,682
+Tôi nên làm nó với một màu sắc khác, thành thật.
+
+27
+00:01:37,682 --> 00:01:40,870
+Nhưng tôi sẽ, thay vào đó chỉ là, và
+
+28
+00:01:40,870 --> 00:01:46,464
+nó có một loạt các chức năng hữu ích sẽ có sẵn, thân mến.
+
+29
+00:01:46,464 --> 00:01:54,239
+Chúng sẽ có sẵn cho tất cả các đối tượng của chúng ta.
+
+30
+00:01:54,239 --> 00:01:58,400
+Nhưng bằng cách nào?
+
+31
+00:01:58,400 --> 00:01:59,753
+Bởi vì, này, bạn sẽ không tin đâu.
+
+32
+00:01:59,753 --> 00:02:04,845
+Nhưng tất cả các đối tượng trong JavaScript, không chỉ cách người dùng 1 và
+
+33
+00:02:04,845 --> 00:02:08,498
+người dùng 2, nơi chúng tôi đặt giá trị proto của mình,
+
+34
+00:02:08,498 --> 00:02:13,166
+tất cả các đối tượng trong JavaScript đều có thuộc tính proto.
+
+35
+00:02:13,166 --> 00:02:18,861
+Một cái mặc định, mặc định là liên kết đến, bạn có muốn đoán xem Matt ở đâu không?
+
+36
+00:02:18,861 --> 00:02:22,103
+>> Người nói 2: Đối tượng >> Câu nói Di chúc: Tới đối tượng này.prototype
+
+37
+00:02:22,103 --> 00:02:23,580
+vật.
+
+38
+00:02:23,580 --> 00:02:25,508
+Chắc tôi sẽ không vẽ mũi tên phải không?
+
+39
+00:02:25,508 --> 00:02:28,270
+Nhưng chúng ta hãy làm một ngôi sao nhỏ.
+
+40
+00:02:28,270 --> 00:02:34,013
+Các cửa hàng chức năng người dùng này sẽ liên kết xuống đối tượng này.
+
+41
+00:02:34,013 --> 00:02:36,929
+Đối tượng object.prototype, và bạn đặt cược vào đó là gì, Matt?
+
+42
+00:02:36,929 --> 00:02:38,946
+Bạn đặt cược vào chức năng nào trong đó?
+
+43
+00:02:38,946 --> 00:02:39,539
+>> Loa 2: hasOwnProperty.
+
+44
+00:02:39,539 --> 00:02:43,343
+>> Will Sentance: hasOwnProperty, anh ấy đúng chỗ,
+
+45
+00:02:43,343 --> 00:02:47,940
+hasOwnProperty, tôi đoán là siêu hữu ích.
+
+46
+00:02:48,980 --> 00:02:57,515
+Như vậy, khi tôi chạy user1.hasOwnProperty,
+
+47
+00:02:57,515 --> 00:03:04,632
+và thực hiện nó với điểm số như đối số của tôi.
+
+48
+00:03:04,632 --> 00:03:08,922
+Kayla, tôi tìm người dùng 1 ở đâu?
+
+49
+00:03:08,922 --> 00:03:10,223
+>> Diễn giả 3: Toàn cầu.
+
+50
+00:03:10,223 --> 00:03:11,354
+>> Will Sentance: Trong toàn cầu, tôi sẽ tìm thấy nó?
+
+51
+00:03:11,354 --> 00:03:12,220
+Vâng.
+
+52
+00:03:12,220 --> 00:03:16,035
+Sau đó, tôi tìm hasOwnProperty trên đối tượng đó.
+
+53
+00:03:16,035 --> 00:03:18,996
+Tôi có tìm thấy nó trên người dùng 1 không?
+
+54
+00:03:18,996 --> 00:03:19,666
+>> Người nói 3: Không.
+
+55
+00:03:19,666 --> 00:03:21,201
+>> Will Sentance: Chắc chắn là không, không phải ở đó.
+
+56
+00:03:21,201 --> 00:03:22,118
+Tôi có hoảng sợ không?
+
+57
+00:03:22,118 --> 00:03:26,704
+Bản chất nguyên mẫu của JavaScript ở đâu có nghĩa là trình thông dịch sẽ đi và
+
+58
+00:03:26,704 --> 00:03:27,774
+nhìn tiếp theo, lên đến?
+
+59
+00:03:27,774 --> 00:03:30,127
+>> Người thuyết trình 3: Chức năng người dùng- >> Will Sentance: Tuyệt vời,
+
+60
+00:03:30,127 --> 00:03:31,370
+có thể hasOwnProperty đang ở đây.
+
+61
+00:03:31,370 --> 00:03:33,629
+Là gia số, là Không.
+
+62
+00:03:33,629 --> 00:03:34,521
+Chúng ta có hoảng sợ không?
+
+63
+00:03:34,521 --> 00:03:41,050
+Không, chúng ta đi tìm xem, chúng ta sẽ xem xét tài sản ẩn nào, Kayla?
+
+64
+00:03:41,050 --> 00:03:43,241
+>> Loa 3: Nguyên mẫu.
+
+65
+00:03:43,241 --> 00:03:45,055
+>> Will Sentance: Thuộc tính proto, vâng, vâng.
+
+66
+00:03:45,055 --> 00:03:50,020
+Đừng lo lắng, chúng ta sẽ thấy sự khác biệt, nhưng thuộc tính proto, là một liên kết đến-
+
+67
+00:03:50,020 --> 00:03:51,722
+>> Người nói 3: Object.proto.
+
+68
+00:03:51,722 --> 00:03:52,632
+>> Will Sentance: Và chúng ta tìm thấy gì ở đó?
+
+69
+00:03:52,632 --> 00:03:53,518
+>> Loa 3: hasOwn.
+
+70
+00:03:53,518 --> 00:03:59,300
+>> Will Sentance: hasOwnProperty, và chúng tôi lấy mã của nó và chúng tôi thực thi nó.
+
+71
+00:03:59,300 --> 00:04:03,680
+Những gì chúng tôi thực sự đang làm với đối tượng của mình. Create là loại kiểm soát
+
+72
+00:04:03,680 --> 00:04:05,220
+về những gì chúng tôi đưa vào proto đó.
+
+73
+00:04:05,220 --> 00:04:07,402
+Bởi vì tất cả các đối tượng theo mặc định, proto của chúng,
+
+74
+00:04:07,402 --> 00:04:10,301
+ngay sau khi chúng được tạo sẽ nhận được một liên kết đến object.prototype.
+
+75
+00:04:10,301 --> 00:04:15,278
+Chúng tôi đã kiểm soát điều đó, nhưng đừng hoảng sợ, chúng tôi không mất quyền truy cập
+
+76
+00:04:15,278 --> 00:04:19,314
+cho những thứ này ở dưới đây, bởi vì nó là một chuỗi tất cả các con đường đi lên.
+
+77
+00:04:19,314 --> 00:04:21,469
+Đến mức tôi muốn hiển thị dòng,
+
+78
+00:04:21,469 --> 00:04:23,308
+để bạn biết đó là một chuỗi, phải không?
+
+79
+00:04:23,308 --> 00:04:27,827
+Đó là một chuỗi, >> Will Sentance: Đó là một chuỗi tất cả
+
+80
+00:04:27,827 --> 00:04:32,380
+cách dẫn đến tiêu đề của chúng tôi, Object.prototype.
+
+81
+00:04:32,380 --> 00:04:34,064
+Đối tượng này cũng có một thuộc tính proto.
+
+82
+00:04:34,064 --> 00:04:37,210
+Không, nhưng đừng hoảng sợ.
+
+83
+00:04:37,210 --> 00:04:40,657
+Bất cứ ai đoán được điều này là, tôi sẽ chỉ cho bạn biết phần đầu của chuỗi.
+
+84
+00:04:40,657 --> 00:04:44,306
+Điều này có thể có giá trị gì đối với proto?
+
+85
+00:04:44,306 --> 00:04:45,689
+Và?
+
+86
+00:04:45,689 --> 00:04:46,269
+>> Người nói 2: Đã nhập tịch.
+
+87
+00:04:46,269 --> 00:04:48,567
+>> Will Sentance: Vâng, thực sự rất gần nhưng vô hiệu, vâng,
+
+88
+00:04:48,567 --> 00:04:52,145
+Nó giống như chúng ta đã hoàn thành bây giờ, không có thêm chuỗi, được không?
+
+89
+00:04:52,145 --> 00:04:56,464
+Nhưng tôi sẽ không đi vào vấn đề này chi tiết hơn, nhưng nếu bạn làm
+
+90
+00:04:56,464 --> 00:05:01,943
+muốn biết tất cả sự phức tạp của điều đó, hãy xem các phần cứng hướng đối tượng.
+
+91
+00:05:01,943 --> 00:05:05,225
+Thực sự [LAUGH] hoặc cuộc nói chuyện của mọi người về điều đó,
+
+92
+00:05:05,225 --> 00:05:09,738
+đi vào phần đó, chúng tôi đi vào chi tiết hơn nhiều.
+
+93
+00:05:09,738 --> 00:05:14,050
+Đặc biệt liên quan đến cách mảng và hàm cũng có một bộ sưu tập lớn
+
+94
+00:05:14,050 --> 00:05:16,799
+các chức năng được chia sẻ mà họ có thể sử dụng liên quan đến điều này.
+
+95
+00:05:16,799 --> 00:05:20,384
+Được rồi, còn một điều nữa tôi muốn nói đến.
+
+96
+00:05:20,384 --> 00:05:23,254
+Có, nếu bạn muốn xác nhận người dùng của chúng tôi có điểm thuộc tính thì sao?
+
+97
+00:05:23,254 --> 00:05:24,325
+Chúng ta có thể sử dụng phương thức hasOwnProperty.
+
+98
+00:05:24,325 --> 00:05:24,879
+Nhưng nó ở đâu?
+
+99
+00:05:24,879 --> 00:05:26,293
+Nó có trên người dùng 1 không?
+
+100
+00:05:26,293 --> 00:05:28,856
+Không. Tất cả chúng ta đều có thuộc tính proto theo mặc định
+
+101
+00:05:28,856 --> 00:05:32,208
+mặc định dẫn đến một đối tượng lớn, object.prototype,
+
+102
+00:05:32,208 --> 00:05:34,394
+đầy đủ các chức năng hữu ích.
+
+103
+00:05:34,394 --> 00:05:41,231
+Chúng tôi có thể truy cập nó thông qua thuộc tính proto của cửa hàng chức năng người dùng, chuỗi đi lên.

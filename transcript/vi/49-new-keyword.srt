@@ -1,0 +1,883 @@
+1
+00:00:00,000 --> 00:00:03,566
+>> Will Sentance: Đó là bản chất công việc nguyên mẫu tuyệt vời của chúng tôi là những công việc màu tím
+
+2
+00:00:03,566 --> 00:00:06,265
+dòng, bản chất nguyên mẫu của JavaScript.
+
+3
+00:00:06,265 --> 00:00:09,994
+Đó là một cách rất hay để đảm bảo rằng chúng tôi không
+
+4
+00:00:09,994 --> 00:00:14,785
+phải có mức tăng trực tiếp trên người dùng 1 và người dùng 2 và người dùng 500.
+
+5
+00:00:14,785 --> 00:00:18,361
+Nhưng chúng tôi có quyền truy cập vào nó bởi vì khi chúng tôi không tìm thấy sự gia tăng trên thảm
+
+6
+00:00:18,361 --> 00:00:20,918
+trên bản thân đối tượng JavaScript không hoảng sợ.
+
+7
+00:00:20,918 --> 00:00:25,470
+Có vẻ như nó là thuộc tính proto trong 1, hướng đến nơi nó liên kết với chức năng của người dùng
+
+8
+00:00:25,470 --> 00:00:30,248
+lưu trữ và tìm một phiên bản đã lưu duy nhất của hàm đó, lấy và sử dụng nó.
+
+9
+00:00:30,248 --> 00:00:31,505
+Chúng tôi yêu nó.
+
+10
+00:00:31,505 --> 00:00:38,370
+Nhưng như tôi đã nói, nó liên quan khá nhiều đến việc viết mã.
+
+11
+00:00:38,370 --> 00:00:43,340
+Vì vậy, nếu chúng ta nhìn lại, chúng ta đã tạo đối tượng theo cách thủ công bằng object.create,
+
+12
+00:00:43,340 --> 00:00:44,759
+lưu trữ trong một người dùng mới.
+
+13
+00:00:44,759 --> 00:00:47,916
+Chẳng qua, tạm thời chỉ là một cái tên thôi, bọn họ không bao giờ vướng bận cái tên đó.
+
+14
+00:00:47,916 --> 00:00:52,252
+Trả lại đối tượng đó theo cách thủ công, chúng tôi cũng đã viết mã cho đối tượng đó.
+
+15
+00:00:52,252 --> 00:00:56,283
+Tạo liên kết để sử dụng một cửa hàng chức năng.
+
+16
+00:00:56,283 --> 00:01:00,996
+Sẽ thật tuyệt nếu chúng ta có thể tự động hóa những thứ đó phải không?
+
+17
+00:01:00,996 --> 00:01:02,287
+Và bạn biết những gì?
+
+18
+00:01:02,287 --> 00:01:06,115
+Sẽ có một từ khóa, tôi sẽ sử dụng màu xanh lam cho nó, nhưng
+
+19
+00:01:06,115 --> 00:01:11,467
+Tôi sẽ chèn trước khi chạy chức năng của mình, mọi người từ khóa đó là gì?
+
+20
+00:01:11,467 --> 00:01:12,524
+Vì tôi đã viết ra rồi mà tôi không nên có, nó là gì?
+
+21
+00:01:12,524 --> 00:01:13,180
+>> Braden: Mới.
+
+22
+00:01:13,180 --> 00:01:15,301
+>> Will Sentance: Mới, tốt lắm mọi người.
+
+23
+00:01:15,301 --> 00:01:19,507
+Xin lỗi, [SOUND] mới và tại sao nếu chúng tôi nói đó là [SOUND] mới,
+
+24
+00:01:19,507 --> 00:01:23,409
+thú vị, tôi sẽ nói từ đó và
+
+25
+00:01:23,409 --> 00:01:27,944
+mọi người sẽ tự động hóa rất nhiều thứ cho chúng ta.
+
+26
+00:01:27,944 --> 00:01:34,490
+Nó sẽ tự động tạo bên trong đây một đối tượng.
+
+27
+00:01:34,490 --> 00:01:37,562
+Vì vậy, mọi thứ có màu xanh lam sẽ là những thứ sẽ được thực hiện cho
+
+28
+00:01:37,562 --> 00:01:38,548
+chúng tôi theo từ khóa mới.
+
+29
+00:01:38,548 --> 00:01:42,000
+Vì vậy, chúng tôi không phải làm điều đó, chúng tôi không phải viết mã đó nữa.
+
+30
+00:01:42,000 --> 00:01:45,966
+Nó sẽ tự động tạo một đối tượng mới cho chúng ta.
+
+31
+00:01:45,966 --> 00:01:49,071
+Nó sẽ tự động trả lại đối tượng đó cho chúng ta.
+
+32
+00:01:49,071 --> 00:01:53,680
+Vâng,
+
+33
+00:01:58,880 --> 00:02:01,042
+>> Will Sentance: Đó cũng là, tin rằng nó hoặc
+
+34
+00:02:01,042 --> 00:02:07,136
+không, nó sẽ tạo liên kết đến một số đối tượng có đầy đủ các chức năng ở đây,
+
+35
+00:02:07,136 --> 00:02:09,908
+tự động cho chúng tôi.
+
+36
+00:02:09,908 --> 00:02:14,667
+Cũng sẽ đặt thuộc tính proto tự động cho chúng tôi.
+
+37
+00:02:14,667 --> 00:02:18,333
+Tôi sẽ nói điều này, chúng ta có thể nghĩ đến đâu?
+
+38
+00:02:18,333 --> 00:02:23,541
+Bởi vì, hãy chờ đợi, trước khi chúng tôi đặt đối tượng đó theo cách thủ công mà chúng tôi đã tìm kiếm một người dùng mới
+
+39
+00:02:23,541 --> 00:02:28,694
+có thuộc tính proto ẩn được liên kết để sử dụng một cửa hàng chức năng đã có ở đó.
+
+40
+00:02:28,694 --> 00:02:30,240
+Nhưng bây giờ tôi nghĩ sẽ là trường hợp.
+
+41
+00:02:30,240 --> 00:02:34,189
+Vì vậy, tôi không biết chúng tôi sẽ đặt các chức năng cửa hàng được chia sẻ của mình ở đâu nếu không
+
+42
+00:02:34,189 --> 00:02:38,154
+trong cửa hàng chức năng của người dùng, chúng tôi sẽ không tự mình kiểm soát nữa.
+
+43
+00:02:38,154 --> 00:02:44,754
+Một điều khác là, làm thế nào tôi có thể đặt các thuộc tính trên đối tượng này?
+
+44
+00:02:44,754 --> 00:02:48,766
+Tôi đã ánh xạ nhãn gì để có thể truy cập đối tượng này và
+
+45
+00:02:48,766 --> 00:02:50,196
+dính các đặc tính vào nó.
+
+46
+00:02:50,196 --> 00:02:51,054
+Tôi đã cho nó nhãn gì?
+
+47
+00:02:51,054 --> 00:02:51,614
+>> Braden: Người dùng mới.
+
+48
+00:02:51,614 --> 00:02:55,191
+>> Will Sentance: Nếu đối tượng đó đang được tạo tự động cho chúng tôi,
+
+49
+00:02:55,191 --> 00:02:57,065
+tôi có thể gán cho nó một nhãn không?
+
+50
+00:02:57,065 --> 00:02:57,973
+Không.
+
+51
+00:02:57,973 --> 00:03:01,153
+Vì vậy, chúng tôi có một vài câu hỏi, chúng tôi sẽ liên kết đến đâu?
+
+52
+00:03:01,153 --> 00:03:07,383
+Và đối tượng này sẽ tự động được đưa ra làm nhãn là gì?
+
+53
+00:03:07,383 --> 00:03:09,748
+Tôi hy vọng nó không phải là nhãn giống như chúng tôi có
+
+54
+00:03:09,748 --> 00:03:14,231
+một cái gì đó khác trong các lệnh gọi hàm khác, điều đó sẽ hơi ngớ ngẩn, phải không?
+
+55
+00:03:14,231 --> 00:03:17,980
+Vâng, chúng tôi sẽ không muốn, chẳng hạn như chúng tôi sẽ không muốn nói rằng,
+
+56
+00:03:17,980 --> 00:03:21,331
+điều này mà ở một nơi khác đề cập đến một cái gì đó hoàn toàn khác.
+
+57
+00:03:21,331 --> 00:03:23,654
+Điều đó sẽ rất điên rồ.
+
+58
+00:03:23,654 --> 00:03:30,839
+Được rồi, mọi người, vì vậy từ khóa mới tự động hóa công việc khó khăn.
+
+59
+00:03:30,839 --> 00:03:34,095
+Khi chúng ta gọi hàm trả về một đối tượng,
+
+60
+00:03:34,095 --> 00:03:37,517
+với từ khóa mới phía trước, chúng tôi tự động hóa 2 việc.
+
+61
+00:03:37,517 --> 00:03:41,194
+Trước hết, chúng tôi tạo đối tượng tự động.
+
+62
+00:03:41,194 --> 00:03:44,288
+Sau đó, chúng tôi thấy tôi đã đặt cái mới trước nó.
+
+63
+00:03:44,288 --> 00:03:46,261
+Sau đó, chúng tôi trả lại đối tượng tự động.
+
+64
+00:03:46,261 --> 00:03:48,507
+Trong khi chờ đợi, chúng tôi đảm bảo rằng chúng tôi sẽ gắn những thứ trong đó.
+
+65
+00:03:48,507 --> 00:03:52,176
+Nhưng bây giờ chúng ta cần điều chỉnh cách chúng ta viết phần thân của hàm này, userCreator,
+
+66
+00:03:52,176 --> 00:03:52,909
+mã của nó.
+
+67
+00:03:52,909 --> 00:03:56,456
+Làm cách nào chúng ta có thể tham khảo đối tượng được tạo tự động này và
+
+68
+00:03:56,456 --> 00:04:02,352
+biết nơi đặt các phiên bản đơn lẻ của chúng tôi, một trong các phiên bản của các chức năng được chia sẻ?
+
+69
+00:04:02,352 --> 00:04:05,113
+Bởi vì tôi không được chọn đặt nó vào một thứ gì đó
+
+70
+00:04:05,113 --> 00:04:07,137
+được gọi là cửa hàng chức năng người dùng nữa.
+
+71
+00:04:07,137 --> 00:04:10,132
+Phần đầu tiên chúng ta có thể trả lời ngay bây giờ, hãy đoán.
+
+72
+00:04:10,132 --> 00:04:14,641
+Bạn nghĩ sao họ gọi đối tượng này là đối tượng được tạo ra tự động bất kỳ ai lấy
+
+73
+00:04:14,641 --> 00:04:15,675
+một đoán, Peter?
+
+74
+00:04:15,675 --> 00:04:16,954
+>> Braden: Có >> Will Sentance: Có,
+
+75
+00:04:16,954 --> 00:04:21,280
+cái này chính xác sẽ được gọi là cái này.
+
+76
+00:04:21,280 --> 00:04:25,486
+Cho rằng điều này đề cập đến đối tượng nhất định duy nhất của nó hoặc
+
+77
+00:04:25,486 --> 00:04:28,469
+một giai đoạn khác của đối tượng đó.
+
+78
+00:04:28,469 --> 00:04:31,931
+Sau đó, khi chúng ta chạy tăng dần trên đối tượng và trong góc thực thi của nó,
+
+79
+00:04:31,931 --> 00:04:34,912
+là điều này đề cập đến bất kỳ đối tượng nào ở bên trái dấu chấm,
+
+80
+00:04:34,912 --> 00:04:36,261
+chúng hoàn toàn tách biệt.
+
+81
+00:04:36,261 --> 00:04:38,798
+Điều đó hơi khó hiểu khi chúng tôi đọc mã của mình,
+
+82
+00:04:38,798 --> 00:04:41,055
+không chỉ một chút, nó sâu sắc khó hiểu.
+
+83
+00:04:41,055 --> 00:04:44,868
+Đây là quy tắc quan trọng khác về cách hoạt động của nó.
+
+84
+00:04:44,868 --> 00:04:49,395
+Nó luôn luôn là bất cứ thứ gì đối tượng ở bên trái dấu chấm khi chúng ta chạy một phương thức,
+
+85
+00:04:49,395 --> 00:04:52,263
+rằng điều này được gán ngầm cho người dùng 1.
+
+86
+00:04:52,263 --> 00:04:57,370
+Nó có một vai trò khác, nếu chúng ta sử dụng từ khóa mới, đối tượng được tạo tự động
+
+87
+00:04:57,370 --> 00:05:02,946
+bên trong ngữ cảnh thực thi đó sẽ gắn nhãn này, nhưng chúng hoàn toàn tách biệt.
+
+88
+00:05:02,946 --> 00:05:08,397
+Được rồi, chúng ta sẽ đưa ra một phiên bản đã lưu duy nhất của hàm chúng ta muốn ở đâu,
+
+89
+00:05:08,397 --> 00:05:11,132
+tất cả các đối tượng đến từ việc thực thi?
+
+90
+00:05:11,132 --> 00:05:14,869
+Đây là những cách thực thi hoàn toàn khác nhau của người tạo người dùng, chúng tôi muốn tất cả
+
+91
+00:05:14,869 --> 00:05:18,274
+những chức năng được chia sẻ mà các đối tượng này có liên kết để được lưu trữ?
+
+92
+00:05:18,274 --> 00:05:22,266
+Để hiểu được điều đó, chúng ta cần thêm một đoạn mở đầu ưu việt nữa,
+
+93
+00:05:22,266 --> 00:05:23,462
+chúng ta hãy có một cái nhìn.
+
+94
+00:05:23,462 --> 00:05:25,341
+Prelude ưu việt, trước khi chúng tôi làm điều đó,
+
+95
+00:05:25,341 --> 00:05:27,537
+từ khóa mới tự động hóa rất nhiều công việc thủ công của chúng tôi.
+
+96
+00:05:27,537 --> 00:05:30,632
+Bạn thấy chúng tôi loại bỏ việc tạo đối tượng sẽ được thực hiện cho
+
+97
+00:05:30,632 --> 00:05:31,585
+chúng tôi với chìa khóa mới.
+
+98
+00:05:31,585 --> 00:05:34,717
+Khi chúng tôi chạy, người dùng được tạo mới sẽ chèn và
+
+99
+00:05:34,717 --> 00:05:38,493
+nó sẽ tự động dán dòng đó lên đó,
+
+100
+00:05:38,493 --> 00:05:42,692
+tạo một đối tượng mới sẽ cố gắng làm điều này không phải với người dùng mới.
+
+101
+00:05:42,692 --> 00:05:45,858
+Sau đó, chúng tôi sẽ có quyền truy cập vào đối tượng đó bằng cách sử dụng điều này.
+
+102
+00:05:45,858 --> 00:05:48,022
+Chúng tôi sẽ không làm newUser.name nữa.
+
+103
+00:05:48,022 --> 00:05:50,722
+Chúng tôi sẽ đặt tên này để sửa chữa những thứ trong đó.
+
+104
+00:05:50,722 --> 00:05:57,174
+Và nó sẽ tự động trả lại đối tượng này thành người dùng 1.
+
+105
+00:05:57,174 --> 00:06:03,123
+Nhưng cửa hàng chức năng của chúng tôi, kết nối của chúng tôi với cửa hàng chức năng đã hoàn thành và biến mất ngay bây giờ.
+
+106
+00:06:03,123 --> 00:06:05,382
+Vậy chúng ta sẽ đi đâu?
+
+107
+00:06:05,382 --> 00:06:11,278
+Chúng tôi cần một đồ vật cũ lớn mà chúng tôi có thể chắc chắn rằng với sự giúp đỡ của họ,
+
+108
+00:06:11,278 --> 00:06:17,513
+với một từ khóa mới, đối tượng được tạo tự động,
+
+109
+00:06:17,513 --> 00:06:22,103
+thuộc tính proto của nó sẽ liên kết với một số đối tượng.
+
+110
+00:06:22,103 --> 00:06:23,553
+Tôi cần biết nơi đó sẽ đến.
+
+111
+00:06:23,553 --> 00:06:30,257
+Để biết nó sẽ ở đâu, chúng ta hãy xem đoạn kết nhỏ này.
+
+112
+00:06:30,257 --> 00:06:35,665
+Hàm vừa là đối tượng vừa là hàm trong JavaScript.
+
+113
+00:06:35,665 --> 00:06:38,217
+Chúng tôi cần nó ở đây, mọi người.
+
+114
+00:06:38,217 --> 00:06:42,795
+Một chút bổ sung ở đây, thực sự quan trọng để chúng tôi hiểu.
+
+115
+00:06:42,795 --> 00:06:47,225
+Vì vậy, chúng ta có, bộ nhớ, bạn biết đấy,
+
+116
+00:06:47,225 --> 00:06:52,446
+hãy làm một, >> Will Sentance: Một chút công việc.
+
+117
+00:06:52,446 --> 00:06:56,753
+Vâng, hãy nhìn vào điều đó dựa trên
+
+118
+00:06:56,753 --> 00:07:01,398
+lời khuyên từ một trong những khán giả của chúng tôi.
+
+119
+00:07:01,398 --> 00:07:04,153
+Vậy dòng 1 ở đây, Dan, chúng ta đang làm gì trong trí nhớ?
+
+120
+00:07:04,153 --> 00:07:06,872
+>> Dan: Chúng tôi đang lưu trữ hàm NhânBy2.
+
+121
+00:07:06,872 --> 00:07:13,535
+>> Will Sentance: Ừ, hãy lưu trữ hàm nhânBy2, nó đây.
+
+122
+00:07:13,535 --> 00:07:19,111
+Được rồi, dòng 2 Jeff, chúng ta đang làm gì ở dòng đó?
+
+123
+00:07:19,111 --> 00:07:23,596
+>> Jeff: Chúng tôi đang tạo một cửa hàng tài sản trên MultiBy2,
+
+124
+00:07:23,596 --> 00:07:25,896
+>> Will Sentance: Nhưng đó là một chức năng,
+
+125
+00:07:25,896 --> 00:07:27,353
+trừ khi Jeff?
+
+126
+00:07:27,353 --> 00:07:28,748
+>> Jeff: Đó là một đồ vật.
+
+127
+00:07:28,748 --> 00:07:30,455
+>> Will Sentance: Một hàm cộng với một đối tượng.
+
+128
+00:07:30,455 --> 00:07:34,633
+Hóa ra ngay sau khi JavaScript nhìn thấy hàm từ khóa đó,
+
+129
+00:07:34,633 --> 00:07:36,392
+biết một chức năng đang đến,
+
+130
+00:07:36,392 --> 00:07:42,790
+chúng ta nhận được một hàm cộng, >> Will Sentance: A big
+
+131
+00:07:42,790 --> 00:07:44,794
+vật cũ đính kèm.
+
+132
+00:07:44,794 --> 00:07:50,440
+Nếu chúng ta sử dụng parens ở cuối hàm, chúng ta sẽ thấy sau một giây.
+
+133
+00:07:50,440 --> 00:07:53,381
+Nếu chúng ta sử dụng dấu chấm ở cuối nhãn hàm, nhãn cho
+
+134
+00:07:53,381 --> 00:07:55,918
+chức năng, bit nào chúng ta có quyền truy cập vào Jeff?
+
+135
+00:07:55,918 --> 00:07:57,269
+>> Jeff: Đó là gì?
+
+136
+00:07:57,269 --> 00:08:00,320
+>> Will Sentance: Nếu chúng ta sử dụng dấu chấm ở cuối nhãn MultiBy2,
+
+137
+00:08:00,320 --> 00:08:02,799
+bit nào của tổ hợp đối tượng hàm.
+
+138
+00:08:02,799 --> 00:08:03,724
+Tôi gọi họ, chúng ta có bit nào?
+
+139
+00:08:03,724 --> 00:08:09,698
+Chúng tôi có quyền truy cập vào bit đối tượng, chính xác thông qua dấu chấm, vào nó chúng tôi đi.
+
+140
+00:08:09,698 --> 00:08:11,152
+Và chúng ta sẽ lưu trữ gì trong đó, Braden?
+
+141
+00:08:11,152 --> 00:08:12,170
+>> Braden: 5.
+
+142
+00:08:12,170 --> 00:08:13,839
+>> Will Sentance: Vâng, tên tài sản nào?
+
+143
+00:08:13,839 --> 00:08:14,660
+>> Braden: Đã lưu trữ.
+
+144
+00:08:14,660 --> 00:08:16,852
+>> Will Sentance: Đã lưu trữ, nhìn này, tuyệt vời.
+
+145
+00:08:16,852 --> 00:08:20,302
+Nhưng có lẽ, hãy nhìn vào dòng tiếp theo,
+
+146
+00:08:20,302 --> 00:08:25,828
+có thể khi sau đó chúng ta chạy MultiBy2 với đầu vào là 3.
+
+147
+00:08:25,828 --> 00:08:29,404
+Có thể điều đó không hoạt động nữa vì có thể việc làm này đã ghi đè hàm
+
+148
+00:08:29,404 --> 00:08:30,400
+mã, phải không Braden?
+
+149
+00:08:30,400 --> 00:08:33,177
+Không, điều gì cho phép chúng tôi bây giờ vẫn sử dụng hàm bit,
+
+150
+00:08:33,177 --> 00:08:34,917
+những biểu tượng chúng tôi đang sử dụng ở đây?
+
+151
+00:08:34,917 --> 00:08:35,630
+>> Braden: Các parens.
+
+152
+00:08:35,630 --> 00:08:39,935
+>> Will Sentance: Parens, và điều đó có nghĩa là hãy sử dụng hàm bit,
+
+153
+00:08:39,935 --> 00:08:42,354
+nó sẽ trở lại 6.
+
+154
+00:08:42,354 --> 00:08:47,657
+Nhưng có thể việc sử dụng hàm bị ghi đè đối tượng, có thể.
+
+155
+00:08:47,657 --> 00:08:50,628
+Braden liệu chúng ta vẫn có quyền truy cập vào đối tượng của mình nếu chúng ta sử dụng ký hiệu dấu chấm?
+
+156
+00:08:50,628 --> 00:08:51,433
+>> Braden: Vâng.
+
+157
+00:08:51,433 --> 00:08:52,142
+>> Will Sentance: Vâng, chúng tôi làm.
+
+158
+00:08:52,142 --> 00:08:56,570
+Đối tượng hàm và chúng ta đang nói về một đối tượng nhiều như nhau, nhưng
+
+159
+00:08:56,570 --> 00:08:58,867
+nó có trong mọi chức năng ở đó.
+
+160
+00:08:58,867 --> 00:09:02,197
+Nhưng nó sẽ hóa ra ở đây là siêu, siêu, siêu hữu ích.
+
+161
+00:09:02,197 --> 00:09:05,181
+Nhưng nếu bạn muốn tin rằng tất cả các chức năng cũng sẽ có,
+
+162
+00:09:05,181 --> 00:09:08,178
+rất hay ở chỗ tất cả các chức năng cũng có theo mặc định.
+
+163
+00:09:08,178 --> 00:09:08,840
+>> Braden: Nguyên mẫu?
+
+164
+00:09:08,840 --> 00:09:10,968
+>> Will Sentance: A, tôi không muốn nói điều đó.
+
+165
+00:09:10,968 --> 00:09:16,216
+Một tài sản, không, vâng, đó là những gì, nhưng a, không, vâng, họ có, trời ơi, vâng.
+
+166
+00:09:16,216 --> 00:09:18,999
+Chúng tôi sẽ thấy điều đó, mặc dù bạn sẽ thấy điều đó ở sảnh OOP tạm dừng.
+
+167
+00:09:18,999 --> 00:09:22,953
+Chuyên môn hóa OOP Habert, nhưng quan trọng hơn đối với chúng tôi ngay bây giờ, họ có một tài sản.
+
+168
+00:09:22,953 --> 00:09:25,391
+Không có gì kỳ diệu, khi bạn nhìn thấy nguyên mẫu tài liệu,
+
+169
+00:09:25,391 --> 00:09:28,750
+chúng tôi nghĩ, có thể có một số loại tiền thưởng kỳ diệu trong tất cả những điều đó.
+
+170
+00:09:28,750 --> 00:09:31,476
+Đó là thuộc tính của một đối tượng và tên của thuộc tính là gì Braden?
+
+171
+00:09:31,476 --> 00:09:34,421
+>> Braden: MultiplyBy2.
+
+172
+00:09:34,421 --> 00:09:36,134
+>> Will Sentance: Không hoàn toàn, Peter, tên của tài sản là?
+
+173
+00:09:36,134 --> 00:09:36,704
+>> Peter: Nguyên mẫu.
+
+174
+00:09:36,704 --> 00:09:37,337
+>> Will Sentance: Nguyên mẫu.
+
+175
+00:09:37,337 --> 00:09:42,397
+Chính xác, thuộc tính đó chỉ là nguyên mẫu và o.
+
+176
+00:09:42,397 --> 00:09:43,998
+Đây là nơi ta cảm thấy thú vị.
+
+177
+00:09:43,998 --> 00:09:48,653
+Tất cả các chức năng trong định dạng đối tượng của chúng luôn tự động có
+
+178
+00:09:48,653 --> 00:09:49,876
+một tài sản trên chúng.
+
+179
+00:09:49,876 --> 00:09:53,126
+Ý tôi là, tại sao dấu chấm chấm chấm, thực ra nó tự động ở đó,
+
+180
+00:09:53,126 --> 00:09:53,971
+nguyên mẫu?
+
+181
+00:09:53,971 --> 00:09:56,477
+Nó không phải là một tài sản ẩn.
+
+182
+00:09:56,477 --> 00:09:59,293
+Nó giống như một thuộc tính của bit đối tượng.
+
+183
+00:09:59,293 --> 00:10:00,342
+Chúng tôi chỉ không có xu hướng nhìn vào điều này một chút.
+
+184
+00:10:00,342 --> 00:10:03,236
+Chúng tôi cần phải điều khiển nhiều nhật ký bằng cách nhấn xuống một chút.
+
+185
+00:10:03,236 --> 00:10:07,435
+Ý tôi là, tôi đoán những đồ vật được giấu với chúng ta và nó ở đó.
+
+186
+00:10:07,435 --> 00:10:09,227
+Nó là gì?
+
+187
+00:10:09,227 --> 00:10:13,385
+Dan, thuộc tính nguyên mẫu được mặc định là gì?
+
+188
+00:10:13,385 --> 00:10:14,124
+>> Dan: Vật thể trống rỗng.
+
+189
+00:10:14,124 --> 00:10:15,535
+>> Will Sentance: Một vật thể trống rỗng lớn.
+
+190
+00:10:15,535 --> 00:10:19,737
+Nhìn kìa.
+
+191
+00:10:19,737 --> 00:10:24,722
+Có nghĩa là, hàm mà chúng ta sẽ sử dụng hàm mới khi nó được thực thi và
+
+192
+00:10:24,722 --> 00:10:29,781
+nó tự động tạo ra một đối tượng rất cần một nơi để liên kết đến,
+
+193
+00:10:29,781 --> 00:10:35,243
+một đối tượng trống lớn cũ, trong đó để lưu trữ các chức năng của chúng tôi với chúng tôi để lưu trữ các chức năng.
+
+194
+00:10:35,243 --> 00:10:40,387
+Chức năng đó không chỉ là một chức năng, nó còn là một cái gì vậy Jeff?
+
+195
+00:10:40,387 --> 00:10:41,086
+>> Jeff: Một đối tượng.
+
+196
+00:10:41,086 --> 00:10:41,770
+>> Will Sentance: Một đối tượng.
+
+197
+00:10:41,770 --> 00:10:45,640
+Và đối tượng đó không rỗng, nó có gì trong đó?
+
+198
+00:10:45,640 --> 00:10:46,725
+>> Jeff: Một tài sản nguyên mẫu.
+
+199
+00:10:46,725 --> 00:10:51,098
+>> Will Sentance: Một nguyên mẫu được đặt đúng cách, độc đáo, đó là gì, Mark?
+
+200
+00:10:51,098 --> 00:10:54,040
+>> Matt: Một vật thể trống rỗng lớn.
+
+201
+00:10:54,040 --> 00:10:57,648
+>> Will Sentance: Chúng tôi nghĩ dân gian rằng nó có thể có ý nghĩa ở đâu
+
+202
+00:10:57,648 --> 00:10:59,937
+chúng tôi có từ khóa mới hoặc cho
+
+203
+00:10:59,937 --> 00:11:05,221
+JavaScript đã quyết định các từ khóa mới đối tượng được tạo tự động bên trong
+
+204
+00:11:05,221 --> 00:11:10,153
+việc chạy của người dùng Tạo một hàm để nó có giao thức
+
+205
+00:11:10,153 --> 00:11:15,195
+kết nối là nếu nó không thể chỉ định rằng chức năng người dùng của nó lưu trữ?
+
+206
+00:11:15,195 --> 00:11:16,739
+Matt, bạn nghĩ nó có ý nghĩa ở chỗ nào?
+
+207
+00:11:16,739 --> 00:11:17,525
+>> Matt: Thuộc tính nguyên mẫu.
+
+208
+00:11:17,525 --> 00:11:20,455
+>> Will Sentance: Thuộc tính nguyên mẫu của hàm mà chúng ta sẽ chạy
+
+209
+00:11:20,455 --> 00:11:24,090
+từ khóa mới hoặc chúng tôi sẽ chạy với từ khóa mới để từ khóa đó tạo ra
+
+210
+00:11:24,090 --> 00:11:25,462
+một đối tượng tự động bên trong.
+
+211
+00:11:25,462 --> 00:11:30,309
+Và điều đó sẽ có một ràng buộc đối với tài sản proto của nó với
+
+212
+00:11:30,309 --> 00:11:34,625
+thuộc tính nguyên mẫu đó, là một đối tượng.
+
+213
+00:11:34,625 --> 00:11:39,169
+Giao thức sẽ không liên kết để sử dụng cửa hàng chức năng, nhưng
+
+214
+00:11:39,169 --> 00:11:40,895
+liên kết đến đối tượng này.
+
+215
+00:11:40,895 --> 00:11:44,839
+Vì vậy, tốt hơn chúng ta nên đặt các hàm mà chúng ta muốn tất cả các đối tượng thoát ra
+
+216
+00:11:44,839 --> 00:11:49,327
+tự động hoặc đến với người dùng đang chạy được tạo bằng từ khóa mới phía trước
+
+217
+00:11:49,327 --> 00:11:53,747
+tự động tạo một đối tượng, đối tượng này cần một nơi nào đó có liên kết đến
+
+218
+00:11:53,747 --> 00:11:55,114
+các chức năng được chia sẻ của nó.
+
+219
+00:11:55,114 --> 00:11:59,871
+Chúng sẽ tự động trở thành chức năng tạo đối tượng với
+
+220
+00:11:59,871 --> 00:12:02,990
+sự trợ giúp của từ khóa mới trong phiên bản đối tượng của nó,
+
+221
+00:12:02,990 --> 00:12:06,798
+trong thuộc tính nguyên mẫu của nó, bản thân nó là một đối tượng.

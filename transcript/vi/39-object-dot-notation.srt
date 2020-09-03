@@ -1,0 +1,388 @@
+1
+00:00:00,310 --> 00:00:03,102
+>> Will Sentance: Giả sử chúng tôi có ứng dụng này lưu trữ từng người dùng trong ứng dụng của tôi
+
+2
+00:00:03,102 --> 00:00:04,449
+với dữ liệu tương ứng của họ.
+
+3
+00:00:04,449 --> 00:00:05,272
+Hãy giữ nó thực sự đơn giản.
+
+4
+00:00:05,272 --> 00:00:07,294
+Chúng tôi đã có nhiều dữ liệu và rất nhiều người dùng.
+
+5
+00:00:07,294 --> 00:00:11,520
+Giữ cho nó thực sự đơn giản, user1 tên Tim,
+
+6
+00:00:11,520 --> 00:00:16,939
+user2 name Stephanie, điểm 3, điểm 5.
+
+7
+00:00:16,939 --> 00:00:20,373
+>> Will Sentance: Chức năng tôi cần có cho mỗi người dùng, một lần nữa,
+
+8
+00:00:20,373 --> 00:00:24,977
+chỉ đơn giản hóa khả năng gia tăng để tăng điểm người dùng lên một,
+
+9
+00:00:24,977 --> 00:00:27,188
+xin lỗi, xin lỗi, người dùng điểm từng người một.
+
+10
+00:00:27,188 --> 00:00:29,488
+Trên thực tế, có rất nhiều chức năng ở đây.
+
+11
+00:00:29,488 --> 00:00:35,190
+Bây giờ, hai điều, tôi không muốn phải chạy tất cả các mã của mình hoặc
+
+12
+00:00:35,190 --> 00:00:39,540
+mã của tôi để thử và tìm ra chức năng gia tăng đó.
+
+13
+00:00:39,540 --> 00:00:42,360
+Trong thế giới lý tưởng của tôi, bất cứ nơi nào user1 ở trong
+
+14
+00:00:42,360 --> 00:00:45,590
+ứng dụng hiện đang được chuyển vào các phần khác nhau của ứng dụng của tôi,
+
+15
+00:00:45,590 --> 00:00:49,360
+Tôi có chức năng gia tăng đó ngay cạnh nó.
+
+16
+00:00:49,360 --> 00:00:54,237
+Và lý tưởng, bằng cách nào đó, nó được quy định khá nhiều là chỉ
+
+17
+00:00:54,237 --> 00:00:59,955
+áp dụng cho dữ liệu user1 hoặc cho user2 và cho dữ liệu user2 và
+
+18
+00:00:59,955 --> 00:01:04,210
+không đột nhiên bị cố gắng áp dụng cho bảng dẫn đầu của tôi.
+
+19
+00:01:04,210 --> 00:01:07,222
+Tôi sẽ cố gắng tăng bảng dẫn đầu của mình, bình thường là một điều.
+
+20
+00:01:07,222 --> 00:01:11,428
+Vâng, vậy làm sao tôi có thể gói gọn trong một gói trong một loại
+
+21
+00:01:11,428 --> 00:01:16,253
+tổ chức cấu trúc dữ liệu, dữ liệu đó với chức năng
+
+22
+00:01:16,253 --> 00:01:20,126
+Tôi biết rằng họ đang ở ngay cạnh nhau.
+
+23
+00:01:20,126 --> 00:01:24,605
+Và tôi thậm chí có thể sử dụng một đặc biệt, >> Will Sentance: Dot,
+
+24
+00:01:24,605 --> 00:01:29,510
+[LAUGH] chấm có lẽ để sử dụng chức năng trên dữ liệu đó.
+
+25
+00:01:29,510 --> 00:01:32,100
+Làm cách nào tôi có thể gói chức năng và dữ liệu ở một nơi?
+
+26
+00:01:32,100 --> 00:01:32,870
+Braden, bạn có ý kiến ​​gì không?
+
+27
+00:01:32,870 --> 00:01:34,610
+>> Loa 2: Trong vật thể hoặc xe buýt.
+
+28
+00:01:34,610 --> 00:01:36,690
+>> Will Sentance: Trong một đối tượng, lưu trữ trong đối tượng.
+
+29
+00:01:36,690 --> 00:01:38,050
+Bây giờ hãy giữ cho nó đơn giản.
+
+30
+00:01:38,050 --> 00:01:40,800
+Lưu trữ trong một đối tượng, điều đó chính xác.
+
+31
+00:01:40,800 --> 00:01:44,570
+Vì vậy, các đối tượng lưu trữ các chức năng với dữ liệu liên kết của chúng.
+
+32
+00:01:44,570 --> 00:01:48,470
+Điều này không được thực hiện đầy đủ trong JavaScript.
+
+33
+00:01:48,470 --> 00:01:50,390
+Đây là khái niệm về sự đóng gói.
+
+34
+00:01:50,390 --> 00:01:54,951
+Nó nói rằng hãy bảo vệ và đóng gói ở một nơi, chức năng và
+
+35
+00:01:54,951 --> 00:02:00,312
+dữ liệu mà nó áp dụng, dữ liệu mà nó áp dụng, ngữ pháp [KHÔNG NGHE ĐƯỢC],
+
+36
+00:02:00,312 --> 00:02:04,790
+dữ liệu khác mà nó áp dụng trong một gói gói nhỏ.
+
+37
+00:02:04,790 --> 00:02:07,560
+Và nó sẽ biến đổi cách chúng ta có thể suy luận về mã.
+
+38
+00:02:07,560 --> 00:02:11,530
+Nhìn này, không phải săn lùng tất cả 100.000 dòng mã của tôi,
+
+39
+00:02:11,530 --> 00:02:15,247
+chức năng gia tăng của tôi, tôi thực sự chỉ đặt dấu chấm và nó ở đó.
+
+40
+00:02:15,247 --> 00:02:19,109
+Và nó sẽ tạo ra mọi thứ mà chúng tôi cố gắng và làm ngày hôm nay,
+
+41
+00:02:19,109 --> 00:02:23,670
+tất cả mọi thứ chúng tôi cố gắng và làm ngày hôm nay, đạt được vị trí tối ưu của tôi.
+
+42
+00:02:23,670 --> 00:02:28,310
+Tất cả những gì chúng tôi cố gắng và làm ngày hôm nay chỉ là tôi có thể đạt được điều này không?
+
+43
+00:02:28,310 --> 00:02:34,450
+Tôi có thể đạt được chức năng chạy trên dữ liệu thích hợp không?
+
+44
+00:02:34,450 --> 00:02:38,790
+Không phải dữ liệu khác, không phải câu hỏi đố ngẫu nhiên, không phải bảng giải đấu ngẫu nhiên, nhưng
+
+45
+00:02:38,790 --> 00:02:44,110
+trên dữ liệu của người dùng và không phải đi tìm kiếm chức năng.
+
+46
+00:02:44,110 --> 00:02:45,080
+Nhưng nó ở ngay đó.
+
+47
+00:02:45,080 --> 00:02:47,370
+Tôi đặt dấu chấm và trong bảng điều khiển,
+
+48
+00:02:47,370 --> 00:02:53,600
+Tôi thậm chí còn thấy phần gia tăng đã được điền sẵn cho tôi, được dự đoán cho tôi.
+
+49
+00:02:53,600 --> 00:02:59,400
+Đó là cách dễ dàng để tìm thấy chức năng thích hợp cho dữ liệu của tôi.
+
+50
+00:02:59,400 --> 00:03:00,380
+Đó là mục tiêu của tôi.
+
+51
+00:03:00,380 --> 00:03:02,870
+Vâng, bạn biết không, tôi đã làm nó ở đây.
+
+52
+00:03:02,870 --> 00:03:04,150
+Tôi đã làm nó ở đây, xong.
+
+53
+00:03:04,150 --> 00:03:05,300
+Mô hình của tôi đã hoàn thành.
+
+54
+00:03:05,300 --> 00:03:09,590
+Tôi đã hoàn thành xong dữ liệu, chức năng và một đối tượng.
+
+55
+00:03:11,530 --> 00:03:14,110
+Nhưng chúng ta hãy tiếp tục tạo các đối tượng vì nó sẽ thành ra
+
+56
+00:03:14,110 --> 00:03:16,800
+rằng chúng ta sẽ rất nhanh chóng chán việc viết tay những đồ vật này.
+
+57
+00:03:16,800 --> 00:03:18,360
+Nhưng chúng ta hãy làm điều đó một vài lần.
+
+58
+00:03:18,360 --> 00:03:18,980
+Và làm như vậy,
+
+59
+00:03:18,980 --> 00:03:22,610
+cũng làm quen với một số cách khác nhau để tạo các đối tượng.
+
+60
+00:03:22,610 --> 00:03:23,880
+Mọi người có thể nghĩ ra cách khác không?
+
+61
+00:03:23,880 --> 00:03:27,900
+Ở đây tôi đã tạo một đối tượng, gọi nó theo nghĩa đen là đối tượng điền đầy đủ và
+
+62
+00:03:27,900 --> 00:03:29,630
+Tôi đã điền trước tất cả các giá trị của nó.
+
+63
+00:03:29,630 --> 00:03:30,610
+Tôi có thể làm gì thay thế?
+
+64
+00:03:30,610 --> 00:03:32,400
+Nếu tôi chỉ tạo một đối tượng rỗng, Braden,
+
+65
+00:03:32,400 --> 00:03:34,949
+làm thế nào tôi có thể thêm các thuộc tính vào nó sau đó?
+
+66
+00:03:36,080 --> 00:03:37,240
+>> Diễn giả 2: Tạo lớp.
+
+67
+00:03:37,240 --> 00:03:38,592
+>> Will Sentance: Không, chỉ cần giữ nó thực sự đơn giản.
+
+68
+00:03:38,592 --> 00:03:39,601
+Vâng, Matt?
+
+69
+00:03:39,601 --> 00:03:40,334
+>> Diễn giả 2: Sử dụng toán tử dấu chấm.
+
+70
+00:03:40,334 --> 00:03:42,720
+>> Will Sentance: Chính xác, ký hiệu dấu chấm, nó đây.
+
+71
+00:03:42,720 --> 00:03:45,190
+Tạo user2 với ký hiệu dấu chấm.
+
+72
+00:03:45,190 --> 00:03:47,880
+Khai báo các thuộc tính trống với ký hiệu dấu chấm.
+
+73
+00:03:47,880 --> 00:03:48,787
+Hãy đi qua.
+
+74
+00:03:48,787 --> 00:03:53,038
+Tôi chỉ muốn đảm bảo rằng tất cả chúng ta đều ở trên cùng một trang với sự tương tác của chúng ta
+
+75
+00:03:53,038 --> 00:03:53,939
+với các đối tượng.
+
+76
+00:03:55,090 --> 00:04:01,193
+Được rồi, Todd, dòng một ở đây, chúng ta đang lưu những gì trong bộ nhớ chung?
+
+77
+00:04:01,193 --> 00:04:04,170
+>> Người thuyết trình 2: Bạn đang định nghĩa khái niệm user2 là một đối tượng rỗng.
+
+78
+00:04:04,170 --> 00:04:05,310
+>> Will Sentance: Vâng, một vật thể trống rỗng lớn.
+
+79
+00:04:05,310 --> 00:04:07,360
+Đó không hẳn là một vật, chỉ là một vật rỗng.
+
+80
+00:04:07,360 --> 00:04:10,300
+Đây rồi, một vật thể trống rỗng to lớn, đang gán tài sản gì cho nó, Todd?
+
+81
+00:04:11,740 --> 00:04:13,460
+>> Người nói 2: Dòng tiếp theo chỉ định tên.
+
+82
+00:04:13,460 --> 00:04:15,510
+>> Will Sentance: Vâng, và gán giá trị gì cho tài sản đó?
+
+83
+00:04:15,510 --> 00:04:16,280
+>> Người nói 2: Mười.
+
+84
+00:04:16,280 --> 00:04:18,153
+>> Will Sentance: Vâng, xin lỗi, [KHÔNG NGHE ĐƯỢC], vì vậy
+
+85
+00:04:18,153 --> 00:04:21,940
+họ gọi những điều khác biệt này là giá trị quan trọng.
+
+86
+00:04:21,940 --> 00:04:24,714
+Tôi hiếm khi nghe thấy cụm từ đó trong mã chuyên nghiệp.
+
+87
+00:04:24,714 --> 00:04:29,850
+Chúng tôi có xu hướng gọi nó là tên thuộc tính, và sau đó là giá trị tài sản, được chứ.
+
+88
+00:04:31,000 --> 00:04:33,885
+Tiếp theo là điểm và 6.
+
+89
+00:04:33,885 --> 00:04:36,040
+Và sau đó, Matt, chúng ta đang làm gì trong slide cuối cùng ở đây?
+
+90
+00:04:36,040 --> 00:04:38,588
+Chúng tôi đang thêm một thuộc tính khác, vâng,
+
+91
+00:04:38,588 --> 00:04:42,527
+Chúng ta có xu hướng gọi các hàm trên các đối tượng là gì, Matt, mọi người?
+
+92
+00:04:42,527 --> 00:04:44,308
+>> Diễn giả 2: Phương pháp. >> Will Sentance: Phương pháp, vâng, tốt lắm,
+
+93
+00:04:44,308 --> 00:04:46,343
+chính xác, phương pháp, thực hiện tốt, dân gian.
+
+94
+00:04:46,343 --> 00:04:51,616
+[KHÔNG NGHE ĐƯỢC], nó đây, và đang lấy tất cả mã của nó và lưu trữ nó.
+
+95
+00:04:51,616 --> 00:04:53,650
+Và như thường lệ, chúng tôi không chạy mã đó nhưng
+
+96
+00:04:53,650 --> 00:04:56,781
+chúng tôi đang lấy toàn bộ định nghĩa hàm đó từ hàm từ sang
+
+97
+00:04:56,781 --> 00:04:59,250
+đóng dấu ngoặc nhọn lưu trữ trên đối tượng đó, đẹp
+

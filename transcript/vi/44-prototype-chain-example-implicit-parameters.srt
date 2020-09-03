@@ -1,0 +1,547 @@
+1
+00:00:00,056 --> 00:00:02,355
+>> Will Sentance: Ethan sẽ vì nó sẽ tiếp tục đến Ethan.
+
+2
+00:00:02,355 --> 00:00:04,912
+>> Ethan: Vì vậy, hàm người dùng lưu trữ một đối tượng nhưng
+
+3
+00:00:04,912 --> 00:00:08,799
+nó có thể chứa bất cứ điều gì khác ngoài các chức năng phải không?
+
+4
+00:00:08,799 --> 00:00:10,763
+>> Will Sentance: Vâng, hoàn toàn, hoàn toàn.
+
+5
+00:00:10,763 --> 00:00:12,973
+>> Ethan: Và bạn cũng tham khảo nó theo cách tương tự.
+
+6
+00:00:12,973 --> 00:00:18,240
+>> Will Sentance: Yeah, yeah, nhân tiện, chúng ta sẽ gặp lại bạn sau
+
+7
+00:00:18,240 --> 00:00:23,678
+trên cũng có thể có một thuộc tính proto ẩn trên đó.
+
+8
+00:00:23,678 --> 00:00:25,273
+Chúa ơi, sau này Ethan đi trước.
+
+9
+00:00:25,273 --> 00:00:30,939
+>> Ethan: Vì vậy, đối số mà object.create chấp nhận là,
+
+10
+00:00:30,939 --> 00:00:33,748
+đó luôn là Proto?
+
+11
+00:00:33,748 --> 00:00:36,345
+>> Will Sentance: Đầu tiên, điều đó luôn được nghĩ đến trong Proto.
+
+12
+00:00:36,345 --> 00:00:38,792
+Vâng, rất tốt, cảm ơn bạn.
+
+13
+00:00:38,792 --> 00:00:39,844
+Bạn muốn theo dõi về điều đó?
+
+14
+00:00:39,844 --> 00:00:43,624
+>> Ethan: Không, chỉ làm rõ thôi.
+
+15
+00:00:43,624 --> 00:00:44,532
+>> Will Sentance: Vâng, đó là một câu hỏi làm rõ.
+
+16
+00:00:44,532 --> 00:00:47,320
+Nói theo cách khác.
+
+17
+00:00:50,685 --> 00:00:53,589
+>> Ethan: Thay vì tham khảo MDN vào lúc này, tôi chỉ hỏi bạn.
+
+18
+00:00:53,589 --> 00:00:56,274
+[LAUGH} >> Will Sentance: Đó là sự thật,
+
+19
+00:00:56,274 --> 00:00:59,806
+object.create tạo một đối tượng rỗng với thuộc tính proto ẩn.
+
+20
+00:00:59,806 --> 00:01:04,943
+Bây giờ, tôi sẽ nói điều này, thuộc tính đó không bị ẩn như thuộc tính phạm vi Lexical của chúng tôi.
+
+21
+00:01:04,943 --> 00:01:07,960
+Cái mà bạn không thể nhìn thấy, hoặc mảng đã hoàn thành của riêng chúng tôi.
+
+22
+00:01:07,960 --> 00:01:09,964
+Không có bảng điều khiển nào hiển thị điều đó vì một số lý do.
+
+23
+00:01:09,964 --> 00:01:15,558
+Thuộc tính ẩn này nếu bạn sử dụng công cụ Chrome Dev để bảng điều khiển ghi nhật ký user1,
+
+24
+00:01:15,558 --> 00:01:20,238
+bạn sẽ thấy mũi tên xuống nhỏ trong bảng điều khiển công cụ Chrome Dev.
+
+25
+00:01:20,238 --> 00:01:22,680
+Nếu bạn nhấp vào đó, bạn sẽ thấy thuộc tính proto này và
+
+26
+00:01:22,680 --> 00:01:24,100
+một liên kết đến cửa hàng chức năng của người dùng.
+
+27
+00:01:24,100 --> 00:01:27,782
+Vì vậy, đây là một trong những ẩn nhưng bạn có thể nhìn thấy nó.
+
+28
+00:01:27,782 --> 00:01:29,370
+Vâng, nhiều hơn nữa, hãy tiếp tục.
+
+29
+00:01:29,370 --> 00:01:33,697
+>> Ethan: Về mặt kỹ thuật, nó không được dùng nữa nhưng bạn có thể sử dụng .getPrototype của tôi, tôi nghĩ,
+
+30
+00:01:33,697 --> 00:01:36,950
+đó là một phương pháp mới để thực sự nhận được nó một cách chính thức.
+
+31
+00:01:36,950 --> 00:01:37,845
+>> Will Sentance: Xuất sắc.
+
+32
+00:01:37,845 --> 00:01:42,672
+>> Ethan: Nhưng trình duyệt có thể sẽ di chuyển __proto vì nó
+
+33
+00:01:42,672 --> 00:01:44,855
+kinda được tích hợp sẵn mãi mãi.
+
+34
+00:01:44,855 --> 00:01:50,127
+>> Will Sentance: Hoàn hảo, chúng tôi duy trì tính nhất quán của lịch sử JavaScript.
+
+35
+00:01:50,127 --> 00:01:52,749
+Xuất sắc, luôn làm việc với nó.
+
+36
+00:01:52,749 --> 00:01:58,928
+Được rồi, mọi người, vậy bây giờ,
+
+37
+00:01:58,928 --> 00:02:05,109
+vâng, bây giờ chúng ta hãy thực sự tiếp tục và
+
+38
+00:02:05,109 --> 00:02:09,621
+chạy phương thức gia tăng đó.
+
+39
+00:02:09,621 --> 00:02:12,272
+Có bối cảnh thực hiện của tôi, tôi đã sẵn sàng để đi.
+
+40
+00:02:12,272 --> 00:02:15,403
+Hãy để 'thực sự rõ ràng, như mọi khi,
+
+41
+00:02:15,403 --> 00:02:20,019
+ngữ cảnh thực thi này đã biến mất, bật ra khỏi phía mã.
+
+42
+00:02:20,019 --> 00:02:21,335
+Hãy vào và chạy tăng dần.
+
+43
+00:02:21,335 --> 00:02:23,629
+Bộ nhớ cục bộ là bình thường.
+
+44
+00:02:23,629 --> 00:02:24,663
+Hãy đặt nó ở đó.
+
+45
+00:02:24,663 --> 00:02:29,685
+Tôi muốn hỏi điều gì đó, mã số gia tăng chúng ta có thể thấy tôi
+
+46
+00:02:29,685 --> 00:02:35,292
+đặt nó vào một dòng ở đó, nhưng, Braden, mã của nó là gì?
+
+47
+00:02:35,292 --> 00:02:37,370
+Chỉ cần cho tôi những từ chính xác, những gì tôi đôi khi yêu cầu
+
+48
+00:02:37,370 --> 00:02:38,681
+để liên hệ bằng những từ chính xác, phải không?
+
+49
+00:02:38,681 --> 00:02:39,477
+Mã của nó là gì?
+
+50
+00:02:39,477 --> 00:02:40,951
+>> Braydon: Đây. Điểm ++.
+
+51
+00:02:40,951 --> 00:02:45,271
+>> Will Sentance: This.scorel ++.
+
+52
+00:02:45,271 --> 00:02:51,648
+Đây là vấn đề, chức năng gia tăng này không cần hoạt động trên người dùng 1,
+
+53
+00:02:51,648 --> 00:02:57,289
+không cần hoạt động trên người dùng 2, không cần hoạt động trên người dùng 403.
+
+54
+00:02:57,289 --> 00:02:58,709
+Vâng chính xác.
+
+55
+00:02:58,709 --> 00:02:59,923
+Tất cả bọn họ.
+
+56
+00:02:59,923 --> 00:03:03,320
+Vì vậy, phương pháp gia tăng này.
+
+57
+00:03:03,320 --> 00:03:06,124
+Tôi đoán nếu tôi muốn làm việc trên user1, bên trong nó,
+
+58
+00:03:06,124 --> 00:03:08,818
+Tôi sẽ cần viết user1.score ++.
+
+59
+00:03:08,818 --> 00:03:14,071
+Để họ có thể đi tìm chúng tôi, người ta tìm tài sản của trường và thực hiện nó.
+
+60
+00:03:14,071 --> 00:03:18,521
+Nhưng vấn đề là sau đó chạy nó user2.increment và
+
+61
+00:03:18,521 --> 00:03:23,154
+bên trong chạy bên trong của tăng đã chạy user1.score ++.
+
+62
+00:03:23,154 --> 00:03:30,908
+Vì vậy, tôi cần phương pháp này để hàm này hoạt động trên user1 hoặc
+
+63
+00:03:30,908 --> 00:03:35,261
+user2 hoặc user4 hoặc user405.
+
+64
+00:03:35,261 --> 00:03:40,231
+Đừng hoảng sợ, tôi có một điều tuyệt vời.
+
+65
+00:03:40,231 --> 00:03:42,275
+Tôi trong bộ nhớ địa phương của tôi quá nhỏ với tôi.
+
+66
+00:03:42,275 --> 00:03:45,110
+Tôi có một thứ tuyệt vời được gọi là tham số ngầm.
+
+67
+00:03:45,110 --> 00:03:47,160
+Điều đó có nghĩa là một, tôi thậm chí không xác định.
+
+68
+00:03:47,160 --> 00:03:51,919
+Nó tự động ở đó và tự động điền cho tôi.
+
+69
+00:03:51,919 --> 00:03:53,871
+Và nó được gọi là cái này.
+
+70
+00:03:53,871 --> 00:03:58,722
+Ngay sau khi tôi bắt đầu chạy phương thức này trong bộ nhớ cục bộ của mình,
+
+71
+00:03:58,722 --> 00:04:00,176
+bạn biết tôi nhận được gì không?
+
+72
+00:04:00,176 --> 00:04:04,023
+Không cần phân tích cú pháp chế độ xem chỉ tự động,
+
+73
+00:04:04,023 --> 00:04:07,493
+Tôi nhận được một trình giữ chỗ tham số ngầm định.
+
+74
+00:04:07,493 --> 00:04:12,239
+Ý nghĩa tiềm ẩn Tôi không viết nó, nó ở đó cho tôi, cái này và
+
+75
+00:04:12,239 --> 00:04:17,267
+bạn nghĩ nó sẽ tự động được gán cho nó là gì vậy Todd?
+
+76
+00:04:17,267 --> 00:04:17,877
+>> Todd: Người dùng1.
+
+77
+00:04:17,877 --> 00:04:20,970
+>> Will Sentance: Người dùng1, bất cứ điều gì ở phía bên trái của dấu chấm đó,
+
+78
+00:04:20,970 --> 00:04:23,740
+vấn đề được chạy trên đó, trên đối tượng đó.
+
+79
+00:04:23,740 --> 00:04:29,691
+Bất kể đối tượng nào ở phía bên trái, sẽ có User1.
+
+80
+00:04:29,691 --> 00:04:34,158
+Trong thực tế, tất cả các chức năng và toàn cầu tự động tuy nhiên điều này nhưng
+
+81
+00:04:34,158 --> 00:04:38,956
+bên cạnh một số trường hợp thú vị khác mà chúng ta sẽ thấy hôm nay
+
+82
+00:04:38,956 --> 00:04:42,032
+rằng điều này luôn luôn có một cuộc nói chuyện về nó.
+
+83
+00:04:42,032 --> 00:04:43,937
+Trong quá trình tạo của người dùng, chúng tôi đã có điều này, nhưng
+
+84
+00:04:43,937 --> 00:04:46,713
+nó đề cập đến một cái gì đó không quá hữu ích.
+
+85
+00:04:46,713 --> 00:04:50,622
+Đây là một khái niệm đối tượng toàn cục vui nhộn trong cửa sổ JavaScript hoặc
+
+86
+00:04:50,622 --> 00:04:53,775
+đối tượng toàn cầu bạn có thể đã nhìn thấy nó một hoặc hai lần.
+
+87
+00:04:53,775 --> 00:04:57,353
+Và vì vậy nếu chúng tôi thử và sử dụng cái này, bên trong một người tạo người dùng,
+
+88
+00:04:57,353 --> 00:05:00,659
+chúng tôi sẽ chỉ ra một số đối tượng toàn cầu vui nhộn.
+
+89
+00:05:00,659 --> 00:05:03,599
+Một số loại vật thể nhỏ ngẫu nhiên.
+
+90
+00:05:03,599 --> 00:05:11,088
+Nó sẽ không có nhiều công dụng, nhưng thay vào đó nó là một hàm tăng thêm,
+
+91
+00:05:11,088 --> 00:05:16,431
+do đó được gọi cho đối tượng người dùng 1 hoặc người dùng 2.
+
+92
+00:05:16,431 --> 00:05:22,461
+Nhưng do đó cần phải tổng quát, có thể sử dụng lại trên từng đối tượng này.
+
+93
+00:05:22,461 --> 00:05:24,635
+Ơn trời, chúng tôi có thông số ngầm này.
+
+94
+00:05:24,635 --> 00:05:30,155
+Người giữ chỗ nhỏ này, đây là một quy tắc quan trọng nhất của chúng tôi, nó luôn gắn liền với
+
+95
+00:05:30,155 --> 00:05:35,439
+đối tượng ở phía bên trái của các dấu chấm mà chức năng đó đang được chạy.
+
+96
+00:05:35,439 --> 00:05:40,463
+Vậy .score ++ Todd, đánh giá biến thành cái gì?
+
+97
+00:05:40,463 --> 00:05:41,983
+>> Todd: User1.score ++.
+
+98
+00:05:41,983 --> 00:05:43,510
+>> Will Sentance: Rất hay, Todd.
+
+99
+00:05:43,510 --> 00:05:49,801
+Use1.score ++.
+
+100
+00:05:49,801 --> 00:05:54,588
+Người dùng 1 không có trong bộ nhớ cục bộ, chúng tôi hướng ra toàn cầu, nó đây.
+
+101
+00:05:54,588 --> 00:05:59,009
+Cho điểm, tăng nó lên 4.
+
+102
+00:05:59,009 --> 00:06:03,200
+Đẹp, vâng.
+
+103
+00:06:03,200 --> 00:06:05,466
+Dân gian, chúng ta sẽ thấy một công dụng lớn khác của điều này.
+
+104
+00:06:05,466 --> 00:06:11,283
+Keyword, chúng tôi bắt đầu, mọi lúc một người dùng chính khác trong một thời điểm.
+
+105
+00:06:11,283 --> 00:06:15,918
+Nhưng hiện tại, đây là công dụng chính của chúng tôi, hãy chạy một chức năng được chia sẻ hoặc
+
+106
+00:06:15,918 --> 00:06:21,593
+sẽ có sẵn cho nhiều đối tượng khác nhau thông qua liên kết proto.
+
+107
+00:06:21,593 --> 00:06:26,350
+Và đảm bảo rằng chúng tôi viết nó với từ khóa this để truy cập vào đối tượng mà trên đó
+
+108
+00:06:26,350 --> 00:06:31,055
+, hàm đó đang được thực thi ở phía bên phải của dấu chấm.
+
+109
+00:06:31,055 --> 00:06:33,601
+Thích người này.
+
+110
+00:06:38,071 --> 00:06:38,730
+>> Will Sentance: Vâng, Jason.
+
+111
+00:06:38,730 --> 00:06:40,129
+Chúng tôi sẽ đến Mark.
+
+112
+00:06:40,129 --> 00:06:40,963
+Jason đầu tiên, sau đó đến Mark.
+
+113
+00:06:40,963 --> 00:06:41,679
+Tiếp tục đi, Jason.
+
+114
+00:06:41,679 --> 00:06:48,532
+>> Jason: Chúng tôi có đang làm việc rõ ràng với không gian tên khi toán tử này đang hoạt động không,
+
+115
+00:06:48,532 --> 00:06:55,728
+vì các yêu cầu về phạm vi mà nó phải đi tìm để tìm ra giá trị của chúng ta.
+
+116
+00:06:55,728 --> 00:07:00,677
+>> Will Sentance: Tất cả chúng ta đều hoàn toàn biết rằng bên trong của đây là
+
+117
+00:07:00,677 --> 00:07:05,644
+liên quan đến, nó chỉ nằm trong ngữ cảnh thực thi này.
+
+118
+00:07:05,644 --> 00:07:09,187
+Cái này đến từ đâu vậy?
+
+119
+00:07:09,187 --> 00:07:14,988
+Chỉ trong giây lát, chúng ta sẽ thấy rằng chúng ta có thể chơi với nó theo một số cách thú vị.
+
+120
+00:07:14,988 --> 00:07:16,817
+Chúng ta sẽ gặp trong giây lát, Mark?
+
+121
+00:07:16,817 --> 00:07:19,597
+>> Mark: Đây có phải là bối cảnh thực thi cục bộ không?
+
+122
+00:07:19,597 --> 00:07:21,330
+Chúng tôi đang nói rõ ràng về điều này.
+
+123
+00:07:21,330 --> 00:07:24,787
+Nhưng nó đang truy cập điểm số trong bộ nhớ toàn cầu, hoặc
+
+124
+00:07:24,787 --> 00:07:30,074
+thay đổi nó mà không nói giá trị trả lại, điều mà chúng tôi đã làm theo truyền thống.
+
+125
+00:07:30,074 --> 00:07:33,797
+>> Will Sentance: Chắc chắn rồi, vì vậy bạn đang nói điều này có thể giống như,
+
+126
+00:07:33,797 --> 00:07:38,958
+bạn thận trọng về điều này như một loại tác dụng phụ.
+
+127
+00:07:38,958 --> 00:07:41,694
+Vâng, hoàn toàn, hoàn toàn, và đó là lý do tại sao, nhưng
+
+128
+00:07:41,694 --> 00:07:43,807
+nó hoàn toàn tiêu chuẩn trong mô hình này.
+
+129
+00:07:43,807 --> 00:07:45,813
+Và nó vốn dĩ không có vấn đề gì.
+
+130
+00:07:45,813 --> 00:07:49,835
+Nhưng đó là lý do tại sao chúng ta phải chấp nhận điều đó, nếu chúng ta sử dụng mô hình này,
+
+131
+00:07:49,835 --> 00:07:53,365
+nếu chúng tôi sắp xếp mã của mình, sẽ có sự đánh đổi.
+
+132
+00:07:53,365 --> 00:07:55,808
+Lợi ích to lớn, dữ liệu của tôi hoặc chức năng của tôi hoặc
+
+133
+00:07:55,808 --> 00:07:59,232
+tính khả dụng của chức năng đó được đóng gói ở một nơi.
+
+134
+00:07:59,232 --> 00:08:03,748
+Vấn đề, xung quanh chức năng, nó có thể gây ra hậu quả ở bất kỳ đâu trong mã của tôi
+
+135
+00:08:03,748 --> 00:08:07,760
+tuy nhiên, lý tưởng nhất là chỉ trong đối tượng mà tôi đang cố gắng nhắm mục tiêu.
+
+136
+00:08:07,760 --> 00:08:12,579
+Nhưng việc duy trì loại cơ sở mã này chắc chắn có thể có những lúc thăng trầm.
+
+137
+00:08:12,579 --> 00:08:14,220
+Câu hỏi rất công bằng từ Mark.

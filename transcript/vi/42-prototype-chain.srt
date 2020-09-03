@@ -1,0 +1,275 @@
+1
+00:00:00,000 --> 00:00:03,890
+>> Will Sentance: Ai có thể đề xuất một cách tốt hơn
+
+2
+00:00:05,170 --> 00:00:08,940
+so với việc có các bản sao của từng chức năng trên mỗi người dùng?
+
+3
+00:00:08,940 --> 00:00:12,040
+Nhưng nhớ lại tôi vẫn muốn có thể làm được điều này.
+
+4
+00:00:12,040 --> 00:00:14,280
+Chà, hãy giữ suy nghĩ đó một chút.
+
+5
+00:00:15,370 --> 00:00:16,370
+Ai đó có thể nghĩ ra một cách tốt hơn?
+
+6
+00:00:16,370 --> 00:00:20,830
+Jeff, bạn có một nụ cười gượng gạo, bạn muốn.
+
+7
+00:00:20,830 --> 00:00:24,470
+>> Jeff: Chà, bạn có thể sử dụng một dự án tạo ra một nguyên mẫu.
+
+8
+00:00:24,470 --> 00:00:28,176
+>> Will Sentance: Vâng, có thể là Kelly, bạn sẽ có một suy nghĩ trực giác có thể
+
+9
+00:00:28,176 --> 00:00:32,489
+chúng tôi làm thay vì có các bản sao của tất cả các chức năng của chúng tôi trên mỗi đối tượng?
+
+10
+00:00:32,489 --> 00:00:34,884
+Chúng ta có thể làm gì, theo một nghĩa rất đơn giản, Todd?
+
+11
+00:00:34,884 --> 00:00:38,420
+>> Todd: Chà, tôi chỉ có một người dùng chính mà chúng ta có thể tham khảo từng người.
+
+12
+00:00:40,400 --> 00:00:42,910
+>> Will Sentance: Gần, rất, rất trực quan và đơn giản, Braydon?
+
+13
+00:00:42,910 --> 00:00:45,470
+>> Braydon: Tạo các hàm chấp nhận đối tượng bạn đang sử dụng.
+
+14
+00:00:45,470 --> 00:00:47,080
+>> Will Sentance: Đó là một cách khác, nhưng vấn đề với điều đó sau đó,
+
+15
+00:00:47,080 --> 00:00:49,610
+sau đó chúng ta rơi trở lại thế giới cũ của chức năng của tôi ở đâu?
+
+16
+00:00:49,610 --> 00:00:51,111
+Tôi có thể áp dụng nó cho bất cứ điều gì.
+
+17
+00:00:51,111 --> 00:00:53,576
+Vì vậy, chúng tôi muốn chúng được nhóm theo cùng một cách, đúng không, Matt?
+
+18
+00:00:53,576 --> 00:00:54,866
+>> Matt: Chỉ cần thêm một chức năng.
+
+19
+00:00:54,866 --> 00:00:59,388
+>> Will Sentance: Chỉ cần thêm một hàm trong một đối tượng và
+
+20
+00:00:59,388 --> 00:01:04,043
+bằng cách nào đó JavaScript biết rằng khi nó
+
+21
+00:01:04,043 --> 00:01:09,633
+không tìm thấy gia tăng trên user2, không bỏ cuộc.
+
+22
+00:01:09,633 --> 00:01:16,698
+Chúng tôi không có chức năng gia tăng trên user2.
+
+23
+00:01:16,698 --> 00:01:21,683
+Không có chức năng gia tăng trên user1, nhưng
+
+24
+00:01:21,683 --> 00:01:27,032
+một đối tượng duy nhất, >> Will Sentance: We
+
+25
+00:01:27,032 --> 00:01:31,738
+có thể gọi nó, tôi không biết, cửa hàng chức năng.
+
+26
+00:01:31,738 --> 00:01:36,113
+Chúng tôi sẽ sử dụng một chức năng, vì vậy tôi không biết, và
+
+27
+00:01:36,113 --> 00:01:40,498
+trong đó có chức năng gia tăng của chúng tôi.
+
+28
+00:01:40,498 --> 00:01:45,775
+Và bằng cách nào đó, hy vọng rằng JavaScript có một số tính năng
+
+29
+00:01:45,775 --> 00:01:50,180
+điều đó có nghĩa là khi nó không tìm thấy.
+
+30
+00:01:50,180 --> 00:01:56,277
+Nó truy cập user2, tìm kiếm bộ nhớ, tìm kiếm thuộc tính gia tăng trên nó,
+
+31
+00:01:56,277 --> 00:02:02,374
+không tìm thấy, không hoảng sợ, không bỏ cuộc, nhưng bằng cách nào đó biết đi và
+
+32
+00:02:02,374 --> 00:02:07,291
+tìm hàm trong đối tượng này, lấy mã của nó và chạy nó.
+
+33
+00:02:07,291 --> 00:02:09,695
+Và đó chính xác là những gì JavaScript sẽ làm.
+
+34
+00:02:11,175 --> 00:02:16,335
+Chuỗi nguyên mẫu, chúng tôi sẽ lưu trữ hàm gia tăng chỉ trong một đối tượng.
+
+35
+00:02:16,335 --> 00:02:18,065
+Và nhờ JavaScript giải thích nó.
+
+36
+00:02:18,065 --> 00:02:20,045
+Đó là phần nhìn vào nó và tôi phải làm gì với điều đó?
+
+37
+00:02:20,045 --> 00:02:21,015
+Từ này có nghĩa là gì?
+
+38
+00:02:21,015 --> 00:02:21,845
+Trong khi tôi đi tìm kiếm điều đó.
+
+39
+00:02:23,365 --> 00:02:28,090
+Có nó, nếu nó không tìm thấy chức năng trên user1 hoặc trong trường hợp này là user2,
+
+40
+00:02:28,090 --> 00:02:34,560
+không bỏ cuộc, nhưng bằng cách nào đó hãy tìm kiếm đối tượng đó, tìm số gia tăng và sử dụng nó.
+
+41
+00:02:34,560 --> 00:02:41,056
+Chúng tôi phải liên kết user1 hoặc user2 và đối tượng lưu trữ hàm này mà tôi đã tạo.
+
+42
+00:02:41,056 --> 00:02:44,212
+Vì vậy, trình thông dịch, chúng tôi không tìm thấy sự gia tăng,
+
+43
+00:02:44,212 --> 00:02:48,081
+đảm bảo kiểm tra đến cửa hàng chức năng, nơi nó sẽ tìm thấy nó.
+
+44
+00:02:48,081 --> 00:02:54,399
+Và chính xác như Jeff đã gợi ý, hãy tạo liên kết đó bằng kỹ thuật object.create.
+
+45
+00:02:54,399 --> 00:02:57,753
+Đây là con người.
+
+46
+00:02:57,753 --> 00:03:01,984
+Hãy xem, các chức năng do người dùng tạo thay đổi như thế nào, chúng tôi vẫn đang tạo ra người dùng mới.
+
+47
+00:03:01,984 --> 00:03:07,585
+Nhưng bây giờ chúng ta đang sử dụng kỹ thuật object.create để tạo đối tượng,
+
+48
+00:03:07,585 --> 00:03:08,948
+và nhìn vào cái này.
+
+49
+00:03:08,948 --> 00:03:11,655
+Nó vẫn sẽ là một vật thể trống rỗng.
+
+50
+00:03:11,655 --> 00:03:16,899
+Nhưng tôi có cảm giác rằng thực tế là chúng ta đang chuyển vào cửa hàng chức năng của người dùng,
+
+51
+00:03:16,899 --> 00:03:19,803
+chúng tôi sẽ gọi nó là cửa hàng chức năng người dùng,
+
+52
+00:03:19,803 --> 00:03:24,334
+mà nhìn bề ngoài nó là một đối tượng lớn hơn ở đây với hai chức năng.
+
+53
+00:03:24,334 --> 00:03:27,958
+Tôi đã thêm một cái khác, gia tăng và đăng nhập.
+
+54
+00:03:27,958 --> 00:03:33,158
+Và bằng cách nào đó tôi sẽ có một liên kết đằng sau hậu trường về đối tượng này.
+
+55
+00:03:33,158 --> 00:03:35,866
+Sẽ không có chức năng gia tăng.
+
+56
+00:03:35,866 --> 00:03:38,358
+Sẽ không có chức năng tăng dần trên đó.
+
+57
+00:03:38,358 --> 00:03:40,826
+Có ai thấy tôi thêm một hàm tăng vào đối tượng người dùng mới không?
+
+58
+00:03:40,826 --> 00:03:42,244
+Tôi không thấy.
+
+59
+00:03:42,244 --> 00:03:48,746
+Nhưng bằng cách nào đó, nó sẽ có một liên kết đến các chức năng lưu trữ được chia sẻ.
+
+60
+00:03:48,746 --> 00:03:51,156
+Có nghĩa là khi chúng tôi trả lại đối tượng,
+
+61
+00:03:51,156 --> 00:03:54,672
+liên kết đó sẽ vẫn là các chức năng của cửa hàng được chia sẻ.
+
+62
+00:03:56,764 --> 00:03:58,385
+>> Will Sentance: Nó sẽ rất, rất tốt.
+
+63
+00:03:58,385 --> 00:03:58,995
+Nhân tiện,
+
+64
+00:03:58,995 --> 00:04:03,330
+cách tiếp cận này về cơ bản sẽ đạt được tất cả những điều chúng ta muốn đạt được.
+
+65
+00:04:03,330 --> 00:04:07,084
+Bên cạnh thực tế là nó sẽ liên quan đến một chút viết mã.
+
+66
+00:04:07,084 --> 00:04:10,138
+Và có thể có một số cách viết tắt để đạt được điều này.
+
+67
+00:04:10,138 --> 00:04:11,490
+Và giải pháp ba và
+
+68
+00:04:11,490 --> 00:04:15,660
+bốn sẽ chỉ là những cách rút gọn để thực hiện điều này.
+
+69
+00:04:15,660 --> 00:04:17,080
+Đây là cốt lõi tuyệt đối.

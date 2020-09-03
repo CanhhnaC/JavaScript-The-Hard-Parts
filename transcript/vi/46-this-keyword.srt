@@ -1,0 +1,563 @@
+1
+00:00:00,230 --> 00:00:02,900
+>> Will Sentance: Một trong những phần thưởng mà tôi muốn tặng cho bạn trước đây khi tôi nói rằng chúng ta đã chuyển đi
+
+2
+00:00:02,900 --> 00:00:03,856
+giải pháp ba.
+
+3
+00:00:03,856 --> 00:00:06,677
+Đó sẽ là điều quan trọng tiếp theo và
+
+4
+00:00:06,677 --> 00:00:09,358
+đơn giản hóa tất cả việc tạo đối tượng này.
+
+5
+00:00:09,358 --> 00:00:11,458
+Thêm một điều nữa mà tôi muốn cung cấp cho bạn đó là điều này.
+
+6
+00:00:11,458 --> 00:00:16,130
+Khai báo và gọi một hàm mới bên trong gia số phương thức của chúng ta.
+
+7
+00:00:16,130 --> 00:00:21,857
+Hãy để tôi xóa những thứ chúng tôi đã thêm vào đó để chúng tôi không bị nhầm lẫn.
+
+8
+00:00:21,857 --> 00:00:24,723
+Hãy loại bỏ những phần thưởng này ở đây.
+
+9
+00:00:24,723 --> 00:00:29,404
+Vì vậy, ở dưới cùng, bạn có thể thấy, tôi đang gọi hàm tăng,
+
+10
+00:00:29,404 --> 00:00:31,606
+như trước đây, đây là cùng một mã.
+
+11
+00:00:31,606 --> 00:00:34,458
+Điều duy nhất tôi đã thay đổi ở đây, dân gian,
+
+12
+00:00:34,458 --> 00:00:39,782
+là tôi đã đặt phương thức tăng làm phương thức duy nhất trong cửa hàng hàm người dùng.
+
+13
+00:00:39,782 --> 00:00:45,833
+Và tôi vừa định nghĩa nó qua các dòng, để chúng ta có thể thêm một số thứ vào đó.
+
+14
+00:00:45,833 --> 00:00:47,880
+Đúng vậy, đó thực sự là những gì tôi đã làm?
+
+15
+00:00:47,880 --> 00:00:50,950
+Tôi hy vọng nó là như vậy, tôi nghĩ nó đúng hy vọng.
+
+16
+00:00:50,950 --> 00:00:53,232
+Vì vậy, bây giờ chúng tôi chỉ có chức năng gia tăng của chúng tôi ở đây.
+
+17
+00:00:53,232 --> 00:00:57,567
+Nhưng đó chỉ là vì mục đích đơn giản, vì vậy chúng tôi có thể làm điều gì đó bên trong nó,
+
+18
+00:00:57,567 --> 00:00:58,301
+đi thôi.
+
+19
+00:01:00,125 --> 00:01:07,070
+>> Will Sentance: John không thích việc tôi xóa bảng.
+
+20
+00:01:07,070 --> 00:01:10,840
+Được rồi, có một phương thức gia tăng của chúng tôi đang được gọi trên user1,
+
+21
+00:01:10,840 --> 00:01:14,056
+thông qua liên kết proto, vâng, tất cả tốt?
+
+22
+00:01:14,056 --> 00:01:16,807
+Nó thực hiện điều này. Điểm ++?
+
+23
+00:01:16,807 --> 00:01:22,354
+Tôi chỉ đặt nó bây giờ để hơi xòe ra vì tôi muốn làm điều này,
+
+24
+00:01:22,354 --> 00:01:25,716
+Tôi muốn bên trong của phương thức tăng dần.
+
+25
+00:01:25,716 --> 00:01:28,934
+Bởi vì nếu bạn bắt đầu nghĩ theo phong cách viết mã này,
+
+26
+00:01:28,934 --> 00:01:32,989
+bạn sẽ luôn tìm thấy chính mình trong phương pháp gia tăng đó.
+
+27
+00:01:32,989 --> 00:01:35,825
+Một loạt mã có thể 10 dòng, 12 dòng và
+
+28
+00:01:35,825 --> 00:01:38,739
+bạn có thể không muốn chỉ có 12 dòng [SOUND].
+
+29
+00:01:38,739 --> 00:01:42,497
+Bạn có thể muốn chia nó thành các chức năng nhỏ nhỏ bên trong gia số
+
+30
+00:01:42,497 --> 00:01:44,822
+phương pháp, chỉ một dòng, nó có thể là 12 dòng.
+
+31
+00:01:44,822 --> 00:01:47,218
+Và bạn muốn xác định bên trong chúng,
+
+32
+00:01:47,218 --> 00:01:51,716
+một số chức năng mà bạn thậm chí có thể chạy bên trong gia số.
+
+33
+00:01:51,716 --> 00:01:56,020
+Mà có thể bạn sẽ vẫn muốn sử dụng user1.
+
+34
+00:01:56,020 --> 00:02:01,819
+Điều đó sẽ tạo ra một số thử thách thú vị và hấp dẫn, hãy cùng xem.
+
+35
+00:02:01,819 --> 00:02:03,958
+Tôi sẽ giữ cho điều này cực kỳ đơn giản và
+
+36
+00:02:03,958 --> 00:02:08,307
+theo nghĩa đen, chúng ta sẽ chỉ kết thúc this.score ++ trong một hàm.
+
+37
+00:02:08,307 --> 00:02:10,317
+Và sau đó chạy chức năng đó ngay tại đó và sau đó.
+
+38
+00:02:10,317 --> 00:02:12,949
+Bởi vì tôi muốn nói rõ, nhưng nó sẽ giống hệt nhau,
+
+39
+00:02:12,949 --> 00:02:13,756
+có một cái nhìn vào đó.
+
+40
+00:02:13,756 --> 00:02:19,171
+Tôi đặt this.score ++, hãy xem, bên trong một hàm tôi đang gọi nó ngay tại đó.
+
+41
+00:02:19,171 --> 00:02:21,710
+Đặt nó vào bên trong, thêm 1, và tôi đang gọi nó ngay tại đó.
+
+42
+00:02:21,710 --> 00:02:25,490
+Rõ ràng là tôi chưa bao giờ thực sự làm điều này trong thực tế, nhưng tôi muốn nói rõ.
+
+43
+00:02:25,490 --> 00:02:28,150
+Nhưng trong thực tế, chúng tôi thường tạo ra các chức năng nhỏ
+
+44
+00:02:28,150 --> 00:02:31,400
+bên trong phương thức của chúng tôi đang được gọi trên đối tượng của chúng tôi.
+
+45
+00:02:31,400 --> 00:02:34,630
+Và điều này sẽ thực sự thú vị ở đây.
+
+46
+00:02:34,630 --> 00:02:40,576
+Vì vậy, hãy quay lại điểm mấu chốt của chúng tôi tại đây user1.increment,
+
+47
+00:02:40,576 --> 00:02:43,850
+hãy gọi user1.increment.
+
+48
+00:02:43,850 --> 00:02:45,420
+Rõ ràng là không có nhiều thay đổi.
+
+49
+00:02:45,420 --> 00:02:50,100
+Tôi vừa đặt this.score ++ của mình vào một hàm nhỏ bên trong đây,
+
+50
+00:02:50,100 --> 00:02:52,640
+mà tôi sẽ chạy ngay lập tức.
+
+51
+00:02:52,640 --> 00:02:56,430
+Và, mọi người, đây chỉ là những thứ bổ sung mà tôi muốn cho bạn thấy xung quanh hệ sinh thái của
+
+52
+00:02:56,430 --> 00:02:59,180
+thế giới nguyên mẫu và từ khóa this.
+
+53
+00:02:59,180 --> 00:03:04,494
+Vậy là xong, hãy chạy user1.increment, Braden, hoàn toàn mới?
+
+54
+00:03:04,494 --> 00:03:05,442
+>> Braden: Bối cảnh thực thi.
+
+55
+00:03:05,442 --> 00:03:11,378
+>> Will Sentance: Bối cảnh thực thi, chính xác, nó ở đó, chúng tôi đi vào nó.
+
+56
+00:03:11,378 --> 00:03:18,559
+Điều đầu tiên, Braden, trong bộ nhớ cục bộ, tham số ngầm của chúng ta ngay lập tức là gì?
+
+57
+00:03:18,559 --> 00:03:20,364
+Cái này, phải, được giao cái gì?
+
+58
+00:03:20,364 --> 00:03:23,728
+User1 còn lại bất cứ thứ gì, vậy là tốt rồi,
+
+59
+00:03:23,728 --> 00:03:29,312
+bởi vì bạn muốn thực hiện một số mã trên user1 và thay đổi điểm số, user1.
+
+60
+00:03:32,124 --> 00:03:34,814
+>> Will Sentance: Điều tiếp theo chúng ta làm bên trong lõi gia tăng là gì?
+
+61
+00:03:34,814 --> 00:03:36,061
+>> Braden: Khai báo một hàm add1.
+
+62
+00:03:36,061 --> 00:03:42,918
+>> Will Sentance: Tuyệt vời, add1, nó đây, hàm add1.
+
+63
+00:03:44,310 --> 00:03:46,410
+>> Will Sentance: Chúng ta phải làm gì sau đó ngay lập tức, Braden?
+
+64
+00:03:46,410 --> 00:03:47,099
+>> Braden: Chạy chức năng.
+
+65
+00:03:47,099 --> 00:03:49,783
+>> Will Sentance: Chúng ta gọi hàm, chạy hàm, gọi hàm,
+
+66
+00:03:49,783 --> 00:03:50,949
+chúng đều có nghĩa giống nhau.
+
+67
+00:03:50,949 --> 00:03:52,132
+Cái gì hoàn toàn mới, Braden?
+
+68
+00:03:52,132 --> 00:03:53,212
+>> Braden: Bối cảnh thực thi.
+
+69
+00:03:53,212 --> 00:03:54,365
+>> Will Sentance: Bối cảnh thực thi, chính xác.
+
+70
+00:03:56,784 --> 00:03:58,269
+>> Will Sentance: Bây giờ mọi thứ trở nên thú vị.
+
+71
+00:04:02,937 --> 00:04:05,728
+>> Will Sentance: Dòng mã bên trong là gì?
+
+72
+00:04:05,728 --> 00:04:08,574
+>> Braden: Cái này- >> Will Sentance: Chà, dòng mã-
+
+73
+00:04:08,574 --> 00:04:09,154
+>> Braden: Dòng mã sẽ là
+
+74
+00:04:09,154 --> 00:04:09,654
+this.score ++.
+
+75
+00:04:09,654 --> 00:04:10,680
+>> Will Sentance: This.score.
+
+76
+00:04:12,759 --> 00:04:14,668
+>> Câu di chúc: ++.
+
+77
+00:04:17,047 --> 00:04:23,521
+>> Will Sentance: Giá trị [LAUGH] của chúng ta về điều này bên trong bộ nhớ cục bộ của add1 là gì?
+
+78
+00:04:23,521 --> 00:04:26,603
+Có lẽ đó là user1 vì chúng tôi đang ở trong chức năng này, chúng tôi nghĩ gì,
+
+79
+00:04:26,603 --> 00:04:27,143
+mọi người?
+
+80
+00:04:27,143 --> 00:04:29,574
+Điều đó có ý nghĩa, mọi ngôn ngữ khác đều làm như vậy!
+
+81
+00:04:29,574 --> 00:04:32,080
+Cái gì, Braden, bạn có nghĩ đó là điều đó không?
+
+82
+00:04:32,080 --> 00:04:33,365
+>> Braden: Không.
+
+83
+00:04:33,365 --> 00:04:34,851
+>> Will Sentance: Không, [LAUGH], vinh quang!
+
+84
+00:04:34,851 --> 00:04:37,592
+>> Braden: [LAUGH] >> Will Sentance: Vâng, vì vậy đây là một trong số
+
+85
+00:04:37,592 --> 00:04:42,626
+những người được cho là, có thể không phải là những triển khai tốt nhất trước đó của JavaScript.
+
+86
+00:04:42,626 --> 00:04:45,949
+Đặc biệt là trong các ngôn ngữ khác, nó hoàn toàn tiêu chuẩn rằng trong khi bạn
+
+87
+00:04:45,949 --> 00:04:46,800
+bên trong phương thức.
+
+88
+00:04:46,800 --> 00:04:51,556
+Đối tượng thích hợp, đối tượng mà chúng ta quan tâm đến việc thực hiện các nội dung với dữ liệu.
+
+89
+00:04:51,556 --> 00:04:55,249
+Xuyên suốt, sẽ là đối tượng mà chúng ta đang chạy phương thức.
+
+90
+00:04:55,249 --> 00:04:58,748
+Ngay cả khi chúng ta khai báo các hàm khác bên trong và chạy chúng,
+
+91
+00:04:58,748 --> 00:05:01,135
+chúng nằm trong bộ nhớ cục bộ của chúng.
+
+92
+00:05:01,135 --> 00:05:04,446
+Nhưng không, cái này trong bộ nhớ cục bộ ở đây, Braden,
+
+93
+00:05:04,446 --> 00:05:07,022
+bạn có muốn đoán xem nó đề cập đến điều gì không?
+
+94
+00:05:07,022 --> 00:05:10,183
+>> [SOUND] >> Will Sentance: Mặc định của chúng tôi là gì
+
+95
+00:05:10,183 --> 00:05:10,900
+cái này?
+
+96
+00:05:10,900 --> 00:05:11,990
+Phải, Dan?
+
+97
+00:05:11,990 --> 00:05:12,920
+>> Dan: Bộ nhớ toàn cầu.
+
+98
+00:05:12,920 --> 00:05:16,027
+>> Will Sentance: Chà, đối tượng cửa sổ chung,
+
+99
+00:05:16,027 --> 00:05:19,570
+đặc biệt là không hữu ích tại thời điểm này.
+
+100
+00:05:19,570 --> 00:05:24,457
+Và vì vậy, chúng tôi sẽ kết thúc việc gắn vào đối tượng toàn cầu vui nhộn này được gọi là cửa sổ
+
+101
+00:05:24,457 --> 00:05:26,308
+một tài sản trên đó, một điểm số.
+
+102
+00:05:26,308 --> 00:05:30,399
+Sau đó, cái nào sẽ không được xác định theo mặc định và chúng tôi sẽ thử và tăng nó lên.
+
+103
+00:05:30,399 --> 00:05:33,419
+[SOUND] đẹp, tốt, đó là một trong những lỗi tuyệt vời đó.
+
+104
+00:05:33,419 --> 00:05:37,434
+Không phải lỗi, tôi đoán nếu chúng ta biết cách nó hoạt động,
+
+105
+00:05:37,434 --> 00:05:38,976
+no se không xảy ra.
+
+106
+00:05:38,976 --> 00:05:42,645
+Vì vậy, ngày xưa, việc này được xử lý như thế nào, nó là một cách hài hước.
+
+107
+00:05:42,645 --> 00:05:45,055
+>> Dan: [LAUGH] >> Will Sentance: Họ đã từng,
+
+108
+00:05:45,055 --> 00:05:47,240
+mọi người có biết điều này không?
+
+109
+00:05:47,240 --> 00:05:53,942
+Họ đã từng làm điều này, họ đã từng làm điều đó,
+
+110
+00:05:53,942 --> 00:05:58,427
+they used to do that = this.
+
+111
+00:05:58,427 --> 00:06:03,408
+Mà sẽ đặt điều đó bằng user1 này, đẹp.
+
+112
+00:06:03,408 --> 00:06:07,037
+Và bên trong đây, chúng ta sẽ không viết this.score ++, chúng ta sẽ làm gì?
+
+113
+00:06:07,037 --> 00:06:08,450
+>> Dan: Đó.
+
+114
+00:06:08,450 --> 00:06:10,750
+>> Will Sentance: That.score ++, chúng tôi sẽ tìm kiếm điều đó trong bộ nhớ cục bộ, nó không có ở đó.
+
+115
+00:06:10,750 --> 00:06:14,499
+Vì vậy, chúng tôi ra đây và lấy user1, không vấn đề gì [SOUND] không vấn đề gì.
+
+116
+00:06:14,499 --> 00:06:17,671
+Bạn sẽ thấy rằng = this bên trong nhiều hàm này trong suốt mã.
+
+117
+00:06:17,671 --> 00:06:20,629
+Đó không phải là con đường thiết kế đẹp nhất, và tôi phải nói.
+
+118
+00:06:20,629 --> 00:06:22,665
+Có nhiều cách khác để làm điều đó,
+
+119
+00:06:22,665 --> 00:06:27,407
+bạn thực sự có thể chạy chức năng add1, chúng tôi đang đặt cha mẹ vào cuối.
+
+120
+00:06:27,407 --> 00:06:30,987
+Ngoài ra, có một số cách thủ công để chạy chức năng,
+
+121
+00:06:30,987 --> 00:06:34,070
+có ai biết cách làm thủ công không, Kayla?
+
+122
+00:06:34,070 --> 00:06:35,307
+>> Kayla: Gọi hoặc trả lời.
+
+123
+00:06:35,307 --> 00:06:36,982
+>> Will Sentance: Gọi điện hoặc trả lời, hoặc ràng buộc, chính xác, tốt,
+
+124
+00:06:36,982 --> 00:06:38,526
+ràng buộc sẽ làm một cái gì đó rất gần.
+
+125
+00:06:38,526 --> 00:06:42,031
+Gọi và trả lời, chúng ta sẽ đi sâu vào vấn đề này hơn trong phần PR.
+
+126
+00:06:42,031 --> 00:06:46,048
+Nếu bạn muốn xem, hãy lặn sâu, những gì chúng tôi có, bạn có thể.
+
+127
+00:06:46,048 --> 00:06:48,647
+Nhưng chỉ cần nhanh chóng add1.cool,
+
+128
+00:06:48,647 --> 00:06:51,746
+Tôi có lẽ cũng có thể chỉ cho bạn ngay bây giờ, add1.
+
+129
+00:06:51,746 --> 00:06:58,834
+Hãy loại bỏ, bằng cách đó là rất tiêu chuẩn rằng điều đó. Điều này, tuyệt vời.
+
+130
+00:06:58,834 --> 00:07:03,414
+Tôi không nghĩ rằng nó vốn dĩ đã quá khủng khiếp, nó biết rằng nó khá ngớ ngẩn.
+
+131
+00:07:03,414 --> 00:07:07,990
+Nhưng có một cách khác như tôi đã nói về việc chạy quảng cáo một chức năng.
+
+132
+00:07:07,990 --> 00:07:12,920
+Theo cách thủ công, nơi chúng tôi thực sự có thể kiểm soát những gì nhiệm vụ này
+
+133
+00:07:12,920 --> 00:07:14,041
+là bên trong của nó.
+
+134
+00:07:14,041 --> 00:07:19,486
+Điều đó thật tuyệt, và đó là bằng cách chạy nó bằng cách sử dụng mát hoặc áp dụng.
+
+135
+00:07:19,486 --> 00:07:21,642
+Đối với bit này, cả hai đều làm điều tương tự.
+
+136
+00:07:21,642 --> 00:07:26,946
+Và nếu tôi đã vào đây, cái này, thì bất cứ thứ gì tôi vào,
+
+137
+00:07:26,946 --> 00:07:30,902
+cái này sẽ đánh giá cái gì, mọi người?
+
+138
+00:07:30,902 --> 00:07:32,052
+>> Braden: Người dùng 1.
+
+139
+00:07:32,052 --> 00:07:35,972
+>> Will Sentance: User1, và do đó cái này bên trong đây sẽ được đặt thành đó-
+
+140
+00:07:35,972 --> 00:07:37,427
+>> Braden: Người dùng 1.
+
+141
+00:07:37,427 --> 00:07:38,816
+>> Will Sentance: User1, và sau đó nó hoạt động trở lại.

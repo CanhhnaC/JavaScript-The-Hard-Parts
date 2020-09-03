@@ -1,0 +1,883 @@
+1
+00:00:00,190 --> 00:00:01,210
+>> Will Sentance: Hãy xem, giải pháp 3,
+
+2
+00:00:01,210 --> 00:00:03,590
+từ khóa tự động hóa công việc khó, mới.
+
+3
+00:00:03,590 --> 00:00:05,500
+Lợi ích, nhanh hơn để viết, tôi nhận được nó.
+
+4
+00:00:05,500 --> 00:00:07,110
+Nhìn toàn màu xanh, đó không phải là chúng ta đang viết nữa.
+
+5
+00:00:08,610 --> 00:00:10,940
+Thường vẫn được sử dụng một cách chuyên nghiệp.
+
+6
+00:00:10,940 --> 00:00:14,310
+Và một phần lớn của nó là, nhưng chúng ta sẽ thấy, giải pháp 4 thay đổi nó một chút.
+
+7
+00:00:14,310 --> 00:00:19,330
+Vấn đề là 95% các nhà phát triển không biết nó hoạt động như thế nào.
+
+8
+00:00:19,330 --> 00:00:23,950
+Tôi nghĩ do đó, phỏng vấn thất bại, có một động lực nhẹ nhàng để học hỏi,
+
+9
+00:00:23,950 --> 00:00:29,920
+và do đó không thể gỡ lỗi và tạo mã sạch và đáng tin cậy mọi lúc.
+
+10
+00:00:29,920 --> 00:00:32,400
+Đây là một vấn đề nhỏ khác với nó, đây là thiết kế,
+
+11
+00:00:32,400 --> 00:00:37,220
+Tôi có thể nói, dòng chảy không phải dòng chảy, đó là một động thái thiết kế không thông minh.
+
+12
+00:00:37,220 --> 00:00:41,230
+Người dùng đó tạo một hàm nếu tôi chạy nó mà không có từ khóa mới,
+
+13
+00:00:41,230 --> 00:00:42,160
+Tôi tìm thấy nó trong cơ sở mã.
+
+14
+00:00:42,160 --> 00:00:44,579
+Và khi tôi đang điều hành nhóm của mình và tôi bắt đầu chạy mà không có từ khóa mới.
+
+15
+00:00:44,579 --> 00:00:51,830
+Điều này sẽ kết thúc mà tôi đề cập đến sáu thứ gì trong đối tượng?
+
+16
+00:00:51,830 --> 00:00:53,032
+Nó sẽ chỉ gì cho Braden?
+
+17
+00:00:53,032 --> 00:00:53,930
+>> Braydon: Toàn cầu.
+
+18
+00:00:53,930 --> 00:00:59,040
+>> Will Sentance: Đối tượng toàn cục, được biết là rất tuyệt vời, nhưng
+
+19
+00:00:59,040 --> 00:01:02,152
+bạn có thể nói, tốt, rõ ràng là tôi cần phải có từ khóa mới, phải không?
+
+20
+00:01:02,152 --> 00:01:03,420
+Vì vậy, chúng tôi sẽ nhận được điều này quá sớm.
+
+21
+00:01:03,420 --> 00:01:06,810
+Nó không giống như vậy bởi vì tôi có thể có mã khác trước đó mà cái này thậm chí còn ở đó.
+
+22
+00:01:06,810 --> 00:01:08,980
+Tôi có thể thích một hàm được khai báo rằng tôi đang sử dụng nó,
+
+23
+00:01:08,980 --> 00:01:11,700
+rằng điều này có thể nằm bên trong hàm mà giá trị này bằng.
+
+24
+00:01:11,700 --> 00:01:16,670
+Vấn đề là tôi không biết khi tôi nhìn vào chức năng đó rằng nó yêu cầu một
+
+25
+00:01:16,670 --> 00:01:19,230
+từ khóa để thực hiện công việc của nó.
+
+26
+00:01:19,230 --> 00:01:23,170
+Đó có lẽ không phải là quyết định thiết kế thông minh nhất, phải không?
+
+27
+00:01:23,170 --> 00:01:25,890
+Bạn có thể có xu hướng muốn có thể nhìn vào chức năng và đi,
+
+28
+00:01:25,890 --> 00:01:29,334
+Tôi biết rằng điều đó đòi hỏi một từ khóa mới để làm bất cứ điều gì hữu ích.
+
+29
+00:01:30,960 --> 00:01:33,550
+Vì vậy, các nhà phát triển đã giúp đỡ lẫn nhau.
+
+30
+00:01:33,550 --> 00:01:36,440
+Nếu bạn có thể tưởng tượng ngôn ngữ mà nếu nó sẽ là một hàm
+
+31
+00:01:36,440 --> 00:01:39,590
+yêu cầu đó là sẽ tự động hóa mọi thứ, bạn sẽ không khai báo nó với hàm bạn
+
+32
+00:01:39,590 --> 00:01:43,150
+khai báo nó với và hàm tạo là một thuật ngữ điển hình cho
+
+33
+00:01:43,150 --> 00:01:45,880
+bất cứ thứ gì tạo ra sẽ xây dựng một đối tượng.
+
+34
+00:01:45,880 --> 00:01:47,020
+Nhưng JavaScript đã không làm điều đó.
+
+35
+00:01:47,020 --> 00:01:50,410
+Họ nói rằng không có vấn đề gì là các chức năng, hãy để nó như một chức năng bình thường.
+
+36
+00:01:50,410 --> 00:01:54,380
+Và sau đó chèn trước ba chữ cái mới khi bạn chạy hàm.
+
+37
+00:01:54,380 --> 00:01:55,550
+Tôi không biết.
+
+38
+00:01:55,550 --> 00:01:56,547
+Điều đó không lý tưởng cho
+
+39
+00:01:56,547 --> 00:01:59,770
+các thành viên trong nhóm của bạn giống như nếu bạn viết nhận xét để nói với họ nhưng.
+
+40
+00:01:59,770 --> 00:02:04,233
+Vậy trong thời gian ngắn, các nhà phát triển đã làm gì để giúp đỡ nhau
+
+41
+00:02:04,233 --> 00:02:08,951
+mà họ biết khi họ thấy một hàm rằng nó cần một từ khóa mới trong
+
+42
+00:02:08,951 --> 00:02:12,230
+trước nó để làm công việc của nó?
+
+43
+00:02:12,230 --> 00:02:14,080
+Ừ, tiến lên đi Adam.
+
+44
+00:02:14,080 --> 00:02:14,890
+>> Adam: Viết hoa.
+
+45
+00:02:14,890 --> 00:02:16,110
+>> Câu Di chúc: Viết hoa chữ cái đầu tiên.
+
+46
+00:02:16,110 --> 00:02:19,380
+Và đó là lý do tại sao bạn sẽ không thấy, bất cứ khi nào bạn thấy một từ khóa mới được sử dụng trước
+
+47
+00:02:19,380 --> 00:02:21,620
+một hàm thì hàm sẽ có chữ hoa.
+
+48
+00:02:21,620 --> 00:02:25,060
+Nó không có bất kỳ ý nghĩa nào, nó không có bất kỳ tác động nào đến mã.
+
+49
+00:02:25,060 --> 00:02:28,970
+Chỉ là để giúp nhau giúp dân gian ra ngoài để có thể phát hiện ra
+
+50
+00:02:28,970 --> 00:02:30,630
+rằng chức năng này cần một từ khóa mới.
+
+51
+00:02:30,630 --> 00:02:35,270
+Đó rõ ràng là điều cần được cải thiện.
+
+52
+00:02:35,270 --> 00:02:36,820
+Và đó là nơi giải pháp 4 xuất hiện.
+
+53
+00:02:36,820 --> 00:02:39,390
+Trước tiên, chúng tôi phải ủng hộ một trong những chức năng mà chúng tôi biết rằng nó yêu cầu mới
+
+54
+00:02:39,390 --> 00:02:41,040
+từ khóa chúng tôi đã làm việc.
+
+55
+00:02:41,040 --> 00:02:42,620
+Và đó là giải pháp 4 ra đời.
+
+56
+00:02:42,620 --> 00:02:45,220
+Đường cú pháp vải.
+
+57
+00:02:45,220 --> 00:02:46,490
+Nhưng nó là một đường cú pháp.
+
+58
+00:02:46,490 --> 00:02:48,910
+Điều đó có nghĩa là một cái gì đó thay đổi giao diện của nó, nhưng
+
+59
+00:02:48,910 --> 00:02:49,930
+không thay đổi nó dưới mui xe.
+
+60
+00:02:49,930 --> 00:02:52,790
+Đối với mục đích của chúng tôi, cho phần này ở đây, cách chúng tôi sẽ sử dụng nó ở đây,
+
+61
+00:02:52,790 --> 00:02:56,140
+nó không thay đổi bất cứ điều gì dưới mui xe.
+
+62
+00:02:56,140 --> 00:02:57,910
+Hai điều thúc đẩy điều này.
+
+63
+00:02:58,940 --> 00:03:04,710
+Nó xuất hiện vào năm 2015, ES6, Trong tuyên bố
+
+64
+00:03:04,710 --> 00:03:10,250
+người tạo chức năng của chúng tôi, khi được thực thi
+
+65
+00:03:10,250 --> 00:03:14,470
+tự động với các từ khóa mới giúp trả về một đối tượng thành user1.
+
+66
+00:03:14,470 --> 00:03:20,340
+Chạy lại nó sẽ trả về một đối tượng vào user2, có hai phần quan trọng đối với nó.
+
+67
+00:03:20,340 --> 00:03:23,270
+Có chức năng tạo đối tượng tự động.
+
+68
+00:03:23,270 --> 00:03:26,230
+Và sau đó là kho các chức năng được chia sẻ.
+
+69
+00:03:26,230 --> 00:03:28,970
+Tất cả chúng đều được đóng gói trên cùng một tổ hợp đối tượng chức năng.
+
+70
+00:03:30,690 --> 00:03:35,470
+Nhưng chúng tôi đã thông báo cho JavaScript hai phần riêng biệt.
+
+71
+00:03:35,470 --> 00:03:37,595
+Chúng tôi tuyên bố người tạo người dùng, tạo ra một chức năng và
+
+72
+00:03:37,595 --> 00:03:40,058
+một đối tượng có thuộc tính nguyên mẫu trên đó với một đối tượng đối với nó.
+
+73
+00:03:40,058 --> 00:03:45,850
+Mà chúng ta có thể lưu trữ toàn bộ, độc lập, các chức năng.
+
+74
+00:03:45,850 --> 00:03:51,130
+Trong các ngôn ngữ khác, hai thứ này có mối liên hệ mật thiết với nhau, phải không?
+
+75
+00:03:51,130 --> 00:03:54,820
+Nó có ý nghĩa, hàm này khi nó chạy sẽ tạo ra một đối tượng, trả về nó,
+
+76
+00:03:54,820 --> 00:03:56,620
+và đối tượng đó có quyền truy cập vào các chức năng này.
+
+77
+00:03:56,620 --> 00:03:58,280
+Vì vậy, họ giống như kết nối mật thiết.
+
+78
+00:03:58,280 --> 00:03:59,770
+Trong các ngôn ngữ khác bạn.
+
+79
+00:03:59,770 --> 00:04:02,080
+Ngay cả trong JavaScript, chúng được kết nối mật thiết và
+
+80
+00:04:02,080 --> 00:04:04,390
+chúng trên cùng một tổ hợp đối tượng chức năng.
+
+81
+00:04:05,460 --> 00:04:09,270
+Nhưng trong các ngôn ngữ khác, bạn có thể khai báo chúng cùng nhau.
+
+82
+00:04:09,270 --> 00:04:14,320
+Biết khai báo hàm who khi chạy trả về một đối tượng có quyền truy cập
+
+83
+00:04:14,320 --> 00:04:16,270
+được khai báo hoàn toàn riêng biệt.
+
+84
+00:04:16,270 --> 00:04:20,770
+Các hàm đi vào đối tượng nguyên mẫu được bán trên tài sản dự án,
+
+85
+00:04:20,770 --> 00:04:24,240
+xin lỗi rằng các đối tượng trên thuộc tính dự án, tất cả các đối tượng chức năng kết hợp.
+
+86
+00:04:24,240 --> 00:04:27,290
+Vì vậy, có, chúng được lưu trữ cùng nhau,
+
+87
+00:04:27,290 --> 00:04:32,390
+nhưng chúng không được khai báo có nghĩa là chúng ta không viết chúng vào JavaScript cùng nhau.
+
+88
+00:04:32,390 --> 00:04:35,380
+Chúng tôi không viết hướng dẫn các công việc để đạt được hai điều đó cùng nhau.
+
+89
+00:04:35,380 --> 00:04:36,910
+Chúng tôi không viết chúng cùng nhau, chúng tôi chạy riêng.
+
+90
+00:04:38,320 --> 00:04:42,130
+Một ngôn ngữ khác là chúng tôi thực hiện tất cả trong một cấu trúc, tất cả trong một lần,
+
+91
+00:04:42,130 --> 00:04:45,240
+tất cả trong một định dạng.
+
+92
+00:04:45,240 --> 00:04:48,870
+Và định dạng đó mọi người, bất cứ ai biết cấu trúc đó được gọi là gì
+
+93
+00:04:48,870 --> 00:04:51,650
+điều đó cho phép chúng ta làm những điều này cùng nhau, cứu những điều này cùng một lúc, Peter?
+
+94
+00:04:51,650 --> 00:04:52,270
+>> Adam: Một mệnh đề.
+
+95
+00:04:52,270 --> 00:04:53,960
+>> Will Sentance: Một mệnh đề chính xác.
+
+96
+00:04:53,960 --> 00:04:55,800
+Đó là mệnh đề rõ ràng, Peter.
+
+97
+00:04:55,800 --> 00:04:56,300
+>> Adam: Xin lỗi.
+
+98
+00:04:57,590 --> 00:05:02,520
+>> Will Sentance: Đó là một trò đùa, rõ ràng là trò đùa, một mệnh đề chính xác, chúng ta bắt đầu.
+
+99
+00:05:02,520 --> 00:05:05,400
+Nhưng Peter, anh tốt bụng đến mức bị chỉ ra là không.
+
+100
+00:05:06,640 --> 00:05:09,850
+Bạn thực sự là một người rất, rất tốt.
+
+101
+00:05:09,850 --> 00:05:12,701
+Không rõ ràng không giống như tôi, vì vậy chúng tôi đang viết tôi đã chia sẻ các phương pháp,
+
+102
+00:05:12,701 --> 00:05:14,718
+những phương pháp này được chia sẻ bởi tất cả những người khác.
+
+103
+00:05:14,718 --> 00:05:21,192
+Trên thực tế, chúng ta hãy tự giúp mình ở đây có một người dùng 701,
+
+104
+00:05:21,192 --> 00:05:26,643
+điều này sẽ lại xuất hiện từ việc chạy trình tạo người dùng,
+
+105
+00:05:26,643 --> 00:05:30,504
+hãy thực sự làm điều đó ở đây để đề phòng,
+
+106
+00:05:30,504 --> 00:05:36,089
+người dùng 701 với kết quả của một cuộc gọi khác tới Người tạo người dùng.
+
+107
+00:05:36,089 --> 00:05:42,933
+Hãy nói với Sarah và 19 tuổi và tất nhiên từ khóa mới ở phía trước và
+
+108
+00:05:42,933 --> 00:05:47,600
+mà sẽ được trả về người dùng 701.
+
+109
+00:05:47,600 --> 00:05:55,020
+Và lần này chúng ta hãy làm đúng, có đối tượng
+
+110
+00:05:55,020 --> 00:05:59,350
+với thuộc tính proto lên đến
+
+111
+00:06:02,790 --> 00:06:07,808
+đối tượng được chia sẻ và sau đó đặt tên, Sarah,
+
+112
+00:06:07,808 --> 00:06:12,751
+điểm 19.
+
+113
+00:06:14,360 --> 00:06:17,430
+Mọi người đều nhận được phần này ở đây, tôi hy vọng điều đó không ném mọi người.
+
+114
+00:06:17,430 --> 00:06:24,640
+Hai đối tượng đó, chúng đều có quyền truy cập vào các hàm, phương thức được chia sẻ này.
+
+115
+00:06:26,230 --> 00:06:28,573
+Chúng tôi đang lưu chúng trên cùng một tổ hợp chức năng, nhưng
+
+116
+00:06:28,573 --> 00:06:32,730
+chúng tôi đang khai báo chúng, >> Will Sentance: Riêng biệt.
+
+117
+00:06:33,860 --> 00:06:35,430
+Hãy làm tất cả ở một nơi.
+
+118
+00:06:35,430 --> 00:06:38,420
+Và cấu trúc lớp cho phép chúng ta làm điều đó.
+
+119
+00:06:38,420 --> 00:06:41,850
+Đây rồi, nó là dân gian theo cú pháp, tôi thực sự sẽ đi thẳng vào đây.
+
+120
+00:06:43,780 --> 00:06:45,610
+Đây là hai phần chúng ta đã làm trước đây, phải không?
+
+121
+00:06:45,610 --> 00:06:47,602
+Hãy nhớ rằng, chúng tôi đã tạo người dùng chức năng của chúng tôi,
+
+122
+00:06:47,602 --> 00:06:49,348
+tạo ra một tổ hợp đối tượng hàm.
+
+123
+00:06:49,348 --> 00:06:54,939
+Mặc dù khi nó chạy Sẽ tạo bên trong chính nó với một từ khóa mới,
+
+124
+00:06:54,939 --> 00:06:59,773
+một đối tượng lưu trữ user1 lần đầu tiên, lưu trữ user 701,
+
+125
+00:06:59,773 --> 00:07:05,386
+Lần thứ 701 mà mỗi người có quyền truy cập vào đối tượng này với đầy đủ các chức năng.
+
+126
+00:07:05,386 --> 00:07:08,170
+Người dùng tạo.prototype.increment.
+
+127
+00:07:08,170 --> 00:07:10,620
+Người dùng tạo.prototype.login.
+
+128
+00:07:10,620 --> 00:07:11,630
+Chúng tôi lưu chúng ở đó.
+
+129
+00:07:13,330 --> 00:07:16,170
+Bây giờ không có gì thay đổi dưới mui xe.
+
+130
+00:07:16,170 --> 00:07:21,330
+Chúng tôi chỉ cần thực hiện hai khai báo hoặc nhiệm vụ riêng biệt này
+
+131
+00:07:21,330 --> 00:07:26,560
+trong một cấu trúc, chúng tôi gọi nó là một lớp.
+
+132
+00:07:26,560 --> 00:07:33,110
+Chúng tôi lấy nhãn của hàm và chúng tôi làm cho bạn nhãn của lớp.
+
+133
+00:07:33,110 --> 00:07:36,527
+Ngay sau khi bạn khai báo một lớp, chúng tôi nghĩ chúng tôi nhận được những người như thế nào?
+
+134
+00:07:39,370 --> 00:07:40,310
+>> Will Sentance: Dan? >> Dan: Một đối tượng.
+
+135
+00:07:40,310 --> 00:07:41,889
+>> Will Sentance: Chúng tôi nhận được một tổ hợp đối tượng hàm.
+
+136
+00:07:45,078 --> 00:07:46,040
+>> Will Sentance: Chúng tôi nhận được một đối tượng, vâng.
+
+137
+00:07:46,040 --> 00:07:49,100
+Chúng ta có được một đối tượng sẵn sàng để nhận một hàm và một đối tượng.
+
+138
+00:07:49,100 --> 00:07:51,770
+Ngay sau khi chúng tôi làm điều đó, chúng tôi sẽ xử lý phần đầu tiên bên trong nó.
+
+139
+00:07:51,770 --> 00:07:59,320
+Vì vậy, ngay sau khi chúng ta khai báo nó, chúng ta sẽ nhận được một tổ hợp đối tượng chức năng.
+
+140
+00:07:59,320 --> 00:08:08,670
+Nếu không, chúng ta có một tổ hợp đối tượng chức năng.
+
+141
+00:08:08,670 --> 00:08:13,710
+Và bit đầu tiên của tổ hợp đối tượng hàm, chúng tôi cung cấp hàm tạo phụ đề,
+
+142
+00:08:13,710 --> 00:08:20,190
+và đó là bit hàm, hoặc tổ hợp đối tượng hàm ở đó.
+
+143
+00:08:20,190 --> 00:08:20,800
+Chúng tôi không biết.
+
+144
+00:08:20,800 --> 00:08:24,792
+Chúng tôi cung cấp cho nó một phụ đề, hàm tạo.
+
+145
+00:08:28,277 --> 00:08:31,266
+>> Will Sentance: Và tất nhiên nó nằm trên nó trong tổ hợp đối tượng hàm trong
+
+146
+00:08:31,266 --> 00:08:35,400
+bit đối tượng, một thuộc tính nguyên mẫu, là một đối tượng có đầy đủ chức năng,
+
+147
+00:08:35,400 --> 00:08:38,390
+cũng chưa, chúng tôi lưu trữ ngay lập tức những gì, và
+
+148
+00:08:38,390 --> 00:08:42,880
+chúng tôi không còn phải chỉ định chúng theo cách thủ công mà chúng tôi chỉ cần liệt kê chúng ra.
+
+149
+00:08:42,880 --> 00:08:45,430
+Thậm chí không có dấu phẩy ở giữa, chúng tôi chỉ liệt kê chúng ra.
+
+150
+00:08:45,430 --> 00:08:48,340
+Chúng tôi có thể liệt kê bao nhiêu tùy thích và tất cả chúng sẽ được lấy từng cái một và
+
+151
+00:08:48,340 --> 00:08:50,230
+đằng sau những gì JavaScript đang chạy?
+
+152
+00:08:50,230 --> 00:08:54,377
+Nó nói rằng người dùng create.prototype.increment và
+
+153
+00:08:54,377 --> 00:08:57,382
+nó dính chúng vào đối tượng đó.
+
+154
+00:08:57,382 --> 00:09:00,754
+Mọi người, không có gì thay đổi dưới mui xe ở đây.
+
+155
+00:09:00,754 --> 00:09:06,971
+Chúng ta có ngay khi chúng ta khai báo một lớp trước khi chúng ta thực hiện nó bằng cách khai báo một hàm.
+
+156
+00:09:06,971 --> 00:09:11,047
+Đã ngầm tạo một đối tượng gắn liền với nó một tổ hợp đối tượng hàm
+
+157
+00:09:11,047 --> 00:09:14,880
+trong đó có một thuộc tính nguyên mẫu là chính một đối tượng.
+
+158
+00:09:14,880 --> 00:09:17,320
+Chúng tôi đã lưu trữ các chức năng được chia sẻ của mình vào đó.
+
+159
+00:09:17,320 --> 00:09:24,090
+Bây giờ, chúng ta tạo một mệnh đề là một tổ hợp đối tượng hàm.
+
+160
+00:09:25,490 --> 00:09:28,650
+Và phần đầu tiên của nó, chúng tôi đưa ra một hàm tạo phụ đề và
+
+161
+00:09:28,650 --> 00:09:30,620
+bạn có thể thấy nó giống hệt nhau.
+
+162
+00:09:30,620 --> 00:09:34,300
+Điều đầu tiên mà chúng tôi chuyển vào hàm tạo khác này trước tiên trong đường dẫn của bạn, xin lỗi.
+
+163
+00:09:34,300 --> 00:09:35,920
+Điều đầu tiên chúng tôi lưu trữ trong đó.
+
+164
+00:09:35,920 --> 00:09:41,510
+Và tạo cho chúng ta một hàm tạo là bit hàm của tổ hợp đối tượng hàm.
+
+165
+00:09:41,510 --> 00:09:43,640
+Và sau đó tất cả các chức năng chúng tôi liệt kê bên dưới,
+
+166
+00:09:43,640 --> 00:09:45,850
+chúng tôi chỉ sẽ liệt kê chúng theo nghĩa đen.
+
+167
+00:09:45,850 --> 00:09:48,020
+Ở hậu trường, George, chúng tôi đang xem phần đầu tiên và
+
+168
+00:09:48,020 --> 00:09:53,040
+chúng ta đang đi lên, tắt chúng ta đi đến tổ hợp đối tượng hàm của chúng ta là lớp.
+
+169
+00:09:53,040 --> 00:09:57,110
+Và nhìn vào bit đối tượng của nó và xem xét thuộc tính nguyên mẫu của nó và
+
+170
+00:09:57,110 --> 00:10:00,910
+nhìn vào đối tượng và phương thức câu chuyện đó, được gọi là tăng dần.
+
+171
+00:10:00,910 --> 00:10:04,530
+Và sau đó, slide tiếp theo sẽ đăng nhập.
+
+172
+00:10:04,530 --> 00:10:07,380
+Tắt chúng ta đến lớp người tạo người dùng,
+
+173
+00:10:07,380 --> 00:10:12,350
+mà thực sự chỉ là một tổ hợp đối tượng hàm và xem xét thuộc tính nguyên mẫu.
+
+174
+00:10:12,350 --> 00:10:15,860
+Chúng tôi chèn một thuộc tính đăng nhập vào nó và gán một chức năng.
+
+175
+00:10:15,860 --> 00:10:17,240
+Và sau đó cũng vậy.
+
+176
+00:10:17,240 --> 00:10:20,510
+Khi chúng tôi chạy tạo người dùng, tôi đã viết hoa ở đây không thay đổi.
+
+177
+00:10:20,510 --> 00:10:24,350
+Khi chúng tôi chạy trình tạo người dùng với từ khóa biết chúng tôi sẽ chạy hàm nào
+
+178
+00:10:24,350 --> 00:10:25,715
+đối tượng kết hợp, Dan?
+
+179
+00:10:25,715 --> 00:10:30,767
+Khi chúng tôi chạy trình tạo người dùng bằng số chín với từ khóa mới phía trước,
+
+180
+00:10:30,767 --> 00:10:33,974
+chúng ta chạy bit nào của tổ hợp đối tượng hàm.
+
+181
+00:10:33,974 --> 00:10:34,788
+>> Dan: Người xây dựng.
+
+182
+00:10:34,788 --> 00:10:37,295
+>> Will Sentance: Hàm, vâng chúng ta gọi nó là hàm tạo nhưng
+
+183
+00:10:37,295 --> 00:10:39,860
+nó thực sự chỉ có cùng một chức năng, yeah.
+
+184
+00:10:39,860 --> 00:10:42,100
+Và khi out trả về một đối tượng,
+
+185
+00:10:42,100 --> 00:10:45,020
+nó sẽ liên kết đến bit nào của tổ hợp đối tượng chức năng Dan?
+
+186
+00:10:45,020 --> 00:10:47,000
+>> Dan: Nguyên mẫu.
+
+187
+00:10:47,000 --> 00:10:52,550
+>> Will Sentance: Đối tượng nguyên mẫu chính xác, không có gì thay đổi.
+
+188
+00:10:52,550 --> 00:10:57,500
+Nhưng nó trông giống nhiều ngôn ngữ khác hơn.
+
+189
+00:10:57,500 --> 00:11:00,720
+Nhưng điều đó đối với tôi, tôi thậm chí không biết,
+
+190
+00:11:00,720 --> 00:11:03,900
+bởi vì nó đang làm những gì mà các ngôn ngữ khác đang làm?
+
+191
+00:11:03,900 --> 00:11:05,210
+Không, chắc chắn là không.
+
+192
+00:11:05,210 --> 00:11:11,540
+Và gần như nhiều hơn nữa, tôi không biết, nó lại làm cho nó dễ đọc hơn.
+
+193
+00:11:11,540 --> 00:11:14,550
+Nó làm cho nó rõ ràng dễ đọc hơn.
+
+194
+00:11:14,550 --> 00:11:17,520
+Nhưng đằng sau hậu trường, không có gì thay đổi.
+
+195
+00:11:17,520 --> 00:11:22,041
+Có nghĩa là nếu chúng ta thực sự muốn hiểu và gỡ lỗi và
+
+196
+00:11:22,041 --> 00:11:26,456
+sử dụng những kỹ thuật này, nó thậm chí còn thích hợp hơn
+
+197
+00:11:26,456 --> 00:11:31,409
+mà bây giờ chúng tôi hiểu những gì đang diễn ra.
+
+198
+00:11:31,409 --> 00:11:35,413
+Đang tiếp tục bởi vì thậm chí bây giờ nó trông giống các ngôn ngữ khác.
+
+199
+00:11:35,413 --> 00:11:39,324
+Ý nghĩa sẽ mang lại cho tất cả các quan điểm của chúng tôi về cách các ngôn ngữ khác triển khai
+
+200
+00:11:39,324 --> 00:11:43,300
+những tính năng này, nhưng không hoạt động trong hậu trường cuộc sống thực.
+
+201
+00:11:43,300 --> 00:11:47,640
+Nhân tiện, nó chính xác là cùng một mô hình, như chúng ta đã thấy ở phần trước và giải pháp 2.
+
+202
+00:11:48,850 --> 00:11:51,940
+Nó chỉ được bao bọc bởi tự động hóa chìa khóa mới,
+
+203
+00:11:51,940 --> 00:11:54,188
+đó là rất nhiều mã đã được tự động hóa bởi từ khóa mới.
+
+204
+00:11:54,188 --> 00:11:59,011
+Và bây giờ đã hoàn tất việc thiết lập điểm bắt đầu của chức năng
+
+205
+00:11:59,011 --> 00:12:01,692
+mà khi chạy trả về các đối tượng.
+
+206
+00:12:01,692 --> 00:12:06,281
+Và các đối tượng bị mất hành động có quyền truy cập vào các chia sẻ hoặc chức năng ở đó bây giờ,
+
+207
+00:12:06,281 --> 00:12:11,166
+bây giờ chúng ta thông qua quá trình thiết lập điều này trong một lần Trong các cấu trúc lớp,
+
+208
+00:12:11,166 --> 00:12:12,910
+trong thiết lập lớp.
+
+209
+00:12:12,910 --> 00:12:17,070
+Nhưng nó không thay đổi bất cứ điều gì, nó chỉ khiến chúng ta viết ít mã hơn.
+
+210
+00:12:17,070 --> 00:12:20,180
+Nó được gọi là đường cú pháp, làm cho nó trông đẹp hơn,
+
+211
+00:12:20,180 --> 00:12:23,830
+Tôi cho rằng nó giống như đóng băng đường trên một chiếc bánh, tôi không biết.
+
+212
+00:12:23,830 --> 00:12:26,260
+Về mặt tổng hợp, bạn thích, làm cho nó trông đẹp hơn, nhưng
+
+213
+00:12:26,260 --> 00:12:29,070
+nó sẽ không thay đổi bất cứ điều gì dưới mui xe.
+
+214
+00:12:29,070 --> 00:12:33,410
+Tất cả đúng dân gian, lợi ích nổi lên như một tiêu chuẩn mới không còn nghi ngờ gì nữa
+
+215
+00:12:33,410 --> 00:12:36,190
+cảm thấy giống như sự khởi đầu của các ngôn ngữ khác Python và Java.
+
+216
+00:12:36,190 --> 00:12:39,970
+Nó trông rất giống phong cách của các ngôn ngữ, ngôn ngữ, vấn đề khác.
+
+217
+00:12:39,970 --> 00:12:47,210
+Tôi nói 95 cho giải pháp 3, 99% nhà phát triển không biết nó hoạt động như thế nào.
+
+218
+00:12:47,210 --> 00:12:48,500
+Một lần nữa, tại sao các cuộc phỏng vấn thất bại?
+
+219
+00:12:48,500 --> 00:12:51,540
+Tôi không biết đây là một nhưng
+
+220
+00:12:51,540 --> 00:12:55,520
+không thể giải quyết các vấn đề mà họ muốn giải quyết theo cách họ muốn giải quyết chúng.
+
+221
+00:12:55,520 --> 00:12:58,490
+Nhưng bạn sẽ không phải là một trong những người đó.

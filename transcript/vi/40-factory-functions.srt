@@ -1,0 +1,424 @@
+1
+00:00:00,220 --> 00:00:05,080
+>> Will Sentance: Cách khác mà tôi có thể làm, chức năng tích hợp của
+
+2
+00:00:05,080 --> 00:00:10,230
+JavaScript mà đầu ra sẽ là một đối tượng trống mãi mãi?
+
+3
+00:00:10,230 --> 00:00:11,082
+Vâng, Adam, làm ơn?
+
+4
+00:00:11,082 --> 00:00:11,911
+>> Adam: Object.create.
+
+5
+00:00:11,911 --> 00:00:15,955
+>> Will Sentance: Object.create, rất hay, từ Adam, vâng, ngay tại chỗ.
+
+6
+00:00:15,955 --> 00:00:18,130
+User3 bằng object.create.
+
+7
+00:00:18,130 --> 00:00:19,830
+Đây là một hàm tích hợp sẵn trong JavaScript.
+
+8
+00:00:21,180 --> 00:00:27,140
+Nó sẽ cung cấp cho chúng ta sau một số chi tiết, đó là một từ khó hiểu.
+
+9
+00:00:27,140 --> 00:00:30,440
+Cung cấp cho chúng tôi một số kiểm soát chi tiết đối với đối tượng của chúng tôi.
+
+10
+00:00:30,440 --> 00:00:34,010
+Nhưng tôi chỉ muốn tất cả các bạn biết bây giờ, đó là điều duy nhất
+
+11
+00:00:35,930 --> 00:00:42,060
+xét về bản thân đối tượng của chúng ta, mà nó thực hiện, là trả về một đối tượng rỗng.
+
+12
+00:00:42,060 --> 00:00:43,780
+Vì vậy, bên tay phải ở đây.
+
+13
+00:00:44,990 --> 00:00:47,370
+Chúng ta hãy khai báo phía bên trái ở đây trước.
+
+14
+00:00:48,400 --> 00:00:50,210
+Cho bạn Kayla.
+
+15
+00:00:50,210 --> 00:00:53,400
+Cố lên, tại sao tôi luôn bỏ qua lá thư cuối cùng?
+
+16
+00:00:53,400 --> 00:00:55,070
+Nó rất thú vị, phải không?
+
+17
+00:00:55,070 --> 00:00:57,790
+Chắc là tôi đang cố gắng đẩy nhanh quá trình viết của mình.
+
+18
+00:00:57,790 --> 00:00:59,245
+Được rồi.
+
+19
+00:00:59,245 --> 00:01:01,750
+Đầu tiên bên tay trái Kyla.
+
+20
+00:01:02,910 --> 00:01:05,160
+>> Kayla: Chúng tôi đang khai báo một Người dùng 3 không đổi.
+
+21
+00:01:05,160 --> 00:01:06,270
+>> Will Sentance: Vâng, user3, xuất sắc.
+
+22
+00:01:06,270 --> 00:01:10,070
+Bên tay phải sẽ ngay lập tức trả lại cho chúng ta những gì Kyla?
+
+23
+00:01:10,070 --> 00:01:10,780
+>> Kayla: Một vật thể rỗng.
+
+24
+00:01:10,780 --> 00:01:11,760
+>> Will Sentance: Một đối tượng trống rỗng.
+
+25
+00:01:11,760 --> 00:01:12,950
+Đó là con người.
+
+26
+00:01:12,950 --> 00:01:18,046
+Và vì vậy, ngay cả khi tôi phải, >> Will Sentance: Even
+
+27
+00:01:18,046 --> 00:01:20,242
+nếu tôi đi vào các parethens đó,
+
+28
+00:01:20,242 --> 00:01:24,410
+bạn có thể nghĩ những người có kiến ​​thức là MD khôn ngoan.
+
+29
+00:01:24,410 --> 00:01:29,120
+Tôi có thể chuyển vào một đối tượng trong đó có đầy đủ các đối tượng đầy đủ các thuộc tính,
+
+30
+00:01:29,120 --> 00:01:32,610
+Tôi không quan trọng việc tôi vượt qua nó, tôi có thể vượt qua bất cứ thứ gì tôi muốn.
+
+31
+00:01:32,610 --> 00:01:35,610
+Nó sẽ trả về một đối tượng rỗng.
+
+32
+00:01:35,610 --> 00:01:40,591
+Bây giờ đối tượng trống đó có thể có một số thuộc tính ẩn tùy thuộc vào những gì chúng ta
+
+33
+00:01:40,591 --> 00:01:42,708
+chuyển vào, hoặc tài sản ẩn trên.
+
+34
+00:01:42,708 --> 00:01:47,760
+Nhưng nó luôn là một đối tượng rỗng, không có thuộc tính trực tiếp trên nó.
+
+35
+00:01:47,760 --> 00:01:53,140
+Sau đó, chúng tôi gán cho nó thuộc tính name, là giá trị.
+
+36
+00:01:53,140 --> 00:01:57,920
+Trường Eva mà đã lưu trữ trong đó.
+
+37
+00:01:59,400 --> 00:02:03,660
+9 và một lần nữa phương thức gia tăng là một hàm.
+
+38
+00:02:08,530 --> 00:02:12,372
+Hãy chỉ xác nhận xem tôi có thể làm điều quan trọng của riêng mình hay không.
+
+39
+00:02:12,372 --> 00:02:19,590
+Use3.increment, Todd tôi có thể giúp gì cho bạn không?
+
+40
+00:02:19,590 --> 00:02:22,980
+Lần đầu tiên của tôi lặp đi lặp lại và anh ấy là màu xanh lá cây của tôi khi tôi nhìn lên đây.
+
+41
+00:02:24,140 --> 00:02:26,210
+Có màu xanh lá cây cho cốc.
+
+42
+00:02:26,210 --> 00:02:28,855
+Tôi phải tìm user3 ở đâu, Todd?
+
+43
+00:02:28,855 --> 00:02:29,723
+>> Todd: Trong bộ nhớ Đối tượng.
+
+44
+00:02:29,723 --> 00:02:31,090
+>> Will Sentance: Evo memory, phải không?
+
+45
+00:02:31,090 --> 00:02:31,970
+>> Todd: Vâng.
+
+46
+00:02:31,970 --> 00:02:33,848
+>> Will Sentance: Tại sao tôi tìm kiếm số gia tăng?
+
+47
+00:02:33,848 --> 00:02:35,227
+>> Todd: Trong đối tượng user3.
+
+48
+00:02:35,227 --> 00:02:36,399
+>> Will Sentance: Và tôi có tìm thấy nó không.
+
+49
+00:02:36,399 --> 00:02:37,510
+>> Todd: Vâng. >> Will Sentance: Nếu tôi làm.
+
+50
+00:02:37,510 --> 00:02:41,970
+Lấy mã của nó và thực thi nó là một giấc mơ trở thành sự thật.
+
+51
+00:02:41,970 --> 00:02:43,430
+Đó là một giấc mơ trở thành sự thật.
+
+52
+00:02:43,430 --> 00:02:45,250
+Tôi đã làm điều này là một hướng đối tượng.
+
+53
+00:02:47,530 --> 00:02:50,730
+Tôi có dữ liệu và các hàm, các phương pháp dữ liệu hoạt động cùng nhau và
+
+54
+00:02:50,730 --> 00:02:51,690
+không làm việc với những thứ khác.
+
+55
+00:02:51,690 --> 00:02:54,400
+Bây giờ, tôi luôn có thể sử dụng chức năng này trong các lĩnh vực khác.
+
+56
+00:02:54,400 --> 00:02:57,000
+Vì vậy, nó không phải là loại được bảo vệ nghiêm ngặt nhưng để
+
+57
+00:02:57,000 --> 00:02:59,190
+mục đích chung, chúng tôi khá tốt để đi.
+
+58
+00:03:01,430 --> 00:03:04,960
+Nhưng tôi viết mã lặp đi lặp lại, Ryan đang phá vỡ những nguyên tắc nào?
+
+59
+00:03:06,210 --> 00:03:06,870
+>> Ryan: Vẽ. >> Di chúc: Vẽ,
+
+60
+00:03:06,870 --> 00:03:10,320
+Tôi không lặp lại chính bạn, chúng tôi tự tay tạo ra những đơn đặt hàng này.
+
+61
+00:03:10,320 --> 00:03:11,500
+Mỗi khi người dùng đăng nhập,
+
+62
+00:03:11,500 --> 00:03:15,900
+chúng tôi sẽ phải viết đầy đủ các nhà phát triển đằng sau hậu trường điền vào.
+
+63
+00:03:15,900 --> 00:03:17,520
+Thuộc tính của chúng.
+
+64
+00:03:17,520 --> 00:03:23,050
+Bất cứ khi nào chúng ta có mã đang được thực hiện nhiều lần, chẳng hạn như thêm thuộc tính.
+
+65
+00:03:23,050 --> 00:03:27,930
+Chúng ta có xu hướng làm gì bất cứ khi nào chúng ta thực hiện các dòng mã, lặp đi lặp lại?
+
+66
+00:03:27,930 --> 00:03:29,400
+Chúng ta gói chúng lại bằng gì, Todd?
+
+67
+00:03:29,400 --> 00:03:33,310
+>> Todd: Tôi sẽ khái quát hóa chức năng, trừu tượng hóa nó, xuống.
+
+68
+00:03:33,310 --> 00:03:34,200
+>> Will Sentance: Đặt trong một hàm.
+
+69
+00:03:34,200 --> 00:03:36,280
+Lưu nó một lần để sử dụng lại nhiều lần.
+
+70
+00:03:36,280 --> 00:03:40,200
+Và các bit duy nhất bạn muốn thay đổi có Parson làm đầu vào để chỉ định
+
+71
+00:03:40,200 --> 00:03:42,190
+khi bạn chạy hàm, nó thực sự sẽ làm gì.
+
+72
+00:03:42,190 --> 00:03:45,090
+Vâng, nhưng Todd chính xác là những gì chúng tôi sẽ làm.
+
+73
+00:03:45,090 --> 00:03:46,960
+Và mọi người giải pháp một cho và
+
+74
+00:03:46,960 --> 00:03:50,340
+Tôi chỉ muốn nói thêm một lần nữa trong trường hợp mọi người không thực sự cảm thấy điều này.
+
+75
+00:03:50,340 --> 00:03:51,697
+Đó là một giấc mơ trở thành hiện thực cho
+
+76
+00:03:51,697 --> 00:03:55,974
+tôi khi tôi đang viết với 100.000 dòng mã khi tôi nói dữ liệu của mình.
+
+77
+00:03:55,974 --> 00:04:00,602
+Không có gì bí ẩn về chức năng của tôi.
+
+78
+00:04:03,433 --> 00:04:07,135
+>> Will Sentance: Chà, chức năng của tôi là gì sẽ áp dụng cho điều đó
+
+79
+00:04:07,135 --> 00:04:11,320
+dữ liệu bởi vì nhìn vào dân gian đó, nó ở ngay đó.
+
+80
+00:04:11,320 --> 00:04:13,240
+Hàm có thể được áp dụng cho dữ liệu đó.
+
+81
+00:04:13,240 --> 00:04:17,520
+Và một khi bạn bắt đầu suy nghĩ về mô hình này,
+
+82
+00:04:17,520 --> 00:04:21,610
+đặt dữ liệu và chức năng của bạn cùng một nơi.
+
+83
+00:04:21,610 --> 00:04:24,430
+Tất cả các chức năng mà tôi có thể cần cho user3 đều có ở đó.
+
+84
+00:04:24,430 --> 00:04:28,330
+Một khi bạn bắt đầu suy nghĩ theo cách đó, bạn bắt đầu làm điều này rất nhiều.
+
+85
+00:04:28,330 --> 00:04:30,790
+Bạn bắt đầu nghĩ về mọi thứ trong ứng dụng của mình như
+
+86
+00:04:30,790 --> 00:04:34,470
+dữ liệu trong chức năng được kết nối với tính năng cụ thể đó là gì?
+
+87
+00:04:34,470 --> 00:04:36,330
+Nó thực sự rất, rất tuyệt.
+
+88
+00:04:36,330 --> 00:04:39,260
+Nó không phổ biến như lý do tại sao tôi thực sự nhấn mạnh
+
+89
+00:04:39,260 --> 00:04:41,360
+đây là về việc hiểu các nguyên tắc trong JavaScript.
+
+90
+00:04:41,360 --> 00:04:43,970
+Hãy để chúng tôi làm điều này, mà chúng tôi sử dụng khắp nơi.
+
+91
+00:04:43,970 --> 00:04:47,740
+Bởi vì mô hình của lập trình hướng đối tượng ngày càng không phổ biến
+
+92
+00:04:47,740 --> 00:04:52,580
+như phong cách lập trình chức năng, nhưng tuyệt vời, thực sự trực quan.
+
+93
+00:04:52,580 --> 00:04:57,177
+Cách nghĩ về cấu trúc một ứng dụng, ứng dụng là dữ liệu.
+
+94
+00:04:57,177 --> 00:05:00,746
+Điểm người dùng, bất kỳ chức năng nào, khả năng thay đổi điểm người dùng đó,
+
+95
+00:05:00,746 --> 00:05:01,546
+đặt nó lại với nhau.
+
+96
+00:05:01,546 --> 00:05:05,867
+Và nhìn vào nó, có phải ở đó không.
+
+97
+00:05:05,867 --> 00:05:07,880
+Đẹp, nhưng chúng tôi đang làm một thời gian di động.
+
+98
+00:05:07,880 --> 00:05:14,000
+Vì vậy, bây giờ chúng ta hãy thực hiện công việc tạo đối tượng, lưu nó một lần.
+
+99
+00:05:15,600 --> 00:05:20,450
+Tạo các đối tượng và sau đó sử dụng nó bao nhiêu lần tùy thích.
+
+100
+00:05:20,450 --> 00:05:22,170
+Đó chính xác là những gì chúng tôi sẽ làm ở đây.
+
+101
+00:05:22,170 --> 00:05:24,700
+Tạo các đối tượng của chúng tôi, tạo ra thậm chí không phải là từ phù hợp.
+
+102
+00:05:24,700 --> 00:05:28,620
+Tạo và trả về các đối tượng của chúng tôi bằng cách sử dụng một hàm.
+
+103
+00:05:28,620 --> 00:05:32,080
+Giải pháp này một người sẽ hóa ra là không thể thực hiện được.
+
+104
+00:05:32,080 --> 00:05:36,950
+Bạn không bao giờ có thể sử dụng nó trong thực tế, nhưng nó giúp chúng ta có một chặng đường dài.
+
+105
+00:05:36,950 --> 00:05:40,230
+Mọi thứ khác chúng tôi làm chỉ là làm cho điều này hiệu quả hơn nhiều.
+
+106
+00:05:40,230 --> 00:05:40,950
+Tôi đã cho bạn một gợi ý ở đó.
+

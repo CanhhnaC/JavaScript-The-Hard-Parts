@@ -1,0 +1,452 @@
+1
+00:00:00,090 --> 00:00:04,560
+>> Will Sentance: Bây giờ chúng ta đã đến các lớp phần cuối cùng và
+
+2
+00:00:04,560 --> 00:00:09,110
+nguyên mẫu lập trình hướng đối tượng, nhưng đặc biệt tập trung vào
+
+3
+00:00:09,110 --> 00:00:12,890
+mui xe, một số tính năng mà chúng ta thấy hàng ngày trong JavaScript là gì.
+
+4
+00:00:12,890 --> 00:00:17,360
+Giống như chuỗi nguyên mẫu này, chúng tôi nghe nói về thuộc tính nguyên mẫu này, chúng tôi thấy trên
+
+5
+00:00:17,360 --> 00:00:22,240
+Các chức năng của chúng ta, như từ khóa mới này mà chúng ta thấy, như từ khóa lớp này mà chúng ta thấy.
+
+6
+00:00:22,240 --> 00:00:24,350
+Những điều này thực sự có nghĩa là gì?
+
+7
+00:00:24,350 --> 00:00:29,790
+Chúng tôi thậm chí không tập trung nhiều vào việc xây dựng mô hình AOP như việc sử dụng
+
+8
+00:00:29,790 --> 00:00:34,910
+đó như một thấu kính mà từ đó chúng tôi hiểu việc triển khai nó trong JavaScript,
+
+9
+00:00:34,910 --> 00:00:37,880
+nghĩa là hiểu chuỗi nguyên mẫu.
+
+10
+00:00:37,880 --> 00:00:39,535
+Đó là một thứ thực sự thanh lịch và đẹp đẽ.
+
+11
+00:00:39,535 --> 00:00:42,740
+Tôi đang sử dụng thanh lịch một lần nữa không biết nó có nghĩa là gì.
+
+12
+00:00:42,740 --> 00:00:43,750
+Đó thực sự là một vấn đề, chúng ta bắt đầu.
+
+13
+00:00:43,750 --> 00:00:45,310
+Được rồi, chúng ta bắt đầu.
+
+14
+00:00:45,310 --> 00:00:49,920
+Vì vậy, một mô hình cực kỳ phổ biến để cấu trúc mã phức tạp của chúng tôi.
+
+15
+00:00:49,920 --> 00:00:51,800
+Lập trình hướng đối tượng trong nhiều năm và
+
+16
+00:00:51,800 --> 00:00:56,560
+nhiều năm là cách mà chúng tôi xử lý việc có 100.000 dòng mã trong một tệp.
+
+17
+00:00:56,560 --> 00:01:00,390
+Không hẳn là một tệp, một ứng dụng, có một số cấu trúc
+
+18
+00:01:00,390 --> 00:01:03,250
+nó không chỉ làm cái này, rồi cái này, rồi cái này, rồi cái này và
+
+19
+00:01:03,250 --> 00:01:06,880
+đây, nhưng một số loại cấu trúc tổ chức.
+
+20
+00:01:06,880 --> 00:01:09,370
+trong JavaScript, nó phụ thuộc vào chuỗi nguyên mẫu.
+
+21
+00:01:09,370 --> 00:01:13,650
+Đây là tính năng hậu trường cho phép chúng tôi đạt được một số
+
+22
+00:01:13,650 --> 00:01:17,020
+mô hình hướng đối tượng trong JavaScript.
+
+23
+00:01:17,020 --> 00:01:20,430
+Nhưng tôi cũng đang nói một công cụ hấp dẫn theo đúng nghĩa của nó là khá tốt.
+
+24
+00:01:20,430 --> 00:01:23,760
+Chúng tôi sẽ hiểu sự khác biệt giữa proto và nguyên mẫu.
+
+25
+00:01:23,760 --> 00:01:27,170
+Chúng ta sẽ thấy lớp mới, từ khóa mới trong lớp.
+
+26
+00:01:27,170 --> 00:01:30,940
+Ví dụ, chúng tôi có thể hiểu một cách trung thực nhất,
+
+27
+00:01:30,940 --> 00:01:35,520
+trong cuộc phỏng vấn, nơi một trong những câu hỏi phổ biến nhất đối với một nhà phát triển trung cấp cao cấp
+
+28
+00:01:35,520 --> 00:01:39,660
+là, từ khóa mới đang làm gì.
+
+29
+00:01:39,660 --> 00:01:43,670
+Chúng tôi sẽ xây dựng nó từ đầu để hiểu đầy đủ về nó
+
+30
+00:01:43,670 --> 00:01:45,880
+được phép tự động hóa một số công việc của chúng tôi, nhưng
+
+31
+00:01:45,880 --> 00:01:50,500
+chúng ta cũng sẽ thấy sức mạnh của các chức năng và phạm vi từ vựng bên trong chúng.
+
+32
+00:01:50,500 --> 00:01:52,990
+Chúng ta sẽ xem từ khóa này hoạt động như thế nào.
+
+33
+00:01:52,990 --> 00:02:00,150
+Chúng ta cũng sẽ tìm hiểu về đối tượng Dòng tiêu đề lớn đó,
+
+34
+00:02:00,150 --> 00:02:04,570
+object.prototype, nơi chúng tôi nhận được tất cả các chức năng được chia sẻ của chúng tôi và tất cả các đối tượng nhận được.
+
+35
+00:02:05,620 --> 00:02:09,670
+Tất cả sẽ đến, chúng ta sẽ bắt đầu bằng cách tự nhắc nhở mình những gì
+
+36
+00:02:09,670 --> 00:02:12,510
+thậm chí là cốt lõi của phát triển và chạy mã.
+
+37
+00:02:12,510 --> 00:02:16,660
+Hai điều chúng tôi ghi nhớ, lưu dữ liệu và chạy mã.
+
+38
+00:02:16,660 --> 00:02:18,810
+Trong một ứng dụng điển hình, ví dụ:
+
+39
+00:02:18,810 --> 00:02:21,250
+các trò chơi đố vui, lưu điểm số và
+
+40
+00:02:21,250 --> 00:02:26,230
+tên người dùng của hai người dùng, có thể 100 người dùng, 1000 người dùng đều chơi cùng một lúc.
+
+41
+00:02:26,230 --> 00:02:29,190
+Đừng nghĩ rằng bằng cách nhìn thấy trên giao diện người dùng,
+
+42
+00:02:29,190 --> 00:02:33,140
+như nhìn vào hình ảnh trò chơi đố vui mà đó là dữ liệu được lưu.
+
+43
+00:02:33,140 --> 00:02:36,770
+Đó là dữ liệu được hiển thị, nó được lưu ở hậu trường trong bộ nhớ của Java.
+
+44
+00:02:36,770 --> 00:02:40,120
+Đó là cách nó ở đó, vì vậy nó không phải là ma thuật, nó vẫn ở phía sau hậu trường.
+
+45
+00:02:40,120 --> 00:02:41,240
+Đó chỉ là những điểm ảnh.
+
+46
+00:02:41,240 --> 00:02:42,610
+Đó là hậu trường của máy tính.
+
+47
+00:02:43,770 --> 00:02:46,390
+Nửa còn lại chạy qua phát triển ứng dụng hoặc
+
+48
+00:02:46,390 --> 00:02:51,050
+chạy mã là thực sự chạy mã, các chức năng trên dữ liệu đó.
+
+49
+00:02:51,050 --> 00:02:55,560
+Ví dụ: chúng tôi có một người dùng muốn sử dụng nó để tăng điểm số cho người dùng
+
+50
+00:02:55,560 --> 00:02:57,440
+khi họ nhận được một câu hỏi đố đúng.
+
+51
+00:02:57,440 --> 00:02:58,050
+Đó là nó.
+
+52
+00:02:58,050 --> 00:03:01,890
+Nhân tiện, tôi không biết làm thế nào chúng ta có hàng trăm nghìn dòng mã và
+
+53
+00:03:01,890 --> 00:03:05,420
+nó rất phức tạp, bởi vì đó là nó.
+
+54
+00:03:05,420 --> 00:03:06,980
+Tại sao việc học lại khó như vậy?
+
+55
+00:03:08,370 --> 00:03:12,380
+Trong một trò chơi đố vui, bạn biết không, tôi cần phải cứu rất nhiều người dùng.
+
+56
+00:03:12,380 --> 00:03:14,800
+Nhưng không chỉ người dùng, tôi phải tiết kiệm và nhân tiện,
+
+57
+00:03:14,800 --> 00:03:20,730
+tất cả chúng đều có rất nhiều thuộc tính khác nhau, thông tin về chúng.
+
+58
+00:03:20,730 --> 00:03:25,898
+Điểm, tên người dùng, hình đại diện, URL hồ sơ, cửa hàng email,
+
+59
+00:03:25,898 --> 00:03:31,710
+trạng thái, trạng thái cuối cùng của sự tham gia của họ với ứng dụng.
+
+60
+00:03:31,710 --> 00:03:35,480
+Và đó chỉ là sự khởi đầu, đó chỉ là cách sử dụng.
+
+61
+00:03:35,480 --> 00:03:39,250
+Mọi người có quản trị viên, chúng tôi có các câu hỏi đố vui mà chúng tôi cần lưu lại.
+
+62
+00:03:39,250 --> 00:03:41,130
+Chúng tôi có kết quả câu đố.
+
+63
+00:03:41,130 --> 00:03:45,090
+Chúng tôi có các bảng giải đấu và 1000 phần khác.
+
+64
+00:03:45,090 --> 00:03:51,900
+Tất cả những thứ này đều có dữ liệu được lưu trữ trong thời gian chạy ứng dụng của chúng tôi trong bộ nhớ và
+
+65
+00:03:51,900 --> 00:03:57,230
+chức năng được liên kết là mã mà chúng tôi có thể sử dụng để tương tác và
+
+66
+00:03:57,230 --> 00:03:58,510
+sử dụng dữ liệu đó.
+
+67
+00:03:58,510 --> 00:04:01,911
+Hoặc hiển thị nó, kết xuất nó, hiển thị nó, thay đổi nó đã cập nhật,
+
+68
+00:04:01,911 --> 00:04:05,013
+xóa nó bất cứ điều gì cho tất cả ứng dụng là chức năng và
+
+69
+00:04:05,013 --> 00:04:06,866
+dữ liệu liên quan để chạy trên đó.
+
+70
+00:04:06,866 --> 00:04:11,980
+Vì vậy, nếu chúng tôi bắt đầu với người dùng, tôi không biết có thể làm tăng điểm số đó.
+
+71
+00:04:11,980 --> 00:04:15,830
+Nó có thể hiển thị những thứ này nhưng trong 100.000 dòng mã,
+
+72
+00:04:15,830 --> 00:04:18,650
+nó thực sự phức tạp rất nhanh.
+
+73
+00:04:18,650 --> 00:04:21,210
+Chức năng ở đâu khi tôi cần?
+
+74
+00:04:21,210 --> 00:04:24,750
+Tôi đã có người dùng của mình và tôi có dữ liệu đáng yêu về điểm số và tên của họ,
+
+75
+00:04:24,750 --> 00:04:27,100
+tên người dùng của họ, nhưng tôi muốn cập nhật điểm số.
+
+76
+00:04:27,100 --> 00:04:29,750
+Nhưng đâu là chức năng cho phép tôi xếp hạng điểm?
+
+77
+00:04:29,750 --> 00:04:32,130
+Tôi có 100.000 dòng mã, chức năng đó ở đâu?
+
+78
+00:04:33,410 --> 00:04:36,420
+Không chỉ vậy, chức năng đó chỉ áp dụng cho điểm số của người dùng.
+
+79
+00:04:37,630 --> 00:04:42,467
+Đừng bắt tôi phải bắt đầu, tôi không biết, hoặc tôi cho rằng nó giống như một sự thay đổi
+
+80
+00:04:42,467 --> 00:04:47,250
+tên người dùng, hoặc vâng, cập nhật hình ảnh người dùng.
+
+81
+00:04:47,250 --> 00:04:50,750
+Đừng thử và sử dụng chức năng đó trên các bảng giải đấu của tôi.
+
+82
+00:04:50,750 --> 00:04:53,720
+Đừng cố gắng sử dụng chức năng đó cho câu hỏi đố vui của tôi.
+
+83
+00:04:53,720 --> 00:04:56,370
+Vì vậy, tôi không chỉ không biết chức năng ở đâu trong hàng trăm
+
+84
+00:04:56,370 --> 00:04:57,040
+hàng nghìn dòng mã.
+
+85
+00:04:57,040 --> 00:05:00,610
+Tôi không biết nó áp dụng cho những bit dữ liệu nào và
+
+86
+00:05:00,610 --> 00:05:03,120
+đó là những gì làm cho việc viết mã trở nên phức tạp.
+
+87
+00:05:03,120 --> 00:05:08,340
+Quá nhiều dữ liệu, quá nhiều chức năng và nó chỉ áp dụng cho một số bit nhất định.
+
+88
+00:05:08,340 --> 00:05:09,580
+Và tìm đúng chức năng và
+
+89
+00:05:09,580 --> 00:05:11,340
+đảm bảo rằng nó chỉ áp dụng cho đúng bit,
+
+90
+00:05:11,340 --> 00:05:14,240
+chúng ta cần một số loại cấu trúc tổ chức.
+
+91
+00:05:14,240 --> 00:05:16,540
+Tôi gọi đó là một chút ở đây, dễ lý giải.
+
+92
+00:05:16,540 --> 00:05:19,500
+Tôi muốn mã của mình dễ hiểu chuyện gì đang xảy ra.
+
+93
+00:05:20,580 --> 00:05:23,450
+Nhưng tôi cũng muốn mã của mình dễ dàng thêm các tính năng vào.
+
+94
+00:05:23,450 --> 00:05:28,530
+Đó là chức năng mới cho bất kỳ dữ liệu nhất định nào, giống như người dùng có
+
+95
+00:05:28,530 --> 00:05:32,860
+chức năng mới bây giờ họ có thể, tôi không biết, họ có thể đăng nhập bằng Facebook.
+
+96
+00:05:32,860 --> 00:05:35,590
+Tôi muốn dễ dàng thêm chức năng.
+
+97
+00:05:35,590 --> 00:05:38,770
+Nhưng tôi không muốn tất cả những điều đó phải trả giá
+
+98
+00:05:38,770 --> 00:05:44,690
+mã của tôi có hiệu suất hợp lý không hiệu quả vì nó có thể làm như vậy.
+
+99
+00:05:44,690 --> 00:05:46,230
+Mô hình hướng đối tượng và
+
+100
+00:05:46,230 --> 00:05:50,840
+thực sự là tất cả các mô hình mã, chúng là tập hợp các nguyên tắc,
+
+101
+00:05:50,840 --> 00:05:56,214
+chúng là các phương pháp tiếp cận thực tiễn tốt nhất cho phép chúng tôi đạt được ba điều này.
+
+102
+00:05:56,214 --> 00:06:00,630
+Chúng là một loạt các cách tổ chức mã của chúng ta sẽ cùng nhau
+
+103
+00:06:00,630 --> 00:06:02,640
+hy vọng đạt được ba mục tiêu này.
+
+104
+00:06:02,640 --> 00:06:06,640
+Và đó là nội dung của nó, chúng tôi sẽ đạt được cả ba điều này,
+
+105
+00:06:06,640 --> 00:06:09,980
+bằng cách từ giải pháp đến tiếp theo là theo ý kiến ​​của tôi.
+
+106
+00:06:09,980 --> 00:06:14,070
+Nhưng vì các nhà phát triển thường đến từ các ngôn ngữ khác,
+
+107
+00:06:14,070 --> 00:06:18,920
+ý tưởng của họ về những gì dễ lý luận có thể không
+
+108
+00:06:18,920 --> 00:06:24,130
+một kiểu viết và tổ chức mã riêng của JavaScript.
+
+109
+00:06:24,130 --> 00:06:29,000
+Vì vậy, giải pháp ba và bốn để đạt được cấu trúc mã của chúng tôi theo cách có thể quản lý được,
+
+110
+00:06:29,000 --> 00:06:33,710
+chủ yếu sẽ là về các viết tắt
+
+111
+00:06:33,710 --> 00:06:37,500
+mã làm cho nó trông giống các ngôn ngữ lập trình hơn một chút.
+
+112
+00:06:39,260 --> 00:06:41,290
+Nói cách khác, dễ lý giải hơn nhưng
+
+113
+00:06:41,290 --> 00:06:44,910
+thực sự dễ dàng để lập luận, chỉ khi bạn hiểu rõ về nó.
+
