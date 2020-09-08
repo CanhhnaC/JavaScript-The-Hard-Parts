@@ -3,8 +3,8 @@ if (!Object.is /*|| true*/) {
 		var xNegZero = isItNegZero(x);
 		var yNegZero = isItNegZero(y);
 
-		if (xNegZero || yNegZero) {
-			return xNegZero && yNegZero;
+		if (xNegZero && yNegZero) {
+			return true;
 		}
 		else if (isItNaN(x) && isItNaN(y)) {
 			return true;
@@ -29,7 +29,7 @@ if (!Object.is /*|| true*/) {
 
 
 // tests:
-console.log(Object.is(42,42) === true);
+console.log(Object.is(42,43) === true);
 console.log(Object.is("foo","foo") === true);
 console.log(Object.is(false,false) === true);
 console.log(Object.is(null,null) === true);
