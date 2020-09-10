@@ -1,0 +1,859 @@
+1
+00:00:03,391 --> 00:00:06,702
+>> Will Sentance: Chúng ta sẽ chuyển sang thế giới tuyệt vời của
+
+2
+00:00:06,702 --> 00:00:07,940
+không đồng bộ.
+
+3
+00:00:09,170 --> 00:00:14,390
+Asynchronicity sẽ thay đổi toàn bộ mô hình này.
+
+4
+00:00:14,390 --> 00:00:16,080
+Tôi sẽ thay đổi nó.
+
+5
+00:00:16,080 --> 00:00:18,450
+Nó sẽ tăng cường toàn bộ mô hình này.
+
+6
+00:00:18,450 --> 00:00:20,950
+Toàn bộ mô hình này sẽ tiếp tục tồn tại.
+
+7
+00:00:20,950 --> 00:00:24,060
+Trên thực tế, lý do chúng tôi cần tăng cường mô hình của mình,
+
+8
+00:00:24,060 --> 00:00:28,460
+về cơ bản mô hình này sẽ không thể thực hiện được
+
+9
+00:00:28,460 --> 00:00:33,242
+trong cách chúng ta nghĩ về việc thực hiện các nhiệm vụ mất nhiều thời gian.
+
+10
+00:00:33,242 --> 00:00:34,340
+Vì vậy, chúng ta hãy chỉ xác nhận.
+
+11
+00:00:34,340 --> 00:00:40,230
+JavaScript là một luồng, một dòng mã thực thi tại một thời điểm.
+
+12
+00:00:40,230 --> 00:00:44,214
+Khi tôi bắt đầu chạy nhân với 2, tôi không được phép tiếp tục trong toàn cầu của mình
+
+13
+00:00:44,214 --> 00:00:47,770
+mã, >> Will Sentance: Để thực thi
+
+14
+00:00:47,770 --> 00:00:50,628
+tiếp theo nhân với 2 cùng một lúc.
+
+15
+00:00:50,628 --> 00:00:52,951
+Tôi không được phép, một luồng.
+
+16
+00:00:52,951 --> 00:00:58,181
+Nhưng đồng thời, tôi cũng không được phép chuyển sang dòng tiếp theo bất kể,
+
+17
+00:00:58,181 --> 00:01:03,724
+bởi vì, cho đến khi tôi hoàn thành cuộc gọi nhân với 2, bởi vì JavaScript là đồng bộ.
+
+18
+00:01:03,724 --> 00:01:05,740
+Bây giờ, tất cả những gì có nghĩa là tôi đi từ trên xuống dưới.
+
+19
+00:01:05,740 --> 00:01:08,412
+Tôi không bao giờ chuyển sang dòng tiếp theo, cho đến khi tôi hoàn thành dòng trước.
+
+20
+00:01:08,412 --> 00:01:11,991
+Tôi không bao giờ chuyển sang dòng tiếp theo.
+
+21
+00:01:11,991 --> 00:01:16,062
+Nếu bạn thấy một đầu mối chức năng, tôi phải quay lại khỏi nó.
+
+22
+00:01:16,062 --> 00:01:18,882
+Tôi phải hoàn thành việc thực thi nó trước khi tôi nhấn dòng tiếp theo.
+
+23
+00:01:18,882 --> 00:01:21,052
+Chà, điều này ám chỉ một vấn đề lớn.
+
+24
+00:01:21,052 --> 00:01:24,763
+Điều gì sẽ xảy ra nếu tôi nhân với hai cuộc gọi trong đó tôi gọi đến một máy chủ,
+
+25
+00:01:24,763 --> 00:01:27,744
+sẽ mất 300 mili giây?
+
+26
+00:01:27,744 --> 00:01:30,251
+Tôi không được phép chuyển từ dòng đó để chạy bất kỳ
+
+27
+00:01:30,251 --> 00:01:32,290
+nhiều JavaScript hơn cho đến khi điều đó trở lại.
+
+28
+00:01:32,290 --> 00:01:34,858
+Điều gì xảy ra nếu tôi nhấp vào xem thêm các tweet,
+
+29
+00:01:34,858 --> 00:01:39,188
+nó chạy mã JavaScript cho biết, hãy nhận nhiều tweet hơn.
+
+30
+00:01:39,188 --> 00:01:44,081
+Sẽ mất 300 hoặc 200 mili giây trước khi các tweet quay trở lại,
+
+31
+00:01:44,081 --> 00:01:47,390
+nhưng trong thời gian chờ đợi, tôi đang nhấn thích trên một tweet,
+
+32
+00:01:47,390 --> 00:01:51,151
+sẽ chạy nhiều mã JavaScript hơn để chuyển nó sang màu hồng và
+
+33
+00:01:51,151 --> 00:01:55,695
+để tăng số lượt thích trên tweet đó ở trạng thái của tôi, vào bộ nhớ của tôi.
+
+34
+00:01:55,695 --> 00:02:00,435
+Điều đó không thể xảy ra, tôi sẽ ngồi đó nhấp chuột vì tôi vẫn còn bận chờ đợi
+
+35
+00:02:00,435 --> 00:02:02,368
+dòng nói rằng hãy nhận nhiều tweet hơn.
+
+36
+00:02:02,368 --> 00:02:06,106
+Bởi vì tôi phải đợi cho đến khi nó trả lại các tweet, phải, trước khi tôi có thể
+
+37
+00:02:06,106 --> 00:02:10,092
+chuyển sang dòng tiếp theo của tôi nói rằng, tô màu trái tim màu hồng, vì tôi đã nhấp vào nút.
+
+38
+00:02:10,092 --> 00:02:13,024
+Đây sẽ là một vấn đề sâu sắc.
+
+39
+00:02:13,024 --> 00:02:16,201
+Điều gì sẽ xảy ra nếu chúng ta muốn đợi một thời gian trước khi chúng ta thực sự có thể sử dụng hoặc sở hữu các bit mã.
+
+40
+00:02:16,201 --> 00:02:20,671
+Chúng tôi muốn đợi cho đến khi dữ liệu của chúng tôi quay trở lại từ Twitter,
+
+41
+00:02:20,671 --> 00:02:26,804
+trước khi chúng tôi có thể hiển thị và chạy chức năng, hãy hiển thị dữ liệu đó.
+
+42
+00:02:28,664 --> 00:02:30,772
+>> Will Sentance: Có lẽ chúng ta cần lấy thêm dữ liệu từ API, hoặc
+
+43
+00:02:30,772 --> 00:02:33,370
+thậm chí là một bộ đếm thời gian để hoàn thành và sau đó chúng tôi muốn chạy một số mã.
+
+44
+00:02:33,370 --> 00:02:34,775
+Chúng tôi có một câu hỏi hóc búa.
+
+45
+00:02:34,775 --> 00:02:39,020
+Sự căng thẳng giữa việc muốn trì hoãn một số mã đang chạy, bởi vì chúng tôi đang chờ đợi
+
+46
+00:02:39,020 --> 00:02:43,088
+dữ liệu quay lại, vì vậy chúng tôi muốn dòng mã tiếp theo hiển thị các tweet đó.
+
+47
+00:02:43,088 --> 00:02:44,600
+Chúng tôi muốn thêm dữ liệu để thực sự quay trở lại.
+
+48
+00:02:44,600 --> 00:02:50,391
+Nhưng chúng tôi biết cách chặn luồng đơn của mình tiếp tục chạy mã.
+
+49
+00:02:50,391 --> 00:02:51,728
+Sẽ có một câu hỏi hóc búa.
+
+50
+00:02:51,728 --> 00:02:56,725
+Đó sẽ là bản chất tại sao chúng ta phải giới thiệu trong JavaScript
+
+51
+00:02:56,725 --> 00:03:01,734
+một mô hình bổ sung hoàn toàn cho thế giới đồng bộ đẹp đẽ của chúng ta.
+
+52
+00:03:01,734 --> 00:03:05,748
+Điều này, chỉ ba phần này của JavaScript là không đủ.
+
+53
+00:03:05,748 --> 00:03:08,818
+Điều đặc biệt thú vị là tính không đồng bộ trong Java,
+
+54
+00:03:08,818 --> 00:03:11,442
+thế giới không đồng bộ của Java là một điều thú vị.
+
+55
+00:03:11,442 --> 00:03:16,681
+Tôi yêu công cụ JavaScript đơn giản thuần túy của chúng tôi, nhưng mọi thứ chúng tôi yêu thích
+
+56
+00:03:16,681 --> 00:03:21,677
+phát triển ứng dụng web không diễn ra trong JavaScript thuần túy.
+
+57
+00:03:21,677 --> 00:03:24,385
+JavaScript thuần túy không biết cách nói chuyện với Internet.
+
+58
+00:03:24,385 --> 00:03:27,892
+Đó không phải là một tính năng của JavaScript để nói chuyện với Internet.
+
+59
+00:03:27,892 --> 00:03:33,430
+Thay vào đó, tất cả các tính năng đó nằm ngoài JavaScript.
+
+60
+00:03:33,430 --> 00:03:37,136
+Họ đang ngồi ngoài JavaScript ở đâu?
+
+61
+00:03:37,136 --> 00:03:37,867
+Tên bạn là gì?
+
+62
+00:03:37,867 --> 00:03:38,440
+>> Alec: Alec.
+
+63
+00:03:38,440 --> 00:03:40,782
+>> Will Sentance: Alec, họ đang ngồi ở đâu?
+
+64
+00:03:40,782 --> 00:03:43,097
+Những tính năng không phải của JavaScript nằm ở đâu,
+
+65
+00:03:43,097 --> 00:03:45,470
+họ đang làm những việc như nói chuyện với Internet.
+
+66
+00:03:45,470 --> 00:03:46,040
+Họ ở đâu?
+
+67
+00:03:46,040 --> 00:03:46,670
+>> Alec: API? >> Will Sentance: Hay không tính năng của
+
+68
+00:03:46,670 --> 00:03:47,410
+JavaScript, xin lỗi.
+
+69
+00:03:47,410 --> 00:03:50,230
+Đâu là các tính năng nói với Internet mà Java nên sử dụng?
+
+70
+00:03:50,230 --> 00:03:50,960
+Vâng, điều đó có nghĩa là gì?
+
+71
+00:03:52,090 --> 00:03:56,140
+>> Alec: Tôi không biết, các dịch vụ web yên tĩnh và.
+
+72
+00:03:56,140 --> 00:03:58,472
+>> Will Sentance: Michelle, đâu là những tính năng, ví dụ,
+
+73
+00:03:58,472 --> 00:03:59,573
+có thể nói chuyện với Internet?
+
+74
+00:03:59,573 --> 00:04:00,374
+>> Người nói 3: Có trong trình duyệt [CROSSTALK] không?
+
+75
+00:04:00,374 --> 00:04:01,518
+>> Will Sentance: Họ đang ở trong trình duyệt.
+
+76
+00:04:01,518 --> 00:04:08,988
+Trình duyệt có vô số tính năng mà chúng tôi trong JavaScript có quyền truy cập.
+
+77
+00:04:08,988 --> 00:04:13,077
+Chúng tôi viết mã JavaScript về cơ bản là một mặt tiền,
+
+78
+00:04:13,077 --> 00:04:17,601
+chúng ta sẽ thấy những thứ này, mặt tiền của chúng ta, cho một loạt các tính năng
+
+79
+00:04:17,601 --> 00:04:23,040
+không có trong JavaScript mà thay vào đó là trong trình duyệt web.
+
+80
+00:04:23,040 --> 00:04:26,700
+Đó là những gì chúng ta sẽ dành phần lớn thời gian sáng nay để làm.
+
+81
+00:04:26,700 --> 00:04:30,140
+Là viết mã JavaScript giao diện API.
+
+82
+00:04:30,140 --> 00:04:31,560
+Vì vậy, Alex đúng.
+
+83
+00:04:31,560 --> 00:04:34,690
+Interfaces, I in API là viết tắt của giao diện.
+
+84
+00:04:34,690 --> 00:04:39,189
+Điều đó tương tác với những thứ bên ngoài JavaScript.
+
+85
+00:04:39,189 --> 00:04:43,841
+Được rồi, chúng tôi cần một loạt các tính năng hoàn toàn mới trong JavaScript và
+
+86
+00:04:43,841 --> 00:04:48,964
+bên ngoài Javascript để hiểu cách hoạt động của nó.
+
+87
+00:04:48,964 --> 00:04:50,748
+Vì vậy, chúng tôi bắt đầu.
+
+88
+00:04:50,748 --> 00:04:52,595
+Đây là giải pháp đầu tiên của chúng tôi.
+
+89
+00:04:52,595 --> 00:04:55,398
+Và tôi sẽ nói trước với bạn rằng điều đó về cơ bản là không thể hiểu được.
+
+90
+00:04:55,398 --> 00:05:00,286
+Nhưng đây là giải pháp đầu tiên của chúng tôi về cách thực hiện và thực hiện một nhiệm vụ sẽ thực hiện
+
+91
+00:05:00,286 --> 00:05:04,569
+một thời gian dài như nói chuyện với Twitter và nhận lại các tweet của chúng tôi.
+
+92
+00:05:05,640 --> 00:05:08,800
+Và tuy nhiên, có thể tiếp tục chạy mã, nhưng
+
+93
+00:05:08,800 --> 00:05:11,130
+biết dữ liệu đó ở đâu khi nó quay trở lại.
+
+94
+00:05:11,130 --> 00:05:16,160
+Giải pháp đầu tiên ở đây sẽ không thể thực hiện được, nhưng
+
+95
+00:05:17,170 --> 00:05:25,180
+Tuy nhiên, nó sẽ khá trực quan, nhưng hoàn toàn không thể hiểu được.
+
+96
+00:05:25,180 --> 00:05:26,290
+Được rồi.
+
+97
+00:05:26,290 --> 00:05:28,000
+Dòng 1 và nhân tiện,
+
+98
+00:05:28,000 --> 00:05:32,015
+cho đến nay chúng tôi vẫn thấy những thứ rất giống với những phần cứng đầu tiên,
+
+99
+00:05:32,015 --> 00:05:36,990
+nhưng chúng ta cần tìm hiểu những nền tảng này để hiểu được những điều khó khăn hơn sắp tới.
+
+100
+00:05:36,990 --> 00:05:38,460
+Được rồi, dòng 1, Abdie?
+
+101
+00:05:40,890 --> 00:05:46,088
+>> Abdi: Chà, chúng tôi đang khai báo hiển thị trong môi trường biến của chúng tôi.
+
+102
+00:05:46,088 --> 00:05:47,680
+>> Will Sentance: Vâng, nói rất hay, Abdie.
+
+103
+00:05:47,680 --> 00:05:50,670
+Hiển thị được khai báo, xuất sắc.
+
+104
+00:05:50,670 --> 00:05:54,205
+Dòng mã tiếp theo, Alec?
+
+105
+00:05:54,205 --> 00:05:56,321
+Thực hiện bên tay trái trước.
+
+106
+00:05:56,321 --> 00:06:00,066
+>> Abdi: Chúng tôi đang khai báo dữ liệu từ API.
+
+107
+00:06:00,066 --> 00:06:03,109
+>> Will Sentance: Vâng, và những gì nó sẽ được chỉ định?
+
+108
+00:06:03,109 --> 00:06:05,291
+>> Abdi: Hàm fetchAndWait.
+
+109
+00:06:05,291 --> 00:06:06,928
+>> Will Sentance: Không, chúng tôi không bao giờ gán chức năng.
+
+110
+00:06:06,928 --> 00:06:12,786
+Nếu chúng ta không có dấu ngoặc ở đó, nó sẽ nói tốt, cái gì đang tìm nạpAndWait?
+
+111
+00:06:12,786 --> 00:06:14,676
+Và nó sẽ gán nó cho cái đó, bất kể nó là gì.
+
+112
+00:06:14,676 --> 00:06:17,366
+Nhưng JavaScript không làm điều đó ở phía bên phải.
+
+113
+00:06:17,366 --> 00:06:21,080
+Và những gì một người lái xe luôn bảo tôi phải làm, Blessing?
+
+114
+00:06:21,080 --> 00:06:21,755
+>> Diễn giả 3: Giải mã một hàm.
+
+115
+00:06:21,755 --> 00:06:22,540
+>> Will Sentance: Giải mã.
+
+116
+00:06:22,540 --> 00:06:24,810
+Bên tay phải ở đây là một lệnh.
+
+117
+00:06:24,810 --> 00:06:26,690
+Đó là công việc chưa hoàn thành.
+
+118
+00:06:26,690 --> 00:06:30,670
+Vì vậy, hãy thực sự rõ ràng với bản thân không có cách nào được chỉ định.
+
+119
+00:06:30,670 --> 00:06:34,385
+API dữ liệu không quan tâm đến fetchAndWait.
+
+120
+00:06:34,385 --> 00:06:39,613
+Mối quan tâm duy nhất của nó là bất cứ thứ gì được trả lại từ fetchAndWait,
+
+121
+00:06:39,613 --> 00:06:42,096
+mà chúng tôi hy vọng sẽ là tweet của chúng tôi.
+
+122
+00:06:42,096 --> 00:06:47,765
+Được rồi, vì vậy fetchAndWait ở đây là một hàm tạo sẵn, nhưng chúng ta hãy xem nó làm gì.
+
+123
+00:06:47,765 --> 00:06:54,784
+Vì vậy, dữ liệu từ API sẽ trở thành
+
+124
+00:06:54,784 --> 00:07:01,390
+của fetchAndWait đến URL Twitter của chúng tôi.
+
+125
+00:07:01,390 --> 00:07:07,670
+Vì vậy, chúng tôi hy vọng nó sẽ trả lại một tweet tốt đẹp cho chúng tôi.
+
+126
+00:07:07,670 --> 00:07:08,960
+Đó là những gì chúng tôi đang hy vọng.
+
+127
+00:07:08,960 --> 00:07:12,710
+Vì vậy, hãy bắt đầu theo dõi thời gian của chúng ta đang trôi qua.
+
+128
+00:07:12,710 --> 00:07:16,290
+Chúng tôi đang ở khoảng một phần nghìn giây ở đây.
+
+129
+00:07:16,290 --> 00:07:21,192
+Giả sử điều này ở đây mất 200 mili giây để hoàn thành.
+
+130
+00:07:23,392 --> 00:07:27,913
+>> Will Sentance: 200 mili giây
+
+131
+00:07:27,913 --> 00:07:32,792
+sau, >> Will Sentance: Cuối cùng của chúng tôi
+
+132
+00:07:32,792 --> 00:07:33,680
+dữ liệu quay trở lại.
+
+133
+00:07:35,190 --> 00:07:36,850
+Có thể là 300 mili giây, có thể là nửa giây.
+
+134
+00:07:36,850 --> 00:07:37,970
+Chúng tôi thậm chí không biết.
+
+135
+00:07:37,970 --> 00:07:43,126
+Trong thời gian đó, chúng tôi có được phép tiếp tục và chạy bất kỳ mã JavaScript nào nữa không?
+
+136
+00:07:43,126 --> 00:07:46,649
+Hoàn toàn không, chúng tôi không được phép đi tiếp.
+
+137
+00:07:46,649 --> 00:07:50,708
+Chúng tôi bị chặn vì chuỗi JavaScript của chúng tôi là đồng bộ.
+
+138
+00:07:50,708 --> 00:07:53,359
+Có công việc chúng tôi vẫn đang làm ở phía bên phải đây.
+
+139
+00:07:53,359 --> 00:07:55,417
+Chúng tôi không được phép chuyển sang dòng tiếp theo, và
+
+140
+00:07:55,417 --> 00:07:58,661
+chúng tôi sẽ không muốn vì dòng tiếp theo cho biết, hãy hiển thị dữ liệu API của bạn.
+
+141
+00:07:58,661 --> 00:08:01,222
+Vì vậy, tốt hơn chúng ta nên lấy lại dữ liệu đó nếu chúng ta sẽ hiển thị nó.
+
+142
+00:08:01,222 --> 00:08:02,605
+Đây là giải pháp 1 của chúng tôi.
+
+143
+00:08:02,605 --> 00:08:07,362
+Hãy rõ ràng, đây không phải là giải pháp đúng, nhưng đây là một giải pháp.
+
+144
+00:08:07,362 --> 00:08:12,757
+Vậy là 200 mili giây trôi qua và yêu cầu của chúng tôi đối với Twitter trả về,
+
+145
+00:08:12,757 --> 00:08:17,803
+chúng ta hãy nói, rất hay, nó trả về dữ liệu của chúng ta và nó là
+
+146
+00:08:17,803 --> 00:08:22,762
+nó là một Tweet duy nhất và nó thậm chí không quay lại dưới dạng một đối tượng,
+
+147
+00:08:22,762 --> 00:08:25,476
+tất nhiên chúng trở lại với tư cách là đối tượng.
+
+148
+00:08:25,476 --> 00:08:27,558
+Nhưng chỉ là một Tweet cao.
+
+149
+00:08:27,558 --> 00:08:30,820
+Và chúng ta sẽ cất cao, ở đâu, Michelle?
+
+150
+00:08:30,820 --> 00:08:32,663
+>> Michelle: Trong dữ liệu từ API.
+
+151
+00:08:32,663 --> 00:08:35,185
+>> Will Sentance: Trong dữ liệu từ API.
+
+152
+00:08:35,185 --> 00:08:38,255
+Tôi xin lỗi vì có vẻ như tôi đang sửa tất cả cách phát âm của bạn.
+
+153
+00:08:38,255 --> 00:08:41,731
+Đã cập nhật dữ liệu, nhưng tôi thì không.
+
+154
+00:08:41,731 --> 00:08:44,032
+Tôi chấp nhận những phát âm sai của bạn.
+
+155
+00:08:44,032 --> 00:08:45,852
+Được chứ.
+
+156
+00:08:45,852 --> 00:08:49,778
+Làm tốt tất cả các bạn vì tham nhũng, không, không tham nhũng.
+
+157
+00:08:52,570 --> 00:08:53,497
+>> Will Sentance: Tốt.
+
+158
+00:08:53,497 --> 00:08:56,069
+Tùy chỉnh một ngôn ngữ đẹp.
+
+159
+00:08:56,069 --> 00:08:57,084
+Được rồi.
+
+160
+00:08:57,084 --> 00:08:58,310
+Được rồi, tốt.
+
+161
+00:08:58,310 --> 00:09:03,499
+Vì vậy, API dữ liệu có cao, chuỗi cao được lưu trữ trong đó.
+
+162
+00:09:03,499 --> 00:09:09,984
+200 mili giây sau đó, trong thời gian đó không thể chạy thêm mã JavaScript nào nữa.
+
+163
+00:09:09,984 --> 00:09:11,776
+Điều này là hoàn toàn tai hại.
+
+164
+00:09:11,776 --> 00:09:16,635
+Dù sao đi nữa, bây giờ chúng ta đã đạt được dòng tiếp theo, đó là ai mà tôi vẫn chưa gọi?
+
+165
+00:09:16,635 --> 00:09:19,040
+Sonny, dòng mã tiếp theo của chúng ta cần làm gì?
+
+166
+00:09:19,040 --> 00:09:25,120
+>> Sonny: Để vượt qua API dữ liệu để hiển thị càng cao.
+
+167
+00:09:25,120 --> 00:09:27,630
+>> Will Sentance: Đúng. Vì vậy, chúng tôi chuyển sang nhớ lại màn hình
+
+168
+00:09:27,630 --> 00:09:31,200
+hàm với đối số của chúng tôi là giá trị của dữ liệu từ API,
+
+169
+00:09:31,200 --> 00:09:34,980
+mọi thứ trong Java là chúng tôi sẽ đánh giá ngay lập tức,
+
+170
+00:09:34,980 --> 00:09:39,180
+dữ liệu từ API ở đây là một chuỗi cao ', chúng tôi đưa thẳng vào.
+
+171
+00:09:39,180 --> 00:09:44,420
+Và chúng tôi tạo bằng cách sử dụng ngữ cảnh để chạy nó ở nơi trong bộ nhớ, điều này thực sự rõ ràng
+
+172
+00:09:44,420 --> 00:09:51,020
+ở đây, trong dữ liệu bộ nhớ, dữ liệu tham số được đặt thành đối số cao.
+
+173
+00:09:51,020 --> 00:09:54,851
+Và vì vậy chúng tôi sẽ đăng nhập vào bảng điều khiển của mình.
+
+174
+00:09:54,851 --> 00:10:00,349
+Vào khoảng 201 mili giây, chúng ta sẽ đạt mức cao.
+
+175
+00:10:00,349 --> 00:10:02,424
+Được chứ.
+
+176
+00:10:02,424 --> 00:10:05,272
+Và bây giờ cuối cùng, chúng ta sẽ đánh dòng nào tiếp theo?
+
+177
+00:10:05,272 --> 00:10:06,175
+Quý ông, bạn tên gì?
+
+178
+00:10:06,175 --> 00:10:07,041
+>> Ben: Ben >> Will Sentance: Ben.
+
+179
+00:10:07,041 --> 00:10:07,838
+Xin lỗi, Ben.
+
+180
+00:10:07,838 --> 00:10:10,074
+>> Ben: Chúng tôi sẽ ghi lại cho tôi sau.
+
+181
+00:10:10,074 --> 00:10:15,166
+>> Will Sentance: Tôi sau này sẽ được đăng nhập tại
+
+182
+00:10:15,166 --> 00:10:20,784
+khoảng thời gian sau đó của năm 202
+
+183
+00:10:20,784 --> 00:10:26,425
+mili giây, tôi sau đó được ghi lại.
+
+184
+00:10:29,457 --> 00:10:32,040
+>> Will Sentance: Hãy giơ tay nếu bạn là một fan hâm mộ lớn của giải pháp này.
+
+185
+00:10:33,180 --> 00:10:34,150
+Tôi là một fan hâm mộ lớn của điều này.
+
+186
+00:10:34,150 --> 00:10:35,450
+Không, tôi không bận tâm về giải pháp.
+
+187
+00:10:35,450 --> 00:10:39,669
+Đây là lý do tại sao tôi không bận tâm về giải pháp, nó có tính trực quan sâu sắc.
+
+188
+00:10:41,220 --> 00:10:43,760
+Chúng tôi có ba mục tiêu, ba mục tiêu.
+
+189
+00:10:43,760 --> 00:10:47,090
+Có thể thực hiện các tác vụ mất nhiều thời gian, tác vụ chậm,
+
+190
+00:10:47,090 --> 00:10:48,860
+như lấy dữ liệu từ Twitter.
+
+191
+00:10:48,860 --> 00:10:50,110
+Chúng tôi phải có khả năng làm điều đó.
+
+192
+00:10:50,110 --> 00:10:52,020
+Nếu không, ứng dụng web của chúng tôi rất, rất nhàm chán.
+
+193
+00:10:52,020 --> 00:10:53,720
+Tốt nhất chúng ta có thể làm trò chơi treo cổ,
+
+194
+00:10:53,720 --> 00:10:58,550
+một trò chơi treo cổ rất hay trong dòng lệnh, nhưng đó là điều tốt nhất chúng tôi có thể làm.
+
+195
+00:10:58,550 --> 00:11:01,820
+Nhưng chúng tôi muốn có thể tiếp tục chạy mã JavaScript của mình trong thời gian chờ đợi.
+
+196
+00:11:01,820 --> 00:11:03,300
+Chúng tôi không thể làm điều đó ở đây.
+
+197
+00:11:03,300 --> 00:11:08,310
+Hãy xem này, trong thời gian chờ đợi, mã JavaScript Node được phép chạy cho
+
+198
+00:11:08,310 --> 00:11:09,690
+200 mili giây.
+
+199
+00:11:09,690 --> 00:11:13,380
+Khi nhiệm vụ chậm của chúng tôi hoàn thành mặc dù chúng tôi sẽ có thể chạy chức năng
+
+200
+00:11:13,380 --> 00:11:15,420
+biết nhiệm vụ đã hoàn thành và dữ liệu đã sẵn sàng.
+
+201
+00:11:15,420 --> 00:11:16,417
+Đó là một chút khó khăn.
+
+202
+00:11:16,417 --> 00:11:19,836
+Vì vậy, hóa ra, mọi giải pháp khác mà chúng tôi có, đó là một chút khó khăn.
+
+203
+00:11:19,836 --> 00:11:22,118
+Trong giải pháp này, không một chút khó khăn.
+
+204
+00:11:22,118 --> 00:11:23,375
+Giải pháp này, thật dễ dàng.
+
+205
+00:11:23,375 --> 00:11:26,672
+Tôi có thể thấy nơi dữ liệu của mình được đồng bộ theo thứ tự, trong bộ nhớ.
+
+206
+00:11:26,672 --> 00:11:29,652
+Tôi không gặp vấn đề gì khi chức năng hiển thị của tôi sẽ chạy.
+
+207
+00:11:29,652 --> 00:11:33,756
+Nó sẽ không chạy theo đúng nghĩa đen trong chuỗi đơn của tôi cho đến khi tôi lấy lại dữ liệu của mình.
+
+208
+00:11:33,756 --> 00:11:37,891
+Tôi chỉ giao dịch trong thế giới đồng bộ ở đây, theo thứ tự, từ trên xuống dưới.
+
+209
+00:11:37,891 --> 00:11:39,892
+Đó là lý do tại sao chúng tôi yêu thích mô hình chuỗi đơn JavaScript.
+
+210
+00:11:39,892 --> 00:11:43,614
+Đó là tầm nhìn đằng sau nó, nó có khả năng dự đoán cao không và
+
+211
+00:11:43,614 --> 00:11:45,384
+dễ dàng làm việc với một nhà phát triển.
+
+212
+00:11:45,384 --> 00:11:47,946
+Nhưng rõ ràng, nó về cơ bản là không thể hiểu được.
+
+213
+00:11:49,726 --> 00:11:52,796
+Chặn chuỗi JavaScript đơn của chúng tôi chạy bất kỳ mã nào khác
+
+214
+00:11:52,796 --> 00:11:54,936
+trong khi nhiệm vụ này hoàn thành.
+
+215
+00:11:54,936 --> 00:11:58,786
+Lợi ích, nó chắc chắn dễ dàng để lý luận, nhưng nó không thể giải thích được.

@@ -1,0 +1,215 @@
+1
+00:00:00,130 --> 00:00:02,500
+>> Will Sentance: Trước khi chúng ta làm điều đó, vấn đề của việc này là gì?
+
+2
+00:00:02,500 --> 00:00:04,160
+Không vấn đề gì.
+
+3
+00:00:04,160 --> 00:00:07,810
+Có một cách tiếp cận trực quan tuyệt vời khi chúng ta hiểu rõ
+
+4
+00:00:07,810 --> 00:00:08,720
+nó hoạt động như thế nào.
+
+5
+00:00:09,790 --> 00:00:13,710
+Dữ liệu phản hồi, nó chỉ có sẵn trong chức năng gọi lại.
+
+6
+00:00:13,710 --> 00:00:15,610
+Chúng tôi không thấy điều này ở đây, chúng tôi sẽ thấy nó trong giây lát.
+
+7
+00:00:15,610 --> 00:00:18,310
+Mọi dữ liệu quay lại từ các tính năng của trình duyệt web của chúng tôi đều hoạt động.
+
+8
+00:00:18,310 --> 00:00:20,874
+Ví dụ, tôi đi và nhận một số tweet từ Twitter.
+
+9
+00:00:20,874 --> 00:00:25,280
+Chúng sẽ được phân tích cú pháp làm đối số của hàm
+
+10
+00:00:25,280 --> 00:00:28,230
+đã được thiết lập để chạy khi hoàn thành.
+
+11
+00:00:28,230 --> 00:00:29,840
+Điều đó có thể trở nên khá phức tạp,
+
+12
+00:00:29,840 --> 00:00:32,770
+bởi vì dữ liệu sẽ chỉ có sẵn bên trong đây.
+
+13
+00:00:32,770 --> 00:00:33,780
+Điều đó có thể trở nên khá lộn xộn.
+
+14
+00:00:35,430 --> 00:00:41,000
+Và có thể cảm thấy kỳ lạ khi nghĩ rằng phân tích một hàm thành một hàm khác,
+
+15
+00:00:41,000 --> 00:00:42,760
+chỉ để nó chạy nhiều hơn sau đó.
+
+16
+00:00:42,760 --> 00:00:43,760
+Có lẽ nó cảm thấy kỳ lạ?
+
+17
+00:00:43,760 --> 00:00:45,820
+Nó chắc chắn cảm thấy kỳ lạ.
+
+18
+00:00:45,820 --> 00:00:48,040
+Khi tôi thấy điều đó, setTimeout (printHello, 0),
+
+19
+00:00:48,040 --> 00:00:53,040
+mọi thứ cho tôi biết rằng tôi phải chạy printHello bằng cách nào đó bên trong setTimeout.
+
+20
+00:00:54,230 --> 00:00:55,150
+Mọi thứ cho tôi biết điều đó.
+
+21
+00:00:55,150 --> 00:00:57,630
+Đặc biệt nếu nó cho biết 0 mili giây.
+
+22
+00:00:57,630 --> 00:01:00,210
+Tuy nhiên, tôi hoàn toàn không.
+
+23
+00:01:00,210 --> 00:01:03,800
+Tôi đang chuyển một định nghĩa hàm vào, chỉ dành cho
+
+24
+00:01:03,800 --> 00:01:06,820
+nó được gọi ra ngoài tầm kiểm soát của tôi.
+
+25
+00:01:06,820 --> 00:01:08,810
+Rất nhiều sau này trong ứng dụng.
+
+26
+00:01:08,810 --> 00:01:13,585
+Mất quyền kiểm soát việc thực hiện và xác định điều gì đó của chúng tôi,
+
+27
+00:01:13,585 --> 00:01:16,840
+printHello riêng điều đó sẽ [KHÔNG NGHE ĐƯỢC] Chà, không phải tùy tiện đâu, nhưng
+
+28
+00:01:16,840 --> 00:01:18,740
+ngoài tầm kiểm soát đó sẽ được gọi?
+
+29
+00:01:18,740 --> 00:01:19,860
+Muộn màng.
+
+30
+00:01:19,860 --> 00:01:22,740
+Khi chúng ta viết mã, chúng ta nghĩ về nó ít nhất là,
+
+31
+00:01:22,740 --> 00:01:25,120
+Tôi đang kiểm soát cấu trúc mã của mình.
+
+32
+00:01:25,120 --> 00:01:29,250
+Nhưng thay vào đó, tôi sẽ để lại một phần hoàn toàn nằm ngoài tầm kiểm soát của tôi sau này.
+
+33
+00:01:29,250 --> 00:01:30,940
+Đó là một cảm giác kỳ lạ.
+
+34
+00:01:30,940 --> 00:01:34,350
+Tôi sẽ nói điều này, khi bạn đã hiểu rõ về cách nó hoạt động.
+
+35
+00:01:34,350 --> 00:01:35,460
+nó thực sự không quá tệ.
+
+36
+00:01:35,460 --> 00:01:37,630
+Nếu bạn không hiểu nó hoạt động như thế nào thì thật là kinh khủng.
+
+37
+00:01:37,630 --> 00:01:39,800
+Nhưng nếu bạn hiểu rõ cách nó hoạt động,
+
+38
+00:01:39,800 --> 00:01:42,410
+bạn biết rằng đây là một hàm giả vờ trong JavaScript.
+
+39
+00:01:42,410 --> 00:01:43,000
+Đó là một mặt tiền.
+
+40
+00:01:43,000 --> 00:01:44,746
+Đối với chức năng trong nền.
+
+41
+00:01:44,746 --> 00:01:47,057
+Bạn biết rằng hàm này sẽ được chuyển vào hàng đợi và
+
+42
+00:01:47,057 --> 00:01:50,058
+sau đó được phép quay trở lại JavaScript, vâng, ngoài tầm kiểm soát của bạn, nhưng
+
+43
+00:01:50,058 --> 00:01:52,437
+đó là toàn bộ bản chất của lập trình không đồng bộ.
+
+44
+00:01:52,437 --> 00:01:55,336
+Bạn thực hiện một chuỗi duy nhất là gửi các tác vụ và
+
+45
+00:01:55,336 --> 00:01:59,760
+bạn đưa chúng trở lại tự động, sẵn sàng sử dụng trong chức năng hoặc
+
+46
+00:01:59,760 --> 00:02:02,830
+giá trị trả về hoặc giá trị phản hồi của chúng.
+
+47
+00:02:02,830 --> 00:02:07,600
+Sẵn sàng sử dụng trong chức năng mà bạn đã thiết lập trước đó để được gọi sau này.
+
+48
+00:02:07,600 --> 00:02:13,750
+Bạn hiểu rằng chính mô hình kiến ​​trúc đầu vào, đầu ra không đồng bộ.
+
+49
+00:02:13,750 --> 00:02:15,810
+Bạn hiểu rằng đó là thiết kế.
+
+50
+00:02:15,810 --> 00:02:18,320
+Nhưng tôi hiểu nó không trực quan.
+
+51
+00:02:19,570 --> 00:02:23,990
+Lợi ích, siêu rõ ràng khi bạn hiểu cách hoạt động của nó.
+
+52
+00:02:23,990 --> 00:02:27,350
+Chức năng bạn phân tích cú pháp sẽ được tự động kích hoạt.
+
+53
+00:02:27,350 --> 00:02:32,840
+Sau khi hoàn thành tính năng của trình duyệt Web, quay trở lại JavaScript, và sau đó được gọi
+
+54
+00:02:32,840 --> 00:02:35,970
+khi trình duyệt Web kết thúc công việc hoặc tính năng của trình duyệt Web kết thúc công việc.

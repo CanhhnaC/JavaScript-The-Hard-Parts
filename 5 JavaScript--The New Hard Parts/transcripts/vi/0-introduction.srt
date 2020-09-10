@@ -1,0 +1,511 @@
+1
+00:00:03,010 --> 00:00:05,560
+>> Will Sentance: Chúng ta sẽ trải qua một phong cách học tập
+
+2
+00:00:05,560 --> 00:00:09,370
+điều đó sẽ đòi hỏi rất nhiều ở tất cả các bạn.
+
+3
+00:00:09,370 --> 00:00:15,080
+Tôi sẽ gọi từng người trong phòng một cách khá thường xuyên
+
+4
+00:00:15,080 --> 00:00:19,290
+để chúng tôi có thể nói về mã của mình một cách chính xác và rõ ràng nhất có thể nhưng
+
+5
+00:00:19,290 --> 00:00:24,682
+đầu tiên, đó là lý lịch của tôi, có Thợ mã,
+
+6
+00:00:24,682 --> 00:00:30,320
+Codesmith LA, chúng tôi vừa rời văn phòng này để đến một văn phòng mới tuyệt đẹp ở Venice Beach,
+
+7
+00:00:30,320 --> 00:00:34,230
+ở trung tâm Bãi biển Venice, bên dưới biển hiệu Venice.
+
+8
+00:00:34,230 --> 00:00:38,160
+Tôi không biết có ai biết nơi đó không, nhưng nó rất tốt.
+
+9
+00:00:38,160 --> 00:00:40,530
+Có tôi với các chị em tài năng Newberry của tôi.
+
+10
+00:00:40,530 --> 00:00:42,250
+Tất cả những người, thực sự,
+
+11
+00:00:42,250 --> 00:00:47,370
+Ersey, ở ngoài cùng bên phải, vừa bắt đầu trận chung kết của cô ấy tại Oxford.
+
+12
+00:00:47,370 --> 00:00:50,030
+Thường thì họ sẽ không làm một mô hình mà bạn
+
+13
+00:00:50,030 --> 00:00:54,460
+làm các kỳ thi trung cấp hình thành lớp cuối cùng của bạn.
+
+14
+00:00:54,460 --> 00:00:56,489
+Thay vào đó, điểm cuối cùng của bạn là
+
+15
+00:00:56,489 --> 00:01:00,482
+được sản xuất bởi hai tuần thi vào cuối toàn bộ chương trình.
+
+16
+00:01:00,482 --> 00:01:04,250
+Có nghĩa là bạn có thể làm những gì bạn muốn cho đến hai tuần cuối cùng đó.
+
+17
+00:01:04,250 --> 00:01:09,580
+Và trong hai tuần cuối cùng đó, trời ơi, đó là hai tuần tồi tệ nhất.
+
+18
+00:01:09,580 --> 00:01:14,747
+Tôi nhớ ba đêm liên tiếp, ngủ trước hai tiếng trước khi làm bài.
+
+19
+00:01:14,747 --> 00:01:15,750
+Trời ơi.
+
+20
+00:01:15,750 --> 00:01:17,938
+Dù sao thì, đây là một trong những người chị của tôi.
+
+21
+00:01:17,938 --> 00:01:22,352
+Tôi từng làm việc tại Icecom, đó là một thư viện WebRTC phổ biến và
+
+22
+00:01:22,352 --> 00:01:26,404
+sau đó là Gem, một công ty chuỗi khối đã hoàn thành
+
+23
+00:01:26,404 --> 00:01:30,570
+mọi thứ có thể có trong không gian tiền điện tử chuỗi khối.
+
+24
+00:01:30,570 --> 00:01:32,190
+Một công ty rất tuyệt vời với khả năng lãnh đạo xuất sắc.
+
+25
+00:01:32,190 --> 00:01:33,130
+Công ty rất tốt.
+
+26
+00:01:33,130 --> 00:01:35,230
+Được rồi, tôi điều hành Codesmith.
+
+27
+00:01:35,230 --> 00:01:37,030
+Rất ngắn gọn, Codesmith là gì?
+
+28
+00:01:37,030 --> 00:01:41,190
+Đầu tiên và quan trọng nhất, nhân tiện, một trung tâm kỹ thuật phần mềm xuất sắc.
+
+29
+00:01:41,190 --> 00:01:43,070
+Tôi không thể đủ căng thẳng.
+
+30
+00:01:43,070 --> 00:01:48,580
+Đúng vậy, cuối cùng thì Codesmith tạo ra những người có kỹ năng để đi và xây dựng
+
+31
+00:01:48,580 --> 00:01:52,900
+những điều họ mơ ước, được đi làm trong công ty mà họ mơ ước.
+
+32
+00:01:52,900 --> 00:01:55,620
+Nhưng đó không phải là mục đích và điều đó nói lên
+
+33
+00:01:55,620 --> 00:01:57,320
+mọi thứ chúng ta sẽ làm hôm nay.
+
+34
+00:01:57,320 --> 00:02:03,130
+Mục tiêu trở thành một kỹ sư vĩ đại, là có khả năng xây dựng.
+
+35
+00:02:03,130 --> 00:02:08,097
+Như một tác dụng phụ của điều đó, chúng tôi có cơ hội duy nhất này để làm việc
+
+36
+00:02:08,097 --> 00:02:11,848
+trong những vai trò thỏa mãn trí tuệ,
+
+37
+00:02:11,848 --> 00:02:16,368
+sáng tạo và tôi đoán ổn định, thỏa mãn về mặt tài chính.
+
+38
+00:02:16,368 --> 00:02:17,640
+Tôi không biết nếu điều này đã từng tồn tại trước đây.
+
+39
+00:02:17,640 --> 00:02:19,750
+Đó là một đặc ân tuyệt vời khi có được điều đó
+
+40
+00:02:19,750 --> 00:02:23,670
+đó là những gì Codesmith sản xuất, tốt nghiệp làm việc tại Google,
+
+41
+00:02:23,670 --> 00:02:28,280
+Amazon, PayPal, Microsoft, Oscar, được tất cả những công ty khác này.
+
+42
+00:02:30,400 --> 00:02:35,430
+Chỉ một phần tư nhận được các vị trí cấp cao, hầu hết nhận được các vị trí kỹ sư cấp trung.
+
+43
+00:02:35,430 --> 00:02:39,320
+Nhân tiện, loại vật liệu chúng ta đang thấy ngày nay là loại vật liệu
+
+44
+00:02:39,320 --> 00:02:44,330
+rằng sinh viên tốt nghiệp sẽ được hỏi các câu hỏi phỏng vấn trong toàn bộ thời gian.
+
+45
+00:02:44,330 --> 00:02:48,360
+Chúng tôi đã khảo sát học sinh tốt nghiệp một vài tuần trước, điều gì bạn nhận được hỏi về nhiều nhất?
+
+46
+00:02:49,480 --> 00:02:53,310
+Số một, vòng lặp sự kiện, nó hoạt động như thế nào?
+
+47
+00:02:53,310 --> 00:02:55,570
+Đối với các công việc cấp trung, câu hỏi số một.
+
+48
+00:02:55,570 --> 00:02:58,180
+Thứ hai, đóng cửa.
+
+49
+00:02:58,180 --> 00:03:00,220
+Làm thế nào nó hoạt động dưới mui xe?
+
+50
+00:03:00,220 --> 00:03:04,610
+Bây giờ phần khó của phần một có một đột phá chi tiết về kết thúc.
+
+51
+00:03:04,610 --> 00:03:08,930
+Chúng tôi sẽ không xem xét nó ở cùng một mức độ chi tiết, nhưng nhân tiện,
+
+52
+00:03:08,930 --> 00:03:12,010
+là một bản xem trước để chúng tôi hiểu các trình vòng lặp.
+
+53
+00:03:12,010 --> 00:03:17,420
+Chúng ta cần hiểu sâu sắc về việc đóng cửa, được rồi.
+
+54
+00:03:17,420 --> 00:03:18,620
+Có gì để nói?
+
+55
+00:03:18,620 --> 00:03:19,540
+Tôi sẽ nói rằng nó đã ở giữa.
+
+56
+00:03:20,900 --> 00:03:25,800
+Điều đặc biệt đối với tôi là mỗi người trong căn phòng này,
+
+57
+00:03:25,800 --> 00:03:29,660
+chúng tôi độc lập bất khả tri đối với lý lịch của bạn.
+
+58
+00:03:29,660 --> 00:03:32,320
+Và điều tương tự cũng xảy ra ở Goldsmith.
+
+59
+00:03:32,320 --> 00:03:35,880
+Bạn đã tốt nghiệp Princeton CS
+
+60
+00:03:35,880 --> 00:03:37,920
+học cùng với người không học đại học.
+
+61
+00:03:39,010 --> 00:03:41,110
+Và đó một lần nữa, điều tuyệt vời về kỹ thuật phần mềm.
+
+62
+00:03:42,140 --> 00:03:43,440
+Chúng tôi luôn tập trung vào chương trình.
+
+63
+00:03:43,440 --> 00:03:46,860
+Phản hồi duy nhất bạn nhận được trong các cuộc phỏng vấn là không đủ kinh nghiệm.
+
+64
+00:03:46,860 --> 00:03:49,980
+Mọi người đều yêu thích, nhưng đó là phản hồi mạnh mẽ nhất trên trái đất.
+
+65
+00:03:49,980 --> 00:03:54,310
+Đây là ngành duy nhất không có đủ kinh nghiệm
+
+66
+00:03:54,310 --> 00:03:57,230
+chúng tôi đã hỏi bạn mười câu hỏi và bạn trả lời bốn câu hỏi.
+
+67
+00:03:57,230 --> 00:04:02,630
+Hãy điền vào sáu trong vài ngày tới, và đó là lý do cuối cùng
+
+68
+00:04:02,630 --> 00:04:06,170
+trở thành một kỹ sư là khả năng vượt qua các khối trong hiểu biết của bạn.
+
+69
+00:04:06,170 --> 00:04:09,020
+Và đó là một ngành công nghiệp vô cùng mạnh mẽ.
+
+70
+00:04:09,020 --> 00:04:12,810
+Nơi bạn có thể đi từ không có đủ kinh nghiệm, chỉ ba ngày sau
+
+71
+00:04:12,810 --> 00:04:16,860
+có đủ kinh nghiệm vì bạn đã vượt qua những khối đó.
+
+72
+00:04:16,860 --> 00:04:18,680
+Và đó là luận văn của Thợ mã.
+
+73
+00:04:18,680 --> 00:04:19,270
+Được rồi, tốt.
+
+74
+00:04:20,460 --> 00:04:24,920
+Đội ngũ giúp Codesmith trở nên khả thi, những người rất tốt bụng này.
+
+75
+00:04:24,920 --> 00:04:26,180
+Ặc.
+
+76
+00:04:26,180 --> 00:04:27,570
+Gửi lời chào đến Eric.
+
+77
+00:04:27,570 --> 00:04:30,379
+Phim của ai, anh ấy có một dự án phụ,
+
+78
+00:04:30,379 --> 00:04:35,182
+một bộ phim có tên là Midnight Sun, nhắm đến đối tượng thanh thiếu niên,
+
+79
+00:04:35,182 --> 00:04:40,006
+có ngân sách 10 triệu đô la, đã phá vỡ 25 triệu đô la trên toàn cầu.
+
+80
+00:04:40,006 --> 00:04:41,380
+Thật không thể tin được phải không?
+
+81
+00:04:41,380 --> 00:04:47,281
+Anh ấy hiện là bạn thân của Justine Bieber, người có mặt tại hội nghị hàng đầu.
+
+82
+00:04:47,281 --> 00:04:52,110
+Nhưng tuy nhiên, tôi nghĩ anh ta có, anh ta có thể có số của Bieb.
+
+83
+00:04:52,110 --> 00:04:53,010
+Tôi không chắc.
+
+84
+00:04:53,010 --> 00:04:55,510
+Nhưng đây là một tập hợp tuyệt vời của những người mà anh ấy làm Codesmith.
+
+85
+00:04:55,510 --> 00:04:56,540
+LA và New York.
+
+86
+00:04:56,540 --> 00:04:59,330
+Hai địa điểm xảy ra.
+
+87
+00:04:59,330 --> 00:05:00,200
+Những con người tuyệt vời.
+
+88
+00:05:00,200 --> 00:05:05,260
+Snow ở đó, người điều hành kỹ thuật ở LA, 20 năm kinh nghiệm.
+
+89
+00:05:05,260 --> 00:05:06,360
+Dù sao những người tuyệt vời.
+
+90
+00:05:06,360 --> 00:05:06,860
+Tốt.
+
+91
+00:05:07,970 --> 00:05:10,020
+Nhân tiện, những thứ chúng tôi tìm kiếm ở các ứng viên Thợ mã,
+
+92
+00:05:10,020 --> 00:05:14,140
+chỉ cần bạn quan tâm, nhưng tôi sẽ nói có ý nghĩa hơn với mọi người.
+
+93
+00:05:14,140 --> 00:05:17,850
+Những điều mà các công ty tìm kiếm ở các ứng viên kỹ thuật của chính họ.
+
+94
+00:05:17,850 --> 00:05:21,880
+Không phải nhà phát triển cấp dưới, không phải cấp mới, mà là cấp trung hoặc cấp cao.
+
+95
+00:05:21,880 --> 00:05:25,420
+Đó là khả năng lấy bất kỳ tính năng mới nào.
+
+96
+00:05:25,420 --> 00:05:27,199
+Và thực hiện nó.
+
+97
+00:05:27,199 --> 00:05:28,480
+Điều đó yêu cầu những gì?
+
+98
+00:05:29,910 --> 00:05:32,680
+Giải quyết vấn đề, đó là điều cơ bản.
+
+99
+00:05:32,680 --> 00:05:34,280
+Tôi có thể vượt qua một khối không?
+
+100
+00:05:34,280 --> 00:05:38,340
+Chú ý thứ năm quan trọng nhất là kiến ​​thức của bạn về ngôn ngữ hoặc khuôn khổ.
+
+101
+00:05:38,340 --> 00:05:40,650
+Những thứ đó, chúng phát triển.
+
+102
+00:05:40,650 --> 00:05:42,640
+Bạn James của chúng tôi ở đây đã nhận xét.
+
+103
+00:05:42,640 --> 00:05:47,120
+Các khung công tác front-end, chúng phát triển như một Reshe mới?
+
+104
+00:05:47,120 --> 00:05:47,690
+Đó là một từ?
+
+105
+00:05:47,690 --> 00:05:49,709
+Tôi đã lên tiếng.
+
+106
+00:05:49,709 --> 00:05:51,253
+Đó là một từ?
+
+107
+00:05:51,253 --> 00:05:52,384
+Đó là một từ?
+
+108
+00:05:52,384 --> 00:05:53,196
+Chắc chắn rồi.
+
+109
+00:05:53,196 --> 00:05:55,761
+Là khung boojey mới, và đó cũng không phải là từ mà tôi đang tìm kiếm.
+
+110
+00:05:55,761 --> 00:05:58,318
+Reshe, Rishie, tôi chắc chắn đó là một từ.
+
+111
+00:05:58,318 --> 00:06:01,264
+Có một người mới, một người nào đó sẽ có.
+
+112
+00:06:01,264 --> 00:06:02,238
+Đó là một từ.
+
+113
+00:06:02,238 --> 00:06:05,330
+Tôi đã không nghe từ đó trong bảy năm thiếu niên.
+
+114
+00:06:05,330 --> 00:06:07,072
+70 năm.
+
+115
+00:06:07,072 --> 00:06:12,189
+Mới về khuôn khổ xu hướng hàng năm, đó không phải là điều tạo nên một kỹ sư tuyệt vời,
+
+116
+00:06:12,189 --> 00:06:14,720
+bạn là một kỹ thuật viên, trong trường hợp đó.
+
+117
+00:06:14,720 --> 00:06:17,160
+Bạn là một kỹ thuật viên góc cạnh, bạn không linh hoạt.
+
+118
+00:06:17,160 --> 00:06:19,420
+Nhân tiện, điều gì tạo nên một kỹ sư tuyệt vời, những gì chúng tôi tìm kiếm
+
+119
+00:06:19,420 --> 00:06:23,110
+trong Code Smith, các ứng cử viên là khả năng vượt qua các khối của bạn.
+
+120
+00:06:23,110 --> 00:06:26,630
+Chúng tôi sẽ làm điều đó ngày hôm nay và bạn đang giao tiếp kỹ thuật.
+
+121
+00:06:26,630 --> 00:06:29,990
+Hôm nay khi tôi kêu gọi mọi người trong phòng này nói chuyện thông qua mã của bạn,
+
+122
+00:06:29,990 --> 00:06:34,280
+những gì chúng tôi đang làm là cải tiến giao tiếp kỹ thuật của chúng tôi.
+
+123
+00:06:34,280 --> 00:06:35,570
+Được rồi, đó là những gì chúng tôi đang làm.
+
+124
+00:06:35,570 --> 00:06:39,600
+Và sau đó thực hành tốt nhất trong cách tiếp cận và giao tiếp phi kỹ thuật của bạn.
+
+125
+00:06:39,600 --> 00:06:43,350
+Và ngay cả ở đây, sự kỳ vọng đang hỗ trợ lẫn nhau.
+
+126
+00:06:43,350 --> 00:06:46,160
+Đây không phải là môi trường để khoe khoang.
+
+127
+00:06:46,160 --> 00:06:50,090
+Mà đúng hơn là một môi trường để đón nhận sự phát triển của những người xung quanh bạn
+
+128
+00:06:50,090 --> 00:06:53,470
+đó là một bối cảnh tuyệt vời để phát triển bản thân của bạn.

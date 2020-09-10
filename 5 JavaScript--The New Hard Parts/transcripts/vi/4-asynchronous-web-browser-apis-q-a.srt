@@ -1,0 +1,263 @@
+1
+00:00:00,270 --> 00:00:01,070
+>> Will Sentance: Nhưng hãy có ngón tay cái.
+
+2
+00:00:01,070 --> 00:00:02,690
+Anh đã mất em, em rõ ràng.
+
+3
+00:00:02,690 --> 00:00:03,860
+Tôi có những lời giải thích.
+
+4
+00:00:03,860 --> 00:00:05,960
+Mọi người đều thích, tôi tự hào.
+
+5
+00:00:05,960 --> 00:00:09,170
+Michelle có một, Mike có một.
+
+6
+00:00:09,170 --> 00:00:13,999
+Mike, hãy đến với bạn trước. >> Mike: Tôi chỉ tự hỏi làm thế nào để
+
+7
+00:00:13,999 --> 00:00:18,890
+tuyển dụng nếu bạn có các lớp, nếu bạn có một chức năng thời gian chờ đã đặt
+
+8
+00:00:18,890 --> 00:00:22,985
+được gọi là cần thêm một thời gian. >> Will Sentance: Được rồi, vậy
+
+9
+00:00:22,985 --> 00:00:31,860
+câu nói của bạn nếu bên trong bản in của tôi Xin chào, tôi sẽ trì hoãn thêm chức năng.
+
+10
+00:00:31,860 --> 00:00:35,580
+Vì vậy, hãy gọi một hàm khác, không phải là một hàm thực, một mặt tiền cho
+
+11
+00:00:35,580 --> 00:00:37,570
+tính năng trình duyệt web.
+
+12
+00:00:37,570 --> 00:00:39,370
+Vâng, được rồi, hãy đến với điều đó.
+
+13
+00:00:39,370 --> 00:00:42,807
+Michelle. >> Michelle: Câu hỏi của tôi là nếu tôi
+
+14
+00:00:42,807 --> 00:00:48,038
+đang tích cực thực hiện một cái gì đó trên ngăn xếp cuộc gọi?
+
+15
+00:00:48,038 --> 00:00:48,549
+>> Will Sentance: Tuyệt vời,
+
+16
+00:00:48,549 --> 00:00:49,500
+nó đi đâu
+
+17
+00:00:49,500 --> 00:00:52,080
+Chính xác, ngay tại chỗ.
+
+18
+00:00:52,080 --> 00:00:55,750
+Giả sử tôi có 10.000 bản ghi giao diện điều khiển.
+
+19
+00:00:55,750 --> 00:00:58,140
+Khi nào thì hàm được phép quay trở lại?
+
+20
+00:00:58,140 --> 00:00:59,610
+Ngay khi đã sẵn sàng?
+
+21
+00:00:59,610 --> 00:01:04,650
+Sau năm nhật ký bảng điều khiển đó, sau một vài nhật ký, điều gì sẽ xảy ra nếu tôi
+
+22
+00:01:04,650 --> 00:01:08,470
+có một chức năng như bạn nói ngồi trên ngăn xếp cuộc gọi trong 300 mili giây?
+
+23
+00:01:08,470 --> 00:01:10,690
+Hay thậm chí 1000 mili giây?
+
+24
+00:01:10,690 --> 00:01:14,430
+Khi nào thì printHello được phép bật lại?
+
+25
+00:01:14,430 --> 00:01:16,550
+Nó sẽ đến một cách ngẫu nhiên?
+
+26
+00:01:17,860 --> 00:01:18,560
+Có lẽ.
+
+27
+00:01:18,560 --> 00:01:20,420
+Đó sẽ là một thiết kế ngôn ngữ.
+
+28
+00:01:20,420 --> 00:01:22,590
+Hãy chắc chắn rằng chúng tôi biết đó là các chức năng mặt tiền của chúng tôi.
+
+29
+00:01:22,590 --> 00:01:24,570
+Chúng tôi đã có thời gian cố định.
+
+30
+00:01:24,570 --> 00:01:27,950
+Khi tôi nói mặt tiền, tôi có nghĩa là nó là một mặt tiền, nó là một mặt tiền.
+
+31
+00:01:27,950 --> 00:01:30,167
+Nó trông giống như một hàm JavaScript, nhưng không phải vậy.
+
+32
+00:01:30,167 --> 00:01:35,081
+Có vẻ như nó sẽ tạo bối cảnh thực thi,
+
+33
+00:01:35,081 --> 00:01:39,060
+nó không, không có ý nghĩa đối với chúng ta theo bất kỳ cách nào.
+
+34
+00:01:39,060 --> 00:01:40,833
+Thay vào đó, nó chỉ quay công việc nền.
+
+35
+00:01:40,833 --> 00:01:42,990
+Nó là mặt tiền, nó là mặt tiền.
+
+36
+00:01:42,990 --> 00:01:45,203
+Nó giống như thế giới phương tây đó, Chúa ơi,
+
+37
+00:01:45,203 --> 00:01:49,571
+những người có khuôn mặt của thế giới phương Tây, ai đã xem chương trình Westworld?
+
+38
+00:01:49,571 --> 00:01:52,988
+Bạn biết đấy, nơi mà khuôn mặt mở ra Chúa tôi, chết tiệt ghét điều đó.
+
+39
+00:01:52,988 --> 00:01:54,999
+Tôi thực sự đã xem hai tập đầu tiên và
+
+40
+00:01:54,999 --> 00:01:58,014
+tập đầu tiên của mùa, với tất cả các ngón tay của tôi như thế này
+
+41
+00:01:58,014 --> 00:02:01,720
+thông qua bất cứ lúc nào tôi thấy một trong những người đó khuôn mặt của họ mở ra.
+
+42
+00:02:01,720 --> 00:02:02,700
+Và nó đã xảy ra.
+
+43
+00:02:02,700 --> 00:02:04,540
+Tôi đã xem một chút nội dung đó và tôi đã không xem nó kể từ đó.
+
+44
+00:02:04,540 --> 00:02:05,430
+Tôi không thích chương trình này nữa.
+
+45
+00:02:05,430 --> 00:02:07,910
+Tôi không muốn nhìn thấy những khuôn mặt đang mở ra, nhưng nó là như thế này.
+
+46
+00:02:07,910 --> 00:02:10,196
+Nó giống như một mặt tiền. Dành cho những bạn chưa xem
+
+47
+00:02:10,196 --> 00:02:14,679
+Westworld, đó là phiên bản giả vờ của người hoặc có thể không.
+
+48
+00:02:14,679 --> 00:02:16,025
+Có lẽ chúng cũng thật như chúng ta.
+
+49
+00:02:16,025 --> 00:02:19,106
+Nhưng ban đầu chúng được tạo ra một cách máy móc,
+
+50
+00:02:19,106 --> 00:02:22,890
+nghĩa là đằng sau lớp da là những thứ máy móc.
+
+51
+00:02:22,890 --> 00:02:26,300
+Và tất cả chúng ta đều biết rằng con người thấy điều đó rất, rất rùng rợn.
+
+52
+00:02:27,510 --> 00:02:29,210
+Vâng, đó là những gì setTimeout giống như.
+
+53
+00:02:29,210 --> 00:02:32,750
+Nó là một mặt tiền cho chức năng bên ngoài chính nó.
+
+54
+00:02:32,750 --> 00:02:34,640
+Nó không có thật, nó không phải là JavaScript thuần túy.
+
+55
+00:02:34,640 --> 00:02:35,810
+Nó giả vờ.
+
+56
+00:02:35,810 --> 00:02:36,760
+Của bạn đây.
+
+57
+00:02:36,760 --> 00:02:39,170
+Tôi ghét loại suy, đó là lý do tại sao tôi ghét loại suy.
+
+58
+00:02:39,170 --> 00:02:42,590
+Tốt, vì vậy chúng tôi đang tương tác với một thế giới bên ngoài JavaScript.
+
+59
+00:02:42,590 --> 00:02:44,200
+Chúng tôi cần các quy tắc.
+
+60
+00:02:44,200 --> 00:02:46,410
+Chúng tôi cần các quy tắc nghiêm ngặt về cách chúng tôi sẽ tương tác với nó.
+
+61
+00:02:46,410 --> 00:02:50,976
+Vì vậy, chúng ta sẽ thấy mã này ở đây để xác định một loạt các tình huống
+
+62
+00:02:50,976 --> 00:02:53,481
+sẽ cho biết các quy tắc của chúng tôi phải là gì.
+
+63
+00:02:53,481 --> 00:02:57,750
+Vì vậy, chúng ta bắt đầu, từng dòng một, chúng ta sẽ xem qua mã của chúng ta.
+
+64
+00:02:57,750 --> 00:03:00,620
+Và sau đó, chúng ta sẽ bắt đầu lập trình cặp.
+
+65
+00:03:01,670 --> 00:03:05,860
+Và sau đó chúng ta sẽ thấy một giải pháp hoàn toàn mới mà mọi người đều yêu thích
+
+66
+00:03:05,860 --> 00:03:07,620
+không sử dụng mô hình này.

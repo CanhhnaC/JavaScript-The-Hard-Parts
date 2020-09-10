@@ -1,0 +1,387 @@
+1
+00:00:00,020 --> 00:00:01,032
+>> Will Sentance: Mọi người đều thích.
+
+2
+00:00:01,032 --> 00:00:01,878
+Tôi có một sự làm rõ.
+
+3
+00:00:01,878 --> 00:00:05,590
+Tôi ngạc nhiên rõ ràng, bạn đã mất tôi.
+
+4
+00:00:05,590 --> 00:00:10,130
+Được rồi, Victor có một sự làm rõ, Brian có một, Paul có một,
+
+5
+00:00:10,130 --> 00:00:12,000
+Michelle có một cái, Mike.
+
+6
+00:00:12,000 --> 00:00:15,030
+Mike tại sao bạn không đá chúng tôi, James có một, Mike tại sao bạn không đá chúng tôi?
+
+7
+00:00:15,030 --> 00:00:16,816
+>> Mike: Tôi chỉ đang thắc mắc hàng đợi gọi lại ở đâu,
+
+8
+00:00:16,816 --> 00:00:18,924
+là bạn sẽ lưu trữ nó trong một tính năng của trình duyệt web?
+
+9
+00:00:18,924 --> 00:00:20,081
+>> Will Sentance: Đó là một tính năng JavaScript.
+
+10
+00:00:20,081 --> 00:00:22,040
+Không, đó là một tính năng của công cụ JavaScript.
+
+11
+00:00:22,040 --> 00:00:23,160
+Câu hỏi rất, rất hay.
+
+12
+00:00:23,160 --> 00:00:25,170
+Đó là một tính năng của công cụ JavaScript.
+
+13
+00:00:25,170 --> 00:00:26,030
+Brian?
+
+14
+00:00:26,030 --> 00:00:29,370
+>> Brian: Được rồi, nó ưu tiên những thứ đó như thế nào?
+
+15
+00:00:29,370 --> 00:00:31,737
+Giống như nếu bạn có nhiều hơn những người trong thời gian đó.
+
+16
+00:00:31,737 --> 00:00:35,780
+Tất cả đều tăng từ 0 đến 10 hoặc tương tự như vậy.
+
+17
+00:00:35,780 --> 00:00:38,220
+Làm thế nào nó sẽ- >> Will Sentance: Vì vậy,
+
+18
+00:00:38,220 --> 00:00:41,600
+ngay sau khi họ hoàn thành, họ đi lên đây.
+
+19
+00:00:41,600 --> 00:00:44,574
+Nếu họ hoàn thành cùng một lúc, eh.
+
+20
+00:00:47,610 --> 00:00:49,730
+>> Will Sentance: Nó quá tinh vi, tôi không biết.
+
+21
+00:00:49,730 --> 00:00:55,130
+Tôi nghĩ đồng thời, kịch bản là không thể xảy ra, Alec?
+
+22
+00:00:55,130 --> 00:00:57,250
+>> Alec: Đó có phải là một ngăn xếp không?
+
+23
+00:00:57,250 --> 00:00:58,890
+Hàng đợi gọi lại?
+
+24
+00:00:58,890 --> 00:00:59,398
+>> Will Sentance: Có một hàng đợi.
+
+25
+00:00:59,398 --> 00:01:00,725
+>> Alec: Được rồi, nhưng.
+
+26
+00:01:00,725 --> 00:01:05,940
+>> Will Sentance: Đó là một hàng đợi theo nghĩa mà chúng ta đưa vào, in lời chào.
+
+27
+00:01:05,940 --> 00:01:08,969
+Nếu chúng tôi hoàn thành một tính năng trình duyệt web khác, và
+
+28
+00:01:08,969 --> 00:01:12,139
+tính năng trình duyệt web của nó có thể được vượt qua chức năng của nó.
+
+29
+00:01:12,139 --> 00:01:14,450
+Nó sẽ được xếp hàng phía sau, để bắt đầu tiếp theo.
+
+30
+00:01:14,450 --> 00:01:17,842
+Được rồi, vì vậy đó là lần đầu tiên xuất hiện trước.
+
+31
+00:01:17,842 --> 00:01:19,758
+Vì vậy, nó là một cấu trúc hàng đợi.
+
+32
+00:01:25,031 --> 00:01:27,867
+>> Will Sentance: [LAUGH] Không cười khúc khích trịch thượng,
+
+33
+00:01:27,867 --> 00:01:34,890
+Alec đã hỏi một câu hỏi rất chính đáng, liệu hàng đợi từ có phải là ngăn xếp không.
+
+34
+00:01:34,890 --> 00:01:36,290
+Một câu hỏi rất chính đáng.
+
+35
+00:01:36,290 --> 00:01:39,710
+Được rồi, ai khác đã có, Victor là người tiếp theo.
+
+36
+00:01:39,710 --> 00:01:40,640
+>> Người thuyết trình 5: Khoảng thời gian đặt có tác dụng gì?
+
+37
+00:01:41,750 --> 00:01:42,940
+>> Will Sentance: Hãy chờ đợi, Sandra, chúng ta sẽ làm điều đó, vâng,
+
+38
+00:01:42,940 --> 00:01:43,790
+đó là một điều rất thú vị.
+
+39
+00:01:43,790 --> 00:01:45,845
+Nhưng hãy nghĩ về nó giống như làm một cái gì đó rất giống trong trình duyệt web.
+
+40
+00:01:45,845 --> 00:01:48,820
+Tôi sẽ đến đó một đối một với bạn, anh bạn.
+
+41
+00:01:48,820 --> 00:01:50,700
+Có James khác?
+
+42
+00:01:50,700 --> 00:01:55,560
+>> Người nói 5: Vâng, tôi không thể nhớ, hàng đợi nhiệm vụ có nhận được không
+
+43
+00:01:55,560 --> 00:01:59,300
+được xử lý ở cuối vòng lặp sự kiện, hoặc ở đầu, hoặc xin lỗi,
+
+44
+00:01:59,300 --> 00:02:01,939
+sự lặp lại vòng lặp sự kiện, hay sự bắt đầu của lần lặp tiếp theo?
+
+45
+00:02:02,990 --> 00:02:05,240
+>> Will Sentance: Khi bạn đã hoàn thành tất cả các tác vụ đồng bộ.
+
+46
+00:02:05,240 --> 00:02:07,090
+>> Người phát biểu 5: Vậy là đã kết thúc lời phát biểu.
+
+47
+00:02:07,090 --> 00:02:08,210
+>> Will Sentance: Theo nghĩa đó, có.
+
+48
+00:02:08,210 --> 00:02:12,430
+Hãy đảm bảo rằng chúng tôi có bất kỳ câu hỏi trực tuyến nào mà chúng tôi đang trả lời.
+
+49
+00:02:12,430 --> 00:02:12,970
+Paul, tiếp tục đi.
+
+50
+00:02:12,970 --> 00:02:16,270
+>> Người nói 6: Tôi nghĩ rằng tôi có một câu hỏi, tôi chỉ muốn đảm bảo rằng tôi biết
+
+51
+00:02:16,270 --> 00:02:19,866
+phương pháp đặt thời gian chờ được cung cấp bởi môi trường trình duyệt.
+
+52
+00:02:19,866 --> 00:02:22,280
+>> Will Sentance: Yeah, yeah. Đặt thời gian, làm ơn đi trước, tiến lên.
+
+53
+00:02:22,280 --> 00:02:26,040
+>> Người thuyết trình 6: Vậy thì vòng lặp sự kiện và hàng đợi gọi lại không phải là duy nhất cho mỗi
+
+54
+00:02:26,040 --> 00:02:31,592
+thời gian chạy trình duyệt riêng lẻ nhưng nói không phải trình duyệt khác
+
+55
+00:02:31,592 --> 00:02:36,790
+thời gian chạy vv cũng sẽ có những- >> Will Sentance: Hoàn toàn,
+
+56
+00:02:36,790 --> 00:02:41,080
+cách Node triển khai các phần này tùy thuộc vào chúng, vì vậy
+
+57
+00:02:41,080 --> 00:02:45,770
+chúng ta sẽ đến phần sau về nơi nút được triển khai theo một cách hơi khác.
+
+58
+00:02:45,770 --> 00:02:47,640
+Nhưng chúng ta sẽ thấy điều đó một chút sau, anh bạn.
+
+59
+00:02:47,640 --> 00:02:48,850
+Nhưng đó là một câu hỏi hay, tuyệt vời.
+
+60
+00:02:50,520 --> 00:02:51,100
+Vâng, Ben?
+
+61
+00:02:51,100 --> 00:02:52,967
+>> Ben: Có giới hạn nào đối với kích thước này của hàng đợi gọi lại không?
+
+62
+00:02:55,923 --> 00:03:00,620
+>> Will Sentance: Ý tôi là, tôi cho là vậy nhưng đó là một câu hỏi thực sự hay.
+
+63
+00:03:00,620 --> 00:03:03,272
+Tôi sẽ nói rằng hãy kiểm tra nó và chúng ta sẽ nói về
+
+64
+00:03:03,272 --> 00:03:06,554
+bởi vì tất nhiên có một ngăn xếp cuộc gọi, hàng đợi gọi lại.
+
+65
+00:03:06,554 --> 00:03:09,486
+Ý tôi là miễn là đừng quên hàng đợi gọi lại,
+
+66
+00:03:09,486 --> 00:03:11,774
+bạn không lưu chức năng này ở đây.
+
+67
+00:03:11,774 --> 00:03:15,906
+Bạn đang tham khảo vị trí của nó trong bộ nhớ JavaScript, vì vậy câu hỏi là
+
+68
+00:03:15,906 --> 00:03:19,866
+thực sự, có giới hạn bộ nhớ JavaScript cho các định nghĩa hàm không?
+
+69
+00:03:19,866 --> 00:03:20,900
+Bạn có thấy?
+
+70
+00:03:20,900 --> 00:03:25,070
+Bạn không bị giới hạn, bạn không sao chép chức năng này ở đây, vì vậy
+
+71
+00:03:25,070 --> 00:03:29,000
+với tôi, câu hỏi là, có giới hạn bộ nhớ thời gian chạy Java Script không?
+
+72
+00:03:29,000 --> 00:03:33,052
+Vâng, có, nhưng điều đó ngụ ý cho hàng đợi gọi lại của bạn, bất kể giới hạn đó là gì,
+
+73
+00:03:33,052 --> 00:03:36,706
+cái nào độc lập với hàng đợi gọi lại, điều đó có hợp lý không Ben?
+
+74
+00:03:36,706 --> 00:03:37,212
+>> Ben: Vâng.
+
+75
+00:03:37,212 --> 00:03:37,850
+>> Will Sentance: Câu hỏi hay.
+
+76
+00:03:39,400 --> 00:03:40,658
+Có Michelle? >> Michelle: Tôi chỉ tự hỏi liệu
+
+77
+00:03:40,658 --> 00:03:44,390
+vòng lặp sự kiện cũng là một phần của công cụ JavaScript mà bạn đã tham chiếu?
+
+78
+00:03:44,390 --> 00:03:47,280
+>> Will Sentance: Mhmm, hoàn toàn, nhưng nó sẽ còn nhiều thứ hơn nữa
+
+79
+00:03:47,280 --> 00:03:49,870
+hơn là chỉ xử lý điều này, nhưng chúng ta sẽ thấy những điều đó trong giây lát.
+
+80
+00:03:49,870 --> 00:03:51,964
+Sean. >> Sean: Điều gì sẽ xảy ra khi bạn đi vào
+
+81
+00:03:51,964 --> 00:03:55,430
+một chức năng ẩn danh đến thời gian đặt ra?
+
+82
+00:03:55,430 --> 00:03:56,140
+>> Will Sentance: Chức năng ẩn danh,
+
+83
+00:03:56,140 --> 00:04:01,140
+bạn hầu như có thể nghĩ chúng được lưu trữ trong bộ nhớ giống như các hàm không được gắn nhãn.
+
+84
+00:04:01,140 --> 00:04:03,830
+Nhưng họ vẫn có một vị trí và địa chỉ trong trí nhớ.
+
+85
+00:04:03,830 --> 00:04:07,090
+Hãy nghĩ rằng chúng ta không thực sự chuyển nhãn cho hàm.
+
+86
+00:04:07,090 --> 00:04:10,210
+Dưới mui xe, những gì chúng tôi đang truyền tải là một tham chiếu hoặc
+
+87
+00:04:10,210 --> 00:04:12,230
+vị trí cụ thể trong bộ nhớ.
+
+88
+00:04:12,230 --> 00:04:16,920
+Và vì vậy, nếu chúng ta không có nhãn để in hello, chúng ta truyền một hàm gián tiếp.
+
+89
+00:04:16,920 --> 00:04:19,820
+Chức năng đó vẫn đang được xác định trong bộ nhớ chung.
+
+90
+00:04:19,820 --> 00:04:23,727
+Khi tôi chạy, hãy đặt thời gian chờ và tạm dừng để hoạt động, không phải là chức năng được gắn nhãn.
+
+91
+00:04:23,727 --> 00:04:26,873
+Nhưng khi tôi xác định ngay trong dấu ngoặc đơn,
+
+92
+00:04:26,873 --> 00:04:31,580
+vẫn đang được lưu trữ trong bộ nhớ chung mà không có nhãn.
+
+93
+00:04:31,580 --> 00:04:36,210
+Và đó là hàm được tham chiếu cuối cùng được tham chiếu ở đây.
+
+94
+00:04:36,210 --> 00:04:39,160
+Điều này hiện không có nhãn, nhưng nó vẫn tham chiếu đến vị trí trong
+
+95
+00:04:39,160 --> 00:04:42,460
+Bộ nhớ chung của Java Script, nơi hàm đó được định nghĩa.
+
+96
+00:04:42,460 --> 00:04:43,910
+Có ý nghĩa? Đúng.
+
+97
+00:04:43,910 --> 00:04:44,410
+>> Mike: Câu hỏi hay.

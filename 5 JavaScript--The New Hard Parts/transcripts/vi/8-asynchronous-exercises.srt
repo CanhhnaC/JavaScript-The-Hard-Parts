@@ -1,0 +1,359 @@
+1
+00:00:00,050 --> 00:00:01,590
+>> Will Sentance: Vì vậy, lập trình cặp.
+
+2
+00:00:01,590 --> 00:00:05,596
+Không có cách nào tốt hơn để phát triển như một kỹ sư phần mềm.
+
+3
+00:00:05,596 --> 00:00:10,195
+Lý do là, chúng tôi đã nói ở phần đầu, khi mọi người chia sẻ các tài nguyên như Pluralsight.
+
+4
+00:00:10,195 --> 00:00:11,650
+Chính Sean đã chia sẻ điều đó.
+
+5
+00:00:11,650 --> 00:00:13,910
+Pluralsight được điều khiển bằng video.
+
+6
+00:00:15,350 --> 00:00:17,360
+Những nguồn lực này là vững chắc.
+
+7
+00:00:18,640 --> 00:00:19,400
+Chúng rất xuất sắc.
+
+8
+00:00:20,440 --> 00:00:24,561
+Chà, tôi không yêu Pluralsight nhiều như Frontend Masters,
+
+9
+00:00:24,561 --> 00:00:27,060
+một trong những tài nguyên tốt nhất cho video.
+
+10
+00:00:27,060 --> 00:00:28,490
+Chà, nó là tốt nhất trong một chặng đường dài.
+
+11
+00:00:28,490 --> 00:00:31,170
+Đối với thực tế, nó rõ ràng là tốt nhất.
+
+12
+00:00:31,170 --> 00:00:34,350
+Nhưng những thứ đó chỉ hợp pháp nếu bạn đang sử dụng chúng,
+
+13
+00:00:34,350 --> 00:00:39,010
+sử dụng chúng để giải quyết các vấn đề bạn đang gặp phải trong công việc hàng ngày.
+
+14
+00:00:39,010 --> 00:00:42,750
+Vì vậy, nếu bạn là một kỹ sư đầy tham vọng và bạn không làm việc trên JavaScript khó
+
+15
+00:00:42,750 --> 00:00:49,570
+vấn đề hàng ngày, sau đó bạn rơi vào cái bẫy của cái mà tôi gọi là học dễ dàng.
+
+16
+00:00:49,570 --> 00:00:53,810
+Học dễ dàng là học mà bạn không đạt được các khối và do đó bạn không phát triển.
+
+17
+00:00:53,810 --> 00:00:56,890
+Vậy làm cách nào để bạn thực hiện điều mà tôi gọi là học chăm chỉ mà hiệu quả
+
+18
+00:00:56,890 --> 00:00:58,930
+đó thực sự là điều khiến bạn phát triển như một kỹ sư?
+
+19
+00:01:00,110 --> 00:01:03,090
+Chà, bạn làm những việc như thử thách lập trình khó khăn.
+
+20
+00:01:03,090 --> 00:01:03,890
+Bạn xây dựng các dự án.
+
+21
+00:01:03,890 --> 00:01:05,470
+Bạn có bài tập.
+
+22
+00:01:05,470 --> 00:01:09,410
+Nhưng vấn đề với những thứ đó là quá hấp dẫn để làm gì?
+
+23
+00:01:09,410 --> 00:01:12,490
+Để làm bất cứ điều gì khác ngoài điều đó.
+
+24
+00:01:12,490 --> 00:01:15,060
+Bao gồm, vì vậy chúng tôi có thể đang pha một tách trà.
+
+25
+00:01:15,060 --> 00:01:16,410
+Bất cứ điều gì.
+
+26
+00:01:16,410 --> 00:01:18,190
+Nhưng ngay cả khi nó không phải thế, ngay cả khi người kia thích, không, không,
+
+27
+00:01:18,190 --> 00:01:19,660
+Tôi thực sự có thể vượt qua chúng.
+
+28
+00:01:19,660 --> 00:01:21,550
+Bạn vẫn có thể rơi vào hai cái bẫy.
+
+29
+00:01:21,550 --> 00:01:26,270
+Tôi gọi nó là nhà nghiên cứu so với Stack Overflower.
+
+30
+00:01:27,590 --> 00:01:29,380
+Đây là nhà nghiên cứu.
+
+31
+00:01:29,380 --> 00:01:30,660
+Đó là kính lúp của tôi.
+
+32
+00:01:30,660 --> 00:01:33,390
+Tôi cần phải đánh vần điều đó rất tiếc vì rõ ràng tôi đã được nói
+
+33
+00:01:33,390 --> 00:01:35,780
+không ai nhận ra biểu tượng này là gì.
+
+34
+00:01:35,780 --> 00:01:37,430
+Và một Stack Overflower.
+
+35
+00:01:38,470 --> 00:01:42,234
+Lý tưởng nhất, là một kỹ sư phần mềm, chúng tôi luôn cân bằng hai thái cực này.
+
+36
+00:01:42,234 --> 00:01:44,590
+Tôi muốn hiểu mọi thứ và cách nó hoạt động, nhưng
+
+37
+00:01:44,590 --> 00:01:47,590
+Tôi đồng thời phải làm cho nó hoạt động đôi khi.
+
+38
+00:01:47,590 --> 00:01:49,130
+Chỉ làm cho nó hoạt động mà không cần hiểu từng mảnh.
+
+39
+00:01:49,130 --> 00:01:51,560
+Chúng tôi luôn cân bằng hai nhu cầu này.
+
+40
+00:01:51,560 --> 00:01:53,950
+Là một kỹ sư chuyên nghiệp đối mặt với những thử thách khó khăn,
+
+41
+00:01:53,950 --> 00:01:56,700
+chúng tôi hy vọng đã học cách cân bằng điều đó một cách hiệu quả.
+
+42
+00:01:56,700 --> 00:01:58,740
+Nhưng chúng tôi luôn có thể làm tốt hơn nó,
+
+43
+00:01:58,740 --> 00:02:03,350
+và cách tốt nhất tôi biết để có được sự cân bằng là lập trình cặp.
+
+44
+00:02:03,350 --> 00:02:06,370
+Ghép nối lập trình, bằng cách tách các mối quan tâm.
+
+45
+00:02:06,370 --> 00:02:09,387
+Một mặt chúng ta có James, mặt khác, chúng ta có Phước lành.
+
+46
+00:02:09,387 --> 00:02:12,458
+James và Blessing đang cùng nhau vượt qua thử thách.
+
+47
+00:02:12,458 --> 00:02:16,800
+Giả sử Blessing được gọi là hoa tiêu của chúng ta, và James là người lái xe của chúng ta.
+
+48
+00:02:16,800 --> 00:02:21,520
+Ban phước không bao giờ được phép gõ.
+
+49
+00:02:21,520 --> 00:02:24,030
+Cô ấy không được phép đặt tay lên bàn phím.
+
+50
+00:02:24,030 --> 00:02:28,760
+Nhưng cô ấy chịu trách nhiệm giải quyết vấn đề của thử thách.
+
+51
+00:02:28,760 --> 00:02:31,950
+Điều đó có nghĩa là, Blessing là người sẽ nói ra và
+
+52
+00:02:31,950 --> 00:02:37,540
+tiếp cận cả chiến lược tổng thể và thực thi từng dòng của mã
+
+53
+00:02:37,540 --> 00:02:41,440
+mà James sau đó sẽ diễn giải thành mã thực tế.
+
+54
+00:02:41,440 --> 00:02:43,076
+Cô ấy sẽ không bao giờ kiểm soát bàn phím.
+
+55
+00:02:43,076 --> 00:02:47,535
+Cô ấy sẽ không bao giờ chỉ nói, James, bạn không phiền nếu tôi chỉ cho bạn biết ý tôi chứ?
+
+56
+00:02:47,535 --> 00:02:48,236
+>> [ÂM THANH].
+
+57
+00:02:48,236 --> 00:02:51,509
+>> Will Sentance: Thay vào đó, mối quan tâm về sự chia ly này sẽ đảm bảo rằng phước lành
+
+58
+00:02:51,509 --> 00:02:55,509
+không thể trở thành một nhà nghiên cứu trong mười giờ, đọc mọi điều cuối cùng về
+
+59
+00:02:55,509 --> 00:02:59,430
+từ khóa mới vì cô ấy có James ngồi đó đợi.
+
+60
+00:02:59,430 --> 00:03:02,650
+Nhưng cô ấy cũng không thể chỉ là một Stack Overflower, làm cho nó hoạt động, cắm và
+
+61
+00:03:02,650 --> 00:03:07,140
+đóng vai người viết kịch bản vì James cần biết thêm một chút về lý do tại sao chúng tôi làm việc đó.
+
+62
+00:03:07,140 --> 00:03:07,970
+Chiến lược của chúng tôi ở đây là gì?
+
+63
+00:03:07,970 --> 00:03:10,200
+Chúng ta đang làm gì từng dòng một?
+
+64
+00:03:10,200 --> 00:03:12,510
+Nhưng cô ấy cũng không được phép nói, James,
+
+65
+00:03:12,510 --> 00:03:16,420
+hãy để tôi chỉ cho bạn, giao tiếp kỹ thuật của cô ấy, khả năng
+
+66
+00:03:16,420 --> 00:03:21,690
+cô ấy giải thích cách tiếp cận của mình và làm cho nó có ý nghĩa đối với người khác là điều quan trọng.
+
+67
+00:03:22,780 --> 00:03:24,700
+Đó là điều chúng tôi tìm kiếm trong các đoạn mã phỏng vấn nhiều hơn là [KHÔNG NGHE ĐƯỢC].
+
+68
+00:03:24,700 --> 00:03:29,007
+Chúng tôi đã từ chối nhiều người cho Codesmith, những người từng là kỹ sư JavaScript
+
+69
+00:03:29,007 --> 00:03:33,200
+trong bốn hoặc năm năm, bởi vì giao tiếp kỹ thuật của họ không có ở đó.
+
+70
+00:03:33,200 --> 00:03:35,010
+Và đó là điều tạo nên một nhà phát triển cao cấp.
+
+71
+00:03:35,010 --> 00:03:39,770
+Nhà phát triển cấp trung, lấy bất kỳ tính năng nào, triển khai nó.
+
+72
+00:03:39,770 --> 00:03:41,710
+Ngay cả khi họ chưa từng thấy khái niệm này trước đây,
+
+73
+00:03:41,710 --> 00:03:43,730
+bởi vì họ đã học cách vượt qua các khối.
+
+74
+00:03:43,730 --> 00:03:47,885
+Nhà phát triển cấp cao có thể sử dụng bất kỳ tính năng nào và họ có thể trao quyền cho nhóm,
+
+75
+00:03:47,885 --> 00:03:53,670
+đồng nghiệp của họ, để thực hiện nó, bởi vì khả năng của họ
+
+76
+00:03:53,670 --> 00:03:57,920
+mô hình tinh thần bên trong của họ về mã và làm cho nó có ý nghĩa đối với người khác.
+
+77
+00:03:57,920 --> 00:04:00,750
+Đó là những gì chúng tôi đang đào tạo khi chúng tôi ghép nối chương trình.
+
+78
+00:04:00,750 --> 00:04:03,920
+Được rồi, có nghĩa là một máy giữa hai.
+
+79
+00:04:03,920 --> 00:04:07,150
+Nó có nghĩa là chuyển đổi vai trò cứ sau mười phút hoặc lâu hơn.
+
+80
+00:04:09,090 --> 00:04:12,430
+Nhân tiện, nó có nghĩa là nếu đối tác của bạn đang đi theo con đường mà bạn cho là sai lầm,
+
+81
+00:04:12,430 --> 00:04:14,280
+để nó đi đến điểm mà họ nhấn chạy.
+
+82
+00:04:14,280 --> 00:04:17,510
+Và họ thấy lỗi và sau đó cùng nhau gỡ lỗi.
+
+83
+00:04:17,510 --> 00:04:20,490
+Đừng nói, tôi nghĩ bạn đã đi sai đường ở đây.
+
+84
+00:04:21,620 --> 00:04:22,940
+Rất, rất hiệu quả.
+
+85
+00:04:22,940 --> 00:04:23,610
+Được rồi, mọi người.
+
+86
+00:04:23,610 --> 00:04:24,145
+Đây rồi.
+
+87
+00:04:24,145 --> 00:04:28,039
+Bạn sẽ truy cập csbin.io.
+
+88
+00:04:28,039 --> 00:04:29,400
+Điều này dành cho thế giới tiêu điểm trực tuyến của chúng tôi.
+
+89
+00:04:29,400 --> 00:04:33,424
+Bạn đang truy cập csbin.io/promises.
+
+90
+00:04:33,424 --> 00:04:37,460
+Tiếp cận nó, bắt đầu làm việc với chúng và chúng tôi sẽ sớm kết nối lại.

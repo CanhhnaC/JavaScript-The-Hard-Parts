@@ -1,0 +1,839 @@
+1
+00:00:00,400 --> 00:00:01,130
+>> Di chúc: Dòng một,
+
+2
+00:00:01,130 --> 00:00:04,140
+James, chúng ta đang làm gì vậy? >> James: Bạn đang tuyên bố
+
+3
+00:00:04,140 --> 00:00:06,110
+một chức năng được gọi là PrintHello >> Will Sentance: Tuyệt vời,
+
+4
+00:00:06,110 --> 00:00:08,060
+công việc tốt từ James.
+
+5
+00:00:08,060 --> 00:00:10,040
+Dòng hai, tôi chưa gọi cho ai?
+
+6
+00:00:10,040 --> 00:00:13,126
+Tôi đã kêu gọi hầu hết mọi người bây giờ. >> Will Sentance: Tôi đã kêu gọi mọi
+
+7
+00:00:13,126 --> 00:00:16,080
+người độc thân, Mike, dòng hai, chúng ta đang làm gì?
+
+8
+00:00:16,080 --> 00:00:17,070
+>> Mike: Khối chức năng cho
+
+9
+00:00:17,070 --> 00:00:22,254
+một giây được khai báo. >> Will Sentance: Chặn trong một giây.
+
+10
+00:00:22,254 --> 00:00:27,300
+Và vì chúng tôi không chỉ định cách nó hoạt động nhất thiết, nhưng chức năng này,
+
+11
+00:00:27,300 --> 00:00:33,460
+khi nó được gọi, sẽ ở trên ngăn xếp cuộc gọi trong 1.000 mili giây.
+
+12
+00:00:33,460 --> 00:00:36,110
+Đây không phải là một chức năng gửi công việc ra nền.
+
+13
+00:00:36,110 --> 00:00:38,020
+Nó sẽ ở đó trong 1.000 mili giây.
+
+14
+00:00:38,020 --> 00:00:41,050
+Sonia bạn có thể nghĩ ra cách mà tôi có thể viết các hàm như
+
+15
+00:00:41,050 --> 00:00:41,670
+rằng tôi đã làm điều đó?
+
+16
+00:00:44,560 --> 00:00:46,770
+Tôi có thể làm gì mà sẽ mất 1.000 mili giây?
+
+17
+00:00:46,770 --> 00:00:48,436
+Nó phải nằm trong chuỗi công việc,
+
+18
+00:00:48,436 --> 00:00:50,375
+nó sẽ làm một cái gì đó rất nhanh.
+
+19
+00:00:50,375 --> 00:00:52,270
+Các tác vụ nhỏ, rất nhanh.
+
+20
+00:00:52,270 --> 00:00:53,970
+Ben, bạn có thể nghĩ gì? >> Ben: Vòng lặp.
+
+21
+00:00:53,970 --> 00:00:55,320
+>> Will Sentance: Looping, chính xác là
+
+22
+00:00:55,320 --> 00:00:56,290
+lặp lại sẽ làm điều đó.
+
+23
+00:00:56,290 --> 00:00:59,190
+Rất nhiều bước xử lý nhỏ rất, rất nhanh.
+
+24
+00:00:59,190 --> 00:01:00,420
+Nó sẽ là một vòng lặp lớn để
+
+25
+00:01:00,420 --> 00:01:02,320
+1000 mili giây kéo dài trong một công cụ JavaScript hiện đại.
+
+26
+00:01:02,320 --> 00:01:03,070
+Vòng lặp cũ lớn.
+
+27
+00:01:03,070 --> 00:01:06,090
+Nhưng có một vòng lặp đủ dài sẽ kéo dài 1000 mili giây.
+
+28
+00:01:06,090 --> 00:01:07,660
+Bạn không làm điều đó bên ngoài JavaScript.
+
+29
+00:01:07,660 --> 00:01:09,280
+Đó là rất nhiều JavaScript thuần túy.
+
+30
+00:01:09,280 --> 00:01:13,560
+Và do đó đang chặn chúng tôi tiếp tục trong mã của mình khi hàm đó được gọi cho
+
+31
+00:01:13,560 --> 00:01:14,920
+1000 mili giây.
+
+32
+00:01:14,920 --> 00:01:15,890
+Thông minh.
+
+33
+00:01:15,890 --> 00:01:20,685
+Bây giờ, bây giờ Mike, chúng tôi sẽ gọi
+
+34
+00:01:20,685 --> 00:01:27,860
+setTimeout với đối số, in chào
+
+35
+00:01:27,860 --> 00:01:32,310
+định nghĩa hàm chắc chắn chúng ta không gọi nó và đối số 0.
+
+36
+00:01:32,310 --> 00:01:38,150
+Vì vậy, Mike cố gắng nói với tôi về những gì sẽ xảy ra ở đây,
+
+37
+00:01:38,150 --> 00:01:40,970
+và nó sẽ là về các tính năng của trình duyệt web của chúng tôi phải không.
+
+38
+00:01:40,970 --> 00:01:45,050
+Vậy điều gì sẽ xảy ra ở đây Mike? >> Mike: Tôi không chắc.
+
+39
+00:01:45,050 --> 00:01:46,097
+Tôi chỉ biết nó không phải. >> Will Sentance: Vì vậy
+
+40
+00:01:46,097 --> 00:01:49,410
+setTimeout được thiết lập là gì. >> Ben: Nó sẽ
+
+41
+00:01:49,410 --> 00:01:51,820
+thiết lập bối cảnh thực thi cục bộ. >> Will Sentance: Có phải không?
+
+42
+00:01:51,820 --> 00:01:53,650
+>> Ben: Không, nó sẽ gọi là mặt tiền
+
+43
+00:01:53,650 --> 00:01:54,763
+chức năng. >> Will Sentance: Ha.
+
+44
+00:01:54,763 --> 00:01:56,024
+SetTimeout không,
+
+45
+00:01:56,024 --> 00:01:59,420
+nó làm được gì trong JavaScript? >> Ben: Không.
+
+46
+00:01:59,420 --> 00:02:00,300
+>> Will Sentance: Nó không có gì trong
+
+47
+00:02:00,300 --> 00:02:01,210
+JavaScript.
+
+48
+00:02:01,210 --> 00:02:04,640
+Thay vào đó, nó sẽ, nó là một nhãn,
+
+49
+00:02:04,640 --> 00:02:07,900
+nó là một chức năng mặt tiền cho một tính năng của trình duyệt web.
+
+50
+00:02:07,900 --> 00:02:09,400
+Tính năng nào vậy Ben? >> Ben: Hẹn giờ.
+
+51
+00:02:09,400 --> 00:02:10,420
+>> Will Sentance: Hẹn giờ, vì vậy
+
+52
+00:02:10,420 --> 00:02:15,208
+nó sẽ tạo ra một tính năng của trình duyệt web,
+
+53
+00:02:15,208 --> 00:02:19,310
+tính năng hẹn giờ.
+
+54
+00:02:19,310 --> 00:02:23,340
+Và nó sẽ thực hiện hai điều quan trọng mà nó cần biết.
+
+55
+00:02:23,340 --> 00:02:31,020
+Và trong trình duyệt web, bao nhiêu mili giây, Mike,
+
+56
+00:02:31,020 --> 00:02:34,725
+bộ hẹn giờ này sẽ chạy trong khoảng thời gian nào? >> Mike: Không.
+
+57
+00:02:34,725 --> 00:02:37,902
+>> Will Sentance: Zero mili giây và tương tự
+
+58
+00:02:37,902 --> 00:02:43,651
+nói một phần nghìn giây, đó là khi chúng ta
+
+59
+00:02:43,651 --> 00:02:49,390
+bắt đầu, bộ hẹn giờ này đã hoàn thành chưa?
+
+60
+00:02:49,390 --> 00:02:50,280
+Mike?
+
+61
+00:02:50,280 --> 00:02:51,940
+Nó hoàn thành ngay lập tức.
+
+62
+00:02:51,940 --> 00:02:53,330
+Chính xác.
+
+63
+00:02:53,330 --> 00:02:55,280
+Và sau khi hoàn thành, chúng ta muốn làm gì?
+
+64
+00:02:55,280 --> 00:02:58,770
+Chúng tôi muốn gọi in xin chào.
+
+65
+00:02:58,770 --> 00:03:05,152
+Chúng tôi muốn chuyển nó trở lại thành JavaScript hoặc tham chiếu nó trong JavaScript và
+
+66
+00:03:05,152 --> 00:03:09,921
+bắt đầu chạy bằng JavaScript. >> Will Sentance: Vì vậy
+
+67
+00:03:09,921 --> 00:03:11,613
+print hello ngay lập tức sẵn sàng chạy, vì vậy
+
+68
+00:03:11,613 --> 00:03:14,354
+chúng ta có thêm nó thẳng vào ngăn xếp cuộc gọi không? >> tắt màn hình: Không.
+
+69
+00:03:14,354 --> 00:03:15,574
+>> Will Sentance: Tại sao không?
+
+70
+00:03:15,574 --> 00:03:16,450
+>> tắt màn hình: Đó là
+
+71
+00:03:16,450 --> 00:03:18,710
+sự ngăn chặn. >> Di chúc: Không.
+
+72
+00:03:18,710 --> 00:03:19,760
+Nhưng nó đã sẵn sàng ở đây.
+
+73
+00:03:19,760 --> 00:03:21,470
+Nó đã sẵn sàng để hoạt động trở lại. >> tắt màn hình: Bởi vì bạn không ở trong
+
+74
+00:03:21,470 --> 00:03:25,600
+JavaScript bối cảnh hoặc trong thế giới của trình duyệt. >> Will Sentance: Nhưng chúng tôi.
+
+75
+00:03:25,600 --> 00:03:26,760
+Chúng ta đang quay lại với ngữ cảnh JavaScript.
+
+76
+00:03:26,760 --> 00:03:29,720
+Nhìn. Dòng tiếp theo là hai mili giây.
+
+77
+00:03:29,720 --> 00:03:30,940
+Sao anh này không nhìn lại được.
+
+78
+00:03:30,940 --> 00:03:32,689
+Chúng tôi đã nói bất cứ khi nào nó sẵn sàng, hãy quay lại ngăn xếp cuộc gọi.
+
+79
+00:03:35,900 --> 00:03:37,339
+Vâng, bạn nói đúng.
+
+80
+00:03:37,339 --> 00:03:44,858
+Dòng mã tiếp theo mà chúng ta sẽ đạt được ở tốc độ 2 mili giây là khối 41 giây.
+
+81
+00:03:44,858 --> 00:03:48,085
+Chúng tôi không chắc nó sẽ hoạt động như thế nào nhưng chúng tôi biết khi chúng tôi đi sâu vào nó,
+
+82
+00:03:48,085 --> 00:03:50,769
+chúng ta sẽ dành bao nhiêu mili giây bên trong nó,
+
+83
+00:03:50,769 --> 00:03:53,660
+Josh? >> Josh: Mili giây?
+
+84
+00:03:53,660 --> 00:03:55,510
+1000. >> Will Sentance: 1000, tốt.
+
+85
+00:03:55,510 --> 00:03:59,370
+Nhân tiện, Josh đã thực hiện rất tốt điều chỉnh từ giây đến mili giây của anh ấy.
+
+86
+00:03:59,370 --> 00:04:02,830
+Chính xác, cộng thêm 1000 mili giây.
+
+87
+00:04:02,830 --> 00:04:07,904
+Điều đó sẽ nằm trên ngăn xếp cuộc gọi của chúng tôi, vì vậy chúng tôi có toàn cầu ở phía dưới,
+
+88
+00:04:07,904 --> 00:04:12,856
+chặn trong một giây >> Will Sentance: Sẽ ngồi trên
+
+89
+00:04:12,856 --> 00:04:16,190
+gọi ngăn xếp trong 1000 mili giây.
+
+90
+00:04:18,150 --> 00:04:20,950
+Có thể trong thời gian đó, bản in hello đã sẵn sàng hoạt động.
+
+91
+00:04:20,950 --> 00:04:23,260
+Có thể trong lúc đó, nó nhảy lên trên và bắt đầu chạy.
+
+92
+00:04:24,330 --> 00:04:24,850
+Nó có làm được điều đó không?
+
+93
+00:04:24,850 --> 00:04:27,720
+Đó sẽ là một ngôn ngữ khủng khiếp. >> [ĐỦ]
+
+94
+00:04:27,720 --> 00:04:28,370
+>> Will Sentance: Có thể có.
+
+95
+00:04:28,370 --> 00:04:29,910
+Tôi có nghĩa là nó chắc chắn có thể.
+
+96
+00:04:29,910 --> 00:04:36,770
+Nhưng điều đó sẽ rất tùy ý, rất tùy ý về thời điểm mã của chúng ta thực thi.
+
+97
+00:04:36,770 --> 00:04:42,030
+Vì vậy, nó chắc chắn không thể làm, như Michelle đã nói, nó chắc chắn không thể
+
+98
+00:04:42,030 --> 00:04:46,680
+chuyển print hello trở lại ngăn xếp cuộc gọi trong khi thực thi một hàm khác.
+
+99
+00:04:46,680 --> 00:04:47,540
+Điều đó trông khá rõ ràng.
+
+100
+00:04:47,540 --> 00:04:49,370
+Nó thuộc loại ngẫu nhiên tùy ý.
+
+101
+00:04:49,370 --> 00:04:52,570
+Nhưng có thể khi hàm đó thực thi xong,
+
+102
+00:04:52,570 --> 00:04:55,740
+khi hàm đó thực thi xong và chúng tôi nhận được khối cho
+
+103
+00:04:55,740 --> 00:05:02,180
+một giây ra khỏi ngăn xếp cuộc gọi và chúng tôi trả lại chuỗi của chúng tôi
+
+104
+00:05:02,180 --> 00:05:07,660
+ở tốc độ 1002 mili giây, có thể giờ đây việc in hello được cho phép trở lại ngăn xếp cuộc gọi.
+
+105
+00:05:07,660 --> 00:05:09,400
+Ai nghĩ rằng nó được phép trở lại ngăn xếp cuộc gọi?
+
+106
+00:05:09,400 --> 00:05:10,770
+Tôi đang làm câu trả lời của tôi là không có giọng nói.
+
+107
+00:05:10,770 --> 00:05:11,630
+Ai nghĩ nó được phép
+
+108
+00:05:11,630 --> 00:05:14,730
+trở lại ngăn xếp cuộc gọi? >> Alec: Có thể.
+
+109
+00:05:14,730 --> 00:05:16,150
+>> Will Sentance: Vâng, Alec, có thể,
+
+110
+00:05:16,150 --> 00:05:17,829
+>> [ĐỦ]
+
+111
+00:05:17,829 --> 00:05:20,654
+>> Will Sentance: Thật không may, không.
+
+112
+00:05:20,654 --> 00:05:23,880
+Mặc dù xin chào bằng chữ in nhỏ nghèo nàn, nó vẫn đang ngồi đó.
+
+113
+00:05:23,880 --> 00:05:28,385
+Tôi đã sẵn sàng chạy, chạy tôi, sẵn sàng chạy, vào lúc này,
+
+114
+00:05:28,385 --> 00:05:31,560
+1.001 mili giây kể từ khi nó được khởi chạy lần đầu tiên.
+
+115
+00:05:31,560 --> 00:05:33,550
+Bộ hẹn giờ đã khởi động, nó hoàn tất ngay lập tức,
+
+116
+00:05:33,550 --> 00:05:38,230
+print hello ngay lập tức sẵn sàng hoạt động trở lại, nhưng nó không được phép bật lại.
+
+117
+00:05:39,270 --> 00:05:44,510
+Chúng tôi sẽ thấy quy tắc chính xác tại sao, thực sự chúng tôi sẽ truy cập nhật ký bảng điều khiển tiếp theo.
+
+118
+00:05:46,230 --> 00:05:47,240
+Tôi, chúc tôi già trước.
+
+119
+00:05:47,240 --> 00:05:51,990
+Nếu nó nói với tôi trước tiên, bạn biết nó sẽ giao diện điều khiển ghi lại nó trước.
+
+120
+00:05:51,990 --> 00:05:55,440
+Đây rồi, tôi trước.
+
+121
+00:05:55,440 --> 00:06:02,079
+Ở 1002 mili giây. >> Will Sentance: Được rồi.
+
+122
+00:06:02,079 --> 00:06:07,869
+Bây giờ chúng ta có nghĩ đến thời điểm này khi chúng ta đã hoàn thành tất cả mã toàn cầu của mình,
+
+123
+00:06:07,869 --> 00:06:11,710
+chúng tôi nghĩ bây giờ in lời chào được cho phép trở lại?
+
+124
+00:06:12,820 --> 00:06:15,160
+In Xin chào bây giờ đã được cho phép trở lại.
+
+125
+00:06:15,160 --> 00:06:16,870
+Nhưng làm thế nào để nó hoạt động trở lại?
+
+126
+00:06:18,590 --> 00:06:22,820
+Hóa ra là chúng ta cần thêm hai mảnh ghép nữa.
+
+127
+00:06:22,820 --> 00:06:24,750
+Chúng ta cần một quy tắc cơ bản.
+
+128
+00:06:24,750 --> 00:06:28,850
+Quy tắc cơ bản của chúng tôi về thời điểm chức năng bị trì hoãn.
+
+129
+00:06:28,850 --> 00:06:31,090
+Bây giờ có, nó chỉ bị trì hoãn bởi 0 mili giây.
+
+130
+00:06:31,090 --> 00:06:35,360
+Nhưng nó vẫn bị loại bỏ khỏi JavaScript và được liên kết với trình duyệt web.
+
+131
+00:06:35,360 --> 00:06:36,489
+Nó đã bị loại bỏ khỏi JavaScript.
+
+132
+00:06:37,620 --> 00:06:40,380
+Chúng tôi cần một quy tắc về thời điểm cho phép thứ bị loại bỏ khỏi JavaScript
+
+133
+00:06:40,380 --> 00:06:41,430
+trở lại JavaScript.
+
+134
+00:06:43,250 --> 00:06:44,460
+Và chúng tôi có một quy tắc đơn giản,
+
+135
+00:06:46,300 --> 00:06:50,950
+Tôi phải hoàn thành việc làm trống ngăn xếp cuộc gọi của mình về bất kỳ chức năng nào sẽ được chạy,
+
+136
+00:06:50,950 --> 00:06:55,900
+và hoàn tất việc chạy tất cả mã đồng bộ toàn cầu, tất cả các mã của tôi.
+
+137
+00:06:55,900 --> 00:06:57,879
+Tôi có thể có 1000 nhật ký bảng điều khiển.
+
+138
+00:06:58,950 --> 00:06:59,570
+Loại điên rồ.
+
+139
+00:06:59,570 --> 00:07:04,270
+Tôi có thể đã chia nhỏ chức năng khác nhau này bên trong một lệnh gọi hàm,
+
+140
+00:07:04,270 --> 00:07:05,444
+ra khỏi nó.
+
+141
+00:07:05,444 --> 00:07:09,860
+Có 1000 cuộc gọi, tôi có thể có một vòng lặp trong khi vô hạn với các lần đăng nhập bảng điều khiển.
+
+142
+00:07:09,860 --> 00:07:12,650
+Và tôi sẽ không bao giờ cho phép in lời chào trở lại trên ngăn xếp cuộc gọi.
+
+143
+00:07:12,650 --> 00:07:14,650
+Nó không bao giờ được phép trở lại.
+
+144
+00:07:14,650 --> 00:07:15,790
+Tại sao?
+
+145
+00:07:15,790 --> 00:07:20,340
+Vì khi tôi hoàn thành các tính năng nền hoạt động,
+
+146
+00:07:20,340 --> 00:07:23,270
+in hello không đi thẳng vào ngăn xếp cuộc gọi.
+
+147
+00:07:23,270 --> 00:07:30,040
+Như Brian đã gợi ý, nó chuyển sang một thứ gọi là hàng đợi.
+
+148
+00:07:30,040 --> 00:07:34,490
+Tôi đoán nó được xếp hàng đợi như một cuộc gọi lại.
+
+149
+00:07:34,490 --> 00:07:38,900
+Điều này có một vài tên, hàng đợi nhiệm vụ.
+
+150
+00:07:38,900 --> 00:07:41,500
+Chúng ta có thể gọi nó là hàng đợi nhiệm vụ macro vào lúc này không?
+
+151
+00:07:41,500 --> 00:07:45,200
+Nhưng hàng đợi gọi lại là hàng đợi các hàm
+
+152
+00:07:45,200 --> 00:07:46,830
+sẵn sàng xuất hiện trên ngăn xếp cuộc gọi.
+
+153
+00:07:47,860 --> 00:07:53,550
+Đó là bản in xin chào, Blessing, xấp xỉ mili giây
+
+154
+00:07:53,550 --> 00:07:56,280
+in lời chào đã thêm vào hàng đợi gọi lại? >> Phước lành: Một phần nghìn giây.
+
+155
+00:07:56,280 --> 00:07:58,104
+>> Di chúc: Vào khoảng một
+
+156
+00:07:58,104 --> 00:08:05,280
+chính xác là mili giây, đó là một mili giây và sau đó chúng ta có quy tắc của mình.
+
+157
+00:08:05,280 --> 00:08:07,410
+Khi nào thì chức năng này được phép quay trở lại JavaScript?
+
+158
+00:08:08,480 --> 00:08:12,920
+Nó chỉ được phép trở lại JavaScript khi ngăn xếp cuộc gọi trống và
+
+159
+00:08:12,920 --> 00:08:15,350
+tất cả mã toàn cầu của chúng tôi đã chạy xong.
+
+160
+00:08:15,350 --> 00:08:19,180
+Và quy tắc đó, hoặc việc kiểm tra quy tắc đó, có một tên sang trọng.
+
+161
+00:08:19,180 --> 00:08:23,730
+Đó là một loại quá trình nhỏ, đó là một quá trình ẩn dụ.
+
+162
+00:08:23,730 --> 00:08:26,260
+Toàn bộ quá trình được lặp lại và kiểm tra rất nhanh.
+
+163
+00:08:26,260 --> 00:08:26,910
+Tất nhiên là AMD?
+
+164
+00:08:26,910 --> 00:08:28,850
+Tất cả mã toàn cầu đã chạy xong chưa?
+
+165
+00:08:28,850 --> 00:08:29,750
+Hàng đợi có gì trong đó không?
+
+166
+00:08:29,750 --> 00:08:30,580
+Tất nhiên là AMD?
+
+167
+00:08:30,580 --> 00:08:31,490
+Hàng đợi có gì không?
+
+168
+00:08:31,490 --> 00:08:35,750
+Và đó được gọi là vòng lặp sự kiện.
+
+169
+00:08:37,070 --> 00:08:40,640
+Công việc là phải nói rằng liệu trình AMD đã hoàn thành việc chạy tất cả những thứ của nó?
+
+170
+00:08:40,640 --> 00:08:42,680
+Mã toàn cầu đã được thực thi xong chưa?
+
+171
+00:08:42,680 --> 00:08:43,350
+Có phải một cái gì đó trong cốt lõi?
+
+172
+00:08:43,350 --> 00:08:44,320
+Có, có!
+
+173
+00:08:44,320 --> 00:08:47,790
+Điều này không trống trong một thời gian dài, tại thời điểm này, vòng lặp sự kiện sẽ không, không, không,
+
+174
+00:08:47,790 --> 00:08:51,310
+chúng tôi không thể thêm bất cứ thứ gì vào ngăn xếp cuộc gọi vì nó đã bị chặn trong một giây.
+
+175
+00:08:51,310 --> 00:08:54,180
+Nhưng ngay cả khi đó, nhật ký giao diện điều khiển vẫn đang ở đó cần được chạy.
+
+176
+00:08:54,180 --> 00:08:55,880
+Nó đã sẵn sàng để chạy trong bối cảnh thực thi toàn cầu.
+
+177
+00:08:57,380 --> 00:09:01,280
+Ha, tại thời điểm này sự kiện đi là ghế trống?
+
+178
+00:09:01,280 --> 00:09:02,120
+Vâng, đúng vậy.
+
+179
+00:09:02,120 --> 00:09:05,969
+Cuộc gọi lại ở đây có một cái gì đó trong đó nên hãy in xin chào,
+
+180
+00:09:05,969 --> 00:09:11,290
+bạn cuối cùng là 1001 mili giây sau khi bạn bị hoãn 0 mili giây,
+
+181
+00:09:11,290 --> 00:09:16,120
+cuối cùng bạn cũng được phép trở lại
+
+182
+00:09:16,120 --> 00:09:21,550
+ngăn xếp cuộc gọi ở 1003 mili giây.
+
+183
+00:09:21,550 --> 00:09:23,830
+Và lưu ý những thời gian này là thứ tự.
+
+184
+00:09:23,830 --> 00:09:27,934
+Chúng không phải, chúng theo thứ tự, ngoài những thứ chính yếu,
+
+185
+00:09:27,934 --> 00:09:30,912
+Được chứ. >> Will Sentance: Ý nghĩa thông thường là
+
+186
+00:09:30,912 --> 00:09:33,530
+về thứ tự của chúng, ở 1003 mili giây.
+
+187
+00:09:33,530 --> 00:09:39,350
+Cuối cùng, in lời chào được cho phép trở lại ngăn xếp cuộc gọi của chúng tôi,
+
+188
+00:09:39,350 --> 00:09:45,470
+ở 1003 mili giây, chúng tôi in lời chào, đó là mọi người.
+
+189
+00:09:47,030 --> 00:09:52,510
+Một quy trình tuyệt vời để trì hoãn chức năng của chúng tôi, sau đó chỉ được phép
+
+190
+00:09:52,510 --> 00:09:57,550
+quay lại JavaScript trong một điều kiện nhất định, điều kiện đó được kiểm tra
+
+191
+00:09:57,550 --> 00:10:01,230
+bởi vòng lặp sự kiện này đang kiểm tra nó lặp lại rất nhanh, mang tính ẩn dụ nhưng
+
+192
+00:10:01,230 --> 00:10:03,560
+nó đang lặp lại rất nhanh để kiểm tra điều kiện này.
+
+193
+00:10:03,560 --> 00:10:06,190
+Là hàng đợi gọi lại, nó có một cái gì đó trong đó?
+
+194
+00:10:06,190 --> 00:10:11,810
+Nó cho phép nó hoạt động trở lại khi ngăn xếp cuộc gọi của chúng tôi hoàn toàn trống và
+
+195
+00:10:11,810 --> 00:10:16,510
+ngữ cảnh thực thi toàn cầu của chúng tôi đã chạy xong tất cả mã của nó.
+
+196
+00:10:16,510 --> 00:10:17,910
+Và đó là nó.
+
+197
+00:10:17,910 --> 00:10:23,980
+Sáu phần này là cốt lõi của mô hình JavaScript không đồng bộ của chúng tôi.
+
+198
+00:10:23,980 --> 00:10:28,370
+Giải pháp ba sẽ cho chúng ta thấy rằng JavaScript gần đây đã giới thiệu hai
+
+199
+00:10:28,370 --> 00:10:30,010
+các bộ phận bổ sung cho mô hình này.
+
+200
+00:10:30,010 --> 00:10:31,850
+Chúng ta sẽ xem chúng trong giải pháp ba.
+
+201
+00:10:31,850 --> 00:10:37,100
+Nhưng hiện tại, không thích sáu phần cốt lõi này, bộ nhớ,
+
+202
+00:10:37,100 --> 00:10:40,945
+luồng thực thi, ngăn xếp cuộc gọi đại diện cho ngữ cảnh thực thi của chúng tôi,
+
+203
+00:10:40,945 --> 00:10:45,825
+các tính năng của trình duyệt web của chúng tôi, hàng đợi gọi lại của chúng tôi khi tính năng trình duyệt web của chúng tôi
+
+204
+00:10:45,825 --> 00:10:49,570
+kết thúc công việc của nó là nơi hàm của chúng ta sẽ được gửi đi.
+
+205
+00:10:49,570 --> 00:10:52,830
+Điều đó đã được trì hoãn bởi chức năng mặt tiền của chúng tôi
+
+206
+00:10:52,830 --> 00:10:55,500
+quay bộ đếm thời gian tính năng của trình duyệt web đó.
+
+207
+00:10:55,500 --> 00:10:58,490
+Và cuối cùng, vòng lặp sự kiện của chúng tôi sẽ kiểm tra hàng đợi gọi lại đó.
+
+208
+00:10:58,490 --> 00:10:59,870
+Nó nói có cái gì đó trong đó?
+
+209
+00:10:59,870 --> 00:11:03,460
+Ngăn xếp cuộc gọi của chúng ta có tốt và trống không và không có mã chung nào để chạy?
+
+210
+00:11:03,460 --> 00:11:05,790
+Và nói rằng không sao, bạn được phép trở lại.
