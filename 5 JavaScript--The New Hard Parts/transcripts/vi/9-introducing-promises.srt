@@ -1,0 +1,287 @@
+1
+00:00:01,960 --> 00:00:05,220
+>> Will Sentance: Vì vậy, chúng tôi thấy ở đó rằng chúng tôi đã tăng cường
+
+2
+00:00:06,840 --> 00:00:13,570
+thế giới quan của chúng tôi về công cụ JavaScript của chúng tôi trông như thế nào
+
+3
+00:00:13,570 --> 00:00:19,330
+bằng cách thêm các hàm mặt tiền, được gọi là API trình duyệt web.
+
+4
+00:00:19,330 --> 00:00:23,410
+Điều đó có nghĩa là các tính năng của trình duyệt web mà chúng ta có thể sử dụng,
+
+5
+00:00:23,410 --> 00:00:26,530
+tương tác với, từ bên trong JavaScript bằng cách sử dụng các hàm không thực sự
+
+6
+00:00:26,530 --> 00:00:27,950
+bất kỳ thứ gì trong JavaScript.
+
+7
+00:00:27,950 --> 00:00:32,000
+Thay vào đó, chúng là mặt tiền cho các tính năng của trình duyệt web.
+
+8
+00:00:32,000 --> 00:00:37,440
+Khi chúng tôi làm như vậy, chúng tôi đã phân tích cú pháp thiết kế để chấp nhận một số đầu vào nhất định.
+
+9
+00:00:37,440 --> 00:00:40,010
+Và điều đầu tiên ở đây trong bộ hẹn giờ là chức năng
+
+10
+00:00:40,010 --> 00:00:42,570
+mà chúng tôi muốn sau đó phân tích cú pháp thành hàng đợi.
+
+11
+00:00:42,570 --> 00:00:47,840
+Và sau đó quay trở lại JavaScript khi vòng lặp sự kiện bắt đầu, vâng, bạn đã sẵn sàng,
+
+12
+00:00:47,840 --> 00:00:51,020
+bạn đã chạy xong tất cả mã JavaScript đồng bộ của mình, không có gì trên
+
+13
+00:00:51,020 --> 00:00:54,810
+ngăn xếp khóa học và bạn đã chạy xong nhật ký bảng điều khiển của mình ở đó ở dưới cùng.
+
+14
+00:00:54,810 --> 00:00:58,720
+Vì vậy, bây giờ, chức năng thứ ba của bạn đã được phân tích cú pháp từ JavaScript để
+
+15
+00:00:58,720 --> 00:01:03,960
+trình duyệt web được phép quay trở lại Y để gọi lại Q được thực thi
+
+16
+00:01:03,960 --> 00:01:06,470
+trên ngăn xếp cuộc gọi, được rồi.
+
+17
+00:01:06,470 --> 00:01:11,760
+Đó là giải pháp hai, hãy xem những gì các bạn thân yêu của chúng ta
+
+18
+00:01:11,760 --> 00:01:15,970
+trong nhóm thiết kế kịch bản đã thêm vào mô hình này.
+
+19
+00:01:15,970 --> 00:01:18,203
+Họ đã thêm một trình tăng cường khả năng đọc,
+
+20
+00:01:18,203 --> 00:01:22,474
+được gọi là Lời hứa. >> Will Sentance: Chúng tôi đã nói rằng bộ của chúng tôi
+
+21
+00:01:22,474 --> 00:01:26,999
+hết thời gian, tôi đặt thời gian ra ngoài là chỉ làm việc
+
+22
+00:01:26,999 --> 00:01:31,870
+bên ngoài JavaScript trong trình duyệt web.
+
+23
+00:01:31,870 --> 00:01:33,920
+Nó không làm bất cứ điều gì quan tâm đến trình duyệt web.
+
+24
+00:01:35,290 --> 00:01:40,510
+Chà, lời hứa là hai mục tiêu, chúng làm được hai điều.
+
+25
+00:01:40,510 --> 00:01:44,070
+Một bên ngoài JavaScript, trong trình duyệt web.
+
+26
+00:01:44,070 --> 00:01:45,150
+Chúng quay cuồng.
+
+27
+00:01:45,150 --> 00:01:48,190
+Họ bắt đầu, một số tính năng trình duyệt web nền.
+
+28
+00:01:48,190 --> 00:01:49,000
+Họ sẽ làm được.
+
+29
+00:01:49,000 --> 00:01:51,320
+Cũng giống như lần đó tôi đã hẹn giờ.
+
+30
+00:01:51,320 --> 00:01:56,110
+Vì vậy, có một loại chức năng mặt tiền mới có, có điều đó.
+
+31
+00:01:56,110 --> 00:02:00,650
+Nhưng đồng thời nó thực hiện điều gì đó trong JavaScript.
+
+32
+00:02:01,650 --> 00:02:07,070
+Nó sẽ tạo ra một đối tượng đặc biệt được gọi là đối tượng hứa hẹn,
+
+33
+00:02:07,070 --> 00:02:09,330
+nó sẽ được trả lại ngay lập tức.
+
+34
+00:02:09,330 --> 00:02:11,150
+Đặt trả về thời gian chờ trong JavaScript.
+
+35
+00:02:11,150 --> 00:02:12,910
+Những thứ màu xanh ở đây là tất cả những thứ của trình duyệt web.
+
+36
+00:02:12,910 --> 00:02:14,700
+Nó không làm bất cứ điều gì trong JavaScript.
+
+37
+00:02:14,700 --> 00:02:21,918
+Những chức năng mặt tiền mới này, những chức năng như tìm nạp, những mặt tiền trình duyệt web mới này dành cho
+
+38
+00:02:21,918 --> 00:02:27,344
+các tính năng của trình duyệt web, chúng đang tải lên Java Script.
+
+39
+00:02:27,344 --> 00:02:31,311
+Giống như phần này Tìm nạp, sẽ ngay lập tức trả về một thứ gì đó vào
+
+40
+00:02:31,311 --> 00:02:34,581
+Java Script, một đối tượng giữ chỗ được gọi là một lời hứa,
+
+41
+00:02:34,581 --> 00:02:39,970
+nó sẽ có một thuộc tính gọi là giá trị, ban đầu không có gì cả.
+
+42
+00:02:39,970 --> 00:02:46,320
+Giá trị đó sẽ tự động được điền vào sau này khi web nền
+
+43
+00:02:46,320 --> 00:02:51,590
+chẳng hạn như nhiệm vụ của trình duyệt là lấy dữ liệu từ Twitter, đưa dữ liệu đó trở lại.
+
+44
+00:02:51,590 --> 00:02:54,630
+Khi tác vụ trình duyệt web nền đó kết thúc,
+
+45
+00:02:54,630 --> 00:02:59,580
+nó sẽ được lưu trữ trong đó ngay lập tức được trả lại
+
+46
+00:02:59,580 --> 00:03:05,320
+đối tượng trên giá trị của nó thuộc tính dữ liệu được trả lại từ máy chủ.
+
+47
+00:03:05,320 --> 00:03:09,940
+Bây giờ chúng ta sẽ làm hai việc với các chức năng mặt tiền này.
+
+48
+00:03:09,940 --> 00:03:13,070
+Một mặt, chúng tôi sẽ thiết lập nó trong trình duyệt web.
+
+49
+00:03:13,070 --> 00:03:15,220
+JavaScript không có khả năng nói chuyện với Internet.
+
+50
+00:03:15,220 --> 00:03:18,260
+Vì vậy, nó sẽ là một lệnh cho trình duyệt web
+
+51
+00:03:18,260 --> 00:03:20,860
+để nói chuyện từ internet và lấy một số dữ liệu.
+
+52
+00:03:20,860 --> 00:03:24,760
+Đồng thời, không giống như thời gian đặt ra không làm gì trong JavaScript,
+
+53
+00:03:24,760 --> 00:03:28,890
+thay vào đó, chúng tôi tạm dừng ở một chức năng sẽ được kích hoạt sau này.
+
+54
+00:03:28,890 --> 00:03:34,310
+Thay vào đó, chúng tôi sẽ trả về một đối tượng có trình giữ chỗ
+
+55
+00:03:34,310 --> 00:03:39,270
+được gọi là giá trị sẽ được điền vào bằng dữ liệu của chúng tôi từ công việc nền.
+
+56
+00:03:39,270 --> 00:03:43,640
+Và nhân tiện, nó sẽ có một tài sản được che giấu, được gọi là sự hoàn thiện,
+
+57
+00:03:43,640 --> 00:03:46,320
+điều đó sẽ có chức năng sẽ được kích hoạt
+
+58
+00:03:46,320 --> 00:03:50,340
+tự động trong JavaScript khi giá trị đó được cập nhật.
+
+59
+00:03:52,648 --> 00:03:53,999
+Hứa hẹn như một trình giữ chỗ cho
+
+60
+00:03:53,999 --> 00:03:57,540
+dữ liệu chúng tôi sẽ lấy lại từ công việc nền của trình duyệt web.
+
+61
+00:03:57,540 --> 00:03:59,550
+Chúng tôi cũng đính kèm chức năng,
+
+62
+00:03:59,550 --> 00:04:01,770
+mà chúng tôi muốn hoãn chạy cho đến khi hoàn thành công việc nền.
+
+63
+00:04:01,770 --> 00:04:02,980
+Chúng tôi sẽ xem lý do cho
+
+64
+00:04:02,980 --> 00:04:08,930
+đó là nếu tôi cố gắng chạy chức năng trên giá trị của trình giữ chỗ đó
+
+65
+00:04:08,930 --> 00:04:12,500
+phản đối vấn đề là ngay lập tức sẽ không có bất kỳ dữ liệu nào ở đó.
+
+66
+00:04:12,500 --> 00:04:17,020
+Vì vậy, chúng tôi cần đính kèm chức năng trên trình kích hoạt khi dữ liệu quay trở lại
+
+67
+00:04:17,020 --> 00:04:18,550
+dữ liệu đó trên cùng một đối tượng.
+
+68
+00:04:18,550 --> 00:04:19,620
+Chúng ta sẽ thấy điều đó trong giây lát.
+
+69
+00:04:20,630 --> 00:04:23,240
+Hứa đối tượng nước sẽ kích hoạt chức năng đó và nhân tiện,
+
+70
+00:04:23,240 --> 00:04:26,740
+giá trị trả về cho các tính năng của trình duyệt web hoạt động, ví dụ: lấy dữ liệu
+
+71
+00:04:26,740 --> 00:04:32,900
+từ máy chủ, sẽ là đầu vào của chức năng đính kèm, đối số của nó.
+
+72
+00:04:32,900 --> 00:04:37,139
+Chúng tôi sẽ đi qua tất cả những điều này một cách chính xác nhưng đó là tổng quan.
